@@ -1,0 +1,1000 @@
+9870|2da guerra mundial|pepe|History|1940|historia|3|Disponible a Prestamo
+9780140455410|Meditaciones|Marcus Aurelius|Classics|2016|Texto literario clásico con gran influencia en la literatura universal.|2|No Disponible
+9798846103436|Meditaciones|Marcus Aureliu|Classics|1626|Texto literario clásico con gran influencia en la literatura universal.|2|Stock minimo para Local
+12481429|El arte de Amar|Omar Valdelomar|Art|2015|Un texto literario que habra de la aventura de 2 niños por ecnontrar a sus perros|3|Disponible a Prestamo
+12481429|El arte de Amar|Omar Valdelomar|Mathematics|2015|Un texto literario que habra de la aventura de 2 niños por ecnontrar a sus perros|3|Disponible a Prestamo
+9780872204850|Ὀδ?σσεια|Όμη?ος|Classics|1538|Texto literario clásico con gran influencia en la literatura universal.|3|No Disponible
+0807218049|Where the Red Fern Grows|Wilson Rawls|Classics|1961|Obra clásica de gran relevancia literaria e histórica.|5|No Disponible
+9780460050104|Tanglewood Tales|Nathaniel Hawthorne|Classics|1920|Obra clásica de gran relevancia literaria e histórica.|5|No Disponible
+0848810376|Mythology|Edith Hamilton|Classics|1940|Obra clásica de gran relevancia literaria e histórica.|3|No Disponible
+0233955569|On The Road|Jack Kerouac|Classics|1957|Obra clásica de gran relevancia literaria e histórica.|5|No Disponible
+9781177541923|La Odisea|Όμη?ος|Classics|1946|Texto literario clásico con gran influencia en la literatura universal.|4|No Disponible
+9781795754613|State and Revolution|Vladimir Il’ich Lenin|Classics|1920|Libro clásico reconocido por su valor cultural y narrativo.|4|No Disponible
+9780971830516|Pagan Papers|Kenneth Grahame|Classics|2017|Libro clásico reconocido por su valor cultural y narrativo.|4|No Disponible
+1727462459|Die Aufzeichnungen des Malte Laurids Brigge|Rainer Maria Rilke|Classics|1920|Obra representativa de la literatura clásica y tradicional.|2|No Disponible
+9781679583353|Feeling Is the Secret|Neville Goddard|Classics|2016|Obra clásica de gran relevancia literaria e histórica.|5|No Disponible
+1911091050|Брать? Карамазовы|Фёдор Михайлович До?тоев?кий|Classics|1880|Obra clásica de gran relevancia literaria e histórica.|3|No Disponible
+9781547277322|The Princess and Curdie|George MacDonald|Classics|1924|Texto literario clásico con gran influencia en la literatura universal.|5|No Disponible
+1804530050|Love and Freindship|Jane Austen|Classics|1995|Obra representativa de la literatura clásica y tradicional.|2|No Disponible
+9780061492570|Post office|Charles Bukowski|Classics|1984|Obra clásica de gran relevancia literaria e histórica.|4|No Disponible
+9798604416242|Tender is the Night|F. Scott Fitzgerald|Classics|1933|Libro clásico reconocido por su valor cultural y narrativo.|3|No Disponible
+0352310170|A Man With a Maid|Anonymous|Classics|1986|Obra clásica de gran relevancia literaria e histórica.|4|No Disponible
+9788171203338|Ramayana, a Holy Bible of India|Vālmīki|Classics|1923|Libro clásico reconocido por su valor cultural y narrativo.|5|No Disponible
+1986223965|The inside of the cup|Winston Churchill|Classics|1921|Libro clásico reconocido por su valor cultural y narrativo.|4|No Disponible
+9798648795143|La Peste|Albert Camus|Classics|1942|Libro clásico reconocido por su valor cultural y narrativo.|2|No Disponible
+9789706513540|A Modern Utopia|H. G. Wells|Classics|1922|Texto literario clásico con gran influencia en la literatura universal.|2|No Disponible
+9798513996880|The Road to Oz|L. Frank Baum|Classics|1927|Obra clásica de gran relevancia literaria e histórica.|5|No Disponible
+9781528718196|?нна Каренина|Лев Тол?той|Classics|1876|Obra clásica de gran relevancia literaria e histórica.|2|No Disponible
+8723901683|The Stepford Wives|Ira Levin|Classics|1972|Obra clásica de gran relevancia literaria e histórica.|3|No Disponible
+9788506004234|Memórias póstumas de Brás Cubas|Machado de Assis|Classics|1924|Libro clásico reconocido por su valor cultural y narrativo.|4|No Disponible
+0795302568|Player Piano|Kurt Vonnegut|Classics|1952|Obra representativa de la literatura clásica y tradicional.|5|No Disponible
+0205176070|Classical myth|Barry B. Powell|Classics|2012|Obra representativa de la literatura clásica y tradicional.|4|No Disponible
+0440471893|The Princess and the Goblin|George MacDonald|Classics|1920|Libro clásico reconocido por su valor cultural y narrativo.|4|No Disponible
+9781717310491|The Sea Fairies|L. Frank Baum|Classics|1988|Libro clásico reconocido por su valor cultural y narrativo.|2|No Disponible
+9781613820834|Siddhartha|Hermann Hesse|Classics|1922|Obra clásica de gran relevancia literaria e histórica.|3|No Disponible
+0099286092|The power and the Glory|Graham Greene|Classics|1940|Libro clásico reconocido por su valor cultural y narrativo.|4|No Disponible
+9781108057875|Classical Journal|Abraham John Valpy|Classics|2013|Obra clásica de gran relevancia literaria e histórica.|3|No Disponible
+1698896328|The Wild Knight and Other Poems|Gilbert Keith Chesterton|Classics|1945|Libro clásico reconocido por su valor cultural y narrativo.|3|No Disponible
+9782070586646|Heidi|Spyri, Johanna|Classics|1921|Texto literario clásico con gran influencia en la literatura universal.|4|No Disponible
+9781512063257|The Cask of Amontillado|Edgar Allan Poe|Classics|2016|Libro clásico reconocido por su valor cultural y narrativo.|4|No Disponible
+1519339372|Women in Love|D. H. Lawrence|Classics|1920|Libro clásico reconocido por su valor cultural y narrativo.|3|No Disponible
+9781694974365|Dawn|Eleanor Hodgman Porter|Classics|2018|Libro clásico reconocido por su valor cultural y narrativo.|2|No Disponible
+1513269100|A Wonder Book for Girls and Boys|Nathaniel Hawthorne|Classics|1920|Obra representativa de la literatura clásica y tradicional.|5|No Disponible
+0918825806|The Greek myths|Robert Graves|Classics|1955|Obra representativa de la literatura clásica y tradicional.|4|No Disponible
+270280487X|La fortune des Rougon|Émile Zola|Classics|1924|Obra clásica de gran relevancia literaria e histórica.|4|No Disponible
+0812415817|Heroes, Gods and Monsters of the Greek Myths|Bernard Evslin|Classics|1984|Texto literario clásico con gran influencia en la literatura universal.|5|No Disponible
+1376492431|Sult|Knut Hamsun|Classics|1920|Obra representativa de la literatura clásica y tradicional.|5|No Disponible
+9780394415765|Atlas Shrugged (Centennial Ed. HC)|Ayn Rand|Classics|1936|Obra clásica de gran relevancia literaria e histórica.|4|No Disponible
+9788842817970|Debt|David Graeber|History|2021|Texto que explora eventos históricos y su impacto en la sociedad.|2|No Disponible
+9789180306461|La Historia de la Filosofía|Will Durant|History|1926|Libro orientado al estudio de procesos históricos y culturales.|5|No Disponible
+9781565843790|A People's Historia of the United States|Howard Zinn|History|1980|Material histórico centrado en civilizaciones y cambios sociales.|2|No Disponible
+9789794130834|Ringkasan sejarat filsafat|K. Bertens|History|1975|Texto que explora eventos históricos y su impacto en la sociedad.|3|No Disponible
+9789719201847|Mga gunita ng himagsikan|Emilio Aguinaldo|History|1998|Libro orientado al estudio de procesos históricos y culturales.|2|No Disponible
+SIN-ISBN-0001|Thirty years of the Soviet state|N/A|History|1947|Libro orientado al estudio de procesos históricos y culturales.|2|No Disponible
+841874152X|The Lessons of Historia|Will Durant|History|2022|Libro orientado al estudio de procesos históricos y culturales.|4|No Disponible
+9780195397611|The great conversation|Norman Melchert|History|2018|Libro orientado al estudio de procesos históricos y culturales.|2|No Disponible
+9780706998238|Freedom at Midnight|Dominique Lapierre|History|1985|Obra histórica que analiza acontecimientos importantes de distintas épocas.|3|No Disponible
+0008313857|El Arte de la Guerra|孙武 (Sun Tzu)|History|1944|Libro orientado al estudio de procesos históricos y culturales.|2|No Disponible
+6055029731|Sapiens|Yuval Noah Harari|History|2016|Libro orientado al estudio de procesos históricos y culturales.|3|No Disponible
+1803414308|Capitalist Realism|Mark Fisher|History|2017|Libro orientado al estudio de procesos históricos y culturales.|2|No Disponible
+9780714822761|The story of art|E. H. Gombrich|History|1950|Obra histórica que analiza acontecimientos importantes de distintas épocas.|4|No Disponible
+0349116903|The Age of Revolution|Eric Hobsbawm|History|1962|Texto que explora eventos históricos y su impacto en la sociedad.|4|No Disponible
+8466361200|21 Lessons for the 21st Century|Yuval Noah Harari|History|2018|Libro orientado al estudio de procesos históricos y culturales.|2|No Disponible
+9780449223772|El Auge y Caída del Tercer Reich|William L. Shirer|History|1960|Libro orientado al estudio de procesos históricos y culturales.|3|No Disponible
+9780140256352|Bumi Manusia|Pramoedya Ananta Toer|History|1991|Material histórico centrado en civilizaciones y cambios sociales.|2|No Disponible
+9780375413988|A history of the modern world|R. R. Palmer|History|1984|Libro orientado al estudio de procesos históricos y culturales.|3|No Disponible
+9780810918849|Arte|Frederick Hartt|History|1984|Obra histórica que analiza acontecimientos importantes de distintas épocas.|2|No Disponible
+9780070078727|The Unfinished Nation|Alan Brinkley|History|2021|Obra histórica que analiza acontecimientos importantes de distintas épocas.|4|No Disponible
+0385094434|The discovery of India|Jawaharlal Nehru|History|1955|Obra histórica que analiza acontecimientos importantes de distintas épocas.|4|No Disponible
+9786254146046|The Dawn of Everything|David Graeber|History|2024|Obra histórica que analiza acontecimientos importantes de distintas épocas.|5|No Disponible
+9780136054054|Historia del Arte|Marilyn Stokstad|History|1995|Obra histórica que analiza acontecimientos importantes de distintas épocas.|2|No Disponible
+9780670058167|Letters from a father to his daughter|Jawaharlal Nehru|History|1952|Libro orientado al estudio de procesos históricos y culturales.|2|No Disponible
+0434007498|Postwar|Tony Judt|History|2005|Obra histórica que analiza acontecimientos importantes de distintas épocas.|2|No Disponible
+9780618473113|The Enduring Vision|Paul S. Boyer|History|1987|Material histórico centrado en civilizaciones y cambios sociales.|4|No Disponible
+1472585496|A history of the English-speaking peoples|Winston S. Churchill|History|1950|Material histórico centrado en civilizaciones y cambios sociales.|2|No Disponible
+9780133893885|Historia of art|H. W. Janson|History|1962|Obra histórica que analiza acontecimientos importantes de distintas épocas.|4|No Disponible
+9781886463172|An echo in the darkness|Francine Rivers|History|2018|Material histórico centrado en civilizaciones y cambios sociales.|2|No Disponible
+9780072957549|Traditions & encounters|Jerry H. Bentley|History|2020|Material histórico centrado en civilizaciones y cambios sociales.|3|No Disponible
+0671314009|A Historia of Western Philosophy|Bertrand Russell|History|1984|Obra histórica que analiza acontecimientos importantes de distintas épocas.|2|No Disponible
+9781435336667|Letters on demonology and witchcraft|Sir Walter Scott|History|1830|Material histórico centrado en civilizaciones y cambios sociales.|3|No Disponible
+9780795309427|A Room of One's Own|Virginia Woolf|History|1929|Material histórico centrado en civilizaciones y cambios sociales.|5|No Disponible
+9781428005891|Historia of Egypt, Chaldea, Syria, Babylonia, And Assyria|Gaston Maspero|History|1901|Obra histórica que analiza acontecimientos importantes de distintas épocas.|4|No Disponible
+164798825X|La conquête du pain|Peter Kropotkin|History|1921|Material histórico centrado en civilizaciones y cambios sociales.|2|No Disponible
+SIN-ISBN-0002|Ioannis Zonarae Annales|Zonaras, Joannes|History|1841|Obra histórica que analiza acontecimientos importantes de distintas épocas.|5|No Disponible
+9781945540943|ההיסטוריה של המחר|Yuval Noah Harari|History|2016|Material histórico centrado en civilizaciones y cambios sociales.|3|No Disponible
+9780688078959|The Mother Tongue|Bill Bryson|History|2016|Material histórico centrado en civilizaciones y cambios sociales.|4|No Disponible
+9789712700576|Rizal without the overcoat|Ambeth R. Ocampo|History|2000|Material histórico centrado en civilizaciones y cambios sociales.|4|No Disponible
+9781526603012|The Silk Roads|Peter Frankopan|History|2016|Obra histórica que analiza acontecimientos importantes de distintas épocas.|4|Disponible a Prestamo
+9788467023381|Der Untergang des Abendlandes|Oswald Spengler|History|1920|Obra histórica que analiza acontecimientos importantes de distintas épocas.|4|No Disponible
+9789711024154|Historia of the Filipino People|Teodoro A. Agoncillo|History|1969|Obra histórica que analiza acontecimientos importantes de distintas épocas.|4|No Disponible
+0671832026|The worldly philosophers|Robert L. Heilbroner|History|1953|Obra histórica que analiza acontecimientos importantes de distintas épocas.|2|No Disponible
+9780786215133|A Walk in the Woods|Bill Bryson|History|2016|Texto que explora eventos históricos y su impacto en la sociedad.|2|No Disponible
+9780945001102|Tragedy and hope|Carroll Quigley|History|2024|Obra histórica que analiza acontecimientos importantes de distintas épocas.|4|No Disponible
+9780333454077|Historia of Africa|Kevin Shillington|History|2018|Obra histórica que analiza acontecimientos importantes de distintas épocas.|2|No Disponible
+019271922X|The Eagle of the Ninth. 1400 Grundwörter.|Rosemary Sutcliff|History|1954|Texto que explora eventos históricos y su impacto en la sociedad.|4|No Disponible
+9788483360835|Manifest der Kommunistischen Partei|Karl Marx|History|1848|Texto que explora eventos históricos y su impacto en la sociedad.|5|No Disponible
+9780090502516|Sleep walkers|Arthur Koestler|History|1986|Material histórico centrado en civilizaciones y cambios sociales.|5|No Disponible
+0307472493|The Palace of Illusions|Chitra Banerjee Divakaruni|History|2008|Obra histórica que analiza acontecimientos importantes de distintas épocas.|4|No Disponible
+0805318003|Biology|Neil Alexander Campbell|Science|1987|Libro científico relacionado con descubrimientos y avances modernos.|2|No Disponible
+9780575099937|La Caída de Hyperion|Dan Simmons|Science|2016|Texto especializado en investigación científica y conocimiento experimental.|4|No Disponible
+9787229030933|Death's End (The Three-Body Problem Series Book 3)|刘慈欣|Science|2016|Material académico enfocado en ciencias y tecnología aplicada.|4|No Disponible
+9780140051353|Понедельник начинает?? в ?убботу; Пикник на обочине|?ркадий Стругацкий|Science|2017|Obra orientada al análisis de fenómenos científicos.|4|No Disponible
+9780449024973|Las Cavernas de Acero|Isaac Asimov|Science|1953|Material académico enfocado en ciencias y tecnología aplicada.|2|No Disponible
+0563410221|The Foundation Trilogy|Isaac Asimov|Science|1950|Material académico enfocado en ciencias y tecnología aplicada.|4|No Disponible
+9861206884|The Dark Forest (The Three-Body Problem Series Book 2)|刘慈欣|Science|2016|Libro científico relacionado con descubrimientos y avances modernos.|4|No Disponible
+9782843623103|Nightfall|Isaac Asimov|Science|1990|Texto especializado en investigación científica y conocimiento experimental.|5|No Disponible
+9780345313904|The Naked Sun|Isaac Asimov|Science|1954|Libro científico relacionado con descubrimientos y avances modernos.|2|No Disponible
+9780441363957|I Have No Mouth and I Must Scream|Harlan Ellison|Science|1984|Texto especializado en investigación científica y conocimiento experimental.|4|No Disponible
+9781409095484|A short history of nearly everything|Bill Bryson|Science|2016|Libro científico relacionado con descubrimientos y avances modernos.|2|No Disponible
+0739433911|God Emperor of Dune|Frank Herbert|Science|1981|Texto especializado en investigación científica y conocimiento experimental.|4|No Disponible
+0575073225|Altered Carbon. Vol. 1|Richard K. Morgan|Science|2016|Material académico enfocado en ciencias y tecnología aplicada.|4|No Disponible
+9780671491758|The Mote in God's Eye|Larry Niven|Science|1978|Obra orientada al análisis de fenómenos científicos.|2|No Disponible
+9780425053140|Dune Messiah|Frank Herbert|Science|1969|Material académico enfocado en ciencias y tecnología aplicada.|2|No Disponible
+9788835720010|2001|Arthur C. Clarke|Science|1968|Material académico enfocado en ciencias y tecnología aplicada.|2|No Disponible
+848896692X|The End of Eternity|Isaac Asimov|Science|1955|Material académico enfocado en ciencias y tecnología aplicada.|3|No Disponible
+8576575116|The Stars, Like Dust|Isaac Asimov|Science|1951|Material académico enfocado en ciencias y tecnología aplicada.|3|No Disponible
+8374809000|Endymion|Dan Simmons|Science|2018|Material académico enfocado en ciencias y tecnología aplicada.|4|No Disponible
+0449204294|Lucifer's Hammer|Larry Niven|Science|1985|Obra orientada al análisis de fenómenos científicos.|5|No Disponible
+1529157463|Proyecto Hail Mary|Andy Weir|Science|2025|Obra orientada al análisis de fenómenos científicos.|2|No Disponible
+9780321793102|Microbiology|Gerard J. Tortora|Science|1982|Texto especializado en investigación científica y conocimiento experimental.|2|No Disponible
+9784150102470|The Currents of Space|Isaac Asimov|Science|1952|Obra orientada al análisis de fenómenos científicos.|4|No Disponible
+9783813507638|What If?|Randall Munroe|Science|2016|Libro científico relacionado con descubrimientos y avances modernos.|2|No Disponible
+0091956951|Arteemis|Andy Weir|Science|2017|Libro científico relacionado con descubrimientos y avances modernos.|3|No Disponible
+9787555027706|The Long Way to a Small, Angry Planet|Becky Chambers|Science|2016|Material académico enfocado en ciencias y tecnología aplicada.|5|No Disponible
+2266114018|Chapterhouse Dune|Frank Herbert|Science|1985|Libro científico relacionado con descubrimientos y avances modernos.|4|No Disponible
+1405000198|Pandora's Star|Peter F. Hamilton|Science|2020|Libro científico relacionado con descubrimientos y avances modernos.|4|No Disponible
+8445076531|The Martian Chronicles|Ray Bradbury|Science|1950|Libro científico relacionado con descubrimientos y avances modernos.|4|No Disponible
+9782081481367|Astrophysics for People in a Hurry|Neil deGrasse Tyson|Science|2017|Libro científico relacionado con descubrimientos y avances modernos.|3|No Disponible
+1515966429|A Closed and Common Orbit|Becky Chambers|Science|2016|Material académico enfocado en ciencias y tecnología aplicada.|3|No Disponible
+0886461863|Friday|Robert A. Heinlein|Science|1984|Libro científico relacionado con descubrimientos y avances modernos.|2|No Disponible
+8445070800|Burning Chrome|William Gibson|Science|2017|Obra orientada al análisis de fenómenos científicos.|3|No Disponible
+0246123044|The Robots of Dawn|Isaac Asimov|Science|1984|Texto especializado en investigación científica y conocimiento experimental.|2|No Disponible
+180422023X|The 48 Derechos of Power|Robert Greene|Science|2016|Texto especializado en investigación científica y conocimiento experimental.|3|No Disponible
+9780613997249|Heretics of Dune|Frank Herbert|Science|1984|Libro científico relacionado con descubrimientos y avances modernos.|3|No Disponible
+8401941253|Contact|Carl Sagan|Science|1985|Obra orientada al análisis de fenómenos científicos.|2|No Disponible
+9788020409980|Solaris|Stanisław Lem|Science|1961|Libro científico relacionado con descubrimientos y avances modernos.|2|No Disponible
+059359973X|Snow Crash|Neal Stephenson|Science|1992|Material académico enfocado en ciencias y tecnología aplicada.|2|No Disponible
+9780575079090|The Stars My Destination|Alfred Bester|Science|1956|Texto especializado en investigación científica y conocimiento experimental.|4|No Disponible
+1400150663|El Hombre Invisible|H. G. Wells|Science|0|Libro científico relacionado con descubrimientos y avances modernos.|3|No Disponible
+1478987375|Ancillary Sword|Ann Leckie|Science|2016|Obra orientada al análisis de fenómenos científicos.|4|No Disponible
+8576574470|The Last Colony|John Scalzi|Science|2019|Obra orientada al análisis de fenómenos científicos.|5|No Disponible
+8576574837|Fundación|Isaac Asimov|Science|1951|Texto especializado en investigación científica y conocimiento experimental.|5|No Disponible
+1101658053|Duna|Frank Herbert|Science|1965|Libro científico relacionado con descubrimientos y avances modernos.|5|No Disponible
+9782221125779|A Fire upon the Deep|Vernor Vinge|Science|2016|Libro científico relacionado con descubrimientos y avances modernos.|3|No Disponible
+9780425029459|Starship Troopers|Robert A. Heinlein|Science|1959|Material académico enfocado en ciencias y tecnología aplicada.|3|No Disponible
+9788576573197|Robots and Empire|Isaac Asimov|Science|1985|Libro científico relacionado con descubrimientos y avances modernos.|5|No Disponible
+9780553294385|Les Robots|Isaac Asimov|Science|1950|Texto especializado en investigación científica y conocimiento experimental.|2|No Disponible
+9783518369401|Ubik|Philip K. Dick|Science|1969|Obra orientada al análisis de fenómenos científicos.|3|No Disponible
+0135019419|Introductory Mathematical Analysis|Ernest F. Haeussler|Mathematics|1973|Obra educativa sobre teoría y métodos matemáticos.|4|No Disponible
+9780387557434|What is mathematics?|Richard Courant|Mathematics|1941|Libro enfocado en razonamiento matemático y resolución de problemas.|3|No Disponible
+1337694193|Discrete Mathematics with Applications|Susanna S. Epp|Mathematics|2019|Texto especializado en conceptos matemáticos y aplicaciones prácticas.|4|No Disponible
+9781480560390|Algorithms to Live By|Brian Christian|Mathematics|2016|Libro enfocado en razonamiento matemático y resolución de problemas.|2|No Disponible
+9780840054104|Calculus|James Stewart|Mathematics|2016|Texto especializado en conceptos matemáticos y aplicaciones prácticas.|3|No Disponible
+9780141997971|Cómo Mentir con Estadísticas|Darrell Huff|Mathematics|2016|Material académico relacionado con cálculo, álgebra y estadística.|2|No Disponible
+9780691080970|How to solve it|George Pólya|Mathematics|1985|Obra educativa sobre teoría y métodos matemáticos.|2|No Disponible
+9780241360194|Humble Pi|Matt Parker|Mathematics|2019|Libro enfocado en razonamiento matemático y resolución de problemas.|5|No Disponible
+9781492032649|Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow|Aurélien Géron|Mathematics|2019|Texto especializado en conceptos matemáticos y aplicaciones prácticas.|5|No Disponible
+9780070088511|Applied mathematics for business, economics, and the social sciences|Frank S. Budnick|Mathematics|1993|Libro enfocado en razonamiento matemático y resolución de problemas.|2|No Disponible
+9780857898456|La Alegría de X|Steven H. Strogatz|Mathematics|2012|Material académico relacionado con cálculo, álgebra y estadística.|4|No Disponible
+9789863209119|How Not to Be Wrong|Jordan Ellenberg|Mathematics|2014|Obra educativa sobre teoría y métodos matemáticos.|4|No Disponible
+0435037307|Heinemann Mathematics|Scottish Primary Mathematics Group|Mathematics|1987|Material académico relacionado con cálculo, álgebra y estadística.|2|No Disponible
+9789768014160|Mathematics|Raymond Toolsie|Mathematics|1996|Libro enfocado en razonamiento matemático y resolución de problemas.|4|No Disponible
+0716743582|Mathematical structures for computer science|Judith L. Gersting|Mathematics|1984|Libro enfocado en razonamiento matemático y resolución de problemas.|5|No Disponible
+9780078601354|Mathematics|McGraw-Hill|Mathematics|1998|Obra educativa sobre teoría y métodos matemáticos.|3|No Disponible
+9780618163830|Algebra 1|Ron Larson|Mathematics|1993|Obra educativa sobre teoría y métodos matemáticos.|5|No Disponible
+0471154962|Advanced Engineering Mathematics|Erwin Kreyszig|Mathematics|1988|Material académico relacionado con cálculo, álgebra y estadística.|5|No Disponible
+0073229725|Discrete Mathematics and Its Applications|Kenneth H. Rosen|Mathematics|2018|Texto especializado en conceptos matemáticos y aplicaciones prácticas.|3|No Disponible
+0135622239|Mathematical statistics|John E. Freund|Mathematics|1987|Obra educativa sobre teoría y métodos matemáticos.|5|No Disponible
+9780750685559|Engineering mathematics|Bird, J. O.|Mathematics|2017|Texto especializado en conceptos matemáticos y aplicaciones prácticas.|5|No Disponible
+9783813507638|What If?|Randall Munroe|Mathematics|2016|Obra educativa sobre teoría y métodos matemáticos.|5|No Disponible
+9780136208877|Using and understanding mathematics|Jeffrey O. Bennett|Mathematics|2016|Material académico relacionado con cálculo, álgebra y estadística.|3|No Disponible
+9780256031409|Mathematics; with applications in management and economics|Earl K. Bowen|Mathematics|1980|Material académico relacionado con cálculo, álgebra y estadística.|3|No Disponible
+9780716748137|The fractal geometry of nature|Benoît B. Mandelbrot|Mathematics|1986|Material académico relacionado con cálculo, álgebra y estadística.|4|No Disponible
+9780665590962|Elements|Euclid|Mathematics|1543|Texto especializado en conceptos matemáticos y aplicaciones prácticas.|3|No Disponible
+0471099600|Mathematical Methods in the Physical Ciencias|Mary L. Boas|Mathematics|1966|Libro enfocado en razonamiento matemático y resolución de problemas.|2|No Disponible
+0710803648|The Mathematical Experience|Philip J. Davis|Mathematics|2016|Material académico relacionado con cálculo, álgebra y estadística.|2|No Disponible
+9781434404923|A Course of Pure Mathematics|G. H. Hardy|Mathematics|1921|Material académico relacionado con cálculo, álgebra y estadística.|4|No Disponible
+9780139364686|Understanding Symbolic Logic|Virginia Klenk|Mathematics|1989|Texto especializado en conceptos matemáticos y aplicaciones prácticas.|4|No Disponible
+9780521091879|Principia mathematica|Alfred North Whitehead|Mathematics|1925|Libro enfocado en razonamiento matemático y resolución de problemas.|5|No Disponible
+0312185480|Calculus Made Easy|Silvanus Phillips Thompson|Mathematics|1921|Libro enfocado en razonamiento matemático y resolución de problemas.|4|No Disponible
+9781258442385|Mathematics and plausible reasoning|George Pólya|Mathematics|1954|Material académico relacionado con cálculo, álgebra y estadística.|3|No Disponible
+0003125475|Spectrum Maths|Dave Kirkby|Mathematics|1989|Texto especializado en conceptos matemáticos y aplicaciones prácticas.|2|No Disponible
+0520088174|Philosophiae naturalis principia mathematica|Sir Isaac Newton|Mathematics|1803|Libro enfocado en razonamiento matemático y resolución de problemas.|5|No Disponible
+053493501X|College algebra|Jerome E. Kaufmann|Mathematics|1987|Obra educativa sobre teoría y métodos matemáticos.|2|No Disponible
+1118804872|Solutions manual to accompany Applied mathematics and modeling for chemical engineers|Richard G. Rice|Mathematics|1996|Obra educativa sobre teoría y métodos matemáticos.|5|No Disponible
+9780534395193|Introducción a Probability and Statistics|William Mendenhall|Mathematics|1987|Obra educativa sobre teoría y métodos matemáticos.|5|No Disponible
+1603860398|An introduction to mathematics|Alfred North Whitehead|Mathematics|1958|Obra educativa sobre teoría y métodos matemáticos.|5|No Disponible
+9780761160960|Everything You Need to Ace Math in One Big Fat Notebook|Workman Publishing Company Staff|Mathematics|2016|Texto especializado en conceptos matemáticos y aplicaciones prácticas.|3|No Disponible
+9780867200935|Calculus with analytic geometry|Murray H. Protter|Mathematics|1977|Libro enfocado en razonamiento matemático y resolución de problemas.|5|No Disponible
+9781565774551|Saxon Math 8/7|Stephen Hake|Mathematics|2003|Material académico relacionado con cálculo, álgebra y estadística.|2|No Disponible
+9780618174409|Precalculus With Limits|Ron Larson|Mathematics|1993|Obra educativa sobre teoría y métodos matemáticos.|4|No Disponible
+9780367524685|Data Ciencia|Tiffany-Anne Timbers|Mathematics|2024|Texto especializado en conceptos matemáticos y aplicaciones prácticas.|2|No Disponible
+0124847609|Intermediate algebra|Charles P. McKeague|Mathematics|1979|Material académico relacionado con cálculo, álgebra y estadística.|5|No Disponible
+9780850363807|Mathematics for the million|Lancelot Thomas Hogben|Mathematics|1989|Libro enfocado en razonamiento matemático y resolución de problemas.|3|No Disponible
+9780673467386|Mathematical ideas|Charles David Miller|Mathematics|1986|Libro enfocado en razonamiento matemático y resolución de problemas.|4|No Disponible
+0135000009|Business mathematics|Nelda W. Roueche|Mathematics|1993|Material académico relacionado con cálculo, álgebra y estadística.|4|No Disponible
+9780471381556|Calculus|Howard Anton|Mathematics|2016|Texto especializado en conceptos matemáticos y aplicaciones prácticas.|3|No Disponible
+9787111133063|Principles of Mathematical Analysis|Walter Rudin|Mathematics|1976|Texto especializado en conceptos matemáticos y aplicaciones prácticas.|5|No Disponible
+9789180306461|La Historia de la Filosofía|Will Durant|Philosophy|1926|Material orientado al estudio del pensamiento y la razón.|3|No Disponible
+9781521936719|Jenseits von Gut und Böse|Friedrich Nietzsche|Philosophy|1923|Material orientado al estudio del pensamiento y la razón.|2|No Disponible
+9789501602289|Tao te Ching|??|Philosophy|1842|Material orientado al estudio del pensamiento y la razón.|2|No Disponible
+9781535422062|Le mythe de Sisyphe|Albert Camus|Philosophy|1941|Libro dedicado al análisis de ideas filosóficas y existenciales.|3|No Disponible
+0394700759|El Mito de Sísifo y Otros Ensayos|Albert Camus|Philosophy|1955|Texto especializado en corrientes filosóficas y ética.|3|No Disponible
+9780971123113|Ἀπολογία Σωκ?άτους|Πλάτων|Philosophy|1920|Libro dedicado al análisis de ideas filosóficas y existenciales.|5|No Disponible
+7549561656|The Wisdom of Insecurity|Alan Watts|Philosophy|2016|Texto especializado en corrientes filosóficas y ética.|2|No Disponible
+9780195397611|The great conversation|Norman Melchert|Philosophy|2018|Texto especializado en corrientes filosóficas y ética.|4|No Disponible
+9780140455410|Meditaciones|Marcus Aurelius|Philosophy|2016|Libro dedicado al análisis de ideas filosóficas y existenciales.|4|No Disponible
+9798846103436|Meditaciones|Marcus Aurelius|Philosophy|1626|Texto especializado en corrientes filosóficas y ética.|2|No Disponible
+9789794130834|Ringkasan sejarat filsafat|K. Bertens|Philosophy|1975|Obra filosófica centrada en pensamiento crítico y reflexión humana.|2|No Disponible
+0671314009|A Historia of Western Philosophy|Bertrand Russell|Philosophy|1984|Libro dedicado al análisis de ideas filosóficas y existenciales.|2|No Disponible
+841874152X|The Lessons of Historia|Will Durant|Philosophy|2022|Obra filosófica centrada en pensamiento crítico y reflexión humana.|2|No Disponible
+9781546805632|Los Problemas de la Filosofía|Bertrand Russell|Philosophy|1923|Libro dedicado al análisis de ideas filosóficas y existenciales.|3|No Disponible
+2291066846|Why I am an atheist|Bhagat Singh|Philosophy|2008|Texto especializado en corrientes filosóficas y ética.|2|No Disponible
+0760756023|Discours de la méthode|René Descartes|Philosophy|1664|Libro dedicado al análisis de ideas filosóficas y existenciales.|3|No Disponible
+SIN-ISBN-0003|Sistematika filsafat|Sidi Gazalba|Philosophy|1973|Material orientado al estudio del pensamiento y la razón.|5|No Disponible
+9780553256802|The Tao of Physics|Fritjof Capra|Philosophy|1984|Libro dedicado al análisis de ideas filosóficas y existenciales.|2|No Disponible
+1691195618|Der Antichrist|Friedrich Nietzsche|Philosophy|1920|Libro dedicado al análisis de ideas filosóficas y existenciales.|5|No Disponible
+9780199690879|Pensar|Simon Blackburn|Philosophy|2001|Libro dedicado al análisis de ideas filosóficas y existenciales.|3|No Disponible
+9781404324251|Φαίδων|Πλάτων|Philosophy|1713|Libro dedicado al análisis de ideas filosóficas y existenciales.|4|No Disponible
+9781602851092|The Four Agreements|Don Miguel Ruiz|Philosophy|2016|Libro dedicado al análisis de ideas filosóficas y existenciales.|2|No Disponible
+1980529086|Also sprach Zarathustra|Friedrich Nietzsche|Philosophy|1883|Material orientado al estudio del pensamiento y la razón.|4|No Disponible
+180422023X|The 48 Derechos of Power|Robert Greene|Philosophy|2016|Material orientado al estudio del pensamiento y la razón.|2|No Disponible
+0130968692|Introducción a logic|Irving Marmer Copi|Philosophy|1953|Libro dedicado al análisis de ideas filosóficas y existenciales.|5|No Disponible
+9780735278516|12 Rules for Life|Jordan B. Peterson|Philosophy|2018|Libro dedicado al análisis de ideas filosóficas y existenciales.|5|No Disponible
+0195638204|Indian philosophy|Sarvepalli Radhakrishnan|Philosophy|1923|Material orientado al estudio del pensamiento y la razón.|3|No Disponible
+9789896162931|The theory of everything|Stephen Hawking|Philosophy|2020|Texto especializado en corrientes filosóficas y ética.|3|No Disponible
+9789667007034|Sofies verden|Jostein Gaarder|Philosophy|1991|Material orientado al estudio del pensamiento y la razón.|4|No Disponible
+9780198250548|A theory of justice|John Rawls|Philosophy|1971|Obra filosófica centrada en pensamiento crítico y reflexión humana.|3|No Disponible
+9780879681722|The complete works of Friedrich Nietzsche|Friedrich Nietzsche|Philosophy|1924|Material orientado al estudio del pensamiento y la razón.|4|No Disponible
+1911214527|Bluets|Maggie Nelson|Philosophy|2017|Material orientado al estudio del pensamiento y la razón.|3|No Disponible
+9780631205692|Philosophische Untersuchungen|Ludwig Wittgenstein|Philosophy|1953|Material orientado al estudio del pensamiento y la razón.|2|No Disponible
+1136749772|The Open Society and Its Enemies (1+2)|Karl Popper|Philosophy|1945|Material orientado al estudio del pensamiento y la razón.|3|No Disponible
+9789568356323|Wille zur Macht|Friedrich Nietzsche|Philosophy|1967|Obra filosófica centrada en pensamiento crítico y reflexión humana.|2|No Disponible
+9781975902759|Tractatus logico-philosophicus|Ludwig Wittgenstein|Philosophy|1921|Material orientado al estudio del pensamiento y la razón.|2|No Disponible
+9781508504313|The Kybalion|Three Initiates|Philosophy|2016|Obra filosófica centrada en pensamiento crítico y reflexión humana.|2|No Disponible
+1101083220|The pig that wants to be eaten|Julian Baggini|Philosophy|2009|Texto especializado en corrientes filosóficas y ética.|5|No Disponible
+9780072406344|Questions that matter|Miller, Ed. L.|Philosophy|1984|Texto especializado en corrientes filosóficas y ética.|2|No Disponible
+9780451607263|Nature, Man,& Woman|Alan Watts|Philosophy|2022|Texto especializado en corrientes filosóficas y ética.|5|No Disponible
+9798621626914|Συμπόσιον|Πλάτων|Philosophy|1559|Texto especializado en corrientes filosóficas y ética.|2|No Disponible
+8477203903|Die Welt als Wille und Vorstellung|Arthur Schopenhauer|Philosophy|1924|Material orientado al estudio del pensamiento y la razón.|2|No Disponible
+SIN-ISBN-0004|Pengantar ilmu hukum|Tuty Saleh|Philosophy|1963|Material orientado al estudio del pensamiento y la razón.|2|No Disponible
+1016631626|De rerum natura|Titus Lucretius Carus|Philosophy|1548|Texto especializado en corrientes filosóficas y ética.|5|No Disponible
+9780140135534|Pedagogia do Oprimido|Paulo Freire|Philosophy|1985|Texto especializado en corrientes filosóficas y ética.|3|No Disponible
+9780559123313|The guide of the perplexed of Maimonides|Moses Maimonides|Philosophy|1920|Texto especializado en corrientes filosóficas y ética.|5|No Disponible
+9781429952682|Justice|Michael J. Sandel|Philosophy|2017|Material orientado al estudio del pensamiento y la razón.|4|No Disponible
+0192152173|A Study of Historia|Arnold J. Toynbee|Philosophy|1934|Obra filosófica centrada en pensamiento crítico y reflexión humana.|5|No Disponible
+9780140228595|Physics and philosophy|Werner Heisenberg|Philosophy|1984|Obra filosófica centrada en pensamiento crítico y reflexión humana.|3|No Disponible
+9780070477186|Nursing|Dorothea E. Orem|Philosophy|1985|Texto especializado en corrientes filosóficas y ética.|4|No Disponible
+9786020667188|Hábitos Atómicos|James Clear|Psychology|2016|Libro enfocado en comportamiento humano y desarrollo personal.|2|No Disponible
+1451554737|The Power of Your Subconscious Mind|Joseph Murphy|Psychology|1963|Obra psicológica orientada al análisis de la conducta humana.|4|No Disponible
+9781780333939|Mentalidad|Carol S. Dweck|Psychology|2016|Texto especializado en procesos mentales y crecimiento emocional.|5|No Disponible
+9386832836|Good Vibes, Good Life|Vex King|Psychology|2018|Obra psicológica orientada al análisis de la conducta humana.|3|No Disponible
+1788161564|The Derechos of Human Nature|Robert Greene|Psychology|2018|Material relacionado con psicología, emociones y relaciones humanas.|2|No Disponible
+9781526650863|I Want to Die but I Want to Eat Tteokbokki|Baek Se-Hee [백세?]|Psychology|2024|Libro enfocado en comportamiento humano y desarrollo personal.|3|No Disponible
+9780735278516|12 Rules for Life|Jordan B. Peterson|Psychology|2018|Texto especializado en procesos mentales y crecimiento emocional.|5|No Disponible
+1912453053|A Macat Analysis of Daniel Kahneman's Thinking, Fast and Slow|Jacqueline Allan|Psychology|2018|Material relacionado con psicología, emociones y relaciones humanas.|5|No Disponible
+9781559276429|Emotional Intelligence|Daniel Goleman|Psychology|2016|Texto especializado en procesos mentales y crecimiento emocional.|4|No Disponible
+750860928X|Who Moved My Cheese?|Spencer Johnson|Psychology|2018|Libro enfocado en comportamiento humano y desarrollo personal.|5|No Disponible
+9781473580756|Omgiven av Psykopater|Thomas Erikson|Psychology|2020|Texto especializado en procesos mentales y crecimiento emocional.|3|No Disponible
+9780894643996|The psychology of money|Henry Clay Lindgren|Psychology|1991|Texto especializado en procesos mentales y crecimiento emocional.|2|No Disponible
+9780132613163|Educational psychology|Anita Woolfolk Hoy|Psychology|1987|Material relacionado con psicología, emociones y relaciones humanas.|2|No Disponible
+2848993502|The Arte of Seduction|Robert Greene|Psychology|2020|Libro enfocado en comportamiento humano y desarrollo personal.|2|No Disponible
+1781257027|Ego is the Enemy|Ryan Holiday|Psychology|2016|Material relacionado con psicología, emociones y relaciones humanas.|3|No Disponible
+9788495292087|Psycho-cybernetics|Maxwell Maltz|Psychology|1960|Texto especializado en procesos mentales y crecimiento emocional.|2|No Disponible
+9781416502494|The 7 Habits of Highly Effective People|Stephen R. Covey|Psychology|1989|Texto especializado en procesos mentales y crecimiento emocional.|3|No Disponible
+9780345246820|Games People Play|Eric Berne|Psychology|1964|Material relacionado con psicología, emociones y relaciones humanas.|5|No Disponible
+1529146518|The Diary of a CEO|Steven Bartlett|Psychology|2025|Obra psicológica orientada al análisis de la conducta humana.|2|No Disponible
+1582701709|El Secreto|Rhonda Byrne|Psychology|2000|Obra psicológica orientada al análisis de la conducta humana.|5|No Disponible
+0762419709|No More Mr. Nice Guy|Robert A. Glover|Psychology|2001|Obra psicológica orientada al análisis de la conducta humana.|3|No Disponible
+1585428485|Attached|Amir Levine|Psychology|2010|Material relacionado con psicología, emociones y relaciones humanas.|2|No Disponible
+9388423550|The 5 a.m. Club|Robin S. Sharma|Psychology|2018|Material relacionado con psicología, emociones y relaciones humanas.|5|No Disponible
+1545225664|As a man thinketh|James Allen|Psychology|1933|Obra psicológica orientada al análisis de la conducta humana.|3|No Disponible
+9781863501569|Influence|Robert B. Cialdini|Psychology|2016|Material relacionado con psicología, emociones y relaciones humanas.|4|No Disponible
+0007191308|The Secret Language of Birthdays|Gary Goldschneider|Psychology|2016|Material relacionado con psicología, emociones y relaciones humanas.|3|No Disponible
+1804221759|101 Essays That Will Change The Way You Think|Brianna Wiest|Psychology|2024|Obra psicológica orientada al análisis de la conducta humana.|4|No Disponible
+9798648795143|La Peste|Albert Camus|Psychology|1942|Obra psicológica orientada al análisis de la conducta humana.|5|No Disponible
+9780205349692|Psicología|Robert A. Baron|Psychology|1985|Obra psicológica orientada al análisis de la conducta humana.|3|No Disponible
+1974974014|The Arte of Reading Minds|Henrik Fexeus|Psychology|2019|Libro enfocado en comportamiento humano y desarrollo personal.|3|No Disponible
+9780674706255|The principles of psychology|William James|Psychology|1952|Libro enfocado en comportamiento humano y desarrollo personal.|4|No Disponible
+9780437950062|How to Win Friends and Influence People|Dale Carnegie|Psychology|1936|Obra psicológica orientada al análisis de la conducta humana.|5|No Disponible
+0340835044|Eat That Frog! 21 Great Ways to Stop Procrastinating and Get More Done in Less Time|Brian Tracy|Psychology|2016|Material relacionado con psicología, emociones y relaciones humanas.|3|No Disponible
+1760638269|The Courage to Be Disliked|Ichir? Kishimi|Psychology|2017|Material relacionado con psicología, emociones y relaciones humanas.|3|No Disponible
+1402790058|Outwitting the devil|Napoleon Hill|Psychology|2011|Material relacionado con psicología, emociones y relaciones humanas.|2|No Disponible
+1984884360|Silencio|Susan Cain|Psychology|2018|Libro enfocado en comportamiento humano y desarrollo personal.|2|No Disponible
+1526625334|Indistractable|Nir Eyal|Psychology|2019|Material relacionado con psicología, emociones y relaciones humanas.|2|No Disponible
+9788479538255|Breaking the habit of being yourself|Joe Dispenza|Psychology|2012|Libro enfocado en comportamiento humano y desarrollo personal.|4|No Disponible
+1647432235|Read People Like a Book|Patrick King|Psychology|2024|Libro enfocado en comportamiento humano y desarrollo personal.|4|No Disponible
+9676503460|Psikologi remaja|Muhamad Mansur Abdullah|Psychology|1988|Texto especializado en procesos mentales y crecimiento emocional.|3|No Disponible
+1407099957|Women Who Love Too Much|Robin Norwood|Psychology|1985|Libro enfocado en comportamiento humano y desarrollo personal.|2|No Disponible
+9780471557715|Abnormal Psicología|Gerald C. Davison|Psychology|1986|Material relacionado con psicología, emociones y relaciones humanas.|3|No Disponible
+9780176472740|Psicología|Dennis Coon|Psychology|2016|Libro enfocado en comportamiento humano y desarrollo personal.|5|No Disponible
+1846141575|Antifragile|Nassim Nicholas Taleb|Psychology|2016|Obra psicológica orientada al análisis de la conducta humana.|2|No Disponible
+0899669050|Lord of the Flies|William Golding|Psychology|1954|Obra psicológica orientada al análisis de la conducta humana.|2|No Disponible
+0534363784|Psicología|Wayne Weiten|Psychology|1989|Material relacionado con psicología, emociones y relaciones humanas.|4|No Disponible
+9786026486578|La Psicología del Dinero|Morgan Housel|Psychology|2020|Material relacionado con psicología, emociones y relaciones humanas.|5|No Disponible
+9780548056189|The game of life and how to play it|Florence Scovel Shinn|Psychology|1925|Material relacionado con psicología, emociones y relaciones humanas.|3|No Disponible
+0060831944|Secrets of the Millionaire Mind|T. Harv Eker|Psychology|2017|Obra psicológica orientada al análisis de la conducta humana.|5|No Disponible
+1789464226|Talking With Psychopaths and Savages|Christopher Berry-Dee|Psychology|2019|Libro enfocado en comportamiento humano y desarrollo personal.|2|No Disponible
+1707121753|Study Guide|SuperSummary|Sociology|2019|Obra sociológica orientada al análisis de comunidades y sociedad.|3|No Disponible
+9781473580756|Omgiven av Psykopater|Thomas Erikson|Sociology|2020|Texto especializado en dinámicas sociales y estructuras culturales.|3|No Disponible
+9781982120627|How to Not Die Alone|Logan Ury|Sociology|2024|Obra sociológica orientada al análisis de comunidades y sociedad.|3|No Disponible
+1789464226|Talking With Psychopaths and Savages|Christopher Berry-Dee|Sociology|2019|Material académico relacionado con estudios sociales y relaciones humanas.|4|No Disponible
+1250179947|Surrounded by Idiots|Thomas Erikson|Sociology|2017|Material académico relacionado con estudios sociales y relaciones humanas.|3|No Disponible
+9780131020887|Sociology|John J. Macionis|Sociology|1987|Texto especializado en dinámicas sociales y estructuras culturales.|4|No Disponible
+9781542005227|If You Tell|Gregg Olsen|Sociology|2019|Material académico relacionado con estudios sociales y relaciones humanas.|4|No Disponible
+9780071232678|Sociological theory|George Ritzer|Sociology|1988|Material académico relacionado con estudios sociales y relaciones humanas.|4|No Disponible
+9788200030683|Sosiologi|Vilhelm Aubert|Sociology|1969|Obra sociológica orientada al análisis de comunidades y sociedad.|3|No Disponible
+9780043001097|Sociology|T. B. Bottomore|Sociology|1962|Texto especializado en dinámicas sociales y estructuras culturales.|5|No Disponible
+9780812066043|Basil Rattlebones (Cowan, Geoffrey. Little House of Horrors.)|Keith Faulkner|Sociology|1996|Obra sociológica orientada al análisis de comunidades y sociedad.|2|No Disponible
+0195007514|L'imagination sociologique|C. Wright Mills|Sociology|2016|Material académico relacionado con estudios sociales y relaciones humanas.|2|No Disponible
+0393968685|Introducción a Sociology|Anthony Giddens|Sociology|1991|Obra sociológica orientada al análisis de comunidades y sociedad.|2|No Disponible
+9780060889586|Superfreakonomics|Steven D. Levitt|Sociology|2019|Obra sociológica orientada al análisis de comunidades y sociedad.|2|No Disponible
+9780070304253|Sociology|Paul B. Horton|Sociology|1984|Material académico relacionado con estudios sociales y relaciones humanas.|3|No Disponible
+9782080811981|Les règles de la méthode sociologique|Émile Durkheim|Sociology|1938|Texto especializado en dinámicas sociales y estructuras culturales.|3|No Disponible
+9781984879554|The Book You Wish Your Parents Had Read|Philippa Perry|Sociology|2019|Libro enfocado en sociedad, cultura y comportamiento colectivo.|2|No Disponible
+0060731338|Freakonomics|Steven D. Levitt|Sociology|2019|Obra sociológica orientada al análisis de comunidades y sociedad.|4|No Disponible
+SIN-ISBN-0005|Setangkai bunga sosiologi|Selo Soemardjan|Sociology|1964|Material académico relacionado con estudios sociales y relaciones humanas.|4|No Disponible
+0713900199|The social construction of reality|Peter L. Berger|Sociology|1984|Obra sociológica orientada al análisis de comunidades y sociedad.|3|No Disponible
+0071136673|Sociology|Richard T. Schaefer|Sociology|1979|Obra sociológica orientada al análisis de comunidades y sociedad.|5|No Disponible
+1684033888|Raising Good Humans|Hunter Clarke-Fields MSAE|Sociology|2019|Obra sociológica orientada al análisis de comunidades y sociedad.|5|No Disponible
+0393887391|The real world|Kerry Ferris|Sociology|2016|Material académico relacionado con estudios sociales y relaciones humanas.|3|No Disponible
+9780007597499|Sociology|Michael Haralambos|Sociology|2016|Material académico relacionado con estudios sociales y relaciones humanas.|5|No Disponible
+9780393614282|You May Ask Yourself|Dalton Conley|Sociology|2016|Material académico relacionado con estudios sociales y relaciones humanas.|2|No Disponible
+9789793304397|Membangun masyarakat, memberdayakan rakyat|Edi Suharto|Sociology|2005|Libro enfocado en sociedad, cultura y comportamiento colectivo.|5|No Disponible
+0520028244|Wirtschaft und Gesellschaft|Max Weber|Sociology|1954|Libro enfocado en sociedad, cultura y comportamiento colectivo.|4|No Disponible
+9780205300297|Sociology|James M. Henslin|Sociology|1993|Texto especializado en dinámicas sociales y estructuras culturales.|5|No Disponible
+0155551310|Masters of sociological thought|Lewis A. Coser|Sociology|1977|Texto especializado en dinámicas sociales y estructuras culturales.|4|No Disponible
+0349426953|Set Boundaries, Find Peace|Nedra Glover Tawwab|Sociology|2021|Material académico relacionado con estudios sociales y relaciones humanas.|5|No Disponible
+0133792242|The Sociology Project|Jeff Manza|Sociology|2017|Libro enfocado en sociedad, cultura y comportamiento colectivo.|4|No Disponible
+1984893149|Let's Talk about It|Erika Moen|Sociology|2021|Libro enfocado en sociedad, cultura y comportamiento colectivo.|5|No Disponible
+0745618731|Sociology|Anthony Giddens|Sociology|1986|Libro enfocado en sociedad, cultura y comportamiento colectivo.|4|No Disponible
+9780544133310|How Emotions Are Made: The Secret Life of the Brain|Lisa Feldman Barrett|Sociology|2017|Material académico relacionado con estudios sociales y relaciones humanas.|4|No Disponible
+9780130703484|Criminology|Steven E. Barkan|Sociology|1996|Texto especializado en dinámicas sociales y estructuras culturales.|4|No Disponible
+9780030417610|Foundations of behavioral research|Fred N. Kerlinger|Sociology|2000|Obra sociológica orientada al análisis de comunidades y sociedad.|3|No Disponible
+0155021001|Introducción a sociology|Henry L. Tischler|Sociology|1986|Material académico relacionado con estudios sociales y relaciones humanas.|2|No Disponible
+9914743285|Confessions of Nairobi Women|Joan Thatiah|Sociology|2022|Libro enfocado en sociedad, cultura y comportamiento colectivo.|3|No Disponible
+SIN-ISBN-0006|Hukum dan masyarakat|Satjipto Rahardjo|Sociology|1980|Texto especializado en dinámicas sociales y estructuras culturales.|4|No Disponible
+9781529087857|Closer to Love|Vex King|Sociology|2023|Libro enfocado en sociedad, cultura y comportamiento colectivo.|3|No Disponible
+1441721541|Zodiac|Robert Graysmith|Sociology|1986|Material académico relacionado con estudios sociales y relaciones humanas.|2|No Disponible
+1727538447|Criminal Psicología|Hans Gross|Sociology|2016|Texto especializado en dinámicas sociales y estructuras culturales.|4|No Disponible
+9788131602263|Indian sociological thought|B. K. Nagla|Sociology|2008|Obra sociológica orientada al análisis de comunidades y sociedad.|4|No Disponible
+SIN-ISBN-0007|What is sociology?|Alex Inkeles|Sociology|1964|Obra sociológica orientada al análisis de comunidades y sociedad.|5|No Disponible
+SIN-ISBN-0008|Gendai shakaigaku no tenkai|Konno, Toshihiko|Sociology|1976|Material académico relacionado con estudios sociales y relaciones humanas.|2|No Disponible
+6027985216|Pengantar sosiologi politik|Elly Malihah Setiadi|Sociology|2013|Libro enfocado en sociedad, cultura y comportamiento colectivo.|2|No Disponible
+152351406X|Montessori Baby|Simone Davies|Sociology|2021|Obra sociológica orientada al análisis de comunidades y sociedad.|5|No Disponible
+9780190277604|Thirty readings in introductory sociology|Kenneth Alan Gould|Sociology|2016|Obra sociológica orientada al análisis de comunidades y sociedad.|5|No Disponible
+0195074424|Sociological insight|Randall Collins|Sociology|1992|Obra sociológica orientada al análisis de comunidades y sociedad.|3|No Disponible
+9781662650826|The Sex Lives of African Women|Nana Darkoa Sekyiamah|Sociology|2022|Texto especializado en dinámicas sociales y estructuras culturales.|4|No Disponible
+8484800903|Picasso|Pablo Picasso|Art|1926|Libro relacionado con historia del arte y expresión cultural.|4|No Disponible
+9780141035796|Modos de Ver|John Berger|Art|1986|Libro relacionado con historia del arte y expresión cultural.|2|No Disponible
+1579125867|Vincent van Gogh|Vincent van Gogh|Art|1924|Material enfocado en técnicas artísticas y apreciación estética.|5|No Disponible
+3886451615|Paul Klee|Paul Klee|Art|1930|Texto especializado en movimientos artísticos y diseño visual.|2|No Disponible
+9780735102934|Chto takoe iskusstvo? / What is art?|Лев Тол?той|Art|1932|Obra dedicada al análisis artístico y la creatividad visual.|4|No Disponible
+9780714822761|The story of art|E. H. Gombrich|Art|1950|Libro relacionado con historia del arte y expresión cultural.|4|No Disponible
+9781553210023|Van Gogh|Federico Zeri|Art|1937|Texto especializado en movimientos artísticos y diseño visual.|5|No Disponible
+9780906909133|Henry Moore|David Sylvester|Art|1934|Material enfocado en técnicas artísticas y apreciación estética.|3|No Disponible
+9780425221525|Homeport|Nora Roberts|Art|2021|Texto especializado en movimientos artísticos y diseño visual.|2|No Disponible
+9780136054054|Historia del Arte|Marilyn Stokstad|Art|1995|Libro relacionado con historia del arte y expresión cultural.|5|No Disponible
+9568356150|Public Speaking and Influencing Men in Business|Dale Carnegie|Art|1926|Libro relacionado con historia del arte y expresión cultural.|5|No Disponible
+8878139629|Leonardo|Leonardo da Vinci|Art|1946|Material enfocado en técnicas artísticas y apreciación estética.|4|No Disponible
+0140064397|Vite de' più eccellenti pittori, scultori et architettori|Giorgio Vasari|Art|1923|Libro relacionado con historia del arte y expresión cultural.|2|No Disponible
+9783922035800|Andy Warhol|Andy Warhol|Art|1967|Material enfocado en técnicas artísticas y apreciación estética.|4|No Disponible
+9780133893885|Historia of art|H. W. Janson|Art|1962|Obra dedicada al análisis artístico y la creatividad visual.|5|No Disponible
+9780553270969|Gorin no sho|Miyamoto Musashi|Art|1963|Texto especializado en movimientos artísticos y diseño visual.|3|No Disponible
+9781452657516|Arte & fear|David Bayles|Art|2023|Libro relacionado con historia del arte y expresión cultural.|3|No Disponible
+9781853913808|Painting with Crayons, Pastels and Chalks (The Complete Arte Course)|N/A|Art|1994|Obra dedicada al análisis artístico y la creatividad visual.|2|No Disponible
+9780534642006|Arte Through the Ages|Helen Gardner|Art|1926|Libro relacionado con historia del arte y expresión cultural.|4|No Disponible
+1898250359|Die Gestalt des Menschen|Gottfried Bammes|Art|1994|Texto especializado en movimientos artísticos y diseño visual.|4|No Disponible
+SIN-ISBN-0009|Kunst in fernen Welten.|N/A|Art|1949|Libro relacionado con historia del arte y expresión cultural.|5|No Disponible
+9782251014074|Naturalis historia|Pliny the Elder|Art|1668|Obra dedicada al análisis artístico y la creatividad visual.|2|No Disponible
+8365796163|The dot|Peter H. Reynolds|Art|2017|Obra dedicada al análisis artístico y la creatividad visual.|4|No Disponible
+0495794481|Gardner's Arte Through the Ages|Fred S. Kleiner|Art|2020|Material enfocado en técnicas artísticas y apreciación estética.|4|No Disponible
+9781856690287|Production for graphic designers|Alan Pipes|Art|1992|Obra dedicada al análisis artístico y la creatividad visual.|3|No Disponible
+0077606337|The Arte of Public Speaking|Stephen E. Lucas|Art|1983|Texto especializado en movimientos artísticos y diseño visual.|3|No Disponible
+9780691097855|Arte and illusion|E. H. Gombrich|Art|1960|Libro relacionado con historia del arte y expresión cultural.|4|No Disponible
+8881184117|Edvard Munch|Edvard Munch|Art|1927|Material enfocado en técnicas artísticas y apreciación estética.|5|No Disponible
+9780722538074|How to Talk to Anyone|Leil Lowndes|Art|2017|Texto especializado en movimientos artísticos y diseño visual.|5|No Disponible
+0394701151|Sozialgeschichte der Kunst und Literatur|Arnold Hauser|Art|1951|Obra dedicada al análisis artístico y la creatividad visual.|2|No Disponible
+9780940512085|Artes & Architecture|N/A|Art|1998|Obra dedicada al análisis artístico y la creatividad visual.|4|No Disponible
+9781760641795|How to Do Nothing|Jenny Odell|Art|2019|Obra dedicada al análisis artístico y la creatividad visual.|5|No Disponible
+045200456X|The Renaissance, Studies in Arte and Poetry|Walter Pater|Art|1922|Texto especializado en movimientos artísticos y diseño visual.|3|No Disponible
+0500288631|Graphic Design School|David Dabner|Art|2017|Libro relacionado con historia del arte y expresión cultural.|4|No Disponible
+187071511X|Georg Baselitz|Georg Baselitz|Art|1970|Material enfocado en técnicas artísticas y apreciación estética.|5|No Disponible
+9781285754994|Ancient, Medieval, and Non-European Arte|Helen Gardner|Art|1986|Texto especializado en movimientos artísticos y diseño visual.|3|No Disponible
+9780140217056|Concepts of Modern Arte|Nikos Stangos|Art|1989|Obra dedicada al análisis artístico y la creatividad visual.|5|No Disponible
+9780810918849|Arte|Frederick Hartt|Art|1984|Material enfocado en técnicas artísticas y apreciación estética.|3|No Disponible
+9780133914504|Janson's history of art|H. W. Janson|Art|2006|Libro relacionado con historia del arte y expresión cultural.|2|No Disponible
+9781417934621|By the Stage Door|Ada Patterson|Art|2005|Libro relacionado con historia del arte y expresión cultural.|5|No Disponible
+9798541968682|Dell'Artee della Guerra|Niccolò Machiavelli|Art|1540|Texto especializado en movimientos artísticos y diseño visual.|2|No Disponible
+0446389773|How to Master the Arte of Selling|Tom Hopkins|Art|1986|Obra dedicada al análisis artístico y la creatividad visual.|3|No Disponible
+0500844216|The Historia of Arte : A Global View|Jean Robertson|Art|2021|Libro relacionado con historia del arte y expresión cultural.|4|No Disponible
+0486826732|The art spirit|Robert Henri|Art|2019|Libro relacionado con historia del arte y expresión cultural.|5|No Disponible
+9780844655888|Concerning the spiritual in art|Wassily Kandinsky|Art|1947|Texto especializado en movimientos artísticos y diseño visual.|2|No Disponible
+9780578377452|The Book|Hungry Minds|Art|2025|Obra dedicada al análisis artístico y la creatividad visual.|3|No Disponible
+0133900886|A history of Far Eastern art|Sherman E. Lee|Art|1988|Libro relacionado con historia del arte y expresión cultural.|3|No Disponible
+SIN-ISBN-0010|Con/textual|N/A|Art|2001|Texto especializado en movimientos artísticos y diseño visual.|2|No Disponible
+0141932325|Pioneers of modern design from William Morris to Walter Gropius|Nikolaus Pevsner|Art|1986|Libro relacionado con historia del arte y expresión cultural.|5|No Disponible
+9783822841037|1000 Chairs|Charlotte Fiell|Art|2000|Libro relacionado con historia del arte y expresión cultural.|2|No Disponible
+SIN-ISBN-0011|Alice in Wonderland in Five Acts|Lewis Carroll|Children|1897|Libro infantil diseñado para estimular la imaginación y el aprendizaje.|5|No Disponible
+2070535835|El Fantástico Sr. Zorro|Roald Dahl|Children|1970|Historia orientada a niños con contenido educativo y entretenido.|3|No Disponible
+1792863683|The Book of Dragons|Edith Nesbit|Children|1973|Libro infantil diseñado para estimular la imaginación y el aprendizaje.|2|No Disponible
+0001854321|James and the Giant Peach|Roald Dahl|Children|1961|Libro infantil diseñado para estimular la imaginación y el aprendizaje.|2|No Disponible
+0689863179|Love Potion|Steven Banks|Children|2003|Historia orientada a niños con contenido educativo y entretenido.|3|No Disponible
+073642329X|Chicken Little (Read-Aloud Storybook)|RH Disney|Children|2005|Texto para jóvenes lectores enfocado en diversión y enseñanza.|4|No Disponible
+9781402727184|Ready, Alice?|Amanda Haley|Children|2005|Obra infantil con relatos creativos y personajes memorables.|4|No Disponible
+9780789485137|First Day at Gymnastics|DK Publishing|Children|2002|Obra infantil con relatos creativos y personajes memorables.|3|No Disponible
+9780060002008|Mildred and Sam|Sharleen Collicott|Children|2002|Historia orientada a niños con contenido educativo y entretenido.|2|No Disponible
+9780060584443|The Twits|Roald Dahl|Children|1967|Libro infantil diseñado para estimular la imaginación y el aprendizaje.|4|No Disponible
+9780613168717|The Classic Tale of the Velveteen Rabbit|Margery Williams Bianco|Children|1922|Historia orientada a niños con contenido educativo y entretenido.|4|No Disponible
+8129121549|The Blue Umbrella|Ruskin Bond|Children|2018|Obra infantil con relatos creativos y personajes memorables.|3|No Disponible
+0671738682|Fear Street - Sunburn|Robert Lawrence Stine|Children|1993|Historia orientada a niños con contenido educativo y entretenido.|4|No Disponible
+9783737360883|Guess How Much I Love You|Sam McBratney|Children|1994|Libro infantil diseñado para estimular la imaginación y el aprendizaje.|3|No Disponible
+9780062676443|Imagine Me|Tahereh Mafi|Children|2020|Texto para jóvenes lectores enfocado en diversión y enseñanza.|2|No Disponible
+9780439051521|The Enormous Potato|Aubrey Davis|Children|1997|Historia orientada a niños con contenido educativo y entretenido.|4|No Disponible
+9798732290356|Five on a Treasure Island|Enid Blyton|Children|1942|Libro infantil diseñado para estimular la imaginación y el aprendizaje.|3|No Disponible
+9781593199357|Chicka chicka boom boom|Bill Martin Jr.|Children|2017|Libro infantil diseñado para estimular la imaginación y el aprendizaje.|4|No Disponible
+0807218049|Where the Red Fern Grows|Wilson Rawls|Children|1961|Historia orientada a niños con contenido educativo y entretenido.|5|No Disponible
+1434218309|The Ugly Duckling|Hans Christian Andersen|Children|1945|Libro infantil diseñado para estimular la imaginación y el aprendizaje.|4|No Disponible
+1953021166|Ikigai|Chiemi Souen|Children|2021|Obra infantil con relatos creativos y personajes memorables.|3|No Disponible
+0789473607|Rockets and Spaceships|DK Publishing|Children|2001|Obra infantil con relatos creativos y personajes memorables.|3|No Disponible
+3596216575|The Incredible Journey|Sheila Burnford|Children|1960|Texto para jóvenes lectores enfocado en diversión y enseñanza.|3|No Disponible
+193102040X|Hooked on Phonics|Hooked on Phonics|Children|2005|Historia orientada a niños con contenido educativo y entretenido.|4|No Disponible
+1855498642|Danny, The Champion of the World|Roald Dahl|Children|1975|Libro infantil diseñado para estimular la imaginación y el aprendizaje.|2|No Disponible
+9781845021603|George's Marvelous Medicine|Roald Dahl|Children|1981|Texto para jóvenes lectores enfocado en diversión y enseñanza.|4|No Disponible
+0789473569|Diving Dolphin|DK Publishing|Children|2001|Texto para jóvenes lectores enfocado en diversión y enseñanza.|2|No Disponible
+9780060571528|Coraline|Neil Gaiman|Children|2001|Texto para jóvenes lectores enfocado en diversión y enseñanza.|3|No Disponible
+9780689704130|Mrs. Frisby and the Rats of Nimh|Robert C. O'Brien|Children|1970|Obra infantil con relatos creativos y personajes memorables.|2|No Disponible
+9780060573850|The Berenstain Bears Hug and Make Up (Berenstain Bears)|Mike Berenstain|Children|2006|Libro infantil diseñado para estimular la imaginación y el aprendizaje.|2|No Disponible
+9780603580697|Defy Me (Shatter Me)|Tahereh Mafi|Children|2025|Libro infantil diseñado para estimular la imaginación y el aprendizaje.|4|No Disponible
+9781467603393|The School for Good and Evil|Soman Chainani|Children|2018|Libro infantil diseñado para estimular la imaginación y el aprendizaje.|4|No Disponible
+0833529382|The Boxcar Children|Gertrude Chandler Warner|Children|1924|Historia orientada a niños con contenido educativo y entretenido.|3|No Disponible
+9780399226908|La Oruga Muy Hambrienta|Eric Carle|Children|1969|Obra infantil con relatos creativos y personajes memorables.|5|No Disponible
+9780812440768|Harry the Dirty Dog|Gene Zion|Children|1984|Historia orientada a niños con contenido educativo y entretenido.|4|No Disponible
+074453495X|Owl Babies|Martin Waddell|Children|2017|Obra infantil con relatos creativos y personajes memorables.|2|No Disponible
+0061965251|Where the Sidewalk Ends|Shel Silverstein|Children|1985|Texto para jóvenes lectores enfocado en diversión y enseñanza.|4|No Disponible
+0732274109|If You Give a Mouse a Cookie|Laura Joffe Numeroff|Children|1985|Historia orientada a niños con contenido educativo y entretenido.|4|No Disponible
+0307287009|Barbie Horse Trouble Barbie Look Look|Golden Books|Children|1984|Texto para jóvenes lectores enfocado en diversión y enseñanza.|5|No Disponible
+1404814434|Shapes in the Sky|Josepha Sherman|Children|2021|Texto para jóvenes lectores enfocado en diversión y enseñanza.|4|No Disponible
+9783806740141|Have You Seen My Cat?|Eric Carle|Children|2016|Historia orientada a niños con contenido educativo y entretenido.|3|No Disponible
+9781730943157|Ozma of Oz|L. Frank Baum|Children|1961|Texto para jóvenes lectores enfocado en diversión y enseñanza.|3|No Disponible
+144244228X|The Summer I Turned Pretty Trilogy|Jenny Han|Children|2022|Historia orientada a niños con contenido educativo y entretenido.|2|No Disponible
+1419773984|No Brainer|Jeff Kinney|Children|2024|Historia orientada a niños con contenido educativo y entretenido.|2|No Disponible
+0603002447|The magic Faraway Tree|Enid Blyton|Children|1943|Libro infantil diseñado para estimular la imaginación y el aprendizaje.|2|No Disponible
+9780307010858|The Monster at the End of This Book|Jon Stone|Children|1993|Libro infantil diseñado para estimular la imaginación y el aprendizaje.|5|No Disponible
+9781846110504|Farmer Duck|Martin Waddell|Children|1991|Historia orientada a niños con contenido educativo y entretenido.|2|No Disponible
+1484473647|Cabin Fever|Jeff Kinney|Children|2016|Obra infantil con relatos creativos y personajes memorables.|2|No Disponible
+9781587171086|The Phantom Tollbooth|Norton Juster|Children|1961|Obra infantil con relatos creativos y personajes memorables.|4|No Disponible
+9781857913965|The Gruffalo|Julia Donaldson|Children|1999|Obra infantil con relatos creativos y personajes memorables.|3|No Disponible
+9781784163068|Hello world|Hannah Fry|Technology|2018|Libro técnico enfocado en informática y desarrollo tecnológico.|3|No Disponible
+9780062301260|Elon Musk|Ashlee Vance|Technology|2016|Libro técnico enfocado en informática y desarrollo tecnológico.|3|No Disponible
+8416858217|Dark Matter|Blake Crouch|Technology|2016|Libro técnico enfocado en informática y desarrollo tecnológico.|3|No Disponible
+9780525536543|Minimalismo Digital|Cal Newport|Technology|2019|Obra orientada al estudio de innovación digital y herramientas tecnológicas.|3|No Disponible
+0241976987|The Circle|Dave Eggers|Technology|2016|Obra orientada al estudio de innovación digital y herramientas tecnológicas.|3|No Disponible
+0670875589|All Tomorrow's Parties|William Gibson|Technology|1999|Material académico relacionado con sistemas computacionales y tecnología moderna.|2|No Disponible
+9811568502|Transactions on Engineering Technologies|Sio-Iong Ao|Technology|2016|Libro técnico enfocado en informática y desarrollo tecnológico.|4|No Disponible
+9780694526079|Good to Great|Jim Collins|Technology|2001|Material académico relacionado con sistemas computacionales y tecnología moderna.|4|No Disponible
+9782862280004|Small Is Beautiful|E. F. Schumacher|Technology|1989|Libro técnico enfocado en informática y desarrollo tecnológico.|4|No Disponible
+0871131811|Zodiac|Neal Stephenson|Technology|2020|Libro técnico enfocado en informática y desarrollo tecnológico.|3|No Disponible
+006077147X|Crossing the Chasm|Geoffrey A. Moore|Technology|2021|Obra orientada al estudio de innovación digital y herramientas tecnológicas.|2|No Disponible
+9782910386078|Industrial Society and Its Future|Theodore Kaczynski|Technology|2017|Material académico relacionado con sistemas computacionales y tecnología moderna.|2|No Disponible
+0030697832|Profiles of the future|Arthur C. Clarke|Technology|1984|Material académico relacionado con sistemas computacionales y tecnología moderna.|3|No Disponible
+9780578377452|The Book|Hungry Minds|Technology|2025|Texto especializado en avances tecnológicos y transformación digital.|2|No Disponible
+0143120174|What technology wants|Kevin Kelly|Technology|2010|Texto especializado en avances tecnológicos y transformación digital.|5|No Disponible
+9780451485076|Vida 3.0|Max Tegmark|Technology|2017|Obra orientada al estudio de innovación digital y herramientas tecnológicas.|2|No Disponible
+9780809324613|Operating manual for spaceship earth|R. Buckminster Fuller|Technology|1991|Libro técnico enfocado en informática y desarrollo tecnológico.|5|No Disponible
+3527511059|Inspired|Marty Cagan|Technology|2017|Obra orientada al estudio de innovación digital y herramientas tecnológicas.|5|No Disponible
+9784167275730|Red Storm Rising|Tom Clancy|Technology|1986|Texto especializado en avances tecnológicos y transformación digital.|3|No Disponible
+8423436756|Techno-Feudalism|Yanis Varoufakis|Technology|2024|Obra orientada al estudio de innovación digital y herramientas tecnológicas.|3|No Disponible
+9781471138799|Los Innovadores|Walter Isaacson|Technology|2017|Material académico relacionado con sistemas computacionales y tecnología moderna.|5|No Disponible
+1683925858|Computer Concepts and Management Information Systems|C. P. Gupta|Technology|2020|Texto especializado en avances tecnológicos y transformación digital.|4|No Disponible
+9781760641795|How to Do Nothing|Jenny Odell|Technology|2019|Material académico relacionado con sistemas computacionales y tecnología moderna.|3|No Disponible
+SIN-ISBN-0012|The infrared handbook|N/A|Technology|1978|Texto especializado en avances tecnológicos y transformación digital.|4|No Disponible
+9780316116725|Connections|Burke, James|Technology|1990|Libro técnico enfocado en informática y desarrollo tecnológico.|4|No Disponible
+9780023133404|The nature and properties of soils|Nyle C. Brady|Technology|2016|Obra orientada al estudio de innovación digital y herramientas tecnológicas.|3|No Disponible
+9780805347890|Human Anatomy|Elaine Nicpon Marieb|Technology|2016|Libro técnico enfocado en informática y desarrollo tecnológico.|3|No Disponible
+9781604208252|CGEIT Review Manual, 8th Edition|Isaca|Technology|2020|Libro técnico enfocado en informática y desarrollo tecnológico.|4|No Disponible
+9780133814262|Teaching and learning with technology|Judy Lever-Duffy|Technology|2017|Texto especializado en avances tecnológicos y transformación digital.|4|No Disponible
+9781982109677|The Future Is Faster Than You Think|Peter H. Diamandis|Technology|2020|Libro técnico enfocado en informática y desarrollo tecnológico.|3|No Disponible
+1118358619|Packaging design|Marianne R. Klimchuk|Technology|2008|Libro técnico enfocado en informática y desarrollo tecnológico.|3|No Disponible
+9782221092057|Timeline|Michael Crichton|Technology|1999|Texto especializado en avances tecnológicos y transformación digital.|3|No Disponible
+0669203483|The processes of technological innovation|Louis G. Tornatzky|Technology|1990|Obra orientada al estudio de innovación digital y herramientas tecnológicas.|2|No Disponible
+0766823652|Introducción a Fluid Power|James L Johnson|Technology|2001|Texto especializado en avances tecnológicos y transformación digital.|4|No Disponible
+9780029797204|Machine design|Aaron D. Deutschman|Technology|1978|Material académico relacionado con sistemas computacionales y tecnología moderna.|4|No Disponible
+1526625334|Indistractable|Nir Eyal|Technology|2019|Obra orientada al estudio de innovación digital y herramientas tecnológicas.|5|No Disponible
+0137947364|Ciencia, technology, and society|Robert E. McGinn|Technology|1991|Material académico relacionado con sistemas computacionales y tecnología moderna.|3|No Disponible
+9780130767097|Computer Confluence|George Beekman|Technology|1997|Obra orientada al estudio de innovación digital y herramientas tecnológicas.|4|No Disponible
+9781472202741|Demon Seed|Dean Koontz|Technology|2018|Obra orientada al estudio de innovación digital y herramientas tecnológicas.|2|No Disponible
+1664624074|Who Owns the Future?|Jaron Lanier|Technology|2013|Libro técnico enfocado en informática y desarrollo tecnológico.|5|No Disponible
+8120402898|Post harvest technology of cereals, pulses and oilseeds|Amalendu Chakraverty|Technology|1988|Obra orientada al estudio de innovación digital y herramientas tecnológicas.|2|No Disponible
+9780262043649|Novacene|James Lovelock|Technology|2019|Obra orientada al estudio de innovación digital y herramientas tecnológicas.|3|No Disponible
+2226110739|Rainbow six|Tom Clancy|Technology|2023|Material académico relacionado con sistemas computacionales y tecnología moderna.|3|No Disponible
+0974060518|Grunch of giants|R. Buckminster Fuller|Technology|2004|Obra orientada al estudio de innovación digital y herramientas tecnológicas.|5|No Disponible
+9780008168858|Fall; or, Dodge in Hell|Neal Stephenson|Technology|2019|Libro técnico enfocado en informática y desarrollo tecnológico.|5|No Disponible
+979433605X|Jejak pemikiran B.J. Habibie|B. J. Habibie|Technology|2010|Libro técnico enfocado en informática y desarrollo tecnológico.|4|No Disponible
+1451695764|Abundance|Peter H. Diamandis|Technology|2012|Obra orientada al estudio de innovación digital y herramientas tecnológicas.|2|No Disponible
+9781509868063|Mala Sangre|John Carreyrou|Technology|2018|Texto especializado en avances tecnológicos y transformación digital.|4|No Disponible
+9781090412577|R.U.R. and The insect play|Karel Čapek|Technology|1920|Material académico relacionado con sistemas computacionales y tecnología moderna.|4|No Disponible
+0075441586|The Technological Society|Jacques Ellul|Technology|1964|Texto especializado en avances tecnológicos y transformación digital.|2|No Disponible
+SIN-ISBN-0013|Fauna (including - fauna course part A, June 22-23, 1976 and fauna course part B, Feb. 6-10, 1978).|N/A|Medicine|1978|Texto orientado al estudio de medicina y cuidado de la salud.|3|No Disponible
+9780914955016|Ayurveda|Vasant Lad|Medicine|1984|Libro especializado en salud, medicina y bienestar integral.|3|No Disponible
+9781683646693|No Bad Parts|Richard Schwartz Ph.D.|Medicine|2021|Texto orientado al estudio de medicina y cuidado de la salud.|3|No Disponible
+1633218546|Advances in Medicine and Biology|Leon V. Berhardt|Medicine|2016|Libro especializado en salud, medicina y bienestar integral.|3|No Disponible
+9781732557147|Lost Book of Herbal Remedies|Nicole Apelian|Medicine|2019|Obra enfocada en prácticas médicas y conocimientos terapéuticos.|3|No Disponible
+0809229331|The Web That Has No Weaver|Ted J. Kaptchuk|Medicine|2000|Material académico relacionado con ciencias médicas y tratamientos clínicos.|5|No Disponible
+9780824059316|Domestic medicine|William Buchan M.D.|Medicine|1792|Material académico relacionado con ciencias médicas y tratamientos clínicos.|3|No Disponible
+1881316718|African holistic health|Llaila O. Afrika|Medicine|1989|Libro especializado en salud, medicina y bienestar integral.|2|No Disponible
+0134167929|How to live 365 days a year|John A. Schindler|Medicine|1984|Texto orientado al estudio de medicina y cuidado de la salud.|2|No Disponible
+SIN-ISBN-0014|Memorial volume in honor of prof. S. Muntner|N/A|Medicine|1983|Libro especializado en salud, medicina y bienestar integral.|2|No Disponible
+9798988024095|Forgotten Home Apothecary|Nicole Apelian|Medicine|2024|Libro especializado en salud, medicina y bienestar integral.|3|No Disponible
+9780812112306|Blood Counts and Differentials Evaluation/Includes Book, IBM PC Disk and Instruction Booklet|J. David Bessman|Medicine|1989|Obra enfocada en prácticas médicas y conocimientos terapéuticos.|5|No Disponible
+9780815150466|Industrial Therapy|Glenda L. Key|Medicine|1995|Libro especializado en salud, medicina y bienestar integral.|5|No Disponible
+051714767X|Herbal medicine|Dian Dincin Buchman|Medicine|1988|Texto orientado al estudio de medicina y cuidado de la salud.|3|No Disponible
+9781250222015|The Emotion Code|Bradley B. Nelson|Medicine|2019|Obra enfocada en prácticas médicas y conocimientos terapéuticos.|2|No Disponible
+8120809572|Ayurvedic healing|David Frawley|Medicine|1989|Texto orientado al estudio de medicina y cuidado de la salud.|2|No Disponible
+1858105129|Back To Eden|Jethro Kloss|Medicine|1984|Obra enfocada en prácticas médicas y conocimientos terapéuticos.|3|No Disponible
+0316858560|The Wasp Factory|Iain Banks|Medicine|1984|Obra enfocada en prácticas médicas y conocimientos terapéuticos.|5|No Disponible
+1500420530|Suicide Med|Freida McFadden|Medicine|2014|Material académico relacionado con ciencias médicas y tratamientos clínicos.|3|No Disponible
+9780143036494|La Gran Influenza|John M. Barry|Medicine|2019|Texto orientado al estudio de medicina y cuidado de la salud.|3|No Disponible
+605974656X|The Body Keeps the Score|Bessel van der Kolk|Medicine|2016|Libro especializado en salud, medicina y bienestar integral.|4|No Disponible
+1497607434|Blood Music|Greg Bear|Medicine|1985|Material académico relacionado con ciencias médicas y tratamientos clínicos.|3|No Disponible
+1887714332|Hoodoo Medicine|Faith Mitchell|Medicine|1998|Libro especializado en salud, medicina y bienestar integral.|4|No Disponible
+0714119067|Ancient Egyptian Medicine|John F. Nunn|Medicine|2002|Texto orientado al estudio de medicina y cuidado de la salud.|4|No Disponible
+9789501515268|Perfect Health|Deepak Chopra|Medicine|1990|Texto orientado al estudio de medicina y cuidado de la salud.|3|No Disponible
+9780801501142|Simple, effective treatment of agoraphobia|Claire Weekes|Medicine|1984|Libro especializado en salud, medicina y bienestar integral.|4|No Disponible
+0609802860|The complete book of Ayurvedic home remedies|Vasant Lad|Medicine|1998|Obra enfocada en prácticas médicas y conocimientos terapéuticos.|2|No Disponible
+0907325173|The art of cookery, made plain and easy|Hannah Glasse|Medicine|1796|Libro especializado en salud, medicina y bienestar integral.|2|No Disponible
+9781462547555|Taking charge of adult ADHD|Russell Barkley|Medicine|2017|Libro especializado en salud, medicina y bienestar integral.|2|No Disponible
+SIN-ISBN-0015|Sahasrayogam|N/A|Medicine|1989|Material académico relacionado con ciencias médicas y tratamientos clínicos.|4|No Disponible
+9780434992928|De medicina|Aulus Cornelius Celsus|Medicine|1665|Obra enfocada en prácticas médicas y conocimientos terapéuticos.|5|No Disponible
+9780939616107|Chinese herbal medicine|Dan Bensky|Medicine|1986|Material académico relacionado con ciencias médicas y tratamientos clínicos.|4|No Disponible
+9780143102564|Mejor|Atul Gawande|Medicine|2008|Libro especializado en salud, medicina y bienestar integral.|5|No Disponible
+SIN-ISBN-0016|Laboratory diagnosis of mycoplasmosis|N/A|Medicine|1976|Libro especializado en salud, medicina y bienestar integral.|2|No Disponible
+9780190722562|Understanding Psychopathology|Alban Burke|Medicine|2020|Libro especializado en salud, medicina y bienestar integral.|4|No Disponible
+9780425040539|I am Legend|Richard Matheson|Medicine|1954|Obra enfocada en prácticas médicas y conocimientos terapéuticos.|4|No Disponible
+3776002751|Organon der rationellen Heilkunde|Samuel Hahnemann|Medicine|1921|Material académico relacionado con ciencias médicas y tratamientos clínicos.|4|No Disponible
+SIN-ISBN-0017|Dr. Chase's recipes|A. W. Chase|Medicine|1860|Libro especializado en salud, medicina y bienestar integral.|3|No Disponible
+6073805543|This Is Your Brain on Food|Uma Naidoo MD|Medicine|2020|Libro especializado en salud, medicina y bienestar integral.|3|No Disponible
+9781493424016|Cleaning up Your Mental Mess|Caroline Leaf|Medicine|2021|Libro especializado en salud, medicina y bienestar integral.|3|No Disponible
+0816162697|All Things Bright and Beautiful (All Creatures Great and Small #3-4)|James Herriot|Medicine|1984|Texto orientado al estudio de medicina y cuidado de la salud.|3|No Disponible
+9781549129186|This is going to hurt|Adam Kay|Medicine|2017|Material académico relacionado con ciencias médicas y tratamientos clínicos.|3|No Disponible
+9781953295774|Why We Get Sick|Benjamin Bikman|Medicine|2020|Material académico relacionado con ciencias médicas y tratamientos clínicos.|2|No Disponible
+1975150198|ACSM's Guidelines for Exercise Testing and Prescription|Gary Liguori|Medicine|2021|Texto orientado al estudio de medicina y cuidado de la salud.|5|No Disponible
+SIN-ISBN-0018|First lines of the practice of physic|William Cullen|Medicine|1792|Libro especializado en salud, medicina y bienestar integral.|5|No Disponible
+9781870845014|You can heal your life|Louise L. Hay|Medicine|1984|Libro especializado en salud, medicina y bienestar integral.|5|No Disponible
+1885670281|Little Herb Encyclopedia|Jack Ritchason|Medicine|1985|Material académico relacionado con ciencias médicas y tratamientos clínicos.|5|No Disponible
+9798989876204|UWorld Rxprep 2025 NAPLEX Course Book|UWorld|Medicine|2024|Libro especializado en salud, medicina y bienestar integral.|2|No Disponible
+9780766187207|Complete Herbalist; Or, People Their Own Physician|O. Phelps Brown|Medicine|1833|Material académico relacionado con ciencias médicas y tratamientos clínicos.|3|No Disponible
+1571746552|The Quantum Doctor|Amit Goswami|Medicine|2011|Libro especializado en salud, medicina y bienestar integral.|4|No Disponible
+SIN-ISBN-0019|Anno .xiiii. Henrici Sexti|N/A|Law|1553|Texto especializado en fundamentos legales y constitucionales.|5|No Disponible
+9780118045131|Derechos, etc|Great Britain.|Law|1922|Obra jurídica enfocada en derecho y procedimientos legales.|4|No Disponible
+9780131183162|Cases in Constitutional Derecho|Robert F. Cushman|Law|1989|Material académico relacionado con legislación y sistemas legales.|5|No Disponible
+9789797690281|Hukum administrasi negara|H. R. Ridwan|Law|2002|Obra jurídica enfocada en derecho y procedimientos legales.|2|No Disponible
+9789790980150|Pengantar ilmu hukum Indonesia|C. S. T. Kansil|Law|2011|Libro orientado al estudio de normas jurídicas y derecho.|4|No Disponible
+SIN-ISBN-0020|Hukum pidana|Moeljatno|Law|1961|Texto especializado en fundamentos legales y constitucionales.|5|No Disponible
+9794282464|Hukum agraria Indonesia|Budi Harsono.|Law|1994|Libro orientado al estudio de normas jurídicas y derecho.|4|No Disponible
+SIN-ISBN-0021|Pengantar hukum Indonesia|Ernst Utrecht|Law|1962|Libro orientado al estudio de normas jurídicas y derecho.|4|No Disponible
+SIN-ISBN-0022|Peranan yurisprudensi sebagai sumber hukum|Paulus Effendie Lotulung|Law|2000|Material académico relacionado con legislación y sistemas legales.|5|No Disponible
+SIN-ISBN-0023|Pengantar fiqih mu'amalah|Muhammad Hasbi Ash Shiddieqy|Law|1974|Obra jurídica enfocada en derecho y procedimientos legales.|4|No Disponible
+SIN-ISBN-0024|Hukum perdata|R. Sardjono|Law|1960|Texto especializado en fundamentos legales y constitucionales.|3|No Disponible
+0353616842|Ancient law, its connection with the early history of society and its relaton to modern ideas|Henry James Sumner Maine|Law|2010|Obra jurídica enfocada en derecho y procedimientos legales.|2|No Disponible
+9788321902982|Kodeks pracy|Poland.|Law|1938|Material académico relacionado con legislación y sistemas legales.|4|No Disponible
+9786021865750|Hukum dan psikologi hukum|Abintoro Prakoso|Law|2014|Libro orientado al estudio de normas jurídicas y derecho.|2|No Disponible
+SIN-ISBN-0025|Pengantar ilmu hukum|Tuty Saleh|Law|1963|Obra jurídica enfocada en derecho y procedimientos legales.|5|No Disponible
+0130879533|Derecho Empresarial|Henry R. Cheeseman|Law|2018|Texto especializado en fundamentos legales y constitucionales.|4|No Disponible
+9780198760726|El Concepto del Derecho|H. L. A. Hart|Law|1986|Obra jurídica enfocada en derecho y procedimientos legales.|2|No Disponible
+9797692973|Ilmu negara|Ni'matul Huda|Law|2010|Libro orientado al estudio de normas jurídicas y derecho.|2|No Disponible
+0198763875|About Derecho|Tony Honoré|Law|1996|Obra jurídica enfocada en derecho y procedimientos legales.|2|No Disponible
+979538225X|Hukum ekonomi & ekonomi Islam|Neni Sri Imaniyati|Law|2002|Obra jurídica enfocada en derecho y procedimientos legales.|4|No Disponible
+9789794140277|Hukum bisnis|Ifan Noor Adham|Law|2008|Texto especializado en fundamentos legales y constitucionales.|5|No Disponible
+9789790074750|Hukum tata negara & hukum administrasi negara|Ahmad Sukardja|Law|2012|Material académico relacionado con legislación y sistemas legales.|4|No Disponible
+9781136673764|Constitutional & administrative law|Hilaire Barnett|Law|2017|Libro orientado al estudio de normas jurídicas y derecho.|3|No Disponible
+9780160464287|Derechos, etc|United States|Law|1789|Libro orientado al estudio de normas jurídicas y derecho.|2|No Disponible
+SIN-ISBN-0026|Festschrift für Otto Lenel zum fünfzigjährigen Doctorjubiläum am 16. Dezember 1921 /überreicht von der Rechts- und Staatswissenschaftlichen Fakultät der Universität Freiburg im Breisgau.|N/A|Law|1987|Texto especializado en fundamentos legales y constitucionales.|2|No Disponible
+9780001857438|Castle in the Air|Diana Wynne Jones|Law|2018|Texto especializado en fundamentos legales y constitucionales.|2|No Disponible
+SIN-ISBN-0027|Derechos, etc. (Session laws : 1796-01)|New York (State)|Law|1792|Libro orientado al estudio de normas jurídicas y derecho.|5|No Disponible
+9789795336563|Perpajakan|Mardiasmo|Law|2001|Material académico relacionado con legislación y sistemas legales.|5|No Disponible
+158477763X|Commentaries on the laws of England|Sir William Blackstone|Law|1721|Texto especializado en fundamentos legales y constitucionales.|3|No Disponible
+9780399119323|One L|Scott Turow|Law|1978|Obra jurídica enfocada en derecho y procedimientos legales.|3|No Disponible
+8180381749|P.S.A. Pillai's criminal law|P. S. Atchuthen Pillai|Law|2008|Obra jurídica enfocada en derecho y procedimientos legales.|3|No Disponible
+SIN-ISBN-0028|Constitutional law|N/A|Law|2006|Material académico relacionado con legislación y sistemas legales.|4|No Disponible
+9789712303234|The law on obligations and contracts|Hector S. de Leon|Law|1985|Material académico relacionado con legislación y sistemas legales.|5|No Disponible
+9780876922002|Constitution|India|Law|1947|Material académico relacionado con legislación y sistemas legales.|2|No Disponible
+9789698372101|Comparative constitutional law|Hamid Khan|Law|2008|Material académico relacionado con legislación y sistemas legales.|2|No Disponible
+9790070683|Terminologi hukum pidana|Andi Hamzah|Law|2008|Libro orientado al estudio de normas jurídicas y derecho.|5|No Disponible
+0905435222|Business law|Keith Abbott|Law|1985|Texto especializado en fundamentos legales y constitucionales.|4|No Disponible
+0459240854|Constitutional law of Canada|Peter W. Hogg|Law|1985|Material académico relacionado con legislación y sistemas legales.|2|No Disponible
+9780521029421|Summa Theologica|Thomas Aquinas|Law|1920|Texto especializado en fundamentos legales y constitucionales.|4|No Disponible
+9789793125633|Hukum pidana Islam|Zainuddin Ali|Law|2003|Texto especializado en fundamentos legales y constitucionales.|4|No Disponible
+9789795186649|Aspek hukum dalam bisnis|Richard Burton Simatupang|Law|2009|Obra jurídica enfocada en derecho y procedimientos legales.|2|No Disponible
+9780314025821|Business Derecho Today|Roger LeRoy Miller|Law|1988|Material académico relacionado con legislación y sistemas legales.|3|No Disponible
+SIN-ISBN-0029|Pengantar ilmu hukum dan tata hukum Indonesia|C. S. T. Kansil|Law|1979|Texto especializado en fundamentos legales y constitucionales.|2|No Disponible
+9789790072404|Hukum perlindungan konsumen|Celina Tri Siwi Kristiyanti|Law|2008|Libro orientado al estudio de normas jurídicas y derecho.|5|No Disponible
+SIN-ISBN-0030|Concise explanatory statement and responsiveness summary for the adoption of Chapter 173-350 WAC, solid waste handling standards|N/A|Law|2003|Obra jurídica enfocada en derecho y procedimientos legales.|5|No Disponible
+9789997420480|Decisions of the United States Supreme Court|N/A|Law|1997|Libro orientado al estudio de normas jurídicas y derecho.|4|No Disponible
+9780949009760|International Derecho Reports|E. Lauterpacht|Law|1994|Libro orientado al estudio de normas jurídicas y derecho.|4|No Disponible
+9788180385599|Introducción a the Constitution of India|Durga Das Basu|Law|1960|Libro orientado al estudio de normas jurídicas y derecho.|2|No Disponible
+SIN-ISBN-0031|Pratik hukukta metod|Ernst E. Hirsch|Law|1978|Obra jurídica enfocada en derecho y procedimientos legales.|4|No Disponible
+9780406658111|Criminal law|Smith, J. C.|Law|1988|Material académico relacionado con legislación y sistemas legales.|4|No Disponible
+9780307987457|Por Qué Fracasan las Naciones|Daron Acemoglu|Economics|2016|Libro relacionado con economía, finanzas y desarrollo empresarial.|3|No Disponible
+9782862280004|Small Is Beautiful|E. F. Schumacher|Economics|1989|Material enfocado en análisis económico y gestión financiera.|3|No Disponible
+9780465060733|Economía Básica|Thomas Sowell|Economics|2000|Libro relacionado con economía, finanzas y desarrollo empresarial.|2|No Disponible
+1797113356|Your Next Five Moves|Patrick Bet-David|Economics|2020|Obra orientada al estudio de teorías económicas y finanzas.|5|No Disponible
+9780060889586|Superfreakonomics|Steven D. Levitt|Economics|2019|Material enfocado en análisis económico y gestión financiera.|2|No Disponible
+9781984842305|Start with why|Simon Sinek|Economics|2018|Obra orientada al estudio de teorías económicas y finanzas.|5|No Disponible
+0804139296|De Cero a Uno|Peter A. Thiel|Economics|2001|Texto especializado en mercados, negocios y economía global.|4|No Disponible
+0060731338|Freakonomics|Steven D. Levitt|Economics|2019|Obra orientada al estudio de teorías económicas y finanzas.|4|No Disponible
+9789966466730|Como Europa subdesarrollo a Africa|Walter Rodney|Economics|2018|Material enfocado en análisis económico y gestión financiera.|3|No Disponible
+9781605200132|Das Kapital|Karl Marx|Economics|1867|Texto especializado en mercados, negocios y economía global.|3|No Disponible
+9786026486578|La Psicología del Dinero|Morgan Housel|Economics|2020|Obra orientada al estudio de teorías económicas y finanzas.|4|No Disponible
+9780582382527|Economic development|Michael P. Todaro|Economics|2020|Texto especializado en mercados, negocios y economía global.|4|No Disponible
+006044102X|Economía|Richard G. Lipsey|Economics|1966|Material enfocado en análisis económico y gestión financiera.|3|No Disponible
+0671832026|The worldly philosophers|Robert L. Heilbroner|Economics|1953|Material enfocado en análisis económico y gestión financiera.|3|No Disponible
+SIN-ISBN-0032|Russia and the G8|N/A|Economics|2006|Libro relacionado con economía, finanzas y desarrollo empresarial.|2|No Disponible
+SIN-ISBN-0033|Manajemen pemasaran|Bambang Tri Cahyono|Economics|1994|Libro relacionado con economía, finanzas y desarrollo empresarial.|2|No Disponible
+1405809949|Microeconomics|Robert S. Pindyck|Economics|2017|Texto especializado en mercados, negocios y economía global.|2|No Disponible
+9788808045188|Economía, an introductory analysis|Paul Anthony Samuelson|Economics|1948|Material enfocado en análisis económico y gestión financiera.|2|No Disponible
+SIN-ISBN-0034|Pengantar ilmu ekonomi|J. Bunardhi|Economics|1965|Obra orientada al estudio de teorías económicas y finanzas.|2|No Disponible
+9781417663422|The millionaire next door|Thomas J. Stanley|Economics|2016|Libro relacionado con economía, finanzas y desarrollo empresarial.|4|No Disponible
+0786199172|Economía in One Lesson|Henry Hazlitt|Economics|2020|Material enfocado en análisis económico y gestión financiera.|5|No Disponible
+1604598913|La Riqueza de las Naciones|Adam Smith|Economics|1920|Libro relacionado con economía, finanzas y desarrollo empresarial.|4|No Disponible
+0077439562|Strategic management|Gregory G. Dess|Economics|1992|Libro relacionado con economía, finanzas y desarrollo empresarial.|5|No Disponible
+9780062301260|Elon Musk|Ashlee Vance|Economics|2016|Texto especializado en mercados, negocios y economía global.|4|No Disponible
+9780375406195|Development as Freedom|Amartya Sen|Economics|1999|Libro relacionado con economía, finanzas y desarrollo empresarial.|2|No Disponible
+9789793087108|Neoliberalisme|I. Wibowo|Economics|2003|Libro relacionado con economía, finanzas y desarrollo empresarial.|2|No Disponible
+0942617312|Whatever Happened to Penny Candy?|Richard J. Maybury|Economics|1989|Material enfocado en análisis económico y gestión financiera.|3|No Disponible
+013408327X|Corporate finance|Jonathan B. Berk|Economics|2016|Obra orientada al estudio de teorías económicas y finanzas.|2|No Disponible
+9786020667188|Hábitos Atómicos|James Clear|Economics|2016|Material enfocado en análisis económico y gestión financiera.|5|No Disponible
+9781322110233|Everybody Writes|Ann Handley|Economics|2016|Obra orientada al estudio de teorías económicas y finanzas.|2|No Disponible
+0007256531|Predictably Irrational|Dan Ariely|Economics|2008|Obra orientada al estudio de teorías económicas y finanzas.|5|No Disponible
+9780078785955|Economía|McGraw-Hill|Economics|1998|Obra orientada al estudio de teorías económicas y finanzas.|3|No Disponible
+9780593539781|Million Dollar Weekend|Noah Kagan|Economics|2024|Obra orientada al estudio de teorías económicas y finanzas.|3|No Disponible
+1797135562|Lords of Easy Money|Christopher Leonard|Economics|2022|Libro relacionado con economía, finanzas y desarrollo empresarial.|4|No Disponible
+1266043225|Understanding Business 13th Edition|William G. Nickels|Economics|2021|Texto especializado en mercados, negocios y economía global.|3|No Disponible
+9781614878377|Human Action|Ludwig von Mises|Economics|1990|Material enfocado en análisis económico y gestión financiera.|5|No Disponible
+9788842817970|Debt|David Graeber|Economics|2021|Libro relacionado con economía, finanzas y desarrollo empresarial.|4|No Disponible
+9780525508526|Nudge|Richard H. Thaler|Economics|2021|Texto especializado en mercados, negocios y economía global.|5|No Disponible
+9780374538491|Talking to My Daughter About the Economy|Yanis Varoufakis|Economics|2017|Obra orientada al estudio de teorías económicas y finanzas.|2|No Disponible
+978-1777257316|Teoría de games and economic behavior|John Von Neumann|Economics|1953|Texto especializado en mercados, negocios y economía global.|4|No Disponible
+0465026303|Economic Facts and Fallacies|Thomas Sowell|Economics|2011|Texto especializado en mercados, negocios y economía global.|4|No Disponible
+9780030120640|Microeconomic Theory|Walter Nicholson|Economics|1973|Material enfocado en análisis económico y gestión financiera.|5|No Disponible
+9332704759|Indian Economy|Uma Kapila|Economics|2017|Texto especializado en mercados, negocios y economía global.|4|No Disponible
+9780393356496|Naked Economía|Charles J. Wheelan|Economics|2019|Material enfocado en análisis económico y gestión financiera.|4|No Disponible
+0520028244|Wirtschaft und Gesellschaft|Max Weber|Economics|1954|Texto especializado en mercados, negocios y economía global.|2|No Disponible
+0241951224|Misbehaving|Richard H. Thaler|Economics|2016|Texto especializado en mercados, negocios y economía global.|3|No Disponible
+9780246138453|Belgarath the sorcerer|David Eddings|Economics|2010|Obra orientada al estudio de teorías económicas y finanzas.|5|No Disponible
+8171884067|Indian Economy Since Independence|Uma Kapila|Economics|1999|Material enfocado en análisis económico y gestión financiera.|4|No Disponible
+9789798170508|Ekonomi pembangunan|Mudrajad Kuncoro|Economics|1997|Obra orientada al estudio de teorías económicas y finanzas.|2|No Disponible
+9781471196690|Changing World Order|Ray Dalio|Economics|2020|Obra orientada al estudio de teorías económicas y finanzas.|5|No Disponible
+0471314242|Geografía|Harm J. de Blij|Geography|1971|Obra enfocada en análisis geográfico y cultural.|2|No Disponible
+9780136671305|Geografía Física|Tom L. McKnight|Geography|1984|Material académico relacionado con mapas, territorios y paisajes.|3|No Disponible
+0471253456|Physical Geografía|Alan H. Strahler|Geography|1996|Libro orientado al estudio del espacio geográfico y regiones del mundo.|5|No Disponible
+9780023224485|Geosystems|Robert W. Christopherson|Geography|1992|Material académico relacionado con mapas, territorios y paisajes.|4|No Disponible
+013426309X|Mcknight's physical geography|Darrel Hess|Geography|2016|Material académico relacionado con mapas, territorios y paisajes.|5|No Disponible
+0063503298|Geografía|Peter Haggett|Geography|1984|Obra enfocada en análisis geográfico y cultural.|3|No Disponible
+9783895000614|Geographia|Ptolemy|Geography|1923|Obra enfocada en análisis geográfico y cultural.|5|No Disponible
+0192152173|A Study of Historia|Arnold J. Toynbee|Geography|1934|Material académico relacionado con mapas, territorios y paisajes.|3|No Disponible
+0471861901|Principles of geomorphology|William D. Thornbury|Geography|1954|Texto especializado en fenómenos geográficos y medio ambiente.|3|No Disponible
+0470416505|Introducing physical geography|Alan H. Strahler|Geography|1994|Material académico relacionado con mapas, territorios y paisajes.|4|No Disponible
+9780582330559|The world|L. Dudley Stamp|Geography|1952|Obra enfocada en análisis geográfico y cultural.|5|No Disponible
+9780631136880|Statistics in geography|David Ebdon|Geography|1985|Libro orientado al estudio del espacio geográfico y regiones del mundo.|3|No Disponible
+3525259549|Geografía|Strabo|Geography|1796|Obra enfocada en análisis geográfico y cultural.|5|No Disponible
+SIN-ISBN-0035|World geography|John Hodgdon Bradley|Geography|1954|Obra enfocada en análisis geográfico y cultural.|4|No Disponible
+0072367229|Introducción a geography|Arthur Getis|Geography|2017|Obra enfocada en análisis geográfico y cultural.|5|No Disponible
+047013299X|Discovering Physical Geografía|Alan F. Arbogast|Geography|2017|Obra enfocada en análisis geográfico y cultural.|5|No Disponible
+0674992334|The Geografía of Strabo|Strabo|Geography|1856|Texto especializado en fenómenos geográficos y medio ambiente.|2|No Disponible
+SIN-ISBN-0036|Aspects de la géomorphologie du Maroc|N/A|Geography|1952|Obra enfocada en análisis geográfico y cultural.|2|No Disponible
+1118401867|Visualizing psychology|Siri Carpenter|Geography|2007|Texto especializado en fenómenos geográficos y medio ambiente.|2|No Disponible
+0471537322|Geografía, regions and concepts|Harm J. de Blij|Geography|1985|Obra enfocada en análisis geográfico y cultural.|4|No Disponible
+0665188862|A new geographical, historical, and commercial grammar, and present state of the several kingdoms of the world ..|Guthrie, William|Geography|1792|Texto especializado en fenómenos geográficos y medio ambiente.|3|No Disponible
+0716794594|World regional geography|Lydia M. Pulsipher|Geography|2017|Libro orientado al estudio del espacio geográfico y regiones del mundo.|4|No Disponible
+0321905911|Globalization and diversity|Lester Rowntree|Geography|2016|Material académico relacionado con mapas, territorios y paisajes.|5|No Disponible
+0690046162|Geografía from A to Z|Jack Knowlton|Geography|2009|Material académico relacionado con mapas, territorios y paisajes.|2|No Disponible
+SIN-ISBN-0037|Principles of human geography|Huntington, Ellsworth|Geography|1921|Obra enfocada en análisis geográfico y cultural.|3|No Disponible
+SIN-ISBN-0038|A short but comprehensive system of the geography of the world|Nathaniel Dwight|Geography|1795|Libro orientado al estudio del espacio geográfico y regiones del mundo.|3|No Disponible
+9780321843456|Elemental geosystems|Robert W. Christopherson|Geography|2000|Libro orientado al estudio del espacio geográfico y regiones del mundo.|5|No Disponible
+9780078250156|Geografía|McGraw-Hill|Geography|2001|Obra enfocada en análisis geográfico y cultural.|4|No Disponible
+9780471739623|Geografía Humana|Harm J.De Blij|Geography|1996|Texto especializado en fenómenos geográficos y medio ambiente.|2|No Disponible
+9780675209502|The Cultural Landscape|James M. Rubenstein|Geography|1989|Obra enfocada en análisis geográfico y cultural.|2|No Disponible
+SIN-ISBN-0039|Semeiança del mundo|N/A|Geography|1959|Material académico relacionado con mapas, territorios y paisajes.|4|No Disponible
+0471039144|Human geography|Harm J. de Blij|Geography|1986|Obra enfocada en análisis geográfico y cultural.|2|No Disponible
+0321580028|Places and Regions in Global Context|Paul L. Knox|Geography|1997|Material académico relacionado con mapas, territorios y paisajes.|5|No Disponible
+9780471831600|Geografía Física|Arthur Newell Strahler|Geography|1960|Obra enfocada en análisis geográfico y cultural.|4|No Disponible
+069738506X|Introducción a geography|Arthur Getis|Geography|2000|Material académico relacionado con mapas, territorios y paisajes.|5|No Disponible
+9781119930297|Urban geography|Dave H. Kaplan|Geography|2024|Material académico relacionado con mapas, territorios y paisajes.|2|No Disponible
+036722187X|Geomorphology|Richard J. Chorley|Geography|1984|Obra enfocada en análisis geográfico y cultural.|4|No Disponible
+SIN-ISBN-0040|A geography of India|Singh, Gopal.|Geography|1976|Material académico relacionado con mapas, territorios y paisajes.|3|No Disponible
+9780143420934|Land of The Seven Rivers|Sanjeev Sanyal|Geography|2013|Libro orientado al estudio del espacio geográfico y regiones del mundo.|4|No Disponible
+9780199021291|The regional geography of Canada|Robert M. Bone|Geography|2017|Obra enfocada en análisis geográfico y cultural.|2|No Disponible
+9780520203303|Méditerranée et le monde méditerranéen à l'époque de Philippe II|Fernand Braudel|Geography|1987|Material académico relacionado con mapas, territorios y paisajes.|3|No Disponible
+9781981175826|Little House in the Big Woods|Laura Ingalls Wilder|Geography|1932|Material académico relacionado con mapas, territorios y paisajes.|2|No Disponible
+0665469160|The history of America|William Robertson|Geography|1792|Obra enfocada en análisis geográfico y cultural.|3|No Disponible
+9780131241978|What's the address?|Rachel Griffiths|Geography|2004|Texto especializado en fenómenos geográficos y medio ambiente.|3|No Disponible
+9788532800114|Estrutura e origem das paisagens tropicais e subtropicais|João Jose? Bigarella|Geography|1994|Texto especializado en fenómenos geográficos y medio ambiente.|5|No Disponible
+0321939506|Introducción a Geografía|Carl H. Dahlman|Geography|2011|Material académico relacionado con mapas, territorios y paisajes.|5|No Disponible
+1426202741|The blue zone|Dan Buettner|Geography|2008|Obra enfocada en análisis geográfico y cultural.|4|No Disponible
+9781549862649|Home geography for primary grades|C. C. Long|Geography|2017|Material académico relacionado con mapas, territorios y paisajes.|5|No Disponible
+9780374399696|Madlenka|Peter Sís|Geography|2000|Obra enfocada en análisis geográfico y cultural.|5|No Disponible
+9788185891170|Statistical methods in geographical studies|Aslam Mahmood|Geography|1977|Libro orientado al estudio del espacio geográfico y regiones del mundo.|5|No Disponible
+9501702162|El Profeta|Kahlil Gibran|Religion|1900|Texto orientado al estudio de creencias y tradiciones religiosas.|4|No Disponible
+0310936799|Biblia|Bible|Religion|1611|Material enfocado en filosofía espiritual y doctrinas religiosas.|4|No Disponible
+1600240097|God Is Not Great|Christopher Hitchens|Religion|2008|Texto orientado al estudio de creencias y tradiciones religiosas.|5|No Disponible
+1848941277|El Poder del Ahora|Eckhart Tolle|Religion|2016|Texto orientado al estudio de creencias y tradiciones religiosas.|3|No Disponible
+7549561656|The Wisdom of Insecurity|Alan Watts|Religion|2016|Texto orientado al estudio de creencias y tradiciones religiosas.|4|No Disponible
+9781726136587|The Varieties of Religious Experience|William James|Religion|1920|Obra dedicada al análisis de religiones y prácticas espirituales.|3|No Disponible
+9780197543795|Invitation to world religions|Jeffrey Brodd|Religion|2024|Material enfocado en filosofía espiritual y doctrinas religiosas.|4|No Disponible
+9780136003809|Anatomy of the Sacred|James C. Livingston|Religion|1989|Texto orientado al estudio de creencias y tradiciones religiosas.|5|No Disponible
+9789501602289|Tao te Ching|??|Religion|1842|Texto orientado al estudio de creencias y tradiciones religiosas.|5|No Disponible
+0874810434|Bhagavad-Gita|Vyasa|Religion|1944|Texto orientado al estudio de creencias y tradiciones religiosas.|3|No Disponible
+015696158X|When God Was a Woman|Merlin Stone|Religion|1984|Libro relacionado con espiritualidad, religión y pensamiento trascendental.|5|No Disponible
+1721881646|The Golden Bough|James George Frazer|Religion|1890|Obra dedicada al análisis de religiones y prácticas espirituales.|4|No Disponible
+3821841877|Orthodoxy|Gilbert Keith Chesterton|Religion|1921|Texto orientado al estudio de creencias y tradiciones religiosas.|4|No Disponible
+9781402186189|Natural law in the spiritual world|Henry Drummond|Religion|1835|Material enfocado en filosofía espiritual y doctrinas religiosas.|3|No Disponible
+9781013396717|Zukunft einer Illusion|Sigmund Freud|Religion|1928|Libro relacionado con espiritualidad, religión y pensamiento trascendental.|3|No Disponible
+1733201467|Coloring Book of Shadows|Amy Cesari|Religion|2016|Material enfocado en filosofía espiritual y doctrinas religiosas.|3|No Disponible
+1879557290|The perennial philosophy|Aldous Huxley|Religion|1985|Libro relacionado con espiritualidad, religión y pensamiento trascendental.|2|No Disponible
+9783548372327|The God Delusion|Richard Dawkins|Religion|2016|Libro relacionado con espiritualidad, religión y pensamiento trascendental.|3|No Disponible
+9681662350|The Teachings of Don Juan|Carlos Castaneda|Religion|1985|Material enfocado en filosofía espiritual y doctrinas religiosas.|3|No Disponible
+0061571288|God Is Not One|Stephen Prothero|Religion|2010|Obra dedicada al análisis de religiones y prácticas espirituales.|5|No Disponible
+9780684848594|People of the lie|M. Scott Peck|Religion|1985|Material enfocado en filosofía espiritual y doctrinas religiosas.|5|No Disponible
+9781447223955|Are You There God? It's Me, Margaret.|Judy Blume|Religion|1970|Texto orientado al estudio de creencias y tradiciones religiosas.|4|No Disponible
+0760768382|The Book of the Dead|E. A. Wallis Budge|Religion|1933|Material enfocado en filosofía espiritual y doctrinas religiosas.|5|No Disponible
+0061763489|The World's Religions|Huston Smith|Religion|1990|Libro relacionado con espiritualidad, religión y pensamiento trascendental.|3|No Disponible
+9780136003809|Anatomy of the Sacred|James Livingston|Religion|2008|Obra dedicada al análisis de religiones y prácticas espirituales.|2|No Disponible
+9781299993525|Egyptian ideas of the future life|E. A. Wallis Budge|Religion|1959|Texto orientado al estudio de creencias y tradiciones religiosas.|3|No Disponible
+9781515451013|Saint Francis of Assisi|Gilbert Keith Chesterton|Religion|1923|Material enfocado en filosofía espiritual y doctrinas religiosas.|5|No Disponible
+1850631069|Egyptian magic|E. A. Wallis Budge|Religion|1988|Obra dedicada al análisis de religiones y prácticas espirituales.|3|No Disponible
+9780394719238|Beyond theology|Alan Watts|Religion|2022|Material enfocado en filosofía espiritual y doctrinas religiosas.|3|No Disponible
+131553214X|The anthropology of religion, magic, and witchcraft|Philip L. Stein|Religion|2008|Libro relacionado con espiritualidad, religión y pensamiento trascendental.|3|No Disponible
+0002153114|Histoire des croyances et des idées religieuses|Mircea Eliade|Religion|1976|Obra dedicada al análisis de religiones y prácticas espirituales.|4|No Disponible
+0060809728|The religions of man|Huston Smith|Religion|1986|Material enfocado en filosofía espiritual y doctrinas religiosas.|2|No Disponible
+1564598950|The religions of the ancient world|George Rawlinson|Religion|1893|Obra dedicada al análisis de religiones y prácticas espirituales.|4|No Disponible
+0786145838|Code Name God|Mani Bhaumik|Religion|2008|Material enfocado en filosofía espiritual y doctrinas religiosas.|5|No Disponible
+9780060653019|Miracles|C. S. Lewis|Religion|1958|Texto orientado al estudio de creencias y tradiciones religiosas.|4|No Disponible
+1838049215|A Handbook of Spiritual Medicine|Ibn Daud|Religion|2022|Texto orientado al estudio de creencias y tradiciones religiosas.|2|No Disponible
+9780253206381|Ifa Divination|William Russell Bascom|Religion|1969|Libro relacionado con espiritualidad, religión y pensamiento trascendental.|5|No Disponible
+9403182717|Lapvona|Ottessa Moshfegh|Religion|2022|Texto orientado al estudio de creencias y tradiciones religiosas.|3|No Disponible
+0534191827|Ways to the center|Denise Lardner Carmody|Religion|1984|Texto orientado al estudio de creencias y tradiciones religiosas.|3|No Disponible
+9780670034727|Breaking the spell|Daniel C. Dennett|Religion|2008|Material enfocado en filosofía espiritual y doctrinas religiosas.|3|No Disponible
+973669738X|The Language of God|Francis S. Collins|Religion|2008|Obra dedicada al análisis de religiones y prácticas espirituales.|2|No Disponible
+0007132395|Witch Crafting|Phyllis Curott|Religion|2001|Obra dedicada al análisis de religiones y prácticas espirituales.|5|No Disponible
+9780024747402|Religions of the world|Lewis M. Hopfe|Religion|1987|Texto orientado al estudio de creencias y tradiciones religiosas.|4|No Disponible
+9780391009028|Gottesfinsternis|Martin Buber|Religion|1952|Material enfocado en filosofía espiritual y doctrinas religiosas.|3|No Disponible
+9688534250|Man's Search for Ultimate Meaning|Viktor E. Frankl|Religion|2018|Texto orientado al estudio de creencias y tradiciones religiosas.|5|No Disponible
+0190919027|A concise introduction to world religions|Willard G. Oxtoby|Religion|2019|Libro relacionado con espiritualidad, religión y pensamiento trascendental.|2|No Disponible
+0130119946|Living Religions|Mary Pat Fisher|Religion|1991|Texto orientado al estudio de creencias y tradiciones religiosas.|5|No Disponible
+9644222016|Mas̲navī|Rumi (Jal?l ad-Dīn Muḥammad Balkhī)|Religion|1949|Material enfocado en filosofía espiritual y doctrinas religiosas.|2|No Disponible
+088489486X|World religions|Jeffrey Brodd|Religion|2009|Obra dedicada al análisis de religiones y prácticas espirituales.|4|No Disponible
+9781533150424|Custom and myth|Andrew Lang|Religion|1884|Texto orientado al estudio de creencias y tradiciones religiosas.|2|No Disponible
+9781682042892|Mein Kampf|Adolf Hitler|Politics|1922|Obra literaria diseñada para ampliar el conocimiento del lector.|3|No Disponible
+180422023X|The 48 Derechos of Power|Robert Greene|Politics|2016|Obra literaria diseñada para ampliar el conocimiento del lector.|3|No Disponible
+9788377583050|Animal Farm|George Orwell|Politics|1945|Material de lectura con contenido académico y formativo.|4|No Disponible
+9788483360835|Manifest der Kommunistischen Partei|Karl Marx|Politics|1848|Texto informativo relacionado con conocimientos generales.|5|No Disponible
+0679725423|Fear no evil|Anatoly Shcharansky|Politics|1988|Texto informativo relacionado con conocimientos generales.|4|No Disponible
+1936041081|The Prince|Niccolò Machiavelli|Politics|1551|Material de lectura con contenido académico y formativo.|4|No Disponible
+9780548191798|Πολιτικά (Politiká)|Aristotle|Politics|1561|Material de lectura con contenido académico y formativo.|2|No Disponible
+9788174364449|Train to Pakistan|Khushwant Singh|Politics|1988|Obra literaria diseñada para ampliar el conocimiento del lector.|4|No Disponible
+1667300016|Animal Farm / Nineteen Eighty-Four|George Orwell|Politics|2016|Obra literaria diseñada para ampliar el conocimiento del lector.|4|No Disponible
+0241317983|How Democracies Die|Steven Levitsky|Politics|2017|Material de lectura con contenido académico y formativo.|5|No Disponible
+9780072476668|Power and Choice|W. Phillips Shively|Politics|1987|Texto informativo relacionado con conocimientos generales.|5|No Disponible
+9780192823922|Leviathan|Thomas Hobbes|Politics|1667|Libro educativo y cultural orientado al aprendizaje general.|2|No Disponible
+9789781671678|Why we struck|Adewale Ademoyega|Politics|1981|Texto informativo relacionado con conocimientos generales.|5|No Disponible
+1366184866|On Tyranny|Timothy Snyder|Politics|2017|Obra literaria diseñada para ampliar el conocimiento del lector.|4|No Disponible
+9786028545587|Kualitas pelayanan publik|Hardiyansyah|Politics|2011|Material de lectura con contenido académico y formativo.|3|No Disponible
+9780060198817|India after Gandhi|Ramachandra Guha|Politics|2008|Material de lectura con contenido académico y formativo.|3|No Disponible
+0091944244|A Gentleman in Moscow|Amor Towles|Politics|2016|Material de lectura con contenido académico y formativo.|5|No Disponible
+9788949189543|Prisoners of geography|Tim Marshall|Politics|2016|Obra literaria diseñada para ampliar el conocimiento del lector.|4|No Disponible
+9781530831265|Prince|Niccolò Machiavelli|Politics|2016|Material de lectura con contenido académico y formativo.|5|No Disponible
+1136749772|The Open Society and Its Enemies (1+2)|Karl Popper|Politics|1945|Texto informativo relacionado con conocimientos generales.|4|No Disponible
+0307756890|Rules for radicals|Saul David Alinsky|Politics|1971|Libro educativo y cultural orientado al aprendizaje general.|5|No Disponible
+9781430474838|Der Einzige und sein Eigentum|Max Stirner|Politics|1921|Libro educativo y cultural orientado al aprendizaje general.|4|No Disponible
+9716422229|Philippine history and government|Gregorio F. Zaide|Politics|2002|Material de lectura con contenido académico y formativo.|4|No Disponible
+9780199065127|A concise history of Pakistan|Muḥammad Raz̤? K?ẓmī|Politics|2012|Texto informativo relacionado con conocimientos generales.|4|No Disponible
+9781791733193|Common Sense|Thomas Paine|Politics|1920|Texto informativo relacionado con conocimientos generales.|5|No Disponible
+9789796693092|Pancasila|Roeslan Abdulgani|Politics|1988|Libro educativo y cultural orientado al aprendizaje general.|4|No Disponible
+9780606251624|First They Killed My Father|Loung Ung|Politics|2016|Libro educativo y cultural orientado al aprendizaje general.|2|No Disponible
+0143029916|Understanding Power|Noam Chomsky|Politics|2018|Material de lectura con contenido académico y formativo.|4|No Disponible
+9782910386078|Industrial Society and Its Future|Theodore Kaczynski|Politics|2017|Texto informativo relacionado con conocimientos generales.|5|No Disponible
+0736651063|The Road to Serfdom|Friedrich A. von Hayek|Politics|1944|Obra literaria diseñada para ampliar el conocimiento del lector.|5|No Disponible
+9780341782841|Two Treatises on Government|John Locke|Politics|1794|Libro educativo y cultural orientado al aprendizaje general.|3|No Disponible
+9781305629905|Understanding politics|Thomas M. Magstadt|Politics|2016|Material de lectura con contenido académico y formativo.|4|No Disponible
+SIN-ISBN-0041|Neither trumpets nor drums|Salvador H. Laurel|Politics|1992|Libro educativo y cultural orientado al aprendizaje general.|2|No Disponible
+0393983854|We the people|Benjamin Ginsberg|Politics|2016|Texto informativo relacionado con conocimientos generales.|3|No Disponible
+9789871165131|Du contrat social|Jean-Jacques Rousseau|Politics|1762|Libro educativo y cultural orientado al aprendizaje general.|2|No Disponible
+9780450037665|All the King's Men|Robert Penn Warren|Politics|1946|Obra literaria diseñada para ampliar el conocimiento del lector.|4|No Disponible
+9785170661022|Ма?тер и Маргарита|Михаил ?фана?ьевич Булгаков|Politics|1966|Obra literaria diseñada para ampliar el conocimiento del lector.|5|No Disponible
+SIN-ISBN-0042|Catatan seorang demonstran|Soe, Hok Gie.|Politics|1989|Material de lectura con contenido académico y formativo.|4|No Disponible
+9781473568617|?рхипелаг ГУЛ?Г|?лек?андр И?аевич Солженицын|Politics|1970|Libro educativo y cultural orientado al aprendizaje general.|2|No Disponible
+9780136037187|Political Ideologies|Leon P. Baradat|Politics|1984|Material de lectura con contenido académico y formativo.|2|No Disponible
+0330024531|The Price of My Soul|Bernadette Devlin|Politics|1969|Texto informativo relacionado con conocimientos generales.|3|No Disponible
+9780671541002|First Among Equals|Jeffrey Archer|Politics|1984|Libro educativo y cultural orientado al aprendizaje general.|5|No Disponible
+0547543158|The Origins of Totalitarianism|Hannah Arendt|Politics|1951|Libro educativo y cultural orientado al aprendizaje general.|4|No Disponible
+9781795754613|State and Revolution|Vladimir Il’ich Lenin|Politics|1920|Obra literaria diseñada para ampliar el conocimiento del lector.|5|No Disponible
+146371842X|The Napoleon of Notting Hill|Gilbert Keith Chesterton|Politics|1920|Material de lectura con contenido académico y formativo.|5|No Disponible
+3404127633|Absolute Power|David Baldacci|Politics|2016|Libro educativo y cultural orientado al aprendizaje general.|4|No Disponible
+0007506074|Half of a Yellow Sun|Chimamanda Ngozi Adichie|Politics|2016|Material de lectura con contenido académico y formativo.|4|No Disponible
+9780395327753|The human polity|Kay Lawson|Politics|1984|Material de lectura con contenido académico y formativo.|2|No Disponible
+SIN-ISBN-0043|Dasar-dasar ilmu politik|Miriam Budiardjo|Politics|1972|Texto informativo relacionado con conocimientos generales.|3|No Disponible
+SIN-ISBN-0044|Pengantar ilmu politik|F. Isjwara|Politics|1964|Obra literaria diseñada para ampliar el conocimiento del lector.|5|No Disponible
+0393928659|Looking at Movies|Richard Meran Barsam|Film|2016|Obra literaria diseñada para ampliar el conocimiento del lector.|5|No Disponible
+9780373122004|To Make a Marriage|Carole Mortimer|Film|2001|Material de lectura con contenido académico y formativo.|5|No Disponible
+9780025805002|A short history of the movies|Gerald Mast|Film|1985|Material de lectura con contenido académico y formativo.|3|No Disponible
+9780743493451|Dracula|Bram Stoker|Film|2020|Material de lectura con contenido académico y formativo.|5|No Disponible
+9780263101164|Golden Fever|Carole Mortimer|Film|2017|Texto informativo relacionado con conocimientos generales.|3|No Disponible
+0375420525|House of Leaves|Mark Z. Danielewski|Film|2016|Material de lectura con contenido académico y formativo.|5|No Disponible
+9780063370197|The Celluloid Closet|Vito Russo|Film|1984|Material de lectura con contenido académico y formativo.|2|No Disponible
+9780073514284|The art of watching films|Joseph M. Boggs|Film|2017|Texto informativo relacionado con conocimientos generales.|5|No Disponible
+9185453021|How to Make Love Like a Porn Star|Jenna Jameson|Film|2004|Material de lectura con contenido académico y formativo.|5|No Disponible
+9780723297956|Peppa Pig|Mark Baker|Film|2014|Material de lectura con contenido académico y formativo.|4|No Disponible
+080187386X|Novels into film|George Bluestone|Film|1957|Material de lectura con contenido académico y formativo.|3|No Disponible
+9780786860708|The illusion of life|Frank Thomas Bullen|Film|1995|Material de lectura con contenido académico y formativo.|3|No Disponible
+0714529753|I lost it at the movies|Pauline Kael|Film|1994|Texto informativo relacionado con conocimientos generales.|3|No Disponible
+9781299744455|Film Studies|Amy Villarejo|Film|2021|Libro educativo y cultural orientado al aprendizaje general.|2|No Disponible
+1785659464|Spider-Man|Ramin Zahed|Film|2018|Obra literaria diseñada para ampliar el conocimiento del lector.|4|No Disponible
+1319093590|The Film Experience|Timothy Corrigan|Film|2017|Material de lectura con contenido académico y formativo.|4|No Disponible
+1401308775|Dead Poets Society|N. H. Kleinbaum|Film|1989|Libro educativo y cultural orientado al aprendizaje general.|3|No Disponible
+SIN-ISBN-0045|American Film|American Film Institute|Film|1975|Material de lectura con contenido académico y formativo.|3|No Disponible
+9780452252400|Of mice and magic|Leonard Maltin|Film|1987|Material de lectura con contenido académico y formativo.|5|No Disponible
+9780195033014|Documentary|Erik Barnouw|Film|1992|Obra literaria diseñada para ampliar el conocimiento del lector.|5|No Disponible
+9780241110225|Lulu in Hollywood|Louise Brooks|Film|1987|Obra literaria diseñada para ampliar el conocimiento del lector.|2|No Disponible
+1014304415|The technique of film editing|Karel Reisz|Film|1953|Libro educativo y cultural orientado al aprendizaje general.|5|No Disponible
+9780571165490|On directing film|David Mamet|Film|1992|Material de lectura con contenido académico y formativo.|4|No Disponible
+9781845765002|The anime encyclopedia|Jonathan Clements|Film|2001|Material de lectura con contenido académico y formativo.|3|No Disponible
+8367515196|La planète des singes|Pierre Boulle|Film|1963|Obra literaria diseñada para ampliar el conocimiento del lector.|5|No Disponible
+9780156309202|Film form|Sergei Eisenstein|Film|1957|Material de lectura con contenido académico y formativo.|2|No Disponible
+0671665707|Casino|Nicholas Pileggi|Film|2016|Material de lectura con contenido académico y formativo.|2|No Disponible
+9780131890985|Understanding movies|Louis D. Giannetti|Film|1987|Texto informativo relacionado con conocimientos generales.|3|No Disponible
+1138940925|Cinematography|Blain Brown|Film|2016|Obra literaria diseñada para ampliar el conocimiento del lector.|5|No Disponible
+9788472235618|Film|Samuel Beckett|Film|1968|Texto informativo relacionado con conocimientos generales.|3|No Disponible
+1439170983|Danse Macabre|Stephen King|Film|1980|Texto informativo relacionado con conocimientos generales.|3|No Disponible
+9781135216450|Film theory goes to the movies|Hilary Radner|Film|1993|Libro educativo y cultural orientado al aprendizaje general.|3|No Disponible
+9780062315625|Divergent|Kate Egan|Film|2014|Obra literaria diseñada para ampliar el conocimiento del lector.|4|No Disponible
+9781374817852|Flatland|Edwin Abbott Abbott|Film|1932|Obra literaria diseñada para ampliar el conocimiento del lector.|4|No Disponible
+9780203820513|The monstrous-feminine|Barbara Creed|Film|1993|Obra literaria diseñada para ampliar el conocimiento del lector.|3|No Disponible
+140634009X|Duckling Gets a Cookie?|Mo Willems|Film|2012|Texto informativo relacionado con conocimientos generales.|3|No Disponible
+1579820182|Ferdinand the Bull|Munro Leaf|Film|1938|Libro educativo y cultural orientado al aprendizaje general.|5|No Disponible
+SIN-ISBN-0046|Gravity Falls|Alex Hirsch|Film|2018|Material de lectura con contenido académico y formativo.|2|No Disponible
+9788499088167|Snuff|Chuck Palahniuk|Film|2021|Texto informativo relacionado con conocimientos generales.|4|No Disponible
+1845137140|The world history of animation|Stephen Cavalier|Film|2011|Obra literaria diseñada para ampliar el conocimiento del lector.|5|No Disponible
+1292078111|A short guide to writing about film|Timothy Corrigan|Film|1987|Material de lectura con contenido académico y formativo.|3|No Disponible
+0838616186|The novel and the cinema|Geoffrey Atheling Wagner|Film|1975|Material de lectura con contenido académico y formativo.|5|No Disponible
+9781439105627|Cinematography|J. Kris Malkiewicz|Film|1989|Material de lectura con contenido académico y formativo.|2|No Disponible
+9781407019901|Porno|Irvine Welsh|Film|2017|Obra literaria diseñada para ampliar el conocimiento del lector.|5|No Disponible
+0671545574|Escape to Witch Mountain|Alexander Key|Film|1984|Libro educativo y cultural orientado al aprendizaje general.|5|No Disponible
+087951325X|Horrors!|Drake Douglas|Film|1991|Obra literaria diseñada para ampliar el conocimiento del lector.|3|No Disponible
+0500110123|Divine horsemen|Maya Deren|Film|1984|Libro educativo y cultural orientado al aprendizaje general.|4|No Disponible
+0911137076|Grande illusions|Tom Savini|Film|1994|Obra literaria diseñada para ampliar el conocimiento del lector.|2|No Disponible
+9780801828065|Novels into film|George Bluestone|Film|1968|Texto informativo relacionado con conocimientos generales.|2|No Disponible
+9788428205764|The technique of film animation|John Halas|Film|1959|Obra literaria diseñada para ampliar el conocimiento del lector.|4|No Disponible
+0079111610|Music|Roger Kamien|Music|1976|Texto enfocado en teoría musical y apreciación artística.|5|No Disponible
+9780373110926|No Man's Mistress|Roberta Leigh|Music|1993|Obra relacionada con cultura musical y expresión artística.|4|No Disponible
+9781447222705|Musicophilia|Oliver Sacks|Music|2016|Libro educativo relacionado con composición e interpretación musical.|5|No Disponible
+0205129994|Basic materials in music theory|Paul O. Harder|Music|2018|Texto enfocado en teoría musical y apreciación artística.|2|No Disponible
+9781473888357|Discovering Classical Music|Ian Christians|Music|2016|Texto enfocado en teoría musical y apreciación artística.|2|No Disponible
+9780393966848|The Enjoyment of Music|Kristine Forney|Music|2016|Texto enfocado en teoría musical y apreciación artística.|2|No Disponible
+0340391553|Songwriting|Stephen Citron|Music|1985|Libro educativo relacionado con composición e interpretación musical.|2|No Disponible
+1938073509|How Music Works|David Byrne|Music|2017|Texto enfocado en teoría musical y apreciación artística.|4|No Disponible
+9780073101880|Music in theory and practice|Bruce Benward|Music|1985|Texto enfocado en teoría musical y apreciación artística.|3|No Disponible
+0393099407|The enjoyment of music|Joseph Machlis|Music|1955|Libro educativo relacionado con composición e interpretación musical.|4|No Disponible
+1433207958|The Rest Is Noise|Alex Ross|Music|2007|Obra relacionada con cultura musical y expresión artística.|2|No Disponible
+0393963284|The music kit|Tom Manoff|Music|1984|Libro educativo relacionado con composición e interpretación musical.|3|No Disponible
+9781515908531|Can't stop, won't stop|Jeff Chang|Music|2016|Texto enfocado en teoría musical y apreciación artística.|3|No Disponible
+9780970373908|The Lydian chromatic concept of tonal organization|George Russell|Music|2001|Libro educativo relacionado con composición e interpretación musical.|2|No Disponible
+9781476870748|Pirates of the Caribbean|Klaus Badelt|Music|2009|Material dedicado al aprendizaje y análisis de la música.|4|No Disponible
+0749928751|Love Is a Mix Tape|Rob Sheffield|Music|2010|Texto enfocado en teoría musical y apreciación artística.|3|No Disponible
+9781538745748|Dear Evan Hansen|Steven Levenson|Music|2017|Texto enfocado en teoría musical y apreciación artística.|5|No Disponible
+0393921638|Norton anthology of western music|Claude V. Palisca|Music|2019|Material dedicado al aprendizaje y análisis de la música.|3|No Disponible
+0130269158|All You Need to Know About the Music Business|Donald S. Passman|Music|2019|Obra relacionada con cultura musical y expresión artística.|3|No Disponible
+0825616514|SOLO PLUS|Music Sales Corporation|Music|1998|Obra relacionada con cultura musical y expresión artística.|3|No Disponible
+SIN-ISBN-0047|South Indian music|P Sambamoorthy|Music|1994|Libro educativo relacionado con composición e interpretación musical.|5|No Disponible
+9782259194082|High Fidelity|Nick Hornby|Music|1995|Texto enfocado en teoría musical y apreciación artística.|2|No Disponible
+9781629376363|BTS|Triumph Books|Music|2018|Material dedicado al aprendizaje y análisis de la música.|4|No Disponible
+9780091203207|Music therapy|Juliette Alvin|Music|1984|Obra relacionada con cultura musical y expresión artística.|3|No Disponible
+9780451628800|What to Listen for in Music|Aaron Copland|Music|1953|Material dedicado al aprendizaje y análisis de la música.|5|No Disponible
+0064671682|Music theory|George Thaddeus Jones|Music|1994|Libro educativo relacionado con composición e interpretación musical.|4|No Disponible
+0679728058|The Vintage guide to classical music|Jan Swafford|Music|1992|Material dedicado al aprendizaje y análisis de la música.|5|No Disponible
+9780486243832|Orchestration|Cecil Forsyth|Music|1952|Material dedicado al aprendizaje y análisis de la música.|3|No Disponible
+9781476878584|Wicked|Stephen Schwartz|Music|2000|Texto enfocado en teoría musical y apreciación artística.|5|No Disponible
+9780898796827|Writing better lyrics|Pat Pattison|Music|2009|Libro educativo relacionado con composición e interpretación musical.|4|No Disponible
+0879015497|Listen|Joseph Kerman|Music|1986|Texto enfocado en teoría musical y apreciación artística.|2|No Disponible
+9780811806404|Guitarmaking, tradition and technology|William R. Cumpiano|Music|1985|Material dedicado al aprendizaje y análisis de la música.|5|No Disponible
+0896216926|Elvis and me|Priscilla Beaulieu Presley|Music|2025|Libro educativo relacionado con composición e interpretación musical.|5|No Disponible
+9780749391843|The Commitments|Roddy Doyle|Music|1987|Obra relacionada con cultura musical y expresión artística.|4|No Disponible
+9780143142324|This Is Your Brain on Music|Daniel J. Levitin|Music|2008|Texto enfocado en teoría musical y apreciación artística.|5|No Disponible
+SIN-ISBN-0048|Parthenia in-violata or Mayden-musicke for the Virginall and Bass-viol|N/A|Music|1961|Libro educativo relacionado con composición e interpretación musical.|2|No Disponible
+9780030553189|Anthology for Musical Analysis|Charles Burkhart|Music|1985|Texto enfocado en teoría musical y apreciación artística.|4|No Disponible
+0393091805|Gradus|Leo Kraft|Music|1976|Material dedicado al aprendizaje y análisis de la música.|4|No Disponible
+0263762866|Sparring Partners|Elizabeth Oldfield|Music|1992|Texto enfocado en teoría musical y apreciación artística.|4|No Disponible
+0875161707|The sound of music and plants|Dorothy L. Retallack|Music|1973|Texto enfocado en teoría musical y apreciación artística.|3|No Disponible
+9780889469556|Die Zauberflöte|Wolfgang Amadeus Mozart|Music|1794|Texto enfocado en teoría musical y apreciación artística.|2|No Disponible
+9780060934514|Angry Blonde|Eminem|Music|2000|Texto enfocado en teoría musical y apreciación artística.|5|No Disponible
+0823420272|Ten in the Bed|Cabrera Jane|Music|2006|Obra relacionada con cultura musical y expresión artística.|2|No Disponible
+9780825616495|SOLO PLUS|Music Sales Corporation|Music|1998|Obra relacionada con cultura musical y expresión artística.|4|No Disponible
+9781495096105|Beauty and the Beast|Alan Menken|Music|1992|Libro educativo relacionado con composición e interpretación musical.|4|No Disponible
+1838858156|Blues people|Amiri Baraka|Music|2017|Obra relacionada con cultura musical y expresión artística.|5|No Disponible
+SIN-ISBN-0049|The splendour of South Indian music|P. T. Chelladurai|Music|2000|Libro educativo relacionado con composición e interpretación musical.|5|No Disponible
+0190843594|The Pop, Rock, and Soul Reader|David Brackett|Music|2019|Material dedicado al aprendizaje y análisis de la música.|5|No Disponible
+5552333462|Harry Potter and the Chamber of Secrets|John Williams|Music|2003|Material dedicado al aprendizaje y análisis de la música.|4|No Disponible
+9781405617093|The Prestige|Christopher Priest|Music|1995|Material dedicado al aprendizaje y análisis de la música.|4|No Disponible
+1963349032|$100M Offers|Alex Hormozi|Education|2024|Libro educativo y cultural orientado al aprendizaje general.|2|No Disponible
+9786029822632|Manajemen keuangan|Rahmini Hadi|Education|2011|Material de lectura con contenido académico y formativo.|5|No Disponible
+9795260855|Ilmu pendidikan Islam|Zakiah Daradjat|Education|1992|Obra literaria diseñada para ampliar el conocimiento del lector.|5|No Disponible
+9781441421173|Democracy and Education|John Dewey|Education|1921|Libro educativo y cultural orientado al aprendizaje general.|5|No Disponible
+9780986011955|The art of self-directed learning|Blake Boles|Education|2014|Libro educativo y cultural orientado al aprendizaje general.|2|No Disponible
+9780140135534|Pedagogia do Oprimido|Paulo Freire|Education|1985|Material de lectura con contenido académico y formativo.|5|No Disponible
+9780133972061|Educational research|L. R. Gay|Education|1976|Obra literaria diseñada para ampliar el conocimiento del lector.|5|No Disponible
+9780345305831|The secret of childhood|Maria Montessori|Education|1995|Libro educativo y cultural orientado al aprendizaje general.|2|No Disponible
+0297870920|I am Malala|Malala Yousafzai|Education|2016|Texto informativo relacionado con conocimientos generales.|3|No Disponible
+9781963349115|$100M Leads|Alex Hormozi|Education|2024|Material de lectura con contenido académico y formativo.|4|No Disponible
+0345257898195|Metodo de la pedagogia scientifica|Maria Montessori|Education|1920|Material de lectura con contenido académico y formativo.|4|No Disponible
+602229018X|Pendidikan karakter|Agus Wibowo|Education|2012|Material de lectura con contenido académico y formativo.|2|No Disponible
+9781646110643|The Spell Book for New Witches|Ambrosia Hawthorn|Education|2020|Obra literaria diseñada para ampliar el conocimiento del lector.|4|No Disponible
+SIN-ISBN-0050|ḥa- Hinukh ha-dati ṿeha-neṭiyah le-haḥmir|N/A|Education|1996|Obra literaria diseñada para ampliar el conocimiento del lector.|2|No Disponible
+9780132613163|Educational psychology|Anita Woolfolk Hoy|Education|1987|Material de lectura con contenido académico y formativo.|5|No Disponible
+9780674986572|Make It Stick|Peter C. Brown|Education|2014|Material de lectura con contenido académico y formativo.|3|No Disponible
+9783406392320|Deschooling Society|Ivan Illich|Education|1984|Texto informativo relacionado con conocimientos generales.|2|No Disponible
+9781631619854|Unlimited Memory|Kevin Horsley|Education|2016|Libro educativo y cultural orientado al aprendizaje general.|4|No Disponible
+9780440500841|The absorbent mind|Maria Montessori|Education|1984|Obra literaria diseñada para ampliar el conocimiento del lector.|5|No Disponible
+0316068225|This is water|David Foster Wallace|Education|2009|Texto informativo relacionado con conocimientos generales.|4|No Disponible
+0133747239|Comprehensive classroom management|Vernon Jones|Education|1986|Obra literaria diseñada para ampliar el conocimiento del lector.|3|No Disponible
+2070333930|Boy|Roald Dahl|Education|1984|Obra literaria diseñada para ampliar el conocimiento del lector.|4|No Disponible
+0747506892|Word Power Made Easy|Norman Lewis|Education|1949|Libro educativo y cultural orientado al aprendizaje general.|4|No Disponible
+1940177731|The mis-education of the Negro|Carter Godwin Woodson|Education|1933|Texto informativo relacionado con conocimientos generales.|3|No Disponible
+9780131380875|Curriculum development|Jon Wiles|Education|1984|Material de lectura con contenido académico y formativo.|4|No Disponible
+9780133814262|Teaching and learning with technology|Judy Lever-Duffy|Education|2017|Obra literaria diseñada para ampliar el conocimiento del lector.|4|No Disponible
+2848993502|The Arte of Seduction|Robert Greene|Education|2020|Texto informativo relacionado con conocimientos generales.|5|No Disponible
+9781490460185|Up from Slavery|Booker T. Washington|Education|1923|Texto informativo relacionado con conocimientos generales.|3|No Disponible
+1282463918|Dumbing Us Down|John Taylor Gatto|Education|2017|Texto informativo relacionado con conocimientos generales.|2|No Disponible
+9780132954815|Measurement and Assessment in Teaching|M. David Miller|Education|2008|Obra literaria diseñada para ampliar el conocimiento del lector.|3|No Disponible
+9780008292614|The Dictionary of Body Language|pierre dukan|Education|2018|Obra literaria diseñada para ampliar el conocimiento del lector.|5|No Disponible
+9780958854344|If you want to be rich and happy, don't go to school?|Robert T. Kiyosaki|Education|1993|Libro educativo y cultural orientado al aprendizaje general.|3|No Disponible
+9780816491322|Pedagogy of the Oppressed|Paulo Freire|Education|2017|Material de lectura con contenido académico y formativo.|3|No Disponible
+0738384704|NYC Quote|Booksource|Education|2023|Libro educativo y cultural orientado al aprendizaje general.|5|No Disponible
+0020136609|Experience and education|John Dewey|Education|1938|Libro educativo y cultural orientado al aprendizaje general.|3|No Disponible
+9780415471367|Multicultural Education|James A. Banks|Education|1988|Texto informativo relacionado con conocimientos generales.|2|No Disponible
+9781562650636|Children's missionary library|Vernon Linwood Howard|Education|1984|Texto informativo relacionado con conocimientos generales.|5|No Disponible
+0460873806|Emile or Education|Jean-Jacques Rousseau|Education|1762|Obra literaria diseñada para ampliar el conocimiento del lector.|2|No Disponible
+9780130131416|Historical and Philosophical Foundations of Education|Gerald L. Gutek|Education|1996|Texto informativo relacionado con conocimientos generales.|5|No Disponible
+9780226820316|Basic principles of curriculum and instruction|Ralph W. Tyler|Education|1971|Libro educativo y cultural orientado al aprendizaje general.|5|No Disponible
+9780716601890|Childcraft|World Book|Education|1985|Libro educativo y cultural orientado al aprendizaje general.|2|No Disponible
+9781836680543|Foundations of Bilingual Education and Bilingualism|Colin Baker|Education|2017|Libro educativo y cultural orientado al aprendizaje general.|2|No Disponible
+9781457312199|Official SAT Study Guide 2020 Edition|The College Board|Education|2019|Libro educativo y cultural orientado al aprendizaje general.|5|No Disponible
+9795141740|Ilmu pendidikan  Islam|Ahmad Tafsir|Education|1992|Material de lectura con contenido académico y formativo.|2|No Disponible
+0132368862|Educational Psicología|Robert E. Slavin|Education|1986|Libro educativo y cultural orientado al aprendizaje general.|2|No Disponible
+9780810610743|Cooperative learning|Robert E. Slavin|Education|1987|Material de lectura con contenido académico y formativo.|3|No Disponible
+0321084055|A taxonomy for learning, teaching, and assessing|Lorin W. Anderson|Education|2000|Material de lectura con contenido académico y formativo.|2|No Disponible
+0020662300|The Abolition of Man|C. S. Lewis|Education|1978|Texto informativo relacionado con conocimientos generales.|3|No Disponible
+0816491135|Education For Critical Consciousness (Continuum Impacts)|Paulo Freire|Education|2021|Obra literaria diseñada para ampliar el conocimiento del lector.|5|No Disponible
+0909698147|Nurtured by Love|Shinichi Suzuki|Education|1986|Obra literaria diseñada para ampliar el conocimiento del lector.|3|No Disponible
+9781638081968|Reminders of Him|Colleen Hoover|Literature|2022|Libro educativo y cultural orientado al aprendizaje general.|2|No Disponible
+9501702162|El Profeta|Kahlil Gibran|Literature|1900|Libro educativo y cultural orientado al aprendizaje general.|4|No Disponible
+0393946789|The Norton Anthology of English Literature|M. H. Abrams|Literature|1986|Texto informativo relacionado con conocimientos generales.|2|No Disponible
+9798654173478|कामसूत?र|Vatsyāyana|Literature|1883|Libro educativo y cultural orientado al aprendizaje general.|3|No Disponible
+1955762090|The Yellow Wallpaper|Charlotte Perkins Gilman|Literature|1973|Libro educativo y cultural orientado al aprendizaje general.|3|No Disponible
+9768014318|Social studies Guyana|N/A|Literature|2000|Libro educativo y cultural orientado al aprendizaje general.|2|No Disponible
+9789021464206|It Happened One Summer|Tessa Bailey|Literature|2025|Texto informativo relacionado con conocimientos generales.|5|No Disponible
+2012353231|Forbidden knowledge|Roger Shattuck|Literature|1996|Material de lectura con contenido académico y formativo.|5|No Disponible
+9789870404613|Rich Dad, Poor Dad for Teens|Robert T. Kiyosaki|Literature|2016|Texto informativo relacionado con conocimientos generales.|4|No Disponible
+8194808812|Gunaho ka Devta|N/A|Literature|2020|Material de lectura con contenido académico y formativo.|4|No Disponible
+1417686146|A Game of You|Neil Gaiman|Literature|2017|Texto informativo relacionado con conocimientos generales.|4|No Disponible
+1419764195|How to Kill Your Family|Bella Mackie|Literature|2024|Libro educativo y cultural orientado al aprendizaje general.|3|No Disponible
+0233955569|On The Road|Jack Kerouac|Literature|1957|Obra literaria diseñada para ampliar el conocimiento del lector.|5|No Disponible
+1398725188|Once You’re Mine|Morgan Bridges|Literature|2024|Obra literaria diseñada para ampliar el conocimiento del lector.|5|No Disponible
+0143445901|Something I Never Told You|Shravya Bhinder|Literature|2019|Texto informativo relacionado con conocimientos generales.|5|No Disponible
+SIN-ISBN-0051|Die Irrthümer des Romanismus, auf ihren Ursprung in der menschlichen Natur zurückgeführt|Richard Whately|Literature|1833|Texto informativo relacionado con conocimientos generales.|4|No Disponible
+9788377583050|Animal Farm|George Orwell|Literature|1945|Texto informativo relacionado con conocimientos generales.|2|No Disponible
+9780786114245|Das Schloß|Franz Kafka|Literature|1926|Material de lectura con contenido académico y formativo.|4|No Disponible
+9780143432821|The Magic of the Lost Temple|Sudha Murti|Literature|2022|Libro educativo y cultural orientado al aprendizaje general.|3|No Disponible
+6020531325|Seporsi mie ayam sebelum mati|Brian Khrisna|Literature|2025|Texto informativo relacionado con conocimientos generales.|3|No Disponible
+1542094089|400 Days|Chetan Bhagat|Literature|2021|Material de lectura con contenido académico y formativo.|5|No Disponible
+1477633456|Robin Hood|Howard Pyle|Literature|1923|Obra literaria diseñada para ampliar el conocimiento del lector.|2|No Disponible
+1404814434|Shapes in the Sky|Josepha Sherman|Literature|2021|Material de lectura con contenido académico y formativo.|2|No Disponible
+9781484455296|The Tiny Seed|Eric Carle|Literature|1970|Material de lectura con contenido académico y formativo.|2|No Disponible
+3498063189|Ensaio Sobre a Cegueira|José Saramago|Literature|1995|Libro educativo y cultural orientado al aprendizaje general.|3|No Disponible
+2070333930|Boy|Roald Dahl|Literature|1984|Obra literaria diseñada para ampliar el conocimiento del lector.|5|No Disponible
+9781728206141|Boyfriend Material|Alexis Hall|Literature|2020|Obra literaria diseñada para ampliar el conocimiento del lector.|3|No Disponible
+9781789559460|2am Thoughts|Makenzie Campbell|Literature|2017|Obra literaria diseñada para ampliar el conocimiento del lector.|3|No Disponible
+8501085294|Vidas secas|Graciliano Ramos de Oliveira|Literature|2018|Texto informativo relacionado con conocimientos generales.|4|No Disponible
+85940612|Sastra dan ilmu sastra ; pengantar teori sastra|A. Teeuw|Literature|1984|Material de lectura con contenido académico y formativo.|3|No Disponible
+0063316382|Nearly All the Men in Lagos Are Mad|Damilare Kuku|Literature|2024|Obra literaria diseñada para ampliar el conocimiento del lector.|3|No Disponible
+9781710859119|The Awakening|Kate Chopin|Literature|1964|Texto informativo relacionado con conocimientos generales.|4|No Disponible
+1795194294|The Waves|Virginia Woolf|Literature|1931|Material de lectura con contenido académico y formativo.|2|No Disponible
+9781613837641|Me on the map|Joan Sweeney|Literature|2018|Libro educativo y cultural orientado al aprendizaje general.|3|No Disponible
+0778389448|Local Woman Missing|Mary Kubica|Literature|2021|Texto informativo relacionado con conocimientos generales.|5|No Disponible
+1324063084|The Norton Anthology of World Literature|Martin Puchner|Literature|2018|Material de lectura con contenido académico y formativo.|5|No Disponible
+9781407034881|Lords and Ladies|Terry Pratchett|Literature|1992|Obra literaria diseñada para ampliar el conocimiento del lector.|5|No Disponible
+9781588274403|Aesop's Fables|Aesop|Literature|1921|Obra literaria diseñada para ampliar el conocimiento del lector.|2|No Disponible
+9789531968812|The Giver|Lois Lowry|Literature|1993|Obra literaria diseñada para ampliar el conocimiento del lector.|2|No Disponible
+9780795309427|A Room of One's Own|Virginia Woolf|Literature|1929|Material de lectura con contenido académico y formativo.|4|No Disponible
+1667300016|Animal Farm / Nineteen Eighty-Four|George Orwell|Literature|2016|Libro educativo y cultural orientado al aprendizaje general.|3|No Disponible
+9798604416242|Tender is the Night|F. Scott Fitzgerald|Literature|1933|Libro educativo y cultural orientado al aprendizaje general.|2|No Disponible
+9781542690379|Пре?тупление и наказание|Фёдор Михайлович До?тоев?кий|Literature|1866|Material de lectura con contenido académico y formativo.|3|No Disponible
+1665113200|The conspiracy against the human race|Thomas Ligotti|Literature|2010|Obra literaria diseñada para ampliar el conocimiento del lector.|5|No Disponible
+9781101137185|The Fountainhead|Ayn Rand|Literature|1943|Obra literaria diseñada para ampliar el conocimiento del lector.|5|No Disponible
+0874810434|Bhagavad-Gita|Vyasa|Literature|1944|Texto informativo relacionado con conocimientos generales.|3|No Disponible
+9781787378636|Moby Dick|Herman Melville|Literature|1851|Material de lectura con contenido académico y formativo.|4|No Disponible
+3492309402|The Score|Elle Kennedy|Literature|2016|Texto informativo relacionado con conocimientos generales.|2|No Disponible
+8804425547|Le città invisibili|Italo Calvino|Literature|1984|Material de lectura con contenido académico y formativo.|4|No Disponible
+9780593874387|Tearsmith|Erin Doom|Literature|2024|Libro educativo y cultural orientado al aprendizaje general.|4|No Disponible
+124789124|Batman|Alfred|Classics|2019|Las increibles Aventuras de Batman y el chico Maravilla Robin|4|Disponible a Prestamo
+12481429|El arte de Amar|Omar Valdelomar|Philosophy|2015|Un texto literario que habra de la aventura de 2 niños por ecnontrar a sus perros|3|Disponible a Prestamo
+9870|2da guerra|pepe|History|1940|historia|3|Disponible a Prestamo

@@ -1,0 +1,4 @@
+978-1234567890|Cien años de soledad|A-001|Gabriel Garcia Marquezi|C-01|Novela|1967|Realismo mágico en Macondo|10|No Disponible|Fisico|Estante-1|http://biblioteca.com/cien_anos
+978-0987654321|La ciudad y los perros|A-002|Mario Vargas Llosa|C-01|Novela|1963|Primera novela de Vargas Llosa|5|No Disponible|Fisico|Estante-2|http://biblioteca.com/ciudad_perros
+978-1111111111|El amor en los tiempos del cólera|A-001|Gabriel Garcia Marquezi|C-01|Novela|1985|Historia de amor en Cartagena|7|No Disponible|Digital|Estante-3|http://biblioteca.com/amor_colera
+978-2222222222|Conversación en La Catedral|A-002|Mario Vargas Llosa|C-01|Novela|1969|Novela política peruana|4|No Disponible|Fisico|Estante-4|http://biblioteca.com/conversacion_catedral

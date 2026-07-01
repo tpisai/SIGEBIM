@@ -1,0 +1,3 @@
+U-0001|Jose|12345678|jose@gmail.com|josev|1234|Bibliotecario|true
+U-1|isai|123412|isai@gmail.com|admin|123|Administrador|true
+U-2|nick|1234126|isai2@gmail.com|biblio|123|Bibliotecario|true
