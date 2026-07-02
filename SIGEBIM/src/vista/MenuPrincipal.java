@@ -11,7 +11,7 @@ import javax.swing.JInternalFrame;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import modelo.persona.Usuario;
-import vista.Panel.RegistrarUsuario;
+import vista.Panel.GestionarUsuario;
 
 /**
  *
@@ -51,10 +51,13 @@ public class MenuPrincipal extends JFrame {
             case ADMINISTRADOR:
                 break;
             case BIBLIOTECARIO:
+                menuUsuarios.setVisible(false);
+                menuReportes.setVisible(false);
                 break;
             case LECTOR:
                 menuUsuarios.setVisible(false);
                 menuLibros.setVisible(false);
+                menuReportes.setVisible(false);
                 break;
         }
     }
@@ -259,7 +262,7 @@ public class MenuPrincipal extends JFrame {
     }//GEN-LAST:event_ItemGestionLibrosActionPerformed
 
     private void ItemGestionUsuariosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ItemGestionUsuariosActionPerformed
-        mostrarModulo(new RegistrarUsuario(usuario.getRol().getTexto()), "Gestionar Usuarios");
+        
     }//GEN-LAST:event_ItemGestionUsuariosActionPerformed
 
     private void ItemGestionPrestamoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ItemGestionPrestamoActionPerformed

@@ -21,6 +21,7 @@ public class ArchivoUsuario {
                     u.getNombre() + "|" +
                     u.getDni() + "|" +
                     u.getCorreo() + "|" +
+                    u.getCelular() + "|" +
                     u.getUsername() + "|" +
                     u.getPassword() + "|" +
                     u.getRol().getTexto() + "|" +
@@ -41,12 +42,12 @@ public class ArchivoUsuario {
                     continue;
                 }
                 String[] datos = linea.split("\\|");
-                if (datos.length < 8) {
+                if (datos.length < 9) {
                     System.out.println("Registro inválido ignorado: " + linea);
                     continue;
                 }
-                Usuario u = new Usuario(datos[0], datos[1], datos[2], datos[3], datos[4], datos[5], RolUsuario.desdeTexto(datos[6]));
-                u.setActivo(Boolean.parseBoolean(datos[7]));
+                Usuario u = new Usuario(datos[0], datos[1], datos[2], datos[3], datos[4], datos[5], datos[6], RolUsuario.desdeTexto(datos[7]));
+                u.setActivo(Boolean.parseBoolean(datos[8]));
                 lista.add(u);
             }
         }catch(IOException e){

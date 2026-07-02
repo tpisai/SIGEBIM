@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/SIGEBIM/SIGEBIM/src/vista/Panel/GestionLibro.java</file>
+            <file>file:/C:/SIGEBIM/SIGEBIM/src/servicios/usuarios/LoginService.java</file>
+            <file>file:/C:/SIGEBIM/SIGEBIM/src/vista/LoginForm.java</file>
+            <file>file:/C:/SIGEBIM/SIGEBIM/src/servicios/usuarios/UsuarioService.java</file>
+            <file>file:/C:/SIGEBIM/SIGEBIM/src/modelo/persona/Persona.java</file>
+            <file>file:/C:/SIGEBIM/SIGEBIM/src/vista/MenuPrincipal.java</file>
+            <file>file:/C:/SIGEBIM/SIGEBIM/src/modelo/persona/PersonaReniec.java</file>
+            <file>file:/C:/SIGEBIM/SIGEBIM/src/vista/Panel/GestionarAutor.java</file>
+            <file>file:/C:/SIGEBIM/SIGEBIM/src/vista/RegistrarUsuario.java</file>
+            <file>file:/C:/SIGEBIM/SIGEBIM/src/servicios/libros/CategoriaService.java</file>
+            <file>file:/C:/SIGEBIM/SIGEBIM/src/servicios/libros/AutorService.java</file>
+            <file>file:/C:/SIGEBIM/SIGEBIM/src/archivos/ArchivoUsuario.java</file>
+            <file>file:/C:/SIGEBIM/SIGEBIM/src/vista/Panel/GestionarUsuario.java</file>
+            <file>file:/C:/SIGEBIM/SIGEBIM/src/modelo/persona/Usuario.java</file>
+            <file>file:/C:/SIGEBIM/SIGEBIM/src/vista/Panel/GestionarCategoria.java</file>
+            <file>file:/C:/SIGEBIM/SIGEBIM/src/servicios/usuarios/DniService.java</file>
+            <file>file:/C:/SIGEBIM/SIGEBIM/src/servicios/usuarios/AdminUsuarioService.java</file>
+        </group>
+    </open-files>
+</project-private>

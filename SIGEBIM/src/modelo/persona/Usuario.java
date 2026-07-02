@@ -11,14 +11,13 @@ public class Usuario extends Persona {
         super();
         rol = RolUsuario.LECTOR;
     }
-    
-    public Usuario(String codigo, String nombre, String dni, String correo, String username, String password, RolUsuario rol) {
-        super(codigo, nombre, dni, correo);
+    //Constructor
+    public Usuario(String codigo, String nombre, String dni, String correo, String celular, String username, String password, RolUsuario rol) {
+        super(codigo, nombre, dni, correo, celular);
         this.username = username;
         this.password = password;
         this.rol = rol;
     }
-
      // Métodos para definir rol
     public boolean esAdministrador() {
         return rol == RolUsuario.ADMINISTRADOR;
