@@ -23,14 +23,14 @@ public class GestionarCategoria extends javax.swing.JPanel {
     private String id, nombre;
     DefaultListModel<String> modelo = new DefaultListModel<>();
     CategoriaService servicio = new CategoriaService();
-    private void CargarCategorias(){
+    private void cargarCategorias(){
         modelo.clear();
         for (Categoria a : servicio.listar()) {
             modelo.addElement(a.getId() + " - " + a.getNombre());
         }
         lstCategorias.setModel(modelo);
     }
-    private void Busqueda(){
+    private void busqueda(){
         txtBuscar.getDocument().addDocumentListener(new DocumentListener() {
             private void filtrar() {
                 String texto = txtBuscar.getText().trim().toLowerCase();
@@ -56,20 +56,21 @@ public class GestionarCategoria extends javax.swing.JPanel {
             }
         });
     }
-    private void ObtenerDatos(){
+    private void obtenerDatos(){
         id = txtIdCategoria.getText().trim();
         nombre = txtNombreCategoria.getText().trim();
     }
-    private void Limpiar(){
+    private void limpiar(){
         txtIdCategoria.setText(null);
         txtNombreCategoria.setText(null);
         txtBuscar.setText(null);
         txtIdCategoria.requestFocus();
+        cargarCategorias();
     }
     public GestionarCategoria() {
         initComponents();
-        CargarCategorias();
-        Busqueda();
+        cargarCategorias();
+        busqueda();
     }
 
     /**
@@ -307,11 +308,10 @@ public class GestionarCategoria extends javax.swing.JPanel {
     }//GEN-LAST:event_lstCategoriasValueChanged
 
     private void btnAgregarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAgregarActionPerformed
-        ObtenerDatos();
+        obtenerDatos();
         try{
             servicio.registrar(new Categoria(id,nombre));
-            CargarCategorias();
-            Limpiar();
+            limpiar();
         } catch (IllegalArgumentException ex){
                 JOptionPane.showMessageDialog(this,
                 ex.getMessage(),"Error",JOptionPane.ERROR_MESSAGE);
@@ -328,10 +328,9 @@ public class GestionarCategoria extends javax.swing.JPanel {
                     + "Recuerda que esto se repercutira en todos sus libros asociados", 
                     "Confirmar Edicion",JOptionPane.YES_NO_OPTION);
                 if (opcion == JOptionPane.YES_OPTION) {
-                    ObtenerDatos();
+                    obtenerDatos();
                     servicio.actualizar(index, new Categoria(id, nombre));
-                    CargarCategorias();
-                    Limpiar();
+                    limpiar();
                 }
             }
         } catch (IllegalArgumentException ex){
@@ -351,8 +350,7 @@ public class GestionarCategoria extends javax.swing.JPanel {
                 boolean eliminado = servicio.eliminar(index);
                 if (eliminado) {
                     JOptionPane.showMessageDialog(this, "Se borro correctamente la categoria: " + seleccionado);
-                    CargarCategorias();
-                    Limpiar();
+                    limpiar();
                 } else {
                     JOptionPane.showMessageDialog(this,"No se puede eliminar: la categoria tiene libros asociados.");
                 }
@@ -361,8 +359,7 @@ public class GestionarCategoria extends javax.swing.JPanel {
     }//GEN-LAST:event_btnEliminarActionPerformed
 
     private void btnMostrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMostrarActionPerformed
-        CargarCategorias();
-        Limpiar();
+        limpiar();
     }//GEN-LAST:event_btnMostrarActionPerformed
 
 

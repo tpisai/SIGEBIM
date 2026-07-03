@@ -40,7 +40,7 @@ public class DniService {
             int codigo = con.getResponseCode();
             if(codigo!=200){
                 return new PersonaReniec(false,
-                        "DNI no encontrado.");
+                        "DNI no esta registrado en la base de datos de la RENIEC.");
             }
             //Hacer llamado y completar datos de PersonaReniec
             BufferedReader in = new BufferedReader(new InputStreamReader(con.getInputStream()));

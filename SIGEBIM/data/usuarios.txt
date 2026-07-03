@@ -1,4 +1,1 @@
-U-003|ISAI NICK SANCHEZ CRUZ|60972272|tpisai@gmail.com|983192987|isai|1234|Lector|true
-U-0001|Jose|12345678|jose@gmail.com|984751231|josev|1234|Bibliotecario|true
-U-1|isai|123412|isai@gmail.com|908742123|admin|123|Administrador|true
-U-2|nick|1234126|isai2@gmail.com|961236741|biblio|123|Bibliotecario|true
+U-001|ISAI NICK SANCHEZ CRUZ|60972272|tpisai43@gmail.com|983192987|admin|123|Administrador|true

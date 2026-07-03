@@ -23,14 +23,14 @@ public class GestionarAutor extends javax.swing.JPanel {
     private String id, nombre;
     DefaultListModel<String> modelo = new DefaultListModel<>();
     AutorService servicio = new AutorService();
-    private void CargarAutores(){
+    private void cargarAutores(){
         modelo.clear();
         for (Autor a : servicio.listar()) {
             modelo.addElement(a.getId() + " - " + a.getNombre());
         }
         lstAutores.setModel(modelo);
     }
-    private void Busqueda(){
+    private void busqueda(){
         txtBuscar.getDocument().addDocumentListener(new DocumentListener() {
             private void filtrar() {
                 String texto = txtBuscar.getText().trim().toLowerCase();
@@ -56,20 +56,21 @@ public class GestionarAutor extends javax.swing.JPanel {
             }
         });
     }
-    private void ObtenerDatos(){
+    private void obtenerDatos(){
         id = txtIdAutor.getText().trim();
         nombre = txtNombreAutor.getText().trim();
     }
-    private void Limpiar(){
+    private void limpiar(){
         txtIdAutor.setText(null);
         txtNombreAutor.setText(null);
         txtBuscar.setText(null);
         txtIdAutor.requestFocus();
+        cargarAutores();
     }
     public GestionarAutor() {
         initComponents();
-        CargarAutores();
-        Busqueda();
+        cargarAutores();
+        busqueda();
     }
     /**
      * This method is called from within the constructor to initialize the form.
@@ -275,11 +276,10 @@ public class GestionarAutor extends javax.swing.JPanel {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnAgregarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAgregarActionPerformed
-        ObtenerDatos();
+        obtenerDatos();
         try{
             servicio.registrar(new Autor(id,nombre));
-            CargarAutores();
-            Limpiar();
+            limpiar();
             } catch (IllegalArgumentException ex){
                 JOptionPane.showMessageDialog(this,
                 ex.getMessage(),"Error",JOptionPane.ERROR_MESSAGE);
@@ -296,10 +296,9 @@ public class GestionarAutor extends javax.swing.JPanel {
                         + "Recuerda que esto se repercutira en todos sus libros asociados",
                         "Confirmar edición",JOptionPane.YES_NO_OPTION);
                 if (opcion == JOptionPane.YES_OPTION) {
-                    ObtenerDatos();
+                    obtenerDatos();
                     servicio.actualizar(index,new Autor(id,nombre));
-                    CargarAutores();
-                    Limpiar();
+                    limpiar();
                 }
             }
         } catch (IllegalArgumentException ex) {
@@ -319,8 +318,7 @@ public class GestionarAutor extends javax.swing.JPanel {
                 boolean eliminado = servicio.eliminar(index);
                 if (eliminado) {
                     JOptionPane.showMessageDialog(this, "Se borro correctamente al autor: " + seleccionado);
-                    CargarAutores();
-                    Limpiar();
+                    limpiar();
                 } else {
                     JOptionPane.showMessageDialog(this,"No se puede eliminar: el autor tiene libros asociados.");
                 }
@@ -340,8 +338,7 @@ public class GestionarAutor extends javax.swing.JPanel {
     }//GEN-LAST:event_lstAutoresValueChanged
 
     private void btnMostrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMostrarActionPerformed
-        CargarAutores();
-        Limpiar();
+        limpiar();
     }//GEN-LAST:event_btnMostrarActionPerformed
 
 

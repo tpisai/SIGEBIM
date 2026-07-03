@@ -26,13 +26,13 @@ public class GestionLibros extends JInternalFrame {
     ArchivoLibro archivo = new ArchivoLibro();
     ArchivoLog log = new ArchivoLog();
     
-    private void LlenarComboFiltro(){
+    private void llenarComboFiltro(){
         cboBusquedaEspecifica.removeAllItems();
         cboBusquedaEspecifica.addItem("ISBN");
         cboBusquedaEspecifica.addItem("Titulo");
         cboBusquedaEspecifica.addItem("Autor");
     }
-    private void LlenarTable(){
+    private void llenarTable(){
         DefaultTableModel modeloTabla = new DefaultTableModel(){
             //No poder editar en la tabla Libro
             @Override   
@@ -81,8 +81,8 @@ public class GestionLibros extends JInternalFrame {
     public GestionLibros() {
         initComponents();
         setClosable(false);
-        LlenarComboFiltro();
-        LlenarTable();
+        llenarComboFiltro();
+        llenarTable();
         listaLibros = archivo.cargarLibros();
         mostrarLista(listaLibros);
     }

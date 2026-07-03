@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package vista;
+package vista.Panel;
 
 import vista.Panel.GestionarCategoria;
 import vista.Panel.GestionarAutor;
@@ -11,6 +11,9 @@ import javax.swing.JInternalFrame;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import modelo.persona.Usuario;
+import vista.GestionLibros;
+import vista.GestionPrestamo;
+import vista.LoginForm;
 import vista.Panel.GestionarUsuario;
 
 /**
@@ -102,10 +105,10 @@ public class MenuPrincipal extends JFrame {
 
         jLabel1.setBackground(new java.awt.Color(0, 0, 150));
         jLabel1.setFont(new java.awt.Font("Ravie", 2, 72)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(0, 95, 115));
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("SIGEBIM");
 
-        jLabel2.setForeground(new java.awt.Color(0, 95, 115));
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("Sistema de Gestion Bibliotecaria Municipal :)");
 
         Ventana.setLayer(jLabel1, javax.swing.JLayeredPane.DEFAULT_LAYER);
@@ -116,14 +119,14 @@ public class MenuPrincipal extends JFrame {
         VentanaLayout.setHorizontalGroup(
             VentanaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(VentanaLayout.createSequentialGroup()
-                .addContainerGap(351, Short.MAX_VALUE)
+                .addContainerGap(447, Short.MAX_VALUE)
                 .addGroup(VentanaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, VentanaLayout.createSequentialGroup()
                         .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 418, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(314, 314, 314))
+                        .addGap(386, 386, 386))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, VentanaLayout.createSequentialGroup()
                         .addComponent(jLabel2)
-                        .addGap(408, 408, 408))))
+                        .addGap(470, 470, 470))))
         );
         VentanaLayout.setVerticalGroup(
             VentanaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -262,7 +265,7 @@ public class MenuPrincipal extends JFrame {
     }//GEN-LAST:event_ItemGestionLibrosActionPerformed
 
     private void ItemGestionUsuariosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ItemGestionUsuariosActionPerformed
-        
+        mostrarModulo(new GestionarUsuario(), "Gestionar Usuarios");
     }//GEN-LAST:event_ItemGestionUsuariosActionPerformed
 
     private void ItemGestionPrestamoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ItemGestionPrestamoActionPerformed

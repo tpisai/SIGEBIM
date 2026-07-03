@@ -50,7 +50,7 @@ public class UsuarioService implements Gestionable<Usuario> {
             return new PersonaReniec(false, "El DNI debe tener 8 dígitos.");
         }
         if (existeDni(dni)) {
-            return new PersonaReniec(false, "El DNI ya está registrado.");
+            return new PersonaReniec(false,"El DNI ya esta registrado, porfavor coloque otro");
         }
         PersonaReniec persona = dniService.validarDni(dni);
         if(!persona.isValido()){
@@ -175,7 +175,7 @@ public class UsuarioService implements Gestionable<Usuario> {
         return usuarios.size();
     }
     //Persistencia
-    public void guardarCambios(){
+    protected void guardarCambios(){
         archivo.guardarUsuarios(usuarios);
     }
     public ArrayList<Usuario> listar() {

@@ -4,11 +4,11 @@
  */
 package vista;
 
+import vista.Panel.MenuPrincipal;
 import java.awt.Color;
 import javax.swing.JOptionPane;
 import modelo.persona.Usuario;
 import servicios.usuarios.LoginService;
-import vista.Panel.GestionarUsuario;
 
 /**
  *
@@ -315,7 +315,7 @@ public class LoginForm extends javax.swing.JFrame {
     }//GEN-LAST:event_btnCloseActionPerformed
 
     private void btnRegistrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegistrarActionPerformed
-        GestionarUsuario registrar = new GestionarUsuario();
+        RegistrarUsuario registrar = new RegistrarUsuario();
         registrar.setVisible(true);
         dispose();
     }//GEN-LAST:event_btnRegistrarActionPerformed
