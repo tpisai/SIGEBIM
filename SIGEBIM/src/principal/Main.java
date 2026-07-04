@@ -1,9 +1,5 @@
-
 package principal;
 
-import java.util.ArrayList;
-import modelo.libro.Libro;
-import modelo.prestamo.Prestamo;
 import vista.LoginForm;
 
 /**

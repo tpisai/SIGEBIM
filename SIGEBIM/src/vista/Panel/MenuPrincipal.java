@@ -11,7 +11,6 @@ import javax.swing.JInternalFrame;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import modelo.persona.Usuario;
-import vista.GestionLibros;
 import vista.GestionPrestamo;
 import vista.LoginForm;
 import vista.Panel.GestionarUsuario;
@@ -255,13 +254,7 @@ public class MenuPrincipal extends JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void ItemGestionLibrosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ItemGestionLibrosActionPerformed
-        if(Ventana.getAllFrames().length > 0){
-            JOptionPane.showMessageDialog(this,"Primero cierre la ventana actual.");
-            return;
-        }
-        GestionLibros frm = new GestionLibros();
-        Ventana.add(frm);
-        frm.setVisible(true);
+        mostrarModulo(new GestionLibro(), "Gestionar Libros");
     }//GEN-LAST:event_ItemGestionLibrosActionPerformed
 
     private void ItemGestionUsuariosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ItemGestionUsuariosActionPerformed

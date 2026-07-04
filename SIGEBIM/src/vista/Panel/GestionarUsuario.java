@@ -81,7 +81,7 @@ public class GestionarUsuario extends javax.swing.JPanel {
         tblUsuarios.getColumnModel().getColumn(6).setPreferredWidth(80);  // Password
         tblUsuarios.getColumnModel().getColumn(7).setPreferredWidth(100);  // Rol
         tblUsuarios.getColumnModel().getColumn(8).setPreferredWidth(60);   // Estado
-        tblUsuarios.setRowHeight(25);                             // Filas más cómodas
+        tblUsuarios.setRowHeight(25); // Filas más cómodas
         tblUsuarios.setSelectionMode(ListSelectionModel.SINGLE_SELECTION); // Solo una fila
     }
     
@@ -533,10 +533,11 @@ public class GestionarUsuario extends javax.swing.JPanel {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnBuscar)
-                    .addComponent(cboVariable)
-                    .addComponent(txtBuscar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(cboVariable, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(btnBuscar)
+                        .addComponent(txtBuscar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(10, 10, 10)
                 .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 323, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)

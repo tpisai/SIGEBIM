@@ -1,63 +1,64 @@
 package servicios.libros;
+
 //@author zulmi
+import archivos.ArchivoLibro;
 import java.util.ArrayList;
-import modelo.libro.Libro;
 import modelo.enums.CriterioBusqueda;
+import modelo.enums.TipoLibro;
+import modelo.interfaces.Gestionable;
+import modelo.libro.Libro;
 
-public class LibroService {
-    //Lista estatica: las categorias son valores fijos definidos por el sistema.
-    /*private static final String[] CATEGORIAS = {
-        "Classics",
-        "History",
-        "Science",
-        "Mathematics",
-        "Philosophy",
-        "Psychology",
-        "Sociology",
-        "Art",
-        "Children",
-        "Technology",
-        "Medicine",
-        "Law",
-        "Economics",
-        "Geography",
-        "Religion",
-        "Politics",
-        "Film",
-        "Music",
-        "Education",
-        "Literature"
-    }; Para luego guardar en otra clase o reutilizar los nombres*/
+public class LibroService implements Gestionable<Libro> {
+
     private final ArrayList<Libro> libros;
-
-    public LibroService(ArrayList<Libro> libros) {
-        this.libros = libros;
+    private final ArchivoLibro archivoLibro;
+    // Constructor
+    public LibroService() {
+        archivoLibro = new ArchivoLibro();
+        libros = archivoLibro.cargarLibros();
     }
-    // CRUD
+    //CRUD
+    @Override
     public void registrar(Libro libro) {
-        if (libro == null) {
-            throw new IllegalArgumentException("Libro nulo");
-        }
-        if (libro.getIsbn() !=null) {
-            throw new IllegalArgumentException("ISBN ya registrado");
-        }
-        libros.add(libro);
+        validarLibro(libro, false, null);
+        libros.add(0, libro);
+        archivoLibro.guardarLibros(libros);
     }
-    public boolean actualizar(String isbn, Libro libroNuevo) {
-        for (int i = 0; i < libros.size(); i++) {
-            if (libros.get(i).getIsbn().equalsIgnoreCase(isbn)) {
-                libros.set(i, libroNuevo);
-                return true;
+    
+    @Override
+    public void actualizar(int index, Libro libro) {
+        if (index < 0 || index >= libros.size()) {
+            return;
+        }
+        String isbnOriginal = libros.get(index).getIsbn();
+        validarLibro(libro, true, isbnOriginal);
+        libros.set(index, libro);
+        // Mostrar el actualizado primero
+        Libro actualizado = libros.remove(index);
+        libros.add(0, actualizado);
+        archivoLibro.guardarLibros(libros);
+    }
+    
+    @Override
+    public boolean eliminar(int index) {
+        if (index < 0 || index >= libros.size()) {
+            return false;
+        }
+        libros.remove(index);
+        archivoLibro.guardarLibros(libros);
+        return true;
+    }
+    //Metodos para Busquedas
+    public Libro buscarPorISBN(String isbn) {
+        for (Libro l : libros) {
+            if (l.getIsbn().equalsIgnoreCase(isbn)) {
+                return l;
             }
         }
-        return false;
+        return null;
     }
-    public boolean eliminar(String isbn) {
-        return libros.removeIf(l ->
-                l.getIsbn().equalsIgnoreCase(isbn));
-    }
-    //Busquedas
-    public ArrayList<Libro> buscarGeneral(CriterioBusqueda criterio, String texto) {
+    //Busqueda General
+    public ArrayList<Libro> buscar(CriterioBusqueda criterio, String texto) {
         ArrayList<Libro> resultado = new ArrayList<>();
         for (Libro l : libros) {
             if (l.coincideCon(criterio, texto)) {
@@ -66,25 +67,65 @@ public class LibroService {
         }
         return resultado;
     }
-    public ArrayList<Libro> buscarPorCategoria(String categoria) {
-        ArrayList<Libro> resultado = new ArrayList<>();
-        for (Libro l : libros) {
-            if (l.getCategoria().getNombre().toLowerCase().contains(categoria.toLowerCase())) {
-                resultado.add(l);
+    //Validaciones para no romper los ficheros
+    private void validarLibro(Libro libro,boolean esEdicion,String isbnOriginal) {
+        if (libro == null) {
+            throw new IllegalArgumentException("El libro no puede ser nulo.");
+        }
+        
+        if (libro.getIsbn() == null || libro.getIsbn().trim().isEmpty()) {
+            throw new IllegalArgumentException("Debe ingresar un ISBN.");
+        }
+
+        if (libro.getTitulo() == null || libro.getTitulo().trim().isEmpty()) {
+            throw new IllegalArgumentException("Debe ingresar un título.");
+        }
+
+        if (libro.getAutor() == null) {
+            throw new IllegalArgumentException("Debe seleccionar un autor.");
+        }
+
+        if (libro.getCategoria() == null) {
+            throw new IllegalArgumentException("Debe seleccionar una categoría.");
+        }
+
+        if (libro.getAnioPublicacion() <= 0) {
+            throw new IllegalArgumentException("Ingrese un año válido.");
+        }
+
+        if (libro.getDescripcion() == null || libro.getDescripcion().trim().isEmpty()) {
+            throw new IllegalArgumentException("Debe ingresar una descripción.");
+        }
+
+        if (libro.getStock() < 0) {
+            throw new IllegalArgumentException("El stock no puede ser negativo.");
+        }
+
+        if (libro.getTipoLibro() == TipoLibro.FISICO) {
+            if (libro.getUbicacionEstante() == null || libro.getUbicacionEstante().trim().isEmpty()) {
+                throw new IllegalArgumentException("Debe ingresar la ubicación del estante.");
             }
         }
-        return resultado;
-    }
-    public ArrayList<Libro> listarDisponibles() {
-        ArrayList<Libro> resultado = new ArrayList<>();
-        for (Libro l : libros) {
-            if (l.getStock() > 0) {
-                resultado.add(l);
+
+        if (libro.getTipoLibro() == TipoLibro.DIGITAL) {
+            if (libro.getUrlAcceso() == null || libro.getUrlAcceso().trim().isEmpty()) {
+                throw new IllegalArgumentException("Debe ingresar la URL del libro.");
             }
         }
-        return resultado;
+
+        if (!esEdicion || !libro.getIsbn().equalsIgnoreCase(isbnOriginal)) {
+            if (existeISBN(libro.getIsbn())) {
+                throw new IllegalArgumentException("El ISBN ya está registrado.");
+            }
+        }
     }
-    public int totalLibros() {
-        return libros.size();
+    //Validar ISBN, nuestra base para saber que existe el libro realmente
+    private boolean existeISBN(String isbn) {
+        return buscarPorISBN(isbn) != null;
+    }
+    
+    @Override
+    public ArrayList<Libro> listar() {
+        return new ArrayList<>(libros);
     }
 }

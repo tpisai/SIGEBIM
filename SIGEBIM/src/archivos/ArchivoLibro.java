@@ -60,6 +60,11 @@ public class ArchivoLibro {
                 String[] datos = linea.split("\\|");
                 //Asignar la forma correcta del Objeto Libro
                 //Llamamos a las clases de autor y categoria para rellenar los datos
+                if(datos.length < 13){
+                    System.out.println("Línea inválida:");
+                    System.out.println(linea);
+                    continue;
+                }
                 Autor autor = new Autor(datos[2], datos[3]);
                 Categoria categoria = new Categoria(datos[4],datos[5]);
                 //Libro

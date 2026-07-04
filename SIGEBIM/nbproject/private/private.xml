@@ -3,23 +3,40 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/SIGEBIM/SIGEBIM/src/vista/Panel/GestionLibro.java</file>
+            <file>file:/C:/SIGEBIM/SIGEBIM/src/vista/GestionPrestamo.java</file>
+            <file>file:/C:/SIGEBIM/SIGEBIM/src/modelo/libro/Categoria.java</file>
             <file>file:/C:/SIGEBIM/SIGEBIM/src/servicios/usuarios/LoginService.java</file>
             <file>file:/C:/SIGEBIM/SIGEBIM/src/vista/LoginForm.java</file>
-            <file>file:/C:/SIGEBIM/SIGEBIM/src/servicios/usuarios/UsuarioService.java</file>
-            <file>file:/C:/SIGEBIM/SIGEBIM/src/modelo/persona/Persona.java</file>
-            <file>file:/C:/SIGEBIM/SIGEBIM/src/vista/MenuPrincipal.java</file>
-            <file>file:/C:/SIGEBIM/SIGEBIM/src/modelo/persona/PersonaReniec.java</file>
+            <file>file:/C:/SIGEBIM/SIGEBIM/src/archivos/ArchivoAutor.java</file>
+            <file>file:/C:/SIGEBIM/SIGEBIM/src/modelo/enums/CriterioBusqueda.java</file>
+            <file>file:/C:/SIGEBIM/SIGEBIM/src/modelo/libro/Autor.java</file>
+            <file>file:/C:/SIGEBIM/SIGEBIM/src/vista/GestionLibros.java</file>
             <file>file:/C:/SIGEBIM/SIGEBIM/src/vista/Panel/GestionarAutor.java</file>
             <file>file:/C:/SIGEBIM/SIGEBIM/src/vista/RegistrarUsuario.java</file>
             <file>file:/C:/SIGEBIM/SIGEBIM/src/servicios/libros/CategoriaService.java</file>
-            <file>file:/C:/SIGEBIM/SIGEBIM/src/servicios/libros/AutorService.java</file>
+            <file>file:/C:/SIGEBIM/SIGEBIM/src/modelo/libro/Libro.java</file>
             <file>file:/C:/SIGEBIM/SIGEBIM/src/archivos/ArchivoUsuario.java</file>
+            <file>file:/C:/SIGEBIM/SIGEBIM/src/archivos/ArchivoLibro.java</file>
             <file>file:/C:/SIGEBIM/SIGEBIM/src/vista/Panel/GestionarUsuario.java</file>
-            <file>file:/C:/SIGEBIM/SIGEBIM/src/modelo/persona/Usuario.java</file>
             <file>file:/C:/SIGEBIM/SIGEBIM/src/vista/Panel/GestionarCategoria.java</file>
+            <file>file:/C:/SIGEBIM/SIGEBIM/src/principal/Main.java</file>
+            <file>file:/C:/SIGEBIM/SIGEBIM/src/modelo/enums/TipoLibro.java</file>
+            <file>file:/C:/SIGEBIM/SIGEBIM/src/vista/Panel/GestionLibro.java</file>
+            <file>file:/C:/SIGEBIM/SIGEBIM/src/modelo/enums/EstadoLibro.java</file>
+            <file>file:/C:/SIGEBIM/SIGEBIM/src/modelo/enums/RolUsuario.java</file>
+            <file>file:/C:/SIGEBIM/SIGEBIM/src/servicios/usuarios/UsuarioService.java</file>
+            <file>file:/C:/SIGEBIM/SIGEBIM/src/modelo/persona/Persona.java</file>
+            <file>file:/C:/SIGEBIM/SIGEBIM/src/vista/Panel/MenuPrincipal.java</file>
+            <file>file:/C:/SIGEBIM/SIGEBIM/src/modelo/reporte/Reporte.java</file>
+            <file>file:/C:/SIGEBIM/SIGEBIM/src/modelo/persona/PersonaReniec.java</file>
+            <file>file:/C:/SIGEBIM/SIGEBIM/src/modelo/enums/EstadoPrestamo.java</file>
+            <file>file:/C:/SIGEBIM/SIGEBIM/src/servicios/libros/AutorService.java</file>
+            <file>file:/C:/SIGEBIM/SIGEBIM/src/archivos/ArchivoCategoria.java</file>
+            <file>file:/C:/SIGEBIM/SIGEBIM/src/modelo/persona/Usuario.java</file>
+            <file>file:/C:/SIGEBIM/SIGEBIM/src/modelo/libro/MaterialBiblioteca.java</file>
             <file>file:/C:/SIGEBIM/SIGEBIM/src/servicios/usuarios/DniService.java</file>
             <file>file:/C:/SIGEBIM/SIGEBIM/src/servicios/usuarios/AdminUsuarioService.java</file>
+            <file>file:/C:/SIGEBIM/SIGEBIM/src/servicios/libros/LibroService.java</file>
         </group>
     </open-files>
 </project-private>
