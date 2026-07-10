@@ -1,8 +1,8 @@
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JPanel.java to edit this template
+ * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JInternalFrame.java to edit this template
  */
-package vista.Panel;
+package vista.JInternalFrame;
 
 import javax.swing.DefaultListModel;
 import javax.swing.JOptionPane;
@@ -15,10 +15,10 @@ import servicios.libros.AutorService;
  *
  * @author zulmi
  */
-public class GestionarAutor extends javax.swing.JPanel {
+public class GestionarAutor extends javax.swing.JInternalFrame {
 
     /**
-     * Creates new form GestionarAutor
+     * Creates new form GestionAutor2
      */
     private String id, nombre;
     DefaultListModel<String> modelo = new DefaultListModel<>();
@@ -67,11 +67,16 @@ public class GestionarAutor extends javax.swing.JPanel {
         txtIdAutor.requestFocus();
         cargarAutores();
     }
+    //
+    // Constructor, No Tocar!!
     public GestionarAutor() {
+        super("Gestionar Autor - Seccion Bibliotecario", true, true, true, true);
         initComponents();
         cargarAutores();
         busqueda();
     }
+    //
+    //
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -258,54 +263,41 @@ public class GestionarAutor extends javax.swing.JPanel {
                 .addGap(39, 39, 39))
         );
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 391, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 403, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 313, Short.MAX_VALUE))
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 319, Short.MAX_VALUE)
         );
+
+        pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void lstAutoresValueChanged(javax.swing.event.ListSelectionEvent evt) {//GEN-FIRST:event_lstAutoresValueChanged
+        if (!evt.getValueIsAdjusting()) {
+            int index = lstAutores.getSelectedIndex();
+            if (index != -1) {
+                Autor seleccionado = servicio.listar().get(index);
+                txtIdAutor.setText(seleccionado.getId());
+                txtNombreAutor.setText(seleccionado.getNombre());
+            }
+        }
+    }//GEN-LAST:event_lstAutoresValueChanged
 
     private void btnAgregarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAgregarActionPerformed
         obtenerDatos();
         try{
             servicio.registrar(new Autor(id,nombre));
             limpiar();
-            } catch (IllegalArgumentException ex){
-                JOptionPane.showMessageDialog(this,
-                ex.getMessage(),"Error",JOptionPane.ERROR_MESSAGE);
-        }
-    }//GEN-LAST:event_btnAgregarActionPerformed
-
-    private void btnEditarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEditarActionPerformed
-        int index = lstAutores.getSelectedIndex();
-        try{
-            if(index!=-1){
-                Autor seleccionado = servicio.listar().get(index);
-                int opcion = JOptionPane.showConfirmDialog(this, 
-                        "¿Desea editar al autor: " + seleccionado.getNombre() + "? \n "
-                        + "Recuerda que esto se repercutira en todos sus libros asociados",
-                        "Confirmar edición",JOptionPane.YES_NO_OPTION);
-                if (opcion == JOptionPane.YES_OPTION) {
-                    obtenerDatos();
-                    servicio.actualizar(index,new Autor(id,nombre));
-                    limpiar();
-                }
-            }
-        } catch (IllegalArgumentException ex) {
+        } catch (IllegalArgumentException ex){
             JOptionPane.showMessageDialog(this,
                 ex.getMessage(),"Error",JOptionPane.ERROR_MESSAGE);
         }
-    }//GEN-LAST:event_btnEditarActionPerformed
+    }//GEN-LAST:event_btnAgregarActionPerformed
 
     private void btnEliminarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEliminarActionPerformed
         int index = lstAutores.getSelectedIndex();
@@ -326,20 +318,30 @@ public class GestionarAutor extends javax.swing.JPanel {
         }
     }//GEN-LAST:event_btnEliminarActionPerformed
 
-    private void lstAutoresValueChanged(javax.swing.event.ListSelectionEvent evt) {//GEN-FIRST:event_lstAutoresValueChanged
-        if (!evt.getValueIsAdjusting()) {
-                int index = lstAutores.getSelectedIndex();
-                if (index != -1) {
-                    Autor seleccionado = servicio.listar().get(index);
-                    txtIdAutor.setText(seleccionado.getId());
-                    txtNombreAutor.setText(seleccionado.getNombre());
-                }
-            }
-    }//GEN-LAST:event_lstAutoresValueChanged
-
     private void btnMostrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMostrarActionPerformed
         limpiar();
     }//GEN-LAST:event_btnMostrarActionPerformed
+
+    private void btnEditarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEditarActionPerformed
+        int index = lstAutores.getSelectedIndex();
+        try{
+            if(index!=-1){
+                Autor seleccionado = servicio.listar().get(index);
+                int opcion = JOptionPane.showConfirmDialog(this,
+                    "¿Desea editar al autor: " + seleccionado.getNombre() + "? \n "
+                    + "Recuerda que esto se repercutira en todos sus libros asociados",
+                    "Confirmar edición",JOptionPane.YES_NO_OPTION);
+                if (opcion == JOptionPane.YES_OPTION) {
+                    obtenerDatos();
+                    servicio.actualizar(index,new Autor(id,nombre));
+                    limpiar();
+                }
+            }
+        } catch (IllegalArgumentException ex) {
+            JOptionPane.showMessageDialog(this,
+                ex.getMessage(),"Error",JOptionPane.ERROR_MESSAGE);
+        }
+    }//GEN-LAST:event_btnEditarActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

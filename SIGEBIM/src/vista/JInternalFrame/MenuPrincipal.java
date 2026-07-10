@@ -2,18 +2,13 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package vista.Panel;
+package vista.JInternalFrame;
 
-import vista.Panel.GestionarCategoria;
-import vista.Panel.GestionarAutor;
 import javax.swing.JFrame;
 import javax.swing.JInternalFrame;
 import javax.swing.JOptionPane;
-import javax.swing.JPanel;
 import modelo.persona.Usuario;
-import vista.GestionPrestamo;
 import vista.LoginForm;
-import vista.Panel.GestionarUsuario;
 
 /**
  *
@@ -25,16 +20,13 @@ public class MenuPrincipal extends JFrame {
      * Creates new form MenuPrincipal
      */
     private Usuario usuario;
-    private void mostrarModulo(JPanel panel, String titulo) {
+    
+    private void mostrarModulo(JInternalFrame frame) {
         //Primero valida que no haya una ventana abierta
         if(Ventana.getAllFrames().length > 0){
             JOptionPane.showMessageDialog(this,"Primero cierre la ventana actual.");
             return;
         }
-        // Ingresar el Panel al Jframe
-        JInternalFrame frame = new JInternalFrame(titulo, true, true, true, true);
-        frame.add(panel);
-        frame.pack();
         // Colocar la ventana al centro
         int x = (Ventana.getWidth() - frame.getWidth()) / 2, y = (Ventana.getHeight() - frame.getHeight()) / 2;
         frame.setLocation(x, y);
@@ -42,12 +34,17 @@ public class MenuPrincipal extends JFrame {
         Ventana.add(frame);
         frame.setVisible(true);
     }
+    //
+    //Constructor, No Tocar!!
     public MenuPrincipal(Usuario usuario) {
         initComponents();
         setLocationRelativeTo(null);
         this.usuario = usuario;
         configurarPermisos();
+        setExtendedState(JFrame.MAXIMIZED_BOTH);
     }
+    //
+    //
     private void configurarPermisos() {
         switch(usuario.getRol()){
             case ADMINISTRADOR:
@@ -76,10 +73,17 @@ public class MenuPrincipal extends JFrame {
         Ventana = new javax.swing.JDesktopPane();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
+        jToolBar1 = new javax.swing.JToolBar();
+        jButton1 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
+        jButton3 = new javax.swing.JButton();
+        jButton4 = new javax.swing.JButton();
+        jButton5 = new javax.swing.JButton();
         jMenuBar1 = new javax.swing.JMenuBar();
         menuArchivo = new javax.swing.JMenu();
         ItemSalir = new javax.swing.JMenuItem();
         ItemCerrarSesion = new javax.swing.JMenuItem();
+        jMenu4 = new javax.swing.JMenu();
         menuLibros = new javax.swing.JMenu();
         ItemGestionLibros = new javax.swing.JMenuItem();
         ItemGestionarCategoria = new javax.swing.JMenuItem();
@@ -88,6 +92,10 @@ public class MenuPrincipal extends JFrame {
         ItemGestionUsuarios = new javax.swing.JMenuItem();
         menuPrestamos = new javax.swing.JMenu();
         ItemGestionPrestamo = new javax.swing.JMenuItem();
+        itemGestionColas = new javax.swing.JMenuItem();
+        jMenu3 = new javax.swing.JMenu();
+        jMenu5 = new javax.swing.JMenu();
+        jMenu1 = new javax.swing.JMenu();
         menuReportes = new javax.swing.JMenu();
         jMenu11 = new javax.swing.JMenu();
         jMenuItem7 = new javax.swing.JMenuItem();
@@ -95,6 +103,7 @@ public class MenuPrincipal extends JFrame {
         jMenuItem8 = new javax.swing.JMenuItem();
         jMenu13 = new javax.swing.JMenu();
         jMenuItem9 = new javax.swing.JMenuItem();
+        jMenu2 = new javax.swing.JMenu();
 
         jMenuItem1.setText("jMenuItem1");
 
@@ -118,24 +127,56 @@ public class MenuPrincipal extends JFrame {
         VentanaLayout.setHorizontalGroup(
             VentanaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(VentanaLayout.createSequentialGroup()
-                .addContainerGap(447, Short.MAX_VALUE)
                 .addGroup(VentanaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, VentanaLayout.createSequentialGroup()
-                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 418, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(386, 386, 386))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, VentanaLayout.createSequentialGroup()
-                        .addComponent(jLabel2)
-                        .addGap(470, 470, 470))))
+                    .addGroup(VentanaLayout.createSequentialGroup()
+                        .addGap(402, 402, 402)
+                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 418, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(VentanaLayout.createSequentialGroup()
+                        .addGap(505, 505, 505)
+                        .addComponent(jLabel2)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         VentanaLayout.setVerticalGroup(
             VentanaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(VentanaLayout.createSequentialGroup()
-                .addGap(174, 174, 174)
+                .addGap(200, 200, 200)
                 .addComponent(jLabel1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel2)
-                .addContainerGap(427, Short.MAX_VALUE))
+                .addContainerGap(370, Short.MAX_VALUE))
         );
+
+        jToolBar1.setRollover(true);
+
+        jButton1.setText("Acceso Rapido a GestionLibro");
+        jButton1.setFocusable(false);
+        jButton1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton1.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jToolBar1.add(jButton1);
+
+        jButton2.setText("Acceso Rapido a GestionUsuarios");
+        jButton2.setFocusable(false);
+        jButton2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton2.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jToolBar1.add(jButton2);
+
+        jButton3.setText("Acceso Rapido a GestionPrestamos");
+        jButton3.setFocusable(false);
+        jButton3.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton3.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jToolBar1.add(jButton3);
+
+        jButton4.setText("Acceso Rapido a GestionDevoluciones");
+        jButton4.setFocusable(false);
+        jButton4.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton4.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jToolBar1.add(jButton4);
+
+        jButton5.setText("Acceso Rapido a Calcular Multa");
+        jButton5.setFocusable(false);
+        jButton5.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton5.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jToolBar1.add(jButton5);
 
         jMenuBar1.setAutoscrolls(true);
         jMenuBar1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
@@ -159,6 +200,8 @@ public class MenuPrincipal extends JFrame {
         menuArchivo.add(ItemCerrarSesion);
 
         jMenuBar1.add(menuArchivo);
+
+        jMenu4.setText("Gestion");
 
         menuLibros.setText("Libros");
 
@@ -186,7 +229,7 @@ public class MenuPrincipal extends JFrame {
         });
         menuLibros.add(ItemGestionarAutor);
 
-        jMenuBar1.add(menuLibros);
+        jMenu4.add(menuLibros);
 
         menuUsuarios.setText("Usuarios");
 
@@ -198,7 +241,7 @@ public class MenuPrincipal extends JFrame {
         });
         menuUsuarios.add(ItemGestionUsuarios);
 
-        jMenuBar1.add(menuUsuarios);
+        jMenu4.add(menuUsuarios);
 
         menuPrestamos.setText("Prestamos");
 
@@ -210,7 +253,26 @@ public class MenuPrincipal extends JFrame {
         });
         menuPrestamos.add(ItemGestionPrestamo);
 
-        jMenuBar1.add(menuPrestamos);
+        itemGestionColas.setText("Gestionar Colas");
+        itemGestionColas.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                itemGestionColasActionPerformed(evt);
+            }
+        });
+        menuPrestamos.add(itemGestionColas);
+
+        jMenu4.add(menuPrestamos);
+
+        jMenuBar1.add(jMenu4);
+
+        jMenu3.setText("Operaciones");
+        jMenuBar1.add(jMenu3);
+
+        jMenu5.setText("Consultas");
+        jMenuBar1.add(jMenu5);
+
+        jMenu1.setText("Herramientas");
+        jMenuBar1.add(jMenu1);
 
         menuReportes.setText("Reportes");
 
@@ -237,6 +299,9 @@ public class MenuPrincipal extends JFrame {
 
         jMenuBar1.add(menuReportes);
 
+        jMenu2.setText("Ayuda");
+        jMenuBar1.add(jMenu2);
+
         setJMenuBar(jMenuBar1);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -244,31 +309,29 @@ public class MenuPrincipal extends JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(Ventana)
+            .addComponent(jToolBar1, javax.swing.GroupLayout.DEFAULT_SIZE, 1251, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(Ventana)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addComponent(jToolBar1, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(Ventana))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void ItemGestionLibrosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ItemGestionLibrosActionPerformed
-        mostrarModulo(new GestionLibro(), "Gestionar Libros");
+        mostrarModulo(new GestionLibro());
     }//GEN-LAST:event_ItemGestionLibrosActionPerformed
 
     private void ItemGestionUsuariosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ItemGestionUsuariosActionPerformed
-        mostrarModulo(new GestionarUsuario(), "Gestionar Usuarios");
+        mostrarModulo(new GestionarUsuario());
     }//GEN-LAST:event_ItemGestionUsuariosActionPerformed
 
     private void ItemGestionPrestamoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ItemGestionPrestamoActionPerformed
-        if(Ventana.getAllFrames().length > 0){
-            JOptionPane.showMessageDialog(this,"Primero cierre la ventana actual.");
-            return;
-        }
-        GestionPrestamo frm = new GestionPrestamo();
-        Ventana.add(frm);
-        frm.setVisible(true);
+        mostrarModulo(new GestionPrestamo());
     }//GEN-LAST:event_ItemGestionPrestamoActionPerformed
 
     private void ItemSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ItemSalirActionPerformed
@@ -286,12 +349,16 @@ public class MenuPrincipal extends JFrame {
     }//GEN-LAST:event_ItemCerrarSesionActionPerformed
 
     private void ItemGestionarAutorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ItemGestionarAutorActionPerformed
-        mostrarModulo(new GestionarAutor(), "Gestionar Autores");
+        mostrarModulo(new GestionarAutor());
     }//GEN-LAST:event_ItemGestionarAutorActionPerformed
 
     private void ItemGestionarCategoriaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ItemGestionarCategoriaActionPerformed
-        mostrarModulo(new GestionarCategoria(), "Gestionar Categoria");
+        mostrarModulo(new GestionarCategoria());
     }//GEN-LAST:event_ItemGestionarCategoriaActionPerformed
+
+    private void itemGestionColasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itemGestionColasActionPerformed
+        mostrarModulo(new GestionColas());
+    }//GEN-LAST:event_itemGestionColasActionPerformed
 
     /**
      * @param args the command line arguments
@@ -306,16 +373,28 @@ public class MenuPrincipal extends JFrame {
     private javax.swing.JMenuItem ItemGestionarCategoria;
     private javax.swing.JMenuItem ItemSalir;
     private javax.swing.JDesktopPane Ventana;
+    private javax.swing.JMenuItem itemGestionColas;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
+    private javax.swing.JButton jButton4;
+    private javax.swing.JButton jButton5;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu11;
     private javax.swing.JMenu jMenu12;
     private javax.swing.JMenu jMenu13;
+    private javax.swing.JMenu jMenu2;
+    private javax.swing.JMenu jMenu3;
+    private javax.swing.JMenu jMenu4;
+    private javax.swing.JMenu jMenu5;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JMenuItem jMenuItem7;
     private javax.swing.JMenuItem jMenuItem8;
     private javax.swing.JMenuItem jMenuItem9;
+    private javax.swing.JToolBar jToolBar1;
     private javax.swing.JMenu menuArchivo;
     private javax.swing.JMenu menuLibros;
     private javax.swing.JMenu menuPrestamos;

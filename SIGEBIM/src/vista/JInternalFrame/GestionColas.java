@@ -1,8 +1,8 @@
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
+ * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JInternalFrame.java to edit this template
  */
-package vista;
+package vista.JInternalFrame;
 
 import java.util.Queue;
 import javax.swing.JOptionPane;
@@ -12,22 +12,20 @@ import modelo.prestamo.ColaDeEspera;
 
 /**
  *
- * @author jerem
+ * @author zulmi
  */
 public class GestionColas extends javax.swing.JInternalFrame {
-    
-    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(GestionColas.class.getName());
 
+    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(GestionColas.class.getName());
     /**
-     * Creates new form GestionColas
+     * Creates new form GestionColas2
      */
     public GestionColas() {
+        super("Gestion Colas - Seccion Bibliotecario", true, true, true, true);
         initComponents();
-        
         // Acción del botón Buscar
         btnColaIsbn.addActionListener(e -> mostrarCola());
     }
-    
     // Método void que actualiza la tabla
     private void mostrarCola() {
         String isbn = txtIsbn.getText().trim();
@@ -48,8 +46,6 @@ public class GestionColas extends javax.swing.JInternalFrame {
             JOptionPane.showMessageDialog(this, "No hay usuarios en cola para este ISBN.");
         }
     }
-
-
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -65,8 +61,6 @@ public class GestionColas extends javax.swing.JInternalFrame {
         scrllCola = new javax.swing.JScrollPane();
         tblCola = new javax.swing.JTable();
         jLabel2 = new javax.swing.JLabel();
-
-        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
         jLabel1.setText("Buscar por Isbn:");
 
@@ -106,7 +100,7 @@ public class GestionColas extends javax.swing.JInternalFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(228, 228, 228)
                         .addComponent(jLabel2)))
-                .addContainerGap(87, Short.MAX_VALUE))
+                .addContainerGap(103, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -126,30 +120,6 @@ public class GestionColas extends javax.swing.JInternalFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ReflectiveOperationException | javax.swing.UnsupportedLookAndFeelException ex) {
-            logger.log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(() -> new GestionColas().setVisible(true));
-    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnColaIsbn;

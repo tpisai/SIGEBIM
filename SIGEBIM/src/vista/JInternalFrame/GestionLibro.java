@@ -1,14 +1,9 @@
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JPanel.java to edit this template
+ * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JInternalFrame.java to edit this template
  */
-package vista.Panel;
+package vista.JInternalFrame;
 
-/**
- *
- * @author zulmi
- */
-import java.awt.Color;
 import java.util.ArrayList;
 import javax.swing.JOptionPane;
 import javax.swing.ListSelectionModel;
@@ -23,17 +18,22 @@ import modelo.libro.Libro;
 import servicios.libros.AutorService;
 import servicios.libros.CategoriaService;
 import servicios.libros.LibroService;
-public class GestionLibro extends javax.swing.JPanel {
+
+/**
+ *
+ * @author zulmi
+ */
+public class GestionLibro extends javax.swing.JInternalFrame {
 
     /**
-     * Creates new form GestionLibro
+     * Creates new form GestionLibro2
      */
     private final LibroService servicioLibro = new LibroService();
     private final AutorService servicioAutor = new AutorService();
     private final CategoriaService servicioCategoria = new CategoriaService();
-    
     private ArrayList<Libro> listaLibros = new ArrayList<>();
     private ArrayList<Libro> listaMostrada = new ArrayList<>();
+    
     private void cargarAutores(){
         cboAutor.removeAllItems();
         for(Autor autor : servicioAutor.listar()){
@@ -79,13 +79,14 @@ public class GestionLibro extends javax.swing.JPanel {
         txtURL.setText("");
         txtEstado.setText("");
         txtBuscar.setText("");
-        if(cboAutor.getItemCount()>0)
+        if(cboAutor.getItemCount()>0) {
             cboAutor.setSelectedIndex(0);
-        if(cboCategoria.getItemCount()>0)
+        }
+        if(cboCategoria.getItemCount()>0){
             cboCategoria.setSelectedIndex(0);
+        }
         cboTipoLibro.setSelectedIndex(0);
         txtISBN.requestFocus();
-        cboTipoLibro.setSelectedIndex(0);
         habilitarCamposSegunTipo();
         actualizarEstadoAutomatico();
     }
@@ -233,6 +234,7 @@ public class GestionLibro extends javax.swing.JPanel {
     //
     //Constructor no tocar!!!
     public GestionLibro() {
+        super("Gestion Libro - Seccion Bibliotecario", true, true, true, true);
         initComponents();
         cargarAutores();
         cargarCategorias();
@@ -670,53 +672,41 @@ public class GestionLibro extends javax.swing.JPanel {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnRegistrar, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnActualizar, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnLimpiar)
-                    .addComponent(btnEliminar, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(btnLimpiar, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(btnRegistrar, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btnActualizar, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btnEliminar, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(71, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGap(31, 31, 31))
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
+
+        pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnEliminarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEliminarActionPerformed
-        int fila = tblLibros.getSelectedRow();
-        if(fila==-1){
-            JOptionPane.showMessageDialog(this,"Seleccione un libro.");
-            return;
-        }
-        int respuesta = JOptionPane.showConfirmDialog(this,"¿Eliminar este libro?",
-                        "Confirmar",JOptionPane.YES_NO_OPTION);
-        if(respuesta==JOptionPane.YES_OPTION){
-            int indiceOriginal = listaLibros.indexOf(listaMostrada.get(fila));
-            servicioLibro.eliminar(indiceOriginal);
-            refrescarTabla();
-            limpiarCampos();
-        }
-    }//GEN-LAST:event_btnEliminarActionPerformed
+    private void txtStockKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtStockKeyReleased
+        actualizarEstadoAutomatico();
+    }//GEN-LAST:event_txtStockKeyReleased
 
-    private void txtBuscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtBuscarActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtBuscarActionPerformed
+    private void cboTipoLibroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cboTipoLibroActionPerformed
+        habilitarCamposSegunTipo();
+    }//GEN-LAST:event_cboTipoLibroActionPerformed
 
     private void btnRegistrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegistrarActionPerformed
-         try{
+        try{
             Libro libro = obtenerLibroFormulario();
             servicioLibro.registrar(libro);
             refrescarTabla();
@@ -730,7 +720,7 @@ public class GestionLibro extends javax.swing.JPanel {
     }//GEN-LAST:event_btnRegistrarActionPerformed
 
     private void btnActualizarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnActualizarActionPerformed
-         int fila = tblLibros.getSelectedRow();
+        int fila = tblLibros.getSelectedRow();
         if(fila==-1){
             JOptionPane.showMessageDialog(this,"Seleccione un libro.");
             return;
@@ -749,17 +739,37 @@ public class GestionLibro extends javax.swing.JPanel {
         }
     }//GEN-LAST:event_btnActualizarActionPerformed
 
+    private void btnEliminarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEliminarActionPerformed
+        int fila = tblLibros.getSelectedRow();
+        if(fila==-1){
+            JOptionPane.showMessageDialog(this,"Seleccione un libro.");
+            return;
+        }
+        int respuesta = JOptionPane.showConfirmDialog(this,"¿Eliminar este libro?",
+            "Confirmar",JOptionPane.YES_NO_OPTION);
+        if(respuesta==JOptionPane.YES_OPTION){
+            int indiceOriginal = listaLibros.indexOf(listaMostrada.get(fila));
+            servicioLibro.eliminar(indiceOriginal);
+            refrescarTabla();
+            limpiarCampos();
+        }
+    }//GEN-LAST:event_btnEliminarActionPerformed
+
     private void btnLimpiarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLimpiarActionPerformed
         limpiarCampos();
     }//GEN-LAST:event_btnLimpiarActionPerformed
 
+    private void txtBuscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtBuscarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtBuscarActionPerformed
+
     private void btnBuscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBuscarActionPerformed
         String texto = txtBuscar.getText().trim();
         CriterioBusqueda criterio = switch(cboBusqueda.getSelectedIndex()){
-                    case 0 -> CriterioBusqueda.ISBN;
-                    case 1 -> CriterioBusqueda.TITULO;
-                    default -> CriterioBusqueda.AUTOR;
-                };
+            case 0 -> CriterioBusqueda.ISBN;
+            case 1 -> CriterioBusqueda.TITULO;
+            default -> CriterioBusqueda.AUTOR;
+        };
         mostrarLibros(servicioLibro.buscar(criterio,texto)
         );
     }//GEN-LAST:event_btnBuscarActionPerformed
@@ -770,7 +780,7 @@ public class GestionLibro extends javax.swing.JPanel {
             return;
         }
         mostrarLibros(servicioLibro.buscar(CriterioBusqueda.CATEGORIA,categoria.getNombre()
-                )
+        )
         );
     }//GEN-LAST:event_btnBuscarCategoriaActionPerformed
 
@@ -781,14 +791,6 @@ public class GestionLibro extends javax.swing.JPanel {
     private void tblLibrosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tblLibrosMouseClicked
         cargarLibroSeleccionado();
     }//GEN-LAST:event_tblLibrosMouseClicked
-
-    private void cboTipoLibroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cboTipoLibroActionPerformed
-        habilitarCamposSegunTipo();
-    }//GEN-LAST:event_cboTipoLibroActionPerformed
-
-    private void txtStockKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtStockKeyReleased
-        actualizarEstadoAutomatico();
-    }//GEN-LAST:event_txtStockKeyReleased
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

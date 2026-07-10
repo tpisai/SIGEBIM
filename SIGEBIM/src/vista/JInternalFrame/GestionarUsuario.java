@@ -1,8 +1,8 @@
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JPanel.java to edit this template
+ * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JInternalFrame.java to edit this template
  */
-package vista.Panel;
+package vista.JInternalFrame;
 
 import java.awt.Color;
 import java.util.ArrayList;
@@ -20,10 +20,10 @@ import servicios.usuarios.UsuarioService;
  *
  * @author zulmi
  */
-public class GestionarUsuario extends javax.swing.JPanel {
+public class GestionarUsuario extends javax.swing.JInternalFrame {
 
     /**
-     * Creates new form GestionUsuario
+     * Creates new form GestionarUsuario2
      */
     UsuarioService usuarioService = new UsuarioService();
     AdminUsuarioService adminService = new AdminUsuarioService(usuarioService);
@@ -109,6 +109,7 @@ public class GestionarUsuario extends javax.swing.JPanel {
     //
     //Constructor no tocar!!!
     public GestionarUsuario() {
+        super("Gestionar Usuario - Seccion Admin", true, true, true, true);
         initComponents();
         txtNombreUsuario.setEditable(false);
         llenarTable();
@@ -145,8 +146,7 @@ public class GestionarUsuario extends javax.swing.JPanel {
             txtCelular.getText().trim(),
             txtUsername.getText().trim(),
             txtPassword.getText().trim(),
-            RolUsuario.desdeTexto(
-                (String)cboRol.getSelectedItem())
+            RolUsuario.desdeTexto((String)cboRol.getSelectedItem())
         );
         usuario.setActivo(chkActivo.isSelected());
         return usuario;
@@ -178,14 +178,6 @@ public class GestionarUsuario extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jScrollPane2 = new javax.swing.JScrollPane();
-        jTree1 = new javax.swing.JTree();
-        jPopupMenu1 = new javax.swing.JPopupMenu();
-        jMenuItem1 = new javax.swing.JMenuItem();
-        jCheckBoxMenuItem1 = new javax.swing.JCheckBoxMenuItem();
-        jRadioButtonMenuItem1 = new javax.swing.JRadioButtonMenuItem();
-        jCheckBox1 = new javax.swing.JCheckBox();
-        jRadioButton1 = new javax.swing.JRadioButton();
         jPanel2 = new javax.swing.JPanel();
         jPanel4 = new javax.swing.JPanel();
         jLabel9 = new javax.swing.JLabel();
@@ -220,20 +212,6 @@ public class GestionarUsuario extends javax.swing.JPanel {
         cboVariable = new javax.swing.JComboBox<>();
         txtBuscar = new javax.swing.JTextField();
         btnBuscar = new javax.swing.JButton();
-
-        jScrollPane2.setViewportView(jTree1);
-
-        jMenuItem1.setText("jMenuItem1");
-
-        jCheckBoxMenuItem1.setSelected(true);
-        jCheckBoxMenuItem1.setText("jCheckBoxMenuItem1");
-
-        jRadioButtonMenuItem1.setSelected(true);
-        jRadioButtonMenuItem1.setText("jRadioButtonMenuItem1");
-
-        jCheckBox1.setText("jCheckBox1");
-
-        jRadioButton1.setText("jRadioButton1");
 
         setBackground(new java.awt.Color(255, 255, 249));
 
@@ -523,7 +501,7 @@ public class GestionarUsuario extends javax.swing.JPanel {
                         .addComponent(btnLimpiarYMostrar, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(txtBuscar, javax.swing.GroupLayout.PREFERRED_SIZE, 341, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 114, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(cboVariable, javax.swing.GroupLayout.PREFERRED_SIZE, 209, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
                         .addComponent(btnBuscar, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -580,51 +558,23 @@ public class GestionarUsuario extends javax.swing.JPanel {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
+            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
+
+        pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnRegistrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegistrarActionPerformed
-        try{
-            if(personaReniec == null || !personaReniec.isValido()){
-                JOptionPane.showMessageDialog(this,"Primero debe comprobar el DNI.");
-                return;
-            }
-            Usuario usuario = obtenerUsuarioFormulario();
-            adminService.registrar(usuario);
-            JOptionPane.showMessageDialog(this,"Usuario registrado correctamente.");
-            limpiar();
-            } catch (IllegalArgumentException ex){
-                JOptionPane.showMessageDialog(this,
-                ex.getMessage(),"Error",JOptionPane.ERROR_MESSAGE);
-        }
-    }//GEN-LAST:event_btnRegistrarActionPerformed
-
-    private void btnValidarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnValidarActionPerformed
-        personaReniec = usuarioService.validarDni(txtDni.getText().trim());
-        //Hacemos el cambio visual en el form
-        if(personaReniec.isValido()){
-            txtNombreUsuario.setText(personaReniec.getNombreCompleto());
-            txtNombreUsuario.setBackground(Color.WHITE);
-            btnValidar.setEnabled(false);
-        }
-        //Mostramos mensaje de exito o error
-        JOptionPane.showMessageDialog(this,personaReniec.getMensaje());
-    }//GEN-LAST:event_btnValidarActionPerformed
+    private void txtPasswordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPasswordActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtPasswordActionPerformed
 
     private void txtDniActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtDniActionPerformed
         // TODO add your handling code here:
@@ -641,6 +591,43 @@ public class GestionarUsuario extends javax.swing.JPanel {
         actualizarTextoActivo();
     }//GEN-LAST:event_chkActivoActionPerformed
 
+    private void btnValidarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnValidarActionPerformed
+        personaReniec = usuarioService.validarDni(txtDni.getText().trim());
+        //Hacemos el cambio visual en el form
+        if(personaReniec.isValido()){
+            txtNombreUsuario.setText(personaReniec.getNombreCompleto());
+            txtNombreUsuario.setBackground(Color.WHITE);
+            btnValidar.setEnabled(false);
+        }
+        //Mostramos mensaje de exito o error
+        JOptionPane.showMessageDialog(this,personaReniec.getMensaje());
+    }//GEN-LAST:event_btnValidarActionPerformed
+
+    private void tblUsuariosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tblUsuariosMouseClicked
+        int fila = tblUsuarios.getSelectedRow();
+        if(fila==-1){
+            return;
+        }
+        Usuario usuario = adminService.listar().get(fila);
+        mostrarUsuario(usuario);
+    }//GEN-LAST:event_tblUsuariosMouseClicked
+
+    private void btnRegistrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegistrarActionPerformed
+        try{
+            if(personaReniec == null || !personaReniec.isValido()){
+                JOptionPane.showMessageDialog(this,"Primero debe comprobar el DNI.");
+                return;
+            }
+            Usuario usuario = obtenerUsuarioFormulario();
+            adminService.registrar(usuario);
+            JOptionPane.showMessageDialog(this,"Usuario registrado correctamente.");
+            limpiar();
+        } catch (IllegalArgumentException ex){
+            JOptionPane.showMessageDialog(this,
+                ex.getMessage(),"Error",JOptionPane.ERROR_MESSAGE);
+        }
+    }//GEN-LAST:event_btnRegistrarActionPerformed
+
     private void btnEditarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEditarActionPerformed
         int fila = tblUsuarios.getSelectedRow();
         if(fila ==-1){
@@ -650,14 +637,14 @@ public class GestionarUsuario extends javax.swing.JPanel {
         try{
             Usuario seleccionado = adminService.listar().get(fila);
             int opcion = JOptionPane.showConfirmDialog(this,
-            "¿Desea editar al autor: " + seleccionado.getNombre() + "? \n "
-            + "Recuerda que esto se repercutira en todos sus prestamos y multas asociadas",
-            "Confirmar edición",JOptionPane.YES_NO_OPTION);
+                "¿Desea editar al autor: " + seleccionado.getNombre() + "? \n "
+                + "Recuerda que esto se repercutira en todos sus prestamos y multas asociadas",
+                "Confirmar edición",JOptionPane.YES_NO_OPTION);
             if (opcion == JOptionPane.YES_OPTION) {
                 Usuario usuario = obtenerUsuarioFormulario();
                 adminService.actualizar(fila,usuario);
                 limpiar();
-                }
+            }
         } catch (IllegalArgumentException ex) {
             JOptionPane.showMessageDialog(this,
                 ex.getMessage(),"Error",JOptionPane.ERROR_MESSAGE);
@@ -672,8 +659,8 @@ public class GestionarUsuario extends javax.swing.JPanel {
         }
         Usuario seleccionado = adminService.listar().get(fila);
         int opcion = JOptionPane.showConfirmDialog(this,
-        "¿Desea eliminar al usuario: " + seleccionado.getNombre() + "?",
-        "Confirmar eliminación",JOptionPane.YES_NO_OPTION);
+            "¿Desea eliminar al usuario: " + seleccionado.getNombre() + "?",
+            "Confirmar eliminación",JOptionPane.YES_NO_OPTION);
         if (opcion != JOptionPane.YES_OPTION) {
             return;
         }
@@ -681,27 +668,14 @@ public class GestionarUsuario extends javax.swing.JPanel {
         if (eliminado) {
             JOptionPane.showMessageDialog(this, "Se borro correctamente al usuario: " + seleccionado.getNombre());
             limpiar();
-            } else {
+        } else {
             JOptionPane.showMessageDialog(this,"No se puede eliminar: el usuario tiene aun prestamos no devueltos o multas por pagar.");
-            }
+        }
     }//GEN-LAST:event_btnEliminarActionPerformed
 
     private void btnLimpiarYMostrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLimpiarYMostrarActionPerformed
         limpiar();
     }//GEN-LAST:event_btnLimpiarYMostrarActionPerformed
-
-    private void txtPasswordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPasswordActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtPasswordActionPerformed
-
-    private void tblUsuariosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tblUsuariosMouseClicked
-        int fila = tblUsuarios.getSelectedRow();
-        if(fila==-1){
-            return;
-        }
-        Usuario usuario = adminService.listar().get(fila);
-        mostrarUsuario(usuario);
-    }//GEN-LAST:event_tblUsuariosMouseClicked
 
     private void btnBuscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBuscarActionPerformed
         String dato = txtBuscar.getText().trim();
@@ -726,11 +700,11 @@ public class GestionarUsuario extends javax.swing.JPanel {
         }
         mostrarLista(resultado);
         if(resultado.isEmpty()){
-            JOptionPane.showMessageDialog(this, "No se encontraron usuarios ocn ese termino de busqueda");
+            JOptionPane.showMessageDialog(this, "No se encontraron usuarios con ese termino de busqueda");
         }
     }//GEN-LAST:event_btnBuscarActionPerformed
 
-    
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnBuscar;
     private javax.swing.JButton btnEditar;
@@ -741,8 +715,6 @@ public class GestionarUsuario extends javax.swing.JPanel {
     private javax.swing.JComboBox<String> cboRol;
     private javax.swing.JComboBox<String> cboVariable;
     private javax.swing.JCheckBox chkActivo;
-    private javax.swing.JCheckBox jCheckBox1;
-    private javax.swing.JCheckBoxMenuItem jCheckBoxMenuItem1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
@@ -754,17 +726,11 @@ public class GestionarUsuario extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
-    private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
-    private javax.swing.JPopupMenu jPopupMenu1;
-    private javax.swing.JRadioButton jRadioButton1;
-    private javax.swing.JRadioButtonMenuItem jRadioButtonMenuItem1;
-    private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
-    private javax.swing.JTree jTree1;
     private javax.swing.JTable tblUsuarios;
     private javax.swing.JTextField txtBuscar;
     private javax.swing.JTextField txtCelular;
