@@ -2,13 +2,26 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package vista.JInternalFrame;
+package vista;
 
+import java.awt.Component;
 import javax.swing.JFrame;
 import javax.swing.JInternalFrame;
 import javax.swing.JOptionPane;
 import modelo.persona.Usuario;
 import vista.LoginForm;
+//Imports para agregar el fondo de pantalla
+import javax.swing.JDesktopPane;
+import javax.swing.ImageIcon;
+import java.awt.Image;
+import java.awt.Graphics;
+import javax.swing.SwingUtilities;
+import vista.JInternalFrame.GestionColas;
+import vista.JInternalFrame.GestionLibro;
+import vista.JInternalFrame.GestionPrestamo;
+import vista.JInternalFrame.GestionarAutor;
+import vista.JInternalFrame.GestionarCategoria;
+import vista.JInternalFrame.GestionarUsuario;
 
 /**
  *
@@ -22,26 +35,54 @@ public class MenuPrincipal extends JFrame {
     private Usuario usuario;
     
     private void mostrarModulo(JInternalFrame frame) {
-        //Primero valida que no haya una ventana abierta
+        /*Primero valida que no haya una ventana abierta (De momento en comentario para validar despues si es necesario
+        para el sistema o nop)
         if(Ventana.getAllFrames().length > 0){
             JOptionPane.showMessageDialog(this,"Primero cierre la ventana actual.");
             return;
-        }
-        // Colocar la ventana al centro
-        int x = (Ventana.getWidth() - frame.getWidth()) / 2, y = (Ventana.getHeight() - frame.getHeight()) / 2;
-        frame.setLocation(x, y);
-        // Mostrar en la ventana del menu
+        }*/
+        //Mostrar Ventana en el Menu
         Ventana.add(frame);
         frame.setVisible(true);
+        // Colocar la ventana al centro
+        int x = (Ventana.getWidth() - frame.getWidth()) / 2, y = (Ventana.getHeight() - frame.getHeight()) / 2;
+        frame.setLocation(Math.max(x, 0),Math.max(y, 0));
+    }
+    private void configurarVentana() {
+        Ventana.setLayout(null);
+        Ventana.setLayer(lblTitulo, JDesktopPane.DEFAULT_LAYER);
+        Ventana.setLayer(lblSubtitulo, JDesktopPane.DEFAULT_LAYER);
+        Ventana.addComponentListener(new java.awt.event.ComponentAdapter() {
+            @Override
+            public void componentResized(java.awt.event.ComponentEvent evt) {
+                centrarLabels();
+            }
+        });
+
+        SwingUtilities.invokeLater(this::centrarLabels);
+    }
+    
+    private void centrarLabels() {
+        lblTitulo.setSize(lblTitulo.getPreferredSize());
+        lblSubtitulo.setSize(lblSubtitulo.getPreferredSize());
+        int centroX = Ventana.getWidth() / 2;
+        int centroY = Ventana.getHeight() / 2;
+        lblTitulo.setLocation(centroX - lblTitulo.getWidth() / 2, centroY - 90);
+        lblSubtitulo.setLocation(centroX - lblSubtitulo.getWidth() / 2,centroY);
     }
     //
     //Constructor, No Tocar!!
     public MenuPrincipal(Usuario usuario) {
         initComponents();
-        setLocationRelativeTo(null);
+        // Validar que usuario no sea nulo
+        if (usuario == null) {
+            throw new IllegalArgumentException("El usuario no puede ser nulo.");
+        }
         this.usuario = usuario;
         configurarPermisos();
-        setExtendedState(JFrame.MAXIMIZED_BOTH);
+        configurarVentana();
+        setExtendedState(MAXIMIZED_BOTH);
+        setLocationRelativeTo(null);
     }
     //
     //
@@ -70,9 +111,42 @@ public class MenuPrincipal extends JFrame {
     private void initComponents() {
 
         jMenuItem1 = new javax.swing.JMenuItem();
-        Ventana = new javax.swing.JDesktopPane();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
+        jPopupMenu1 = new javax.swing.JPopupMenu();
+        jPopupMenu2 = new javax.swing.JPopupMenu();
+        jPopupMenu3 = new javax.swing.JPopupMenu();
+        Ventana =  new javax.swing.JDesktopPane() {
+
+            private java.awt.Image imagenFondo;
+
+            {
+                java.net.URL ruta =
+                getClass().getResource("/img/fondo.png");
+
+                if (ruta != null) {
+                    imagenFondo = new javax.swing.ImageIcon(ruta).getImage();
+                } else {
+                    System.err.println("No se encontró la imagen de fondo.");
+                }
+            }
+
+            @Override
+            protected void paintComponent(java.awt.Graphics g) {
+                super.paintComponent(g);
+
+                if (imagenFondo != null) {
+                    g.drawImage(
+                        imagenFondo,
+                        0,
+                        0,
+                        getWidth(),
+                        getHeight(),
+                        this
+                    );
+                }
+            }
+        };
+        lblTitulo = new javax.swing.JLabel();
+        lblSubtitulo = new javax.swing.JLabel();
         jToolBar1 = new javax.swing.JToolBar();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
@@ -97,12 +171,9 @@ public class MenuPrincipal extends JFrame {
         jMenu5 = new javax.swing.JMenu();
         jMenu1 = new javax.swing.JMenu();
         menuReportes = new javax.swing.JMenu();
-        jMenu11 = new javax.swing.JMenu();
-        jMenuItem7 = new javax.swing.JMenuItem();
-        jMenu12 = new javax.swing.JMenu();
-        jMenuItem8 = new javax.swing.JMenuItem();
-        jMenu13 = new javax.swing.JMenu();
-        jMenuItem9 = new javax.swing.JMenuItem();
+        jMenuItem2 = new javax.swing.JMenuItem();
+        jMenuItem3 = new javax.swing.JMenuItem();
+        jMenuItem4 = new javax.swing.JMenuItem();
         jMenu2 = new javax.swing.JMenu();
 
         jMenuItem1.setText("jMenuItem1");
@@ -110,17 +181,18 @@ public class MenuPrincipal extends JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         Ventana.setBackground(new java.awt.Color(255, 255, 249));
+        Ventana.setName(""); // NOI18N
 
-        jLabel1.setBackground(new java.awt.Color(0, 0, 150));
-        jLabel1.setFont(new java.awt.Font("Ravie", 2, 72)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel1.setText("SIGEBIM");
+        lblTitulo.setBackground(new java.awt.Color(0, 0, 150));
+        lblTitulo.setFont(new java.awt.Font("Ravie", 2, 72)); // NOI18N
+        lblTitulo.setForeground(new java.awt.Color(255, 255, 255));
+        lblTitulo.setText("SIGEBIM");
 
-        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel2.setText("Sistema de Gestion Bibliotecaria Municipal :)");
+        lblSubtitulo.setForeground(new java.awt.Color(255, 255, 255));
+        lblSubtitulo.setText("Sistema de Gestion Bibliotecaria Municipal :)");
 
-        Ventana.setLayer(jLabel1, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        Ventana.setLayer(jLabel2, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        Ventana.setLayer(lblTitulo, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        Ventana.setLayer(lblSubtitulo, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         javax.swing.GroupLayout VentanaLayout = new javax.swing.GroupLayout(Ventana);
         Ventana.setLayout(VentanaLayout);
@@ -130,20 +202,20 @@ public class MenuPrincipal extends JFrame {
                 .addGroup(VentanaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(VentanaLayout.createSequentialGroup()
                         .addGap(402, 402, 402)
-                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 418, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(lblTitulo, javax.swing.GroupLayout.PREFERRED_SIZE, 418, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(VentanaLayout.createSequentialGroup()
                         .addGap(505, 505, 505)
-                        .addComponent(jLabel2)))
+                        .addComponent(lblSubtitulo)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         VentanaLayout.setVerticalGroup(
             VentanaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(VentanaLayout.createSequentialGroup()
-                .addGap(200, 200, 200)
-                .addComponent(jLabel1)
+                .addGap(212, 212, 212)
+                .addComponent(lblTitulo)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel2)
-                .addContainerGap(370, Short.MAX_VALUE))
+                .addComponent(lblSubtitulo)
+                .addContainerGap(364, Short.MAX_VALUE))
         );
 
         jToolBar1.setRollover(true);
@@ -205,6 +277,7 @@ public class MenuPrincipal extends JFrame {
 
         menuLibros.setText("Libros");
 
+        ItemGestionLibros.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_L, java.awt.event.InputEvent.ALT_DOWN_MASK));
         ItemGestionLibros.setText("Gestion de Libros");
         ItemGestionLibros.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -276,26 +349,14 @@ public class MenuPrincipal extends JFrame {
 
         menuReportes.setText("Reportes");
 
-        jMenu11.setText("Reporte de Libros");
+        jMenuItem2.setText("Reporte Por Libros");
+        menuReportes.add(jMenuItem2);
 
-        jMenuItem7.setText("Ver Cantidad de Libros");
-        jMenu11.add(jMenuItem7);
+        jMenuItem3.setText("Reporte Por Usuarios");
+        menuReportes.add(jMenuItem3);
 
-        menuReportes.add(jMenu11);
-
-        jMenu12.setText("Reporte de Usuarios");
-
-        jMenuItem8.setText("Ver Usuarios");
-        jMenu12.add(jMenuItem8);
-
-        menuReportes.add(jMenu12);
-
-        jMenu13.setText("Reporte de Prestamos");
-
-        jMenuItem9.setText("Ver Prestamos");
-        jMenu13.add(jMenuItem9);
-
-        menuReportes.add(jMenu13);
+        jMenuItem4.setText("Reporte Por Prestamos");
+        menuReportes.add(jMenuItem4);
 
         jMenuBar1.add(menuReportes);
 
@@ -308,8 +369,8 @@ public class MenuPrincipal extends JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(Ventana)
             .addComponent(jToolBar1, javax.swing.GroupLayout.DEFAULT_SIZE, 1251, Short.MAX_VALUE)
+            .addComponent(Ventana)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -336,7 +397,7 @@ public class MenuPrincipal extends JFrame {
 
     private void ItemSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ItemSalirActionPerformed
         int salir=JOptionPane.showConfirmDialog(this, "Desea Salir de todo el sistema?","Confirmar Salida", JOptionPane.YES_NO_OPTION);
-        if(salir==JOptionPane.YES_NO_OPTION){
+        if(salir==JOptionPane.YES_OPTION){
             System.exit(0);
         }
     }//GEN-LAST:event_ItemSalirActionPerformed
@@ -379,22 +440,22 @@ public class MenuPrincipal extends JFrame {
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JMenu jMenu1;
-    private javax.swing.JMenu jMenu11;
-    private javax.swing.JMenu jMenu12;
-    private javax.swing.JMenu jMenu13;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;
     private javax.swing.JMenu jMenu4;
     private javax.swing.JMenu jMenu5;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem1;
-    private javax.swing.JMenuItem jMenuItem7;
-    private javax.swing.JMenuItem jMenuItem8;
-    private javax.swing.JMenuItem jMenuItem9;
+    private javax.swing.JMenuItem jMenuItem2;
+    private javax.swing.JMenuItem jMenuItem3;
+    private javax.swing.JMenuItem jMenuItem4;
+    private javax.swing.JPopupMenu jPopupMenu1;
+    private javax.swing.JPopupMenu jPopupMenu2;
+    private javax.swing.JPopupMenu jPopupMenu3;
     private javax.swing.JToolBar jToolBar1;
+    private javax.swing.JLabel lblSubtitulo;
+    private javax.swing.JLabel lblTitulo;
     private javax.swing.JMenu menuArchivo;
     private javax.swing.JMenu menuLibros;
     private javax.swing.JMenu menuPrestamos;

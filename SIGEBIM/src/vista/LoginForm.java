@@ -4,7 +4,6 @@
  */
 package vista;
 
-import vista.JInternalFrame.MenuPrincipal;
 import java.awt.Color;
 import javax.swing.JOptionPane;
 import modelo.persona.Usuario;
