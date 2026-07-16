@@ -1,0 +1,2 @@
+U-002|GABRIEL ANDRE PANTA ALVAREZ|72521021|pepeluja@gmail.com|98168121|pepe|123|Lector|true
+U-001|ISAI NICK SANCHEZ CRUZ|60972272|tpisai43@gmail.com|983192987|admin|123|Administrador|true
