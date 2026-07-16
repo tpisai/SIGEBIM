@@ -16,12 +16,14 @@ import javax.swing.ImageIcon;
 import java.awt.Image;
 import java.awt.Graphics;
 import javax.swing.SwingUtilities;
+import vista.JInternalFrame.CopiaSeguridadForm;
 import vista.JInternalFrame.GestionColas;
 import vista.JInternalFrame.GestionLibro;
 import vista.JInternalFrame.GestionPrestamo;
 import vista.JInternalFrame.GestionarAutor;
 import vista.JInternalFrame.GestionarCategoria;
 import vista.JInternalFrame.GestionarUsuario;
+import vista.JInternalFrame.RestaurarInfoForm;
 
 /**
  *
@@ -148,11 +150,12 @@ public class MenuPrincipal extends JFrame {
         lblTitulo = new javax.swing.JLabel();
         lblSubtitulo = new javax.swing.JLabel();
         jToolBar1 = new javax.swing.JToolBar();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
+        btnAccesoLibro = new javax.swing.JButton();
+        btnAccesoUsuarios = new javax.swing.JButton();
+        btnAccesoPrestamos = new javax.swing.JButton();
+        btnAccesoDevoluciones = new javax.swing.JButton();
+        btnAccesoMulta = new javax.swing.JButton();
+        btnAccesoCopiaSeguridad = new javax.swing.JButton();
         jMenuBar1 = new javax.swing.JMenuBar();
         menuArchivo = new javax.swing.JMenu();
         ItemSalir = new javax.swing.JMenuItem();
@@ -167,13 +170,14 @@ public class MenuPrincipal extends JFrame {
         menuPrestamos = new javax.swing.JMenu();
         ItemGestionPrestamo = new javax.swing.JMenuItem();
         itemGestionColas = new javax.swing.JMenuItem();
-        jMenu3 = new javax.swing.JMenu();
         jMenu5 = new javax.swing.JMenu();
-        jMenu1 = new javax.swing.JMenu();
         menuReportes = new javax.swing.JMenu();
         jMenuItem2 = new javax.swing.JMenuItem();
         jMenuItem3 = new javax.swing.JMenuItem();
         jMenuItem4 = new javax.swing.JMenuItem();
+        jMenu1 = new javax.swing.JMenu();
+        itemCopiaSeguridad = new javax.swing.JMenuItem();
+        intemRestaurar = new javax.swing.JMenuItem();
         jMenu2 = new javax.swing.JMenu();
 
         jMenuItem1.setText("jMenuItem1");
@@ -220,35 +224,61 @@ public class MenuPrincipal extends JFrame {
 
         jToolBar1.setRollover(true);
 
-        jButton1.setText("Acceso Rapido a GestionLibro");
-        jButton1.setFocusable(false);
-        jButton1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton1.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        jToolBar1.add(jButton1);
+        btnAccesoLibro.setText("Acceso Rapido a GestionLibro");
+        btnAccesoLibro.setFocusable(false);
+        btnAccesoLibro.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnAccesoLibro.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        btnAccesoLibro.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnAccesoLibroActionPerformed(evt);
+            }
+        });
+        jToolBar1.add(btnAccesoLibro);
 
-        jButton2.setText("Acceso Rapido a GestionUsuarios");
-        jButton2.setFocusable(false);
-        jButton2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton2.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        jToolBar1.add(jButton2);
+        btnAccesoUsuarios.setText("Acceso Rapido a GestionUsuarios");
+        btnAccesoUsuarios.setFocusable(false);
+        btnAccesoUsuarios.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnAccesoUsuarios.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        btnAccesoUsuarios.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnAccesoUsuariosActionPerformed(evt);
+            }
+        });
+        jToolBar1.add(btnAccesoUsuarios);
 
-        jButton3.setText("Acceso Rapido a GestionPrestamos");
-        jButton3.setFocusable(false);
-        jButton3.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton3.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        jToolBar1.add(jButton3);
+        btnAccesoPrestamos.setText("Acceso Rapido a GestionPrestamos");
+        btnAccesoPrestamos.setFocusable(false);
+        btnAccesoPrestamos.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnAccesoPrestamos.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        btnAccesoPrestamos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnAccesoPrestamosActionPerformed(evt);
+            }
+        });
+        jToolBar1.add(btnAccesoPrestamos);
 
-        jButton4.setText("Acceso Rapido a GestionDevoluciones");
-        jButton4.setFocusable(false);
-        jButton4.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton4.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        jToolBar1.add(jButton4);
+        btnAccesoDevoluciones.setText("Acceso Rapido a GestionDevoluciones");
+        btnAccesoDevoluciones.setFocusable(false);
+        btnAccesoDevoluciones.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnAccesoDevoluciones.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jToolBar1.add(btnAccesoDevoluciones);
 
-        jButton5.setText("Acceso Rapido a Calcular Multa");
-        jButton5.setFocusable(false);
-        jButton5.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton5.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        jToolBar1.add(jButton5);
+        btnAccesoMulta.setText("Acceso Rapido a Calcular Multa");
+        btnAccesoMulta.setFocusable(false);
+        btnAccesoMulta.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnAccesoMulta.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jToolBar1.add(btnAccesoMulta);
+
+        btnAccesoCopiaSeguridad.setText("Acceso Rapido Crear Copia Seguridad");
+        btnAccesoCopiaSeguridad.setFocusable(false);
+        btnAccesoCopiaSeguridad.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnAccesoCopiaSeguridad.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        btnAccesoCopiaSeguridad.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnAccesoCopiaSeguridadActionPerformed(evt);
+            }
+        });
+        jToolBar1.add(btnAccesoCopiaSeguridad);
 
         jMenuBar1.setAutoscrolls(true);
         jMenuBar1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
@@ -338,14 +368,7 @@ public class MenuPrincipal extends JFrame {
 
         jMenuBar1.add(jMenu4);
 
-        jMenu3.setText("Operaciones");
-        jMenuBar1.add(jMenu3);
-
         jMenu5.setText("Consultas");
-        jMenuBar1.add(jMenu5);
-
-        jMenu1.setText("Herramientas");
-        jMenuBar1.add(jMenu1);
 
         menuReportes.setText("Reportes");
 
@@ -358,7 +381,29 @@ public class MenuPrincipal extends JFrame {
         jMenuItem4.setText("Reporte Por Prestamos");
         menuReportes.add(jMenuItem4);
 
-        jMenuBar1.add(menuReportes);
+        jMenu5.add(menuReportes);
+
+        jMenuBar1.add(jMenu5);
+
+        jMenu1.setText("Herramientas");
+
+        itemCopiaSeguridad.setText("Realizar Copia de Seguridad");
+        itemCopiaSeguridad.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                itemCopiaSeguridadActionPerformed(evt);
+            }
+        });
+        jMenu1.add(itemCopiaSeguridad);
+
+        intemRestaurar.setText("Restaurar Informacion");
+        intemRestaurar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                intemRestaurarActionPerformed(evt);
+            }
+        });
+        jMenu1.add(intemRestaurar);
+
+        jMenuBar1.add(jMenu1);
 
         jMenu2.setText("Ayuda");
         jMenuBar1.add(jMenu2);
@@ -421,6 +466,30 @@ public class MenuPrincipal extends JFrame {
         mostrarModulo(new GestionColas());
     }//GEN-LAST:event_itemGestionColasActionPerformed
 
+    private void itemCopiaSeguridadActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itemCopiaSeguridadActionPerformed
+        mostrarModulo(new CopiaSeguridadForm());
+    }//GEN-LAST:event_itemCopiaSeguridadActionPerformed
+
+    private void intemRestaurarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_intemRestaurarActionPerformed
+        mostrarModulo(new RestaurarInfoForm());
+    }//GEN-LAST:event_intemRestaurarActionPerformed
+
+    private void btnAccesoLibroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAccesoLibroActionPerformed
+        mostrarModulo(new GestionLibro());
+    }//GEN-LAST:event_btnAccesoLibroActionPerformed
+
+    private void btnAccesoUsuariosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAccesoUsuariosActionPerformed
+        mostrarModulo(new GestionarUsuario());
+    }//GEN-LAST:event_btnAccesoUsuariosActionPerformed
+
+    private void btnAccesoPrestamosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAccesoPrestamosActionPerformed
+        mostrarModulo(new GestionPrestamo());
+    }//GEN-LAST:event_btnAccesoPrestamosActionPerformed
+
+    private void btnAccesoCopiaSeguridadActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAccesoCopiaSeguridadActionPerformed
+        mostrarModulo(new CopiaSeguridadForm());
+    }//GEN-LAST:event_btnAccesoCopiaSeguridadActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -434,15 +503,17 @@ public class MenuPrincipal extends JFrame {
     private javax.swing.JMenuItem ItemGestionarCategoria;
     private javax.swing.JMenuItem ItemSalir;
     private javax.swing.JDesktopPane Ventana;
+    private javax.swing.JButton btnAccesoCopiaSeguridad;
+    private javax.swing.JButton btnAccesoDevoluciones;
+    private javax.swing.JButton btnAccesoLibro;
+    private javax.swing.JButton btnAccesoMulta;
+    private javax.swing.JButton btnAccesoPrestamos;
+    private javax.swing.JButton btnAccesoUsuarios;
+    private javax.swing.JMenuItem intemRestaurar;
+    private javax.swing.JMenuItem itemCopiaSeguridad;
     private javax.swing.JMenuItem itemGestionColas;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
-    private javax.swing.JMenu jMenu3;
     private javax.swing.JMenu jMenu4;
     private javax.swing.JMenu jMenu5;
     private javax.swing.JMenuBar jMenuBar1;
