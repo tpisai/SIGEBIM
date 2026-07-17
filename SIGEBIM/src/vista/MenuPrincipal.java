@@ -17,10 +17,6 @@ import java.awt.Image;
 import java.awt.Graphics;
 import javax.swing.SwingUtilities;
 import servicios.respaldos.RegistroActividadService;
-import vista.JInternalFrame.Ayuda.AyudaConfiguracionForm;
-import vista.JInternalFrame.Ayuda.AyudaLibroForm;
-import vista.JInternalFrame.Ayuda.AyudaPrestamoForm;
-import vista.JInternalFrame.Ayuda.AyudaUsuarioForm;
 import vista.JInternalFrame.Consultas.ConsultarRegistroActividad;
 import vista.JInternalFrame.herramientas.CopiaSeguridadForm;
 import vista.JInternalFrame.Gestion.GestionColas;
@@ -515,7 +511,7 @@ public class MenuPrincipal extends JFrame {
     }//GEN-LAST:event_itemGestionColasActionPerformed
 
     private void itemCopiaSeguridadActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itemCopiaSeguridadActionPerformed
-        mostrarModulo(new CopiaSeguridadForm(usuario,registroActividadService));
+        /*mostrarModulo(new CopiaSeguridadForm(usuario,registroActividadService));*/
     }//GEN-LAST:event_itemCopiaSeguridadActionPerformed
 
     private void intemRestaurarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_intemRestaurarActionPerformed
@@ -535,7 +531,7 @@ public class MenuPrincipal extends JFrame {
     }//GEN-LAST:event_btnAccesoPrestamosActionPerformed
 
     private void btnAccesoCopiaSeguridadActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAccesoCopiaSeguridadActionPerformed
-        mostrarModulo(new CopiaSeguridadForm(usuario,registroActividadService));
+        /*mostrarModulo(new CopiaSeguridadForm(usuario,registroActividadService));*/
     }//GEN-LAST:event_btnAccesoCopiaSeguridadActionPerformed
 
     private void itemNosotrosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itemNosotrosActionPerformed
@@ -543,19 +539,19 @@ public class MenuPrincipal extends JFrame {
     }//GEN-LAST:event_itemNosotrosActionPerformed
 
     private void itemAyudaLibrosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itemAyudaLibrosActionPerformed
-        mostrarModulo(new AyudaLibroForm());
+        
     }//GEN-LAST:event_itemAyudaLibrosActionPerformed
 
     private void jMenuItem7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem7ActionPerformed
-        mostrarModulo(new AyudaUsuarioForm());
+        
     }//GEN-LAST:event_jMenuItem7ActionPerformed
 
     private void itemAyudaPrestamosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itemAyudaPrestamosActionPerformed
-        mostrarModulo(new AyudaPrestamoForm());
+        
     }//GEN-LAST:event_itemAyudaPrestamosActionPerformed
 
     private void itemAyudaConfiguracionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itemAyudaConfiguracionActionPerformed
-        mostrarModulo(new AyudaConfiguracionForm());
+        
     }//GEN-LAST:event_itemAyudaConfiguracionActionPerformed
 
     private void itemRegistroActividadActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itemRegistroActividadActionPerformed

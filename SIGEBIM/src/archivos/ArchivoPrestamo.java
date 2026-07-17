@@ -21,11 +21,11 @@ public class ArchivoPrestamo {
             for (Prestamo p : lista) {
                 pw.println(
                     p.getIdPrestamo() + "|" +
-                    p.getLibro().getIsbn() + "|" +
-                    p.getUsuario().getUsername() + "|" +
-                    p.getFechaPrestamo() + "|" +
-                    p.getFechaLimite() + "|" +
-                    p.getFechaDevolucion() + "|" +
+                    (p.getLibro() != null ? p.getLibro().getIsbn() : "") + "|" +
+                    (p.getUsuario() != null ? p.getUsuario().getUsername() : "") + "|" +
+                    (p.getFechaPrestamo() != null ? p.getFechaPrestamo() : "") + "|" +
+                    (p.getFechaLimite() != null ? p.getFechaLimite() : "") + "|" +
+                    (p.getFechaDevolucion() != null ? p.getFechaDevolucion() : "") + "|" +
                     p.getEstado()
                 );
             }
@@ -46,9 +46,12 @@ public class ArchivoPrestamo {
                 Libro libro = buscarLibro(libros, datos[1]);
                 Usuario usuario = buscarUsuario(usuarios, datos[2]);
 
-                LocalDate fechaPrestamo = datos[3].isBlank() ? null : LocalDate.parse(datos[3]);
-                LocalDate fechaLimite = datos[4].isBlank() ? null : LocalDate.parse(datos[4]);
-                LocalDate fechaDevolucion = datos[5].isBlank() ? null : LocalDate.parse(datos[5]);
+                LocalDate fechaPrestamo = (datos[3] == null || datos[3].isBlank() || datos[3].equalsIgnoreCase("null"))
+                        ? null : LocalDate.parse(datos[3]);
+                LocalDate fechaLimite = (datos[4] == null || datos[4].isBlank() || datos[4].equalsIgnoreCase("null"))
+                        ? null : LocalDate.parse(datos[4]);
+                LocalDate fechaDevolucion = (datos[5] == null || datos[5].isBlank() || datos[5].equalsIgnoreCase("null"))
+                        ? null : LocalDate.parse(datos[5]);
 
                 Prestamo prestamo = new Prestamo(
                     datos[0],

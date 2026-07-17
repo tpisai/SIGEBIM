@@ -1,29 +1,27 @@
 package modelo.prestamo;
 
 import java.util.*;
+
 import modelo.persona.Usuario;
 
 public class ColaDeEspera {
-    private static Map<String, Queue<Usuario>> colas = new HashMap<>();
+    private static final Map<String, Queue<Usuario>> colasPorLibro = new HashMap<>();
 
     public static void agregarUsuario(String isbn, Usuario usuario) {
-        colas.putIfAbsent(isbn, new LinkedList<>());
-        colas.get(isbn).add(usuario);
+        colasPorLibro.putIfAbsent(isbn, new LinkedList<>());
+        colasPorLibro.get(isbn).add(usuario);
     }
 
     public static Queue<Usuario> obtenerCola(String isbn) {
-        return colas.getOrDefault(isbn, new LinkedList<>());
+        return colasPorLibro.getOrDefault(isbn, new LinkedList<>());
     }
 
     public static Usuario atenderSiguiente(String isbn) {
-        Queue<Usuario> cola = colas.get(isbn);
-        if (cola != null && !cola.isEmpty()) {
-            return cola.poll();
-        }
-        return null;
+        Queue<Usuario> cola = colasPorLibro.get(isbn);
+        return (cola != null) ? cola.poll() : null;
     }
 
     public static boolean tieneCola(String isbn) {
-        return colas.containsKey(isbn) && !colas.get(isbn).isEmpty();
+        return colasPorLibro.containsKey(isbn) && !colasPorLibro.get(isbn).isEmpty();
     }
 }

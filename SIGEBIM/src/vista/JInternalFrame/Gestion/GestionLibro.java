@@ -389,7 +389,7 @@ public class GestionLibro extends javax.swing.JInternalFrame {
         jLabel11.setFont(new java.awt.Font("Georgia", 2, 14)); // NOI18N
         jLabel11.setForeground(new java.awt.Color(255, 215, 158));
         jLabel11.setText("Estado:");
-        jPanel2.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(14, 67, 60, -1));
+        jPanel2.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(14, 67, 48, -1));
 
         txtISBN.setBackground(new java.awt.Color(242, 224, 189));
         txtISBN.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));

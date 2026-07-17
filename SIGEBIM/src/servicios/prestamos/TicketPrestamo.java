@@ -20,13 +20,11 @@ public class TicketPrestamo {
             PdfWriter.getInstance(document, new FileOutputStream(nombreArchivo));
             document.open();
 
-            // Logo
             Image logo = Image.getInstance("src/img/LOGO.png");
             logo.scaleToFit(120, 120);
             logo.setAlignment(Element.ALIGN_CENTER);
             document.add(logo);
 
-            // Encabezado
             Font fontTitulo = FontFactory.getFont(FontFactory.HELVETICA_BOLD, 18);
             Paragraph titulo = new Paragraph("BIBLIOTECA MUNICIPAL DE CHACLACAYO", fontTitulo);
             titulo.setAlignment(Element.ALIGN_CENTER);
@@ -35,7 +33,6 @@ public class TicketPrestamo {
             document.add(new Paragraph("------------------------------------------------------------------------------------------------------------------------"));
             document.add(new Paragraph(" "));
 
-            // Datos del préstamo con formato
             Font fontLabel = FontFactory.getFont(FontFactory.HELVETICA_BOLD, 12);
             Font fontDato = FontFactory.getFont(FontFactory.HELVETICA, 12);
 
@@ -54,11 +51,15 @@ public class TicketPrestamo {
             document.add(new Paragraph("Nombre del Usuario: ", fontLabel));
             document.add(new Paragraph(prestamo.getUsuario().getNombre(), fontDato));
 
+            // USO DE MÉTODOS FORMATEADOS SEGUROS
             document.add(new Paragraph("Fecha de Préstamo: ", fontLabel));
-            document.add(new Paragraph(prestamo.getFechaPrestamo().toString(), fontDato));
+            document.add(new Paragraph(prestamo.getFechaPrestamoFormateada(), fontDato));
+
+            document.add(new Paragraph("Fecha Límite: ", fontLabel));
+            document.add(new Paragraph(prestamo.getFechaLimiteFormateada(), fontDato));
 
             document.add(new Paragraph("Fecha de Devolución: ", fontLabel));
-            document.add(new Paragraph(prestamo.getFechaDevolucion().toString(), fontDato));
+            document.add(new Paragraph(prestamo.getFechaDevolucionFormateada(), fontDato));
 
             document.add(new Paragraph("Estado: ", fontLabel));
             document.add(new Paragraph(prestamo.getEstadoPrestamo().getTexto(), fontDato));
@@ -67,7 +68,6 @@ public class TicketPrestamo {
             document.add(new Paragraph("------------------------------------------------------------------------------------------------------------------------"));
             document.add(new Paragraph(" "));
 
-            // Pie de página
             Font fontPie = FontFactory.getFont(FontFactory.HELVETICA_OBLIQUE, 10);
             Paragraph pie = new Paragraph("Gracias por usar el servicio de biblioteca municipal", fontPie);
             pie.setAlignment(Element.ALIGN_CENTER);

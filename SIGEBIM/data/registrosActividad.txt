@@ -9,3 +9,4 @@ LOG-0008|17/07/2026 12:38:29|admin|Administrador|Seguridad|Iniciar Sesion|El Usu
 LOG-0009|17/07/2026 12:41:00|admin|Administrador|Seguridad|Iniciar Sesion|El Usuario ingreso correctamente al sistema|Exitoso
 LOG-0010|17/07/2026 12:51:55|admin|Administrador|Seguridad|Iniciar Sesion|El Usuario ingreso correctamente al sistema|Exitoso
 LOG-0011|17/07/2026 12:53:51|admin|Administrador|Seguridad|Iniciar Sesion|El Usuario ingreso correctamente al sistema|Exitoso
+LOG-0012|17/07/2026 17:11:37|admin|Administrador|Seguridad|Iniciar Sesion|El Usuario ingreso correctamente al sistema|Exitoso

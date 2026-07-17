@@ -1,4 +1,4 @@
-package servicios.libros;
+package servicios.prestamos;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
@@ -6,12 +6,16 @@ import java.util.LinkedList;
 import java.util.Queue;
 import modelo.libro.Libro;
 import modelo.enums.EstadoPrestamo;
+import modelo.prestamo.ColaDeEspera;
 import modelo.prestamo.Prestamo;
 import modelo.prestamo.SolicitudPrestamo;
 import modelo.persona.Usuario;
-import modelo.interfaces.Gestionable;
 
 public class PrestamoService {
+
+    private static final String PREFIJO_ID = "TCK-";
+    private static final int DIGITOS_ID = 4;
+
     private final ArrayList<Prestamo> prestamos;
     private final Queue<SolicitudPrestamo> colaSolicitudes;
 
@@ -20,22 +24,19 @@ public class PrestamoService {
         this.colaSolicitudes = new LinkedList<>();
     }
 
-    //Cola FIFO: el primero que solicita el prestamo sera el primero en ser atendido.
+    // --- Cola de solicitudes ---
     public void agregarSolicitud(SolicitudPrestamo solicitud) {
         colaSolicitudes.add(solicitud);
     }
 
-    //para ver quien sigue sin removerlo.
     public SolicitudPrestamo verSiguienteSolicitud() {
         return colaSolicitudes.peek();
     }
 
-    //Equivale a cola.poll(): remueve y retorna la primera solicitud de la cola.
     public SolicitudPrestamo atenderSiguienteSolicitud() {
         return colaSolicitudes.poll();
     }
 
-    //Equivale a cola.size(): devuelve cuantas solicitudes estan pendientes.
     public int cantidadSolicitudesPendientes() {
         return colaSolicitudes.size();
     }
@@ -44,31 +45,49 @@ public class PrestamoService {
         return colaSolicitudes;
     }
 
-    //Registrar Prestamo
+    // --- Registro de préstamos ---
     public void registrar(Prestamo prestamo) {
         if (prestamo == null || existePrestamoActivo(prestamo.getLibro().getIsbn(), prestamo.getUsuario().getUsername())) {
-            throw new IllegalArgumentException("No se puede registrar el prestamo.");
+            throw new IllegalArgumentException("No se puede registrar el préstamo.");
         }
         prestamos.add(prestamo);
     }
-    //Valida antes de guardar en el arraylist el objeto
-    public Prestamo crearPrestamo(String idPrestamo, Libro libro, Usuario usuario, int diasPrestamo) {
-        //Validar para recien permitir registrar el prestamo al usuario
+
+    private String generarSiguienteId() {
+        int maxNumero = 0;
+        for (Prestamo p : prestamos) {
+            String id = p.getIdPrestamo();
+            if (id != null && id.startsWith(PREFIJO_ID)) {
+                try {
+                    int numero = Integer.parseInt(id.substring(PREFIJO_ID.length()));
+                    if (numero > maxNumero) {
+                        maxNumero = numero;
+                    }
+                } catch (NumberFormatException e) {
+                    // Ignorar IDs con formato distinto
+                }
+            }
+        }
+        return String.format(PREFIJO_ID + "%0" + DIGITOS_ID + "d", maxNumero + 1);
+    }
+
+    public Prestamo crearPrestamo(Libro libro, Usuario usuario, int diasPrestamo) {
         if (libro == null || usuario == null) {
             throw new IllegalArgumentException("Debe seleccionar libro y usuario.");
         }
         if (!usuario.isActivo()) {
             throw new IllegalStateException("Usuario inactivo");
         }
-        if (!libro.puedePrestarse()) {
-            throw new IllegalStateException("El libro no cuenta con stock disponible para prestamo.");
-        }
         if (existePrestamoActivo(libro.getIsbn(), usuario.getUsername())) {
             throw new IllegalStateException("Ya tiene préstamo activo");
         }
+        if (!libro.puedePrestarse()) {
+            throw new StockNoDisponibleException(libro);
+        }
+
         libro.registrarPrestamo();
         Prestamo prestamo = new Prestamo(
-                idPrestamo,
+                generarSiguienteId(),
                 libro,
                 usuario,
                 LocalDate.now(),
@@ -80,7 +99,23 @@ public class PrestamoService {
         return prestamo;
     }
 
-    //Atiende la primera solicitud de la cola y, si el libro tiene stock, la convierte en prestamo.
+    // --- Lista de espera ---
+    public void agregarAListaEspera(Libro libro, Usuario usuario) {
+        if (libro == null || usuario == null) {
+            throw new IllegalArgumentException("Debe seleccionar libro y usuario.");
+        }
+        ColaDeEspera.agregarUsuario(libro.getIsbn(), usuario);
+    }
+
+    public boolean tieneListaEspera(String isbn) {
+        return ColaDeEspera.tieneCola(isbn);
+    }
+
+    public Usuario atenderSiguienteEnEspera(String isbn) {
+        return ColaDeEspera.atenderSiguiente(isbn);
+    }
+
+    // --- Aprobar solicitud ---
     public Prestamo aprobarSiguienteSolicitud(Libro libro, Usuario usuario, int diasPrestamo) {
         SolicitudPrestamo solicitud = atenderSiguienteSolicitud();
         if (solicitud == null) {
@@ -90,20 +125,17 @@ public class PrestamoService {
             solicitud.marcarRechazada();
             throw new IllegalArgumentException("Libro o usuario no encontrado.");
         }
-        Prestamo prestamo = crearPrestamo(
-                "P-" + solicitud.getIdSolicitud(),
-                libro,
-                usuario,
-                diasPrestamo
-        );
+        Prestamo prestamo = crearPrestamo(libro, usuario, diasPrestamo);
         solicitud.marcarAtendida();
         return prestamo;
     }
-    //Aplica la devolucion correcta
+
+    // --- Devolver préstamo ---
     public boolean devolverPrestamo(String idPrestamo, Libro libro) {
         for (Prestamo prestamo : prestamos) {
             if (prestamo.getIdPrestamo().equalsIgnoreCase(idPrestamo) && prestamo.estaActivo()) {
                 prestamo.marcarDevuelto();
+                prestamo.setFechaDevolucion(LocalDate.now()); // Captura fecha actual
                 if (libro != null) {
                     libro.registrarDevolucion();
                 }
@@ -113,7 +145,7 @@ public class PrestamoService {
         return false;
     }
 
-
+    // --- CRUD ---
     public boolean actualizar(String codigo, Prestamo prestamoActualizado) {
         for (int i = 0; i < prestamos.size(); i++) {
             if (prestamos.get(i).getIdPrestamo().equalsIgnoreCase(codigo)) {
@@ -124,9 +156,41 @@ public class PrestamoService {
         return false;
     }
 
-
     public boolean eliminar(String codigo) {
         return prestamos.removeIf(p -> p.getIdPrestamo().equalsIgnoreCase(codigo));
+    }
+
+    // --- Búsquedas ---
+    public Prestamo buscarPrestamo(String idPrestamo) {
+        for (Prestamo prestamo : prestamos) {
+            if (prestamo.getIdPrestamo().equalsIgnoreCase(idPrestamo)) {
+                return prestamo;
+            }
+        }
+        return null;
+    }
+
+    public Libro buscarLibroPorIsbn(ArrayList<Libro> libros, String isbn) {
+        for (Libro l : libros) {
+            if (l.getIsbn().equalsIgnoreCase(isbn)) return l;
+        }
+        return null;
+    }
+
+    public Usuario buscarUsuarioPorDni(ArrayList<Usuario> usuarios, String dni) {
+        for (Usuario u : usuarios) {
+            if (u.getDni().equalsIgnoreCase(dni)) return u;
+        }
+        return null;
+    }
+
+    public Usuario buscarLectorPorDni(ArrayList<Usuario> usuarios, String dni) {
+        for (Usuario u : usuarios) {
+            if (u.getDni().equalsIgnoreCase(dni) && u.esLector()) {
+                return u;
+            }
+        }
+        return null;
     }
 
     public boolean existePrestamoActivo(String isbn, String username) {

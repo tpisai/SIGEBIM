@@ -63,7 +63,6 @@ public class GestionColas extends javax.swing.JInternalFrame {
         btnDevolucion1.addActionListener(this::btnDevolucion1ActionPerformed);
 
         btnBuscarr.setBackground(new java.awt.Color(161, 217, 128));
-        btnBuscarr.setForeground(new java.awt.Color(0, 0, 0));
         btnBuscarr.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/lupa.png"))); // NOI18N
         btnBuscarr.setText("Buscar");
         btnBuscarr.addActionListener(this::btnBuscarrActionPerformed);
@@ -96,7 +95,6 @@ public class GestionColas extends javax.swing.JInternalFrame {
         );
 
         tblDevolucion.setBackground(new java.awt.Color(101, 67, 33));
-        tblDevolucion.setForeground(new java.awt.Color(0, 0, 0));
         tblDevolucion.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},

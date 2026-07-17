@@ -100,50 +100,75 @@ public class ImportarInfoForm extends javax.swing.JInternalFrame {
         jLabel16 = new javax.swing.JLabel();
         btnVerificar = new javax.swing.JButton();
         btnLimpiar = new javax.swing.JButton();
-        btnClose = new javax.swing.JButton();
         btnSeleccionar = new javax.swing.JButton();
         btnRestaurar = new javax.swing.JButton();
         txtCantidad = new javax.swing.JTextField();
+        jLabel1 = new javax.swing.JLabel();
+
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jPanel1.setBackground(new java.awt.Color(61, 26, 26));
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel15.setBackground(new java.awt.Color(150, 111, 51));
-        jLabel15.setFont(new java.awt.Font("Segoe Print", 0, 24)); // NOI18N
-        jLabel15.setForeground(new java.awt.Color(0, 95, 115));
+        jLabel15.setFont(new java.awt.Font("Georgia", 3, 24)); // NOI18N
+        jLabel15.setForeground(new java.awt.Color(255, 215, 158));
         jLabel15.setText("SIGEBIM - CREAR COPIA DE SEGURIDAD");
+        jPanel1.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 20, 540, -1));
 
-        txtCarpetaDatos.setBackground(new java.awt.Color(60, 60, 60));
+        txtCarpetaDatos.setBackground(new java.awt.Color(242, 224, 189));
         txtCarpetaDatos.setFont(new java.awt.Font("Segoe UI", 2, 14)); // NOI18N
         txtCarpetaDatos.setForeground(new java.awt.Color(255, 255, 255));
+        jPanel1.add(txtCarpetaDatos, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 110, 426, -1));
 
+        txtCarpetaRespaldo.setBackground(new java.awt.Color(242, 224, 189));
         txtCarpetaRespaldo.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
+        jPanel1.add(txtCarpetaRespaldo, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 70, 263, -1));
 
-        jLabel12.setFont(new java.awt.Font("Segoe UI", 2, 14)); // NOI18N
+        jLabel12.setFont(new java.awt.Font("Georgia", 2, 14)); // NOI18N
+        jLabel12.setForeground(new java.awt.Color(255, 215, 158));
         jLabel12.setText("Carpeta de Respaldo:");
+        jPanel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 70, -1, -1));
 
-        jLabel13.setFont(new java.awt.Font("Segoe UI", 2, 14)); // NOI18N
+        jLabel13.setFont(new java.awt.Font("Georgia", 2, 14)); // NOI18N
+        jLabel13.setForeground(new java.awt.Color(255, 215, 158));
         jLabel13.setText("Carpeta de Datos:");
+        jPanel1.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 120, -1, -1));
 
-        txtFechaRespaldo.setBackground(new java.awt.Color(60, 60, 60));
+        txtFechaRespaldo.setBackground(new java.awt.Color(242, 224, 189));
         txtFechaRespaldo.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         txtFechaRespaldo.setForeground(new java.awt.Color(255, 255, 255));
+        jPanel1.add(txtFechaRespaldo, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 160, 150, -1));
 
-        jLabel14.setFont(new java.awt.Font("Segoe UI", 2, 14)); // NOI18N
+        jLabel14.setFont(new java.awt.Font("Georgia", 2, 14)); // NOI18N
+        jLabel14.setForeground(new java.awt.Color(255, 215, 158));
         jLabel14.setText("Fecha de respaldo:");
+        jPanel1.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 170, 136, -1));
 
+        txtArchivosRespaldo.setBackground(new java.awt.Color(242, 224, 189));
         txtArchivosRespaldo.setColumns(20);
         txtArchivosRespaldo.setRows(5);
         jScrollPane1.setViewportView(txtArchivosRespaldo);
 
-        jLabel16.setFont(new java.awt.Font("Segoe UI", 2, 14)); // NOI18N
-        jLabel16.setText("Cantidad de archivos:");
+        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 220, 426, 215));
 
+        jLabel16.setFont(new java.awt.Font("Georgia", 2, 14)); // NOI18N
+        jLabel16.setForeground(new java.awt.Color(255, 215, 158));
+        jLabel16.setText("Cantidad de archivos:");
+        jPanel1.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 170, -1, -1));
+
+        btnVerificar.setBackground(new java.awt.Color(17, 92, 58));
+        btnVerificar.setFont(new java.awt.Font("Georgia", 0, 12)); // NOI18N
+        btnVerificar.setForeground(new java.awt.Color(255, 215, 158));
         btnVerificar.setText("Verificar");
         btnVerificar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnVerificarActionPerformed(evt);
             }
         });
+        jPanel1.add(btnVerificar, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 250, 136, -1));
 
-        btnLimpiar.setBackground(new java.awt.Color(255, 255, 249));
+        btnLimpiar.setBackground(new java.awt.Color(242, 224, 189));
         btnLimpiar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/escoba.png"))); // NOI18N
         btnLimpiar.setBorderPainted(false);
         btnLimpiar.addActionListener(new java.awt.event.ActionListener() {
@@ -151,124 +176,39 @@ public class ImportarInfoForm extends javax.swing.JInternalFrame {
                 btnLimpiarActionPerformed(evt);
             }
         });
+        jPanel1.add(btnLimpiar, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 350, 70, 50));
 
-        btnClose.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/close.png"))); // NOI18N
-        btnClose.setBorder(null);
-        btnClose.setBorderPainted(false);
-        btnClose.setContentAreaFilled(false);
-        btnClose.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btnClose.setFocusPainted(false);
-        btnClose.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnCloseActionPerformed(evt);
-            }
-        });
-
+        btnSeleccionar.setBackground(new java.awt.Color(212, 163, 89));
+        btnSeleccionar.setFont(new java.awt.Font("Georgia", 0, 12)); // NOI18N
+        btnSeleccionar.setForeground(new java.awt.Color(255, 215, 158));
         btnSeleccionar.setText("Seleccionar Carpeta...");
         btnSeleccionar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnSeleccionarActionPerformed(evt);
             }
         });
+        jPanel1.add(btnSeleccionar, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 70, -1, -1));
 
+        btnRestaurar.setBackground(new java.awt.Color(27, 73, 125));
+        btnRestaurar.setFont(new java.awt.Font("Georgia", 0, 12)); // NOI18N
+        btnRestaurar.setForeground(new java.awt.Color(255, 215, 158));
         btnRestaurar.setText("Restaurar");
         btnRestaurar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnRestaurarActionPerformed(evt);
             }
         });
+        jPanel1.add(btnRestaurar, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 300, 136, -1));
 
-        txtCantidad.setBackground(new java.awt.Color(60, 60, 60));
+        txtCantidad.setBackground(new java.awt.Color(242, 224, 189));
         txtCantidad.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         txtCantidad.setForeground(new java.awt.Color(255, 255, 255));
+        jPanel1.add(txtCantidad, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 160, 119, -1));
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jLabel15, javax.swing.GroupLayout.PREFERRED_SIZE, 540, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(btnClose))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addComponent(jLabel12)
-                                .addComponent(jLabel13)
-                                .addComponent(jLabel14, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(btnVerificar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(btnRestaurar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                            .addComponent(btnLimpiar))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(txtCarpetaRespaldo)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(btnSeleccionar))
-                            .addComponent(jScrollPane1)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(txtFechaRespaldo, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jLabel16)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(txtCantidad, javax.swing.GroupLayout.DEFAULT_SIZE, 119, Short.MAX_VALUE))
-                            .addComponent(txtCarpetaDatos))
-                        .addGap(12, 12, 12)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(btnClose))
-                    .addComponent(jLabel15))
-                .addGap(12, 12, 12)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel12)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(txtCarpetaRespaldo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btnSeleccionar))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(txtCarpetaDatos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel13))))
-                .addGap(13, 13, 13)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel14)
-                    .addComponent(txtFechaRespaldo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel16)
-                    .addComponent(txtCantidad, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(10, 10, 10)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addComponent(btnVerificar)
-                        .addGap(18, 18, 18)
-                        .addComponent(btnRestaurar)
-                        .addGap(51, 51, 51)
-                        .addComponent(btnLimpiar))
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 215, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(0, 10, Short.MAX_VALUE))
-        );
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/fondo.png"))); // NOI18N
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(-3, -4, 710, 460));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 589, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-        );
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -276,10 +216,6 @@ public class ImportarInfoForm extends javax.swing.JInternalFrame {
     private void btnLimpiarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLimpiarActionPerformed
         limpiar();
     }//GEN-LAST:event_btnLimpiarActionPerformed
-
-    private void btnCloseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCloseActionPerformed
-        dispose();
-    }//GEN-LAST:event_btnCloseActionPerformed
 
     private void btnSeleccionarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSeleccionarActionPerformed
         JFileChooser selector = new JFileChooser();
@@ -330,11 +266,11 @@ public class ImportarInfoForm extends javax.swing.JInternalFrame {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnClose;
     private javax.swing.JButton btnLimpiar;
     private javax.swing.JButton btnRestaurar;
     private javax.swing.JButton btnSeleccionar;
     private javax.swing.JButton btnVerificar;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;

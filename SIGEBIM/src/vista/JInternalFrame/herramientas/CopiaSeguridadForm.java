@@ -10,9 +10,8 @@ import java.nio.file.Path;
 import java.util.List;
 import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
-import modelo.persona.Usuario;
 import modelo.respaldo.ResultadoRespaldo;
-import servicios.respaldos.RegistroActividadService;
+import servicios.configuracion.ConfiguracionService;
 import servicios.respaldos.RespaldoService;
 
 /**
@@ -25,9 +24,9 @@ public class CopiaSeguridadForm extends javax.swing.JInternalFrame {
      * Creates new form CopiaSeguridadForm
      */
     private final RespaldoService respaldoService = new RespaldoService();
-    private final String origen = "C:\\SIGEBIM\\SIGEBIM\\data";   
-    private final Usuario usuarioActual;
-    private final RegistroActividadService registroActividadService;
+    private final ConfiguracionService configuracionService = new ConfiguracionService();
+    
+    private final String origen = configuracionService.obtenerConfiguracion().getCarpetaRespaldo();
     
     public void mostrarArchivosDatos(Path carpetaDatos) {
         StringBuilder contenido = new StringBuilder();
@@ -57,12 +56,10 @@ public class CopiaSeguridadForm extends javax.swing.JInternalFrame {
         txtArchivos.setCaretPosition(0);
     }
     
-    public CopiaSeguridadForm(Usuario usuarioActual, RegistroActividadService registroActividadService) {
+    public CopiaSeguridadForm() {
         initComponents();
         txtCarpetaDatos.setEditable(false);
         txtCarpetaDatos.setText(origen);
-        this.usuarioActual = usuarioActual;
-        this.registroActividadService = registroActividadService;
     }
     private void limpiar(){
         txtCarpetaDestino.setText(null);
@@ -89,44 +86,81 @@ public class CopiaSeguridadForm extends javax.swing.JInternalFrame {
         btnSeleccionar = new javax.swing.JButton();
         btnRespaldar = new javax.swing.JButton();
         btnLimpiar = new javax.swing.JButton();
-        btnClose = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
+
+        setClosable(true);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jPanel1.setBackground(new java.awt.Color(61, 26, 26));
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel15.setBackground(new java.awt.Color(150, 111, 51));
-        jLabel15.setFont(new java.awt.Font("Segoe Print", 0, 24)); // NOI18N
-        jLabel15.setForeground(new java.awt.Color(0, 95, 115));
+        jLabel15.setFont(new java.awt.Font("Georgia", 3, 24)); // NOI18N
+        jLabel15.setForeground(new java.awt.Color(255, 215, 158));
         jLabel15.setText("SIGEBIM - CREAR COPIA DE SEGURIDAD");
+        jPanel1.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 0, 540, -1));
 
-        txtCarpetaDatos.setBackground(new java.awt.Color(60, 60, 60));
+        txtCarpetaDestino.setBackground(new java.awt.Color(242, 224, 189));
+        txtCarpetaDestino.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        txtCarpetaDestino.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtCarpetaDestinoActionPerformed(evt);
+            }
+        });
+        jPanel1.add(txtCarpetaDestino, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 120, 240, -1));
+
+        txtCarpetaDatos.setBackground(new java.awt.Color(242, 224, 189));
         txtCarpetaDatos.setForeground(new java.awt.Color(255, 255, 255));
+        txtCarpetaDatos.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel1.add(txtCarpetaDatos, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 80, 430, -1));
 
-        jLabel12.setFont(new java.awt.Font("Segoe UI", 2, 14)); // NOI18N
+        jLabel12.setFont(new java.awt.Font("Georgia", 2, 14)); // NOI18N
+        jLabel12.setForeground(new java.awt.Color(255, 215, 158));
         jLabel12.setText("Carpeta de Datos:");
+        jPanel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 80, -1, -1));
 
-        jLabel13.setFont(new java.awt.Font("Segoe UI", 2, 14)); // NOI18N
+        jLabel13.setFont(new java.awt.Font("Georgia", 2, 14)); // NOI18N
+        jLabel13.setForeground(new java.awt.Color(255, 215, 158));
         jLabel13.setText("Carpeta de Destino:");
+        jPanel1.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 120, -1, -1));
 
+        txtArchivos.setBackground(new java.awt.Color(242, 224, 189));
         txtArchivos.setColumns(20);
         txtArchivos.setRows(5);
+        txtArchivos.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jScrollPane1.setViewportView(txtArchivos);
 
-        jLabel16.setFont(new java.awt.Font("Segoe UI", 2, 14)); // NOI18N
-        jLabel16.setText("Archivos a Respaldar:");
+        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 160, 428, 204));
 
+        jLabel16.setFont(new java.awt.Font("Georgia", 2, 14)); // NOI18N
+        jLabel16.setForeground(new java.awt.Color(255, 215, 158));
+        jLabel16.setText("Archivos a Respaldar:");
+        jPanel1.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 210, -1, -1));
+
+        btnSeleccionar.setBackground(new java.awt.Color(212, 163, 89));
+        btnSeleccionar.setFont(new java.awt.Font("Georgia", 0, 12)); // NOI18N
+        btnSeleccionar.setForeground(new java.awt.Color(255, 215, 158));
         btnSeleccionar.setText("Seleccionar Carpeta...");
+        btnSeleccionar.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         btnSeleccionar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnSeleccionarActionPerformed(evt);
             }
         });
+        jPanel1.add(btnSeleccionar, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 120, 130, 20));
 
+        btnRespaldar.setBackground(new java.awt.Color(27, 73, 125));
+        btnRespaldar.setFont(new java.awt.Font("Georgia", 0, 12)); // NOI18N
+        btnRespaldar.setForeground(new java.awt.Color(255, 215, 158));
         btnRespaldar.setText("Crear Respaldo");
         btnRespaldar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnRespaldarActionPerformed(evt);
             }
         });
+        jPanel1.add(btnRespaldar, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 250, 129, -1));
 
-        btnLimpiar.setBackground(new java.awt.Color(255, 255, 249));
+        btnLimpiar.setBackground(new java.awt.Color(242, 224, 189));
         btnLimpiar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/escoba.png"))); // NOI18N
         btnLimpiar.setBorderPainted(false);
         btnLimpiar.addActionListener(new java.awt.event.ActionListener() {
@@ -134,91 +168,12 @@ public class CopiaSeguridadForm extends javax.swing.JInternalFrame {
                 btnLimpiarActionPerformed(evt);
             }
         });
+        jPanel1.add(btnLimpiar, new org.netbeans.lib.awtextra.AbsoluteConstraints(59, 290, -1, -1));
 
-        btnClose.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/close.png"))); // NOI18N
-        btnClose.setBorder(null);
-        btnClose.setBorderPainted(false);
-        btnClose.setContentAreaFilled(false);
-        btnClose.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btnClose.setFocusPainted(false);
-        btnClose.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnCloseActionPerformed(evt);
-            }
-        });
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, 660, 380));
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabel15, javax.swing.GroupLayout.PREFERRED_SIZE, 540, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(btnClose))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel12)
-                            .addComponent(jLabel13)
-                            .addComponent(jLabel16)
-                            .addComponent(btnLimpiar)
-                            .addComponent(btnRespaldar, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(18, 18, 18)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(txtCarpetaDestino)
-                                .addGap(18, 18, 18)
-                                .addComponent(btnSeleccionar))
-                            .addComponent(jScrollPane1)
-                            .addComponent(txtCarpetaDatos))))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(btnClose))
-                    .addComponent(jLabel15))
-                .addGap(12, 12, 12)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel12)
-                    .addComponent(txtCarpetaDatos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel13)
-                    .addComponent(txtCarpetaDestino, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnSeleccionar))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jLabel16)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 113, Short.MAX_VALUE)
-                        .addComponent(btnRespaldar)
-                        .addGap(18, 18, 18)
-                        .addComponent(btnLimpiar))
-                    .addComponent(jScrollPane1))
-                .addContainerGap())
-        );
-
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 589, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
-        );
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/fondo.png"))); // NOI18N
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, -40, 740, 460));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -236,10 +191,6 @@ public class CopiaSeguridadForm extends javax.swing.JInternalFrame {
     private void btnLimpiarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLimpiarActionPerformed
         limpiar();
     }//GEN-LAST:event_btnLimpiarActionPerformed
-
-    private void btnCloseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCloseActionPerformed
-        dispose();
-    }//GEN-LAST:event_btnCloseActionPerformed
 
     private void btnRespaldarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRespaldarActionPerformed
         String origenTexto = txtCarpetaDatos.getText().trim();
@@ -269,8 +220,6 @@ public class CopiaSeguridadForm extends javax.swing.JInternalFrame {
             }
         }
         ResultadoRespaldo resultado = respaldoService.crearRespaldo(carpetaDatos,carpetaDestino);
-        registroActividadService.registrar(usuarioActual,"Respaldo","Copia de Seguridad",
-                "Realizo copia de seguridad en su carpeta: "+carpetaDestino+"\nCon el nombre de"+nombreRespaldo,true);
         JOptionPane.showMessageDialog(this,resultado.getMensaje(),
                 resultado.isExitoso() ? "Respaldo completado" : "Error",
                 resultado.isExitoso() ? JOptionPane.INFORMATION_MESSAGE : JOptionPane.ERROR_MESSAGE);
@@ -283,12 +232,16 @@ public class CopiaSeguridadForm extends javax.swing.JInternalFrame {
         }
     }//GEN-LAST:event_btnRespaldarActionPerformed
 
+    private void txtCarpetaDestinoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtCarpetaDestinoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtCarpetaDestinoActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnClose;
     private javax.swing.JButton btnLimpiar;
     private javax.swing.JButton btnRespaldar;
     private javax.swing.JButton btnSeleccionar;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel15;
