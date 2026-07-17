@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual Técnico - Reportes y Auditoría</title>
+    <!-- Mismos estilos CSS -->
+    <style>
+        :root { --primary: #3e2723; --secondary: #d7ccc8; --bg-glass: rgba(255, 255, 255, 0.92); }
+        body { 
+            font-family: 'Segoe UI', system-ui, sans-serif; margin: 0; padding: 40px;
+            background-image: url('image_a6bbc7.jpg'); background-size: cover; background-attachment: fixed; 
+            color: #2c3e50; line-height: 1.6; display: flex; justify-content: center;
+        }
+        .container { max-width: 900px; background: var(--bg-glass); padding: 50px; border-radius: 15px; box-shadow: 0 15px 35px rgba(0,0,0,0.4); backdrop-filter: blur(15px); }
+        .header { text-align: center; border-bottom: 3px solid var(--primary); padding-bottom: 20px; margin-bottom: 30px; }
+        .header img { max-width: 180px; filter: drop-shadow(0 4px 6px rgba(0,0,0,0.2)); }
+        h1 { color: var(--primary); font-size: 2.5rem; margin: 15px 0 5px 0; }
+        h2 { color: #5d4037; border-bottom: 2px solid var(--secondary); padding-bottom: 8px; margin-top: 40px; }
+        ul.checklist { list-style: none; padding: 0; } ul.checklist li { margin-bottom: 15px; padding-left: 30px; position: relative; }
+        .do::before { content: '✅'; position: absolute; left: 0; } .dont::before { content: '❌'; position: absolute; left: 0; }
+        .info-box { background: #e8f4f8; border-left: 5px solid #0277bd; padding: 20px; margin: 25px 0; border-radius: 4px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="image_a6bbae.png" alt="Logo Municipalidad">
+            <h1>Manual Técnico: Reportes y Auditoría</h1>
+            <p><strong>Módulo:</strong> Inteligencia de Negocios y Estadísticas | <strong>Exportación:</strong> PDF</p>
+        </div>
+
+        <h2>1. Descripción de la Herramienta</h2>
+        <p>El módulo de reportes extrae la metadata del sistema y la cruza con los parámetros de la "Configuración Global" para generar documentos ejecutivos en formato PDF, listos para la impresión o envío a gerencia.</p>
+
+        <h2>2. Tipos de Reportes Disponibles</h2>
+        <ul class="checklist">
+            <li class="do"><strong>Inventario Actual:</strong> Imprime la totalidad de los libros registrados. Incluye ISBN, Títulos, Categorías, y detalla cuántos están físicos, digitales, prestados o disponibles.</li>
+            <li class="do"><strong>Libros Más Prestados (Top Rotación):</strong> Cruza la tabla de préstamos históricos y muestra qué títulos físicos tienen mayor demanda en el periodo seleccionado.</li>
+            <li class="do"><strong>Usuarios con Multas Pendientes:</strong> Genera la "Lista Negra". Detalla los lectores que sobrepasaron los "Días de Espera" y calcula la deuda actual multiplicada por el "Precio de Multa".</li>
+        </ul>
+
+        <h2>3. Pasos para Exportar (Lo que SE DEBE hacer)</h2>
+        <ul class="checklist">
+            <li class="do"><strong>Paso 1:</strong> Seleccione el tipo de reporte en la lista de opciones.</li>
+            <li class="do"><strong>Paso 2:</strong> Defina el rango de fechas (Fecha Inicial y Fecha Final). <i>Nota: Para el "Inventario Actual", las fechas se ignoran ya que es una foto del momento presente.</i></li>
+            <li class="do"><strong>Paso 3:</strong> Haga clic en el botón <strong>"Generar PDF"</strong>.</li>
+            <li class="do"><strong>Paso 4:</strong> En el cuadro de diálogo, elija dónde desea guardar el archivo en su computadora y asigne un nombre representativo.</li>
+        </ul>
+
+        <h2>4. Restricciones a tomar en cuenta</h2>
+        <ul class="checklist">
+            <li class="dont"><strong>No cierre el sistema mientras genera:</strong> Los reportes largos (ej. Inventario completo de 5,000 libros) pueden tardar un par de segundos en renderizar el PDF.</li>
+            <li class="dont"><strong>Cuidado con los archivos abiertos:</strong> Si intenta guardar un reporte con el mismo nombre de un PDF que ya tiene abierto en Adobe Acrobat o Chrome, el sistema arrojará un error de "Acceso Denegado".</li>
+        </ul>
+
+        <div class="info-box">
+            <h3>🛠️ Preguntas Frecuentes</h3>
+            <p><strong>¿Por qué no aparece el nombre de la biblioteca en la parte superior del PDF?</strong><br>
+            <em>Respuesta:</em> Asegúrese de haber llenado el campo "Nombre de la Biblioteca" en el módulo de Configuración del sistema. El motor de reportes extrae ese dato de allí.</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -40,6 +40,9 @@
           <SubComponents>
             <MenuItem class="javax.swing.JMenuItem" name="ItemCerrarSesion">
               <Properties>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/img/close.png"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Cerrar Sesion"/>
               </Properties>
               <Events>
@@ -55,6 +58,9 @@
           <SubComponents>
             <Menu class="javax.swing.JMenu" name="menuLibros">
               <Properties>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/img/IconoLibro.png"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Mantenimiento de Libros"/>
               </Properties>
               <SubComponents>
@@ -62,6 +68,9 @@
                   <Properties>
                     <Property name="accelerator" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
                       <KeyStroke key="Alt+L"/>
+                    </Property>
+                    <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                      <Image iconType="3" name="/img/lupa.png"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="Libros"/>
                   </Properties>
@@ -89,6 +98,9 @@
             </Menu>
             <MenuItem class="javax.swing.JMenuItem" name="ItemGestionUsuarios">
               <Properties>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/img/IconoUsuario.png"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Mantenimiento de usuarios"/>
               </Properties>
               <Events>
@@ -102,10 +114,24 @@
               <SubComponents>
                 <MenuItem class="javax.swing.JMenuItem" name="ItemGestionPrestamo">
                   <Properties>
+                    <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                      <Image iconType="3" name="/img/prestamo.png"/>
+                    </Property>
                     <Property name="text" type="java.lang.String" value="Prestamos"/>
                   </Properties>
                   <Events>
                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ItemGestionPrestamoActionPerformed"/>
+                  </Events>
+                </MenuItem>
+                <MenuItem class="javax.swing.JMenuItem" name="itemGestionDevoluciones">
+                  <Properties>
+                    <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                      <Image iconType="3" name="/img/devolucion1.png"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Devoluciones"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="itemGestionDevolucionesActionPerformed"/>
                   </Events>
                 </MenuItem>
                 <MenuItem class="javax.swing.JMenuItem" name="itemGestionColas">
@@ -166,6 +192,9 @@
           <SubComponents>
             <MenuItem class="javax.swing.JMenuItem" name="itemCopiaSeguridad">
               <Properties>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/img/IconoCopiaDeSeguridad.png"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Realizar Copia de Seguridad"/>
               </Properties>
               <Events>
@@ -174,19 +203,28 @@
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="intemRestaurar">
               <Properties>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/img/devolucion.png"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Importar Ficheros"/>
               </Properties>
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="intemRestaurarActionPerformed"/>
               </Events>
             </MenuItem>
-            <MenuItem class="javax.swing.JMenuItem" name="jMenuItem10">
+            <MenuItem class="javax.swing.JMenuItem" name="itemConfiguracion">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Configuracion del Sistema"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="itemConfiguracionActionPerformed"/>
+              </Events>
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="itemRegistroActividad">
               <Properties>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/img/ojo.png"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Registro de Actividad"/>
               </Properties>
               <Events>
@@ -202,6 +240,9 @@
           <SubComponents>
             <MenuItem class="javax.swing.JMenuItem" name="itemNosotros">
               <Properties>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/img/busqueda.png"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Sobre Nosotros"/>
               </Properties>
               <Events>
@@ -216,12 +257,12 @@
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="itemAyudaLibrosActionPerformed"/>
               </Events>
             </MenuItem>
-            <MenuItem class="javax.swing.JMenuItem" name="jMenuItem7">
+            <MenuItem class="javax.swing.JMenuItem" name="itemAyudaUsuarioss">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Ayuda a GestionUsuarios"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuItem7ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="itemAyudaUsuariossActionPerformed"/>
               </Events>
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="itemAyudaPrestamos">
@@ -236,6 +277,9 @@
               <Properties>
                 <Property name="text" type="java.lang.String" value="Ayuda a Reportes"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="itemAyudaReportesActionPerformed"/>
+              </Events>
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="itemAyudaConfiguracion">
               <Properties>
@@ -280,8 +324,8 @@
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="1" attributes="0">
-              <Component id="jToolBar1" min="-2" pref="25" max="-2" attributes="0"/>
-              <EmptySpace min="-2" max="-2" attributes="0"/>
+              <Component id="jToolBar1" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
               <Component id="Ventana" max="32767" attributes="0"/>
           </Group>
       </Group>
@@ -325,7 +369,7 @@
                   <Component id="lblTitulo" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="lblSubtitulo" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace pref="364" max="32767" attributes="0"/>
+                  <EmptySpace pref="351" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -364,7 +408,9 @@
       <SubComponents>
         <Component class="javax.swing.JButton" name="btnAccesoLibro">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Acceso Rapido a GestionLibro"/>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/img/IconoLibro.png"/>
+            </Property>
             <Property name="focusable" type="boolean" value="false"/>
             <Property name="horizontalTextPosition" type="int" value="0"/>
             <Property name="verticalTextPosition" type="int" value="3"/>
@@ -375,7 +421,9 @@
         </Component>
         <Component class="javax.swing.JButton" name="btnAccesoUsuarios">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Acceso Rapido a GestionUsuarios"/>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/img/IconoUsuario.png"/>
+            </Property>
             <Property name="focusable" type="boolean" value="false"/>
             <Property name="horizontalTextPosition" type="int" value="0"/>
             <Property name="verticalTextPosition" type="int" value="3"/>
@@ -386,7 +434,9 @@
         </Component>
         <Component class="javax.swing.JButton" name="btnAccesoPrestamos">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Acceso Rapido a GestionPrestamos"/>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/img/prestamo.png"/>
+            </Property>
             <Property name="focusable" type="boolean" value="false"/>
             <Property name="horizontalTextPosition" type="int" value="0"/>
             <Property name="verticalTextPosition" type="int" value="3"/>
@@ -397,23 +447,35 @@
         </Component>
         <Component class="javax.swing.JButton" name="btnAccesoDevoluciones">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Acceso Rapido a GestionDevoluciones"/>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/img/devolucion1.png"/>
+            </Property>
             <Property name="focusable" type="boolean" value="false"/>
             <Property name="horizontalTextPosition" type="int" value="0"/>
             <Property name="verticalTextPosition" type="int" value="3"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnAccesoDevolucionesActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="btnAccesoMulta">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Acceso Rapido a Calcular Multa"/>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/img/multa.png"/>
+            </Property>
             <Property name="focusable" type="boolean" value="false"/>
             <Property name="horizontalTextPosition" type="int" value="0"/>
             <Property name="verticalTextPosition" type="int" value="3"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnAccesoMultaActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="btnAccesoCopiaSeguridad">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Acceso Rapido Crear Copia Seguridad"/>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/img/IconoCopiaDeSeguridad.png"/>
+            </Property>
             <Property name="focusable" type="boolean" value="false"/>
             <Property name="horizontalTextPosition" type="int" value="0"/>
             <Property name="verticalTextPosition" type="int" value="3"/>

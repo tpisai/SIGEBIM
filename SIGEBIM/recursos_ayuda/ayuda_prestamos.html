@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual Técnico - Gestión de Préstamos</title>
+    <!-- Mismos estilos CSS -->
+    <style>
+        :root { --primary: #3e2723; --secondary: #d7ccc8; --bg-glass: rgba(255, 255, 255, 0.92); }
+        body { 
+            font-family: 'Segoe UI', system-ui, sans-serif; margin: 0; padding: 40px;
+            background-image: url('image_a6bbc7.jpg'); background-size: cover; background-attachment: fixed; 
+            color: #2c3e50; line-height: 1.6; display: flex; justify-content: center;
+        }
+        .container { max-width: 900px; background: var(--bg-glass); padding: 50px; border-radius: 15px; box-shadow: 0 15px 35px rgba(0,0,0,0.4); backdrop-filter: blur(15px); }
+        .header { text-align: center; border-bottom: 3px solid var(--primary); padding-bottom: 20px; margin-bottom: 30px; }
+        .header img { max-width: 180px; filter: drop-shadow(0 4px 6px rgba(0,0,0,0.2)); }
+        h1 { color: var(--primary); font-size: 2.5rem; margin: 15px 0 5px 0; }
+        h2 { color: #5d4037; border-bottom: 2px solid var(--secondary); padding-bottom: 8px; margin-top: 40px; }
+        ul.checklist { list-style: none; padding: 0; } ul.checklist li { margin-bottom: 15px; padding-left: 30px; position: relative; }
+        .do::before { content: '✅'; position: absolute; left: 0; } .dont::before { content: '❌'; position: absolute; left: 0; }
+        .info-box { background: #e8f4f8; border-left: 5px solid #0277bd; padding: 20px; margin: 25px 0; border-radius: 4px; }
+        table { width: 100%; border-collapse: collapse; margin: 20px 0; background: white; } th, td { border: 1px solid #ddd; padding: 12px; text-align: left; } th { background-color: var(--primary); color: white; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="image_a6bbae.png" alt="Logo Municipalidad">
+            <h1>Manual Técnico: Transacciones de Préstamos</h1>
+            <p><strong>Módulo:</strong> Flujo de Material Bibliográfico | <strong>Versión:</strong> 1.0</p>
+        </div>
+
+        <h2>1. Descripción del Proceso</h2>
+        <p>Este módulo gestiona el cambio de estados físicos de los libros. Enlaza un Lector (DNI) con un Ejemplar (ISBN) generando un contrato temporal. Trabaja de la mano con el motor de base de datos para prevenir duplicidades.</p>
+
+        <h2>2. Procedimiento de Préstamo (Salida)</h2>
+        <ul class="checklist">
+            <li class="do"><strong>Paso 1:</strong> Digitar el DNI del Lector. El sistema debe confirmar que no posee multas pendientes.</li>
+            <li class="do"><strong>Paso 2:</strong> Digitar el ISBN o utilizar el lector de código de barras.</li>
+            <li class="do"><strong>Paso 3:</strong> Verificar el estado en pantalla. <strong>Solo se permite la transacción si el estado es 'Disponible'.</strong></li>
+            <li class="do"><strong>Paso 4:</strong> Seleccionar en el calendario la Fecha Límite de Devolución. (La fecha actual se asigna automáticamente como inicio).</li>
+            <li class="do"><strong>Paso 5:</strong> Confirmar préstamo. El inventario actualizará internamente el libro a 'No Disponible'.</li>
+        </ul>
+
+        <h2>3. Procedimiento de Devolución (Ingreso)</h2>
+        <ul class="checklist">
+            <li class="do">Busque el préstamo activo ingresando el <strong>DNI del usuario</strong> en la barra de búsqueda de la tabla inferior.</li>
+            <li class="do">Seleccione el registro y presione el botón <strong>'Finalizar Préstamo'</strong>.</li>
+            <li class="do">El sistema leerá la fecha actual y la comparará con la fecha límite. Si hay mora, aplicará los cálculos definidos en la Configuración Global.</li>
+            <li class="do">El libro retorna inmediatamente a su estado 'Disponible' para el siguiente usuario.</li>
+        </ul>
+
+        <h2>4. Restricciones Críticas</h2>
+        <ul class="checklist">
+            <li class="dont"><strong>No intente prestar libros digitales (URL):</strong> Los recursos digitales no tienen control de inventario temporal, son de acceso permanente.</li>
+            <li class="dont"><strong>No modifique fechas de transacciones pasadas:</strong> Por integridad de base de datos, las fechas de préstamos finalizados son inmutables.</li>
+        </ul>
+
+        <div class="info-box">
+            <h3>🛠️ FAQ y Troubleshooting</h3>
+            <p><strong>Problema: "El sistema bloquea el préstamo de un libro físico".</strong><br>
+            <em>Causa:</em> El libro probablemente no ha sido retornado por el usuario anterior. Verifique su estado en el módulo de 'Gestión de Libros'.</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -57,7 +57,7 @@ public class ArchivoLibro {
             String linea;
             while((linea = br.readLine()) != null){
                 //split("\\|") divide la línea en partes usando el carácter | como separador.
-                String[] datos = linea.split("\\|");
+                String[] datos = linea.split("\\|", -1);
                 //Asignar la forma correcta del Objeto Libro
                 //Llamamos a las clases de autor y categoria para rellenar los datos
                 if(datos.length < 13){

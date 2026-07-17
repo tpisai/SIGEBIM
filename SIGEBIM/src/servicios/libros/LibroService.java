@@ -2,6 +2,8 @@ package servicios.libros;
 
 //@author zulmi
 import archivos.ArchivoLibro;
+import java.net.URI;
+import java.net.URISyntaxException;
 import java.util.ArrayList;
 import modelo.enums.CriterioBusqueda;
 import modelo.enums.TipoLibro;
@@ -111,6 +113,7 @@ public class LibroService implements Gestionable<Libro> {
             if (libro.getUrlAcceso() == null || libro.getUrlAcceso().trim().isEmpty()) {
                 throw new IllegalArgumentException("Debe ingresar la URL del libro.");
             }
+            validarUrlDigital(libro.getUrlAcceso());
         }
 
         if (!esEdicion || !libro.getIsbn().equalsIgnoreCase(isbnOriginal)) {
@@ -124,6 +127,40 @@ public class LibroService implements Gestionable<Libro> {
         return buscarPorISBN(isbn) != null;
     }
     
+    public ArrayList<Libro> listarDigitales() {
+        ArrayList<Libro> resultado = new ArrayList<>();
+        for (Libro libro : libros) {
+            if (libro.tieneAccesoDigital()) {
+                resultado.add(libro);
+            }
+        }
+        return resultado;
+    }
+    
+    public ArrayList<Libro> buscarDigitales(String texto) {
+        ArrayList<Libro> resultado = new ArrayList<>();
+        for (Libro libro : libros) {
+            if (libro.tieneAccesoDigital() && libro.coincideCon(CriterioBusqueda.GENERAL, texto)) {
+                resultado.add(libro);
+            }
+        }
+        return resultado;
+    }
+    
+    private void validarUrlDigital(String url) {
+        try {
+            URI direccion = new URI(url.trim());
+            String protocolo = direccion.getScheme();
+            boolean protocoloValido = "http".equalsIgnoreCase(protocolo) 
+                    || "https".equalsIgnoreCase(protocolo);
+            if (!direccion.isAbsolute() || !protocoloValido) {
+                throw new IllegalArgumentException("La URL debe comenzar con http:// o https://.");
+            }
+        } catch (URISyntaxException ex) {
+            throw new IllegalArgumentException("La URL del libro digital no tiene un formato válido.");
+        }
+    }
+ 
     @Override
     public ArrayList<Libro> listar() {
         return new ArrayList<>(libros);

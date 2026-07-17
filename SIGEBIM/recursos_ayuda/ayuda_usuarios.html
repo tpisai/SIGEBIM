@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual Técnico - Gestión de Usuarios</title>
+    <!-- Mismos estilos CSS que el archivo 1, copiados para mantener independencia -->
+    <style>
+        :root { --primary: #3e2723; --secondary: #d7ccc8; --bg-glass: rgba(255, 255, 255, 0.92); }
+        body { 
+            font-family: 'Segoe UI', system-ui, sans-serif; margin: 0; padding: 40px;
+            background-image: url('image_a6bbc7.jpg'); background-size: cover; background-attachment: fixed; 
+            color: #2c3e50; line-height: 1.6; display: flex; justify-content: center;
+        }
+        .container {
+            max-width: 900px; background: var(--bg-glass); padding: 50px; border-radius: 15px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.4); backdrop-filter: blur(15px); border: 1px solid rgba(255,255,255,0.5);
+        }
+        .header { text-align: center; border-bottom: 3px solid var(--primary); padding-bottom: 20px; margin-bottom: 30px; }
+        .header img { max-width: 180px; filter: drop-shadow(0 4px 6px rgba(0,0,0,0.2)); }
+        h1 { color: var(--primary); font-size: 2.5rem; margin: 15px 0 5px 0; }
+        h2 { color: #5d4037; border-bottom: 2px solid var(--secondary); padding-bottom: 8px; margin-top: 40px; }
+        ul.checklist { list-style: none; padding: 0; }
+        ul.checklist li { margin-bottom: 15px; padding-left: 30px; position: relative; }
+        .do::before { content: '✅'; position: absolute; left: 0; }
+        .dont::before { content: '❌'; position: absolute; left: 0; }
+        .info-box { background: #e8f4f8; border-left: 5px solid #0277bd; padding: 20px; margin: 25px 0; border-radius: 4px; }
+        table { width: 100%; border-collapse: collapse; margin: 20px 0; background: white; }
+        th, td { border: 1px solid #ddd; padding: 12px; text-align: left; }
+        th { background-color: var(--primary); color: white; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="image_a6bbae.png" alt="Logo Municipalidad">
+            <h1>Manual Técnico: Gestión de Usuarios</h1>
+            <p><strong>Módulo:</strong> Administración de Lectores y Accesos | <strong>Versión:</strong> 1.0</p>
+        </div>
+
+        <h2>1. Descripción General</h2>
+        <p>Este formulario controla quién puede ingresar al sistema y llevarse material. Gestiona la creación de perfiles, asignación de credenciales (Username/Password) y niveles de autorización (Roles).</p>
+
+        <h2>2. Detalle de Campos del Formulario</h2>
+        <table>
+            <tr><th>Campo</th><th>Regla Técnica de Uso</th></tr>
+            <tr><td><strong>DNI</strong></td><td>8 dígitos exactos. Sirve como identificador principal para préstamos.</td></tr>
+            <tr><td><strong>Nombres y Apellidos</strong></td><td><strong>Bloqueados.</strong> El sistema los obtiene automáticamente de la base de datos de identidad al validar el DNI.</td></tr>
+            <tr><td><strong>Username</strong></td><td>Nombre de usuario único para inicio de sesión (Ej: rmartinez). No usar espacios.</td></tr>
+            <tr><td><strong>Password</strong></td><td>Contraseña del sistema. Mantener la confidencialidad.</td></tr>
+            <tr><td><strong>Rol de Usuario</strong></td><td>'Administrador' (acceso a config/reportes) o 'Usuario' (solo catálogo/préstamos).</td></tr>
+            <tr><td><strong>Teléfono / Correo</strong></td><td>Datos de contacto para el envío de alertas de vencimiento de devoluciones.</td></tr>
+        </table>
+
+        <h2>3. Listado de Acciones: Lo que SE DEBE hacer</h2>
+        <ul class="checklist">
+            <li class="do"><strong>Validar siempre la identidad:</strong> Digite el DNI y presione el botón de validación. Verifique que los nombres devueltos correspondan al lector físico frente a usted.</li>
+            <li class="do"><strong>Búsqueda Multicriterio:</strong> Utilice la barra de búsqueda superior ingresando el <strong>Username</strong> para verificar accesos, o el <strong>Apellido</strong> si el usuario olvidó su número de documento.</li>
+            <li class="do"><strong>Actualización segura:</strong> Para cambiar una contraseña o rol, busque al usuario, modifique el campo correspondiente y guarde. El DNI permanecerá inmutable.</li>
+            <li class="do"><strong>Uso de la Escoba:</strong> Utilice el ícono de escoba para vaciar el formulario completamente antes de atender a un nuevo usuario en la fila.</li>
+        </ul>
+
+        <h2>4. Restricciones: Lo que NO SE DEBE hacer</h2>
+        <ul class="checklist">
+            <li class="dont"><strong>No intente forzar los campos de Nombre:</strong> Están bloqueados por arquitectura del sistema para evitar suplantaciones de identidad.</li>
+            <li class="dont"><strong>No asigne el rol 'Administrador' indiscriminadamente:</strong> Esto otorga acceso a parámetros sensibles como precios de multas y rutas de bases de datos.</li>
+            <li class="dont"><strong>No duplique Usernames:</strong> El sistema validará que cada nombre de usuario sea único.</li>
+        </ul>
+
+        <div class="info-box">
+            <h3>🛠️ Solución de Problemas Frecuentes</h3>
+            <p><strong>Error: "DNI no encontrado o error de validación".</strong><br>
+            <em>Solución:</em> Verifique su conexión a la red o asegúrese de que ha digitado exactamente 8 números sin letras.</p>
+        </div>
+    </div>
+</body>
+</html>

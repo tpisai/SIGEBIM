@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual Técnico - Gestión de Libros</title>
+    <style>
+        :root { --primary: #3e2723; --secondary: #d7ccc8; --bg-glass: rgba(255, 255, 255, 0.92); }
+        body { 
+            font-family: 'Segoe UI', system-ui, sans-serif; margin: 0; padding: 40px;
+            background-image: url('image_a6bbc7.jpg'); background-size: cover; background-attachment: fixed; 
+            color: #2c3e50; line-height: 1.6; display: flex; justify-content: center;
+        }
+        .container {
+            max-width: 900px; background: var(--bg-glass); padding: 50px; border-radius: 15px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.4); backdrop-filter: blur(15px); border: 1px solid rgba(255,255,255,0.5);
+        }
+        .header { text-align: center; border-bottom: 3px solid var(--primary); padding-bottom: 20px; margin-bottom: 30px; }
+        .header img { max-width: 180px; filter: drop-shadow(0 4px 6px rgba(0,0,0,0.2)); }
+        h1 { color: var(--primary); font-size: 2.5rem; margin: 15px 0 5px 0; }
+        h2 { color: #5d4037; border-bottom: 2px solid var(--secondary); padding-bottom: 8px; margin-top: 40px; }
+        ul.checklist { list-style: none; padding: 0; }
+        ul.checklist li { margin-bottom: 15px; padding-left: 30px; position: relative; }
+        .do::before { content: '✅'; position: absolute; left: 0; }
+        .dont::before { content: '❌'; position: absolute; left: 0; }
+        .info-box { background: #e8f4f8; border-left: 5px solid #0277bd; padding: 20px; margin: 25px 0; border-radius: 4px; }
+        table { width: 100%; border-collapse: collapse; margin: 20px 0; background: white; }
+        th, td { border: 1px solid #ddd; padding: 12px; text-align: left; }
+        th { background-color: var(--primary); color: white; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="image_a6bbae.png" alt="Logo Municipalidad">
+            <h1>Manual Técnico: Gestión de Libros</h1>
+            <p><strong>Módulo:</strong> Catalogación e Inventario | <strong>Versión:</strong> 1.0</p>
+        </div>
+
+        <h2>1. Descripción General del Módulo</h2>
+        <p>Este módulo es el núcleo del sistema SIGEBIM. Permite a los bibliotecarios registrar, modificar, consultar y eliminar material bibliográfico. Soporta tanto formatos físicos como recursos digitales mediante enlaces directos (URL).</p>
+
+        <h2>2. Reglas de Llenado de Campos (Diccionario de Datos)</h2>
+        <table>
+            <tr><th>Campo</th><th>Descripción y Regla de Uso</th></tr>
+            <tr><td><strong>ISBN</strong></td><td>Código internacional de 13 dígitos. No admite letras ni guiones. Es la llave principal.</td></tr>
+            <tr><td><strong>Título / Autor / Editorial</strong></td><td>Campos de texto obligatorios. Deben ingresarse respetando mayúsculas y minúsculas.</td></tr>
+            <tr><td><strong>Categoría / Idioma</strong></td><td>Listas desplegables. Seleccione la opción que mejor describa la obra para facilitar el filtrado.</td></tr>
+            <tr><td><strong>Tipo (Físico/Digital)</strong></td><td>Si es "Físico", el campo URL se bloquea. Si es "Digital", se habilita la URL obligatoriamente.</td></tr>
+            <tr><td><strong>URL</strong></td><td>Enlace web para descarga o lectura. Formato válido requerido (ej. https://...).</td></tr>
+            <tr><td><strong>Estado</strong></td><td><strong>Automatizado.</strong> No requiere intervención manual. Se asigna como 'Disponible' al crear.</td></tr>
+        </table>
+
+        <h2>3. Listado de Acciones: Lo que SE DEBE hacer</h2>
+        <ul class="checklist">
+            <li class="do"><strong>Limpiar antes de registrar:</strong> Utilice siempre el botón de la <strong>Escoba</strong> antes de registrar un nuevo libro para asegurar que no queden datos ocultos de una consulta anterior en la memoria del formulario.</li>
+            <li class="do"><strong>Actualizar correctamente:</strong> Para modificar, primero realice una búsqueda, seleccione la fila del libro en la tabla, cambie el dato erróneo y presione 'Actualizar'.</li>
+            <li class="do"><strong>Uso de Búsqueda Específica:</strong> Para encontrar un ejemplar exacto, escriba el <strong>ISBN</strong> completo o el <strong>Autor</strong> exacto en la barra de búsqueda y presione Enter.</li>
+            <li class="do"><strong>Uso de Búsqueda General:</strong> Si un usuario pide "Libros de Ciencia Ficción", deje la barra de texto vacía y seleccione la categoría en el menú desplegable para filtrar toda la tabla.</li>
+        </ul>
+
+        <h2>4. Restricciones: Lo que NO SE DEBE hacer</h2>
+        <ul class="checklist">
+            <li class="dont"><strong>No intente registrar ISBN duplicados:</strong> El sistema rechazará la operación y mostrará una alerta de error de base de datos. Cada libro físico debe tener un registro único.</li>
+            <li class="dont"><strong>No borre libros con préstamos activos:</strong> El sistema prohíbe eliminar un libro si su estado actual es 'No Disponible'. Primero debe registrarse la devolución.</li>
+            <li class="dont"><strong>No ingrese URLs inválidas:</strong> En libros digitales, no escriba texto común en la casilla de URL, debe ser un hipervínculo funcional.</li>
+        </ul>
+
+        <div class="info-box">
+            <h3>🛠️ Solución de Problemas Frecuentes (Troubleshooting)</h3>
+            <p><strong>Error: "El campo URL está bloqueado pero el libro es digital".</strong><br>
+            <em>Solución:</em> Asegúrese de haber seleccionado "Digital" en el menú desplegable. El campo solo escucha el cambio de estado de esa lista.</p>
+            <p><strong>Error: "La tabla no muestra todos los libros tras una búsqueda".</strong><br>
+            <em>Solución:</em> Presione el botón de la escoba para limpiar los filtros y presione buscar con el campo de texto vacío para recargar el inventario total.</p>
+        </div>
+    </div>
+</body>
+</html>

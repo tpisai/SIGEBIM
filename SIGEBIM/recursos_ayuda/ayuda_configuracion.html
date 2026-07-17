@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual Técnico - Configuración Global</title>
+    <!-- Mismos estilos CSS -->
+    <style>
+        :root { --primary: #3e2723; --secondary: #d7ccc8; --bg-glass: rgba(255, 255, 255, 0.92); }
+        body { 
+            font-family: 'Segoe UI', system-ui, sans-serif; margin: 0; padding: 40px;
+            background-image: url('image_a6bbc7.jpg'); background-size: cover; background-attachment: fixed; 
+            color: #2c3e50; line-height: 1.6; display: flex; justify-content: center;
+        }
+        .container { max-width: 900px; background: var(--bg-glass); padding: 50px; border-radius: 15px; box-shadow: 0 15px 35px rgba(0,0,0,0.4); backdrop-filter: blur(15px); }
+        .header { text-align: center; border-bottom: 3px solid var(--primary); padding-bottom: 20px; margin-bottom: 30px; }
+        .header img { max-width: 180px; filter: drop-shadow(0 4px 6px rgba(0,0,0,0.2)); }
+        h1 { color: var(--primary); font-size: 2.5rem; margin: 15px 0 5px 0; }
+        h2 { color: #5d4037; border-bottom: 2px solid var(--secondary); padding-bottom: 8px; margin-top: 40px; }
+        ul.checklist { list-style: none; padding: 0; } ul.checklist li { margin-bottom: 15px; padding-left: 30px; position: relative; }
+        .do::before { content: '✅'; position: absolute; left: 0; } .dont::before { content: '❌'; position: absolute; left: 0; }
+        .info-box { background: #fdf2e9; border-left: 5px solid #e67e22; padding: 20px; margin: 25px 0; border-radius: 4px; }
+        table { width: 100%; border-collapse: collapse; margin: 20px 0; background: white; } th, td { border: 1px solid #ddd; padding: 12px; text-align: left; } th { background-color: var(--primary); color: white; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="image_a6bbae.png" alt="Logo Municipalidad">
+            <h1>Manual Técnico: Configuración y Parámetros</h1>
+            <p><strong>Módulo:</strong> Reglas de Negocio DAO | <strong>Acceso:</strong> Solo Administradores</p>
+        </div>
+
+        <h2>1. Estructura de la Configuración</h2>
+        <p>Este módulo define el comportamiento automatizado de toda la biblioteca. A diferencia de otros datos, estos parámetros se guardan localmente en un archivo plano estructurado (<code>conf.txt</code>) mediante el patrón de diseño DAO.</p>
+
+        <h2>2. Variables Modificables</h2>
+        <table>
+            <tr><th>Parámetro</th><th>Función y Tipo de Dato</th></tr>
+            <tr><td><strong>Nombre de la Biblioteca</strong></td><td>Texto que se usará como membrete oficial en los documentos PDF exportados.</td></tr>
+            <tr><td><strong>Ruta de Respaldo</strong></td><td>Directorio (ruta de carpeta) donde el motor SQL arrojará los <i>dumps</i> o copias de seguridad.</td></tr>
+            <tr><td><strong>Máximo de Días de Espera</strong></td><td>Valor numérico (Entero). Tolerancia de días antes de que un usuario entre en morosidad.</td></tr>
+            <tr><td><strong>Precio de Multa</strong></td><td>Valor decimal. Cantidad monetaria cobrada por cada día de mora acumulado.</td></tr>
+            <tr><td><strong>Cantidad Máxima para Colas</strong></td><td>Valor numérico (Entero). Limita cuántas personas pueden estar en lista de espera por un libro.</td></tr>
+        </table>
+
+        <h2>3. Reglas de Uso</h2>
+        <ul class="checklist">
+            <li class="do"><strong>Verificar la ruta:</strong> Asegúrese de que la "Ruta de Respaldo" apunte a una carpeta válida y con permisos de escritura (ej. <code>C:\Backups_Biblioteca\</code>).</li>
+            <li class="do"><strong>Uso de decimales:</strong> En el campo de "Precio de Multa", utilice un punto decimal (.) según la configuración regional de su sistema para evitar errores de <i>NumberFormatException</i>.</li>
+            <li class="do"><strong>Aplicación inmediata:</strong> Tras presionar "Guardar", los cambios entran en vigencia instantáneamente para las próximas devoluciones.</li>
+        </ul>
+
+        <h2>4. Restricciones Críticas</h2>
+        <ul class="checklist">
+            <li class="dont"><strong>No introduzca letras en campos numéricos:</strong> Ingresar texto en los campos de "Días" o "Multa" causará que el sistema rechace el guardado.</li>
+            <li class="dont"><strong>No elimine el archivo conf.txt manualmente:</strong> Si borra el archivo raíz, el sistema inicializará con valores en cero (0), deshabilitando el cálculo de multas temporalmente.</li>
+        </ul>
+
+        <div class="info-box">
+            <h3>⚠️ Importante: Patrón de Archivos</h3>
+            <p>La lectura de estos datos se realiza cada vez que el módulo de "Préstamos" necesita calcular un retraso. Se requiere que el archivo de texto mantenga los privilegios administrativos en el sistema operativo del servidor.</p>
+        </div>
+    </div>
+</body>
+</html>

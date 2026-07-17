@@ -10,3 +10,6 @@ LOG-0009|17/07/2026 12:41:00|admin|Administrador|Seguridad|Iniciar Sesion|El Usu
 LOG-0010|17/07/2026 12:51:55|admin|Administrador|Seguridad|Iniciar Sesion|El Usuario ingreso correctamente al sistema|Exitoso
 LOG-0011|17/07/2026 12:53:51|admin|Administrador|Seguridad|Iniciar Sesion|El Usuario ingreso correctamente al sistema|Exitoso
 LOG-0012|17/07/2026 17:11:37|admin|Administrador|Seguridad|Iniciar Sesion|El Usuario ingreso correctamente al sistema|Exitoso
+LOG-0013|17/07/2026 17:33:18|admin|Administrador|Seguridad|Iniciar Sesion|El Usuario ingreso correctamente al sistema|Exitoso
+LOG-0014|17/07/2026 17:36:10|admin|Administrador|Seguridad|Iniciar Sesion|El Usuario ingreso correctamente al sistema|Exitoso
+LOG-0015|17/07/2026 17:36:50|admin|Administrador|Seguridad|Iniciar Sesion|El Usuario ingreso correctamente al sistema|Exitoso
