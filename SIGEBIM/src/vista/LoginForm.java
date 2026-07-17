@@ -7,6 +7,7 @@ package vista;
 import java.awt.Color;
 import javax.swing.JOptionPane;
 import modelo.persona.Usuario;
+import servicios.respaldos.RegistroActividadService;
 import servicios.usuarios.LoginService;
 
 /**
@@ -19,6 +20,8 @@ public class LoginForm extends javax.swing.JFrame {
      * Creates new form NewJFrame
      */
     private final LoginService servicio = new LoginService();
+    private final RegistroActividadService registroActividadService;
+    
     private void ExplotarPC(){
         JOptionPane.showMessageDialog(this,"Demasiados intentos. Su PC explotara.");
             for (int i=3; i>0; i--){
@@ -30,6 +33,14 @@ public class LoginForm extends javax.swing.JFrame {
         initComponents();
         this.setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
         setLocationRelativeTo(null);
+        registroActividadService = new RegistroActividadService();
+    }
+    
+    public LoginForm(RegistroActividadService registroActividadService) {
+        initComponents();
+        this.setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
+        setLocationRelativeTo(null);
+        this.registroActividadService = registroActividadService;
     }
 
     /**
@@ -279,15 +290,17 @@ public class LoginForm extends javax.swing.JFrame {
         //Intentar iniciar Sesion
         Usuario usuarioLogueado = servicio.iniciarSesion(username, password);
         if (usuarioLogueado != null){
+            registroActividadService.registrar(usuarioLogueado, "Seguridad", "Iniciar Sesion", "El Usuario ingreso correctamente al sistema", true);
             JOptionPane.showMessageDialog(this,"Bienvenido "+ usuarioLogueado.getRol().getTexto()+ ": " + 
                     usuarioLogueado.getNombre()+ "\n Espero tenga un buen dia :)");
-            MenuPrincipal menu = new MenuPrincipal(usuarioLogueado);
+            MenuPrincipal menu = new MenuPrincipal(usuarioLogueado, registroActividadService);
             menu.setVisible(true);
             dispose();
             return;
         }
         // si el usuario es incorrecto
         servicio.registrarIntentoFallido();
+        registroActividadService.registrarIntentoFallido(username, "Nombre de usuario o contraseña incorrecta verificar con lista de Usuarios.");
         lblIntentos.setForeground(Color.RED);
         lblIntentos.setText("Intentos fallidos: " + servicio.getIntentos() + "/3");
         JOptionPane.showMessageDialog(this, "Usuario o contraseña incorrectos", 

@@ -28,26 +28,12 @@ public class AyudaLibroForm extends javax.swing.JInternalFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel2 = new javax.swing.JPanel();
         jLabel15 = new javax.swing.JLabel();
         btnCerrar = new javax.swing.JButton();
-        jLabel27 = new javax.swing.JLabel();
-        btnIr = new javax.swing.JButton();
-        jLabel26 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         jLabel28 = new javax.swing.JLabel();
         jLabel29 = new javax.swing.JLabel();
-
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 384, Short.MAX_VALUE)
-        );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
-        );
+        btnIr = new javax.swing.JButton();
 
         jLabel15.setBackground(new java.awt.Color(150, 111, 51));
         jLabel15.setFont(new java.awt.Font("Segoe Print", 0, 24)); // NOI18N
@@ -65,11 +51,35 @@ public class AyudaLibroForm extends javax.swing.JInternalFrame {
             }
         });
 
-        jLabel27.setBackground(new java.awt.Color(150, 111, 51));
-        jLabel27.setFont(new java.awt.Font("Segoe Print", 0, 18)); // NOI18N
-        jLabel27.setForeground(new java.awt.Color(255, 51, 51));
-        jLabel27.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/close.png"))); // NOI18N
-        jLabel27.setText("¿Necesita soporte adicional?");
+        jLabel28.setBackground(new java.awt.Color(150, 111, 51));
+        jLabel28.setFont(new java.awt.Font("Segoe Print", 0, 14)); // NOI18N
+        jLabel28.setForeground(new java.awt.Color(255, 51, 51));
+        jLabel28.setText("CÓMO REGISTRAR UN LIBRO?");
+
+        jLabel29.setBackground(new java.awt.Color(150, 111, 51));
+        jLabel29.setFont(new java.awt.Font("Segoe Print", 0, 14)); // NOI18N
+        jLabel29.setText("<html> <b>1. REGISTRO DE NUEVO LIBRO:</b><br> - <b>ISBN:</b> Ingrese el código de barras único del libro (13 dígitos).<br> - <b>Título y Autor:</b> Escriba el nombre del libro y quién lo escribió.<br> - <b>Año:</b> Registre el año en que se publicó.<br> - <b>Formato y URL:</b> Indique si el libro es físico o digital. Si es digital, agregue el enlace en el campo URL.<br> - <b>Stock:</b> Indique cuántos ejemplares están ingresando. El <b>Estado</b> del libro se asignará automáticamente según este valor.<br> - <b>Guardar:</b> Presione el botón <b>[GUARDAR]</b> para registrar el libro.<br><br>  <b>2. CÓMO BUSCAR UN LIBRO:</b><br> - <b>Búsqueda por Autor:</b> Use la primera barra de búsqueda superior escribiendo el nombre del autor para filtrar sus obras.<br> - <b>Búsqueda General:</b> Use la segunda barra de búsqueda para localizar libros rápidamente por su Categoría.<br> - Presione <b>[BUSCAR]</b>. La tabla inferior mostrará únicamente los libros que coincidan.<br> - Para volver a ver toda la lista, solo debe presionar <b>[MOSTRAR TODO]</b> </html>");
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel28, javax.swing.GroupLayout.PREFERRED_SIZE, 302, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel29, javax.swing.GroupLayout.PREFERRED_SIZE, 673, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel28)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel29, javax.swing.GroupLayout.PREFERRED_SIZE, 477, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
 
         btnIr.setBackground(new java.awt.Color(255, 0, 51));
         btnIr.setFont(new java.awt.Font("Segoe Print", 0, 12)); // NOI18N
@@ -81,40 +91,6 @@ public class AyudaLibroForm extends javax.swing.JInternalFrame {
             }
         });
 
-        jLabel26.setBackground(new java.awt.Color(150, 111, 51));
-        jLabel26.setFont(new java.awt.Font("Segoe Print", 0, 10)); // NOI18N
-        jLabel26.setText("Contacte al administrador del equipo de desarrollo SIGEBIM.");
-
-        jLabel28.setBackground(new java.awt.Color(150, 111, 51));
-        jLabel28.setFont(new java.awt.Font("Segoe Print", 0, 14)); // NOI18N
-        jLabel28.setForeground(new java.awt.Color(255, 51, 51));
-        jLabel28.setText("CÓMO REGISTRAR UN LIBRO?");
-
-        jLabel29.setBackground(new java.awt.Color(150, 111, 51));
-        jLabel29.setFont(new java.awt.Font("Segoe Print", 0, 14)); // NOI18N
-        jLabel29.setText("<html>1. <b>ISBN:</b> Ingrese el código de 13 dígitos. El sistema validará su existencia.<br> 2. <b>Datos:</b> Complete Título y Autor. Título es obligatorio.<br> 3. <b>Estado:</b> Asegúrese de seleccionar 'Disponible'.<br> 4. <b>Finalizar:</b> Presione <b>[GUARDAR]</b>.<br><br> <i>Nota: El sistema utiliza arquitectura DAO para proteger la integridad de sus datos.</i> </html>");
-
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel28, javax.swing.GroupLayout.PREFERRED_SIZE, 302, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel29, javax.swing.GroupLayout.PREFERRED_SIZE, 514, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(24, Short.MAX_VALUE))
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel28)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel29, javax.swing.GroupLayout.PREFERRED_SIZE, 257, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(19, Short.MAX_VALUE))
-        );
-
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -123,25 +99,18 @@ public class AyudaLibroForm extends javax.swing.JInternalFrame {
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(btnIr, javax.swing.GroupLayout.PREFERRED_SIZE, 222, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(143, 143, 143)
-                                .addComponent(btnCerrar, javax.swing.GroupLayout.PREFERRED_SIZE, 194, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(jLabel15))
+                        .addComponent(jLabel15)
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
+                        .addGap(6, 6, 6)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel26, javax.swing.GroupLayout.PREFERRED_SIZE, 337, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jLabel27, javax.swing.GroupLayout.PREFERRED_SIZE, 306, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
                                 .addGap(6, 6, 6)
-                                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(0, 0, Short.MAX_VALUE))))
+                                .addComponent(btnCerrar, javax.swing.GroupLayout.PREFERRED_SIZE, 194, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(168, 168, 168)
+                                .addComponent(btnIr, javax.swing.GroupLayout.PREFERRED_SIZE, 222, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(0, 17, Short.MAX_VALUE))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -150,18 +119,11 @@ public class AyudaLibroForm extends javax.swing.JInternalFrame {
                 .addComponent(jLabel15)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnIr, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnCerrar, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel27, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel26, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(58, 58, 58))
+                    .addComponent(btnIr, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnCerrar, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(175, 175, 175))
         );
 
         pack();
@@ -184,11 +146,8 @@ public class AyudaLibroForm extends javax.swing.JInternalFrame {
     private javax.swing.JButton btnCerrar;
     private javax.swing.JButton btnIr;
     private javax.swing.JLabel jLabel15;
-    private javax.swing.JLabel jLabel26;
-    private javax.swing.JLabel jLabel27;
     private javax.swing.JLabel jLabel28;
     private javax.swing.JLabel jLabel29;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
     // End of variables declaration//GEN-END:variables
 }

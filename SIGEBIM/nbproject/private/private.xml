@@ -13,6 +13,8 @@
             <file>file:/C:/SIGEBIM/SIGEBIM/src/modelo/enums/CriterioBusqueda.java</file>
             <file>file:/C:/SIGEBIM/SIGEBIM/src/modelo/respaldo/ArchivoRespaldo.java</file>
             <file>file:/C:/SIGEBIM/SIGEBIM/src/modelo/interfaces/Prestable.java</file>
+            <file>file:/C:/SIGEBIM/SIGEBIM/src/vista/JInternalFrame/Consultas/ConsultarRegistroActividad.java</file>
+            <file>file:/C:/SIGEBIM/SIGEBIM/src/vista/JInternalFrame/Ayuda/AyudaPrestamoForm.java</file>
             <file>file:/C:/SIGEBIM/SIGEBIM/src/vista/RegistrarUsuario.java</file>
             <file>file:/C:/SIGEBIM/SIGEBIM/src/servicios/libros/CategoriaService.java</file>
             <file>file:/C:/SIGEBIM/SIGEBIM/src/modelo/libro/Libro.java</file>
@@ -20,11 +22,15 @@
             <file>file:/C:/SIGEBIM/SIGEBIM/src/modelo/respaldo/ResultadoRespaldo.java</file>
             <file>file:/C:/SIGEBIM/SIGEBIM/src/vista/JInternalFrame/Gestion/GestionarAutor.java</file>
             <file>file:/C:/SIGEBIM/SIGEBIM/src/servicios/prestamos/PrestamoService.java</file>
+            <file>file:/C:/SIGEBIM/SIGEBIM/src/modelo/configuracion/ConfiguracionSistema.java</file>
             <file>file:/C:/SIGEBIM/SIGEBIM/src/principal/Main.java</file>
             <file>file:/C:/SIGEBIM/SIGEBIM/src/modelo/reporte/ReporteUsuarios.java</file>
             <file>file:/C:/SIGEBIM/SIGEBIM/src/modelo/enums/TipoLibro.java</file>
+            <file>file:/C:/SIGEBIM/SIGEBIM/src/vista/JInternalFrame/Ayuda/AyudaReportesForm.java</file>
+            <file>file:/C:/SIGEBIM/SIGEBIM/src/servicios/respaldos/RegistroActividadService.java</file>
             <file>file:/C:/SIGEBIM/SIGEBIM/src/modelo/enums/EstadoLibro.java</file>
             <file>file:/C:/SIGEBIM/SIGEBIM/src/img/ojo.png</file>
+            <file>file:/C:/SIGEBIM/SIGEBIM/src/archivos/ArchivoConfiguracion.java</file>
             <file>file:/C:/SIGEBIM/SIGEBIM/src/modelo/prestamo/Prestamo.java</file>
             <file>file:/C:/SIGEBIM/SIGEBIM/src/vista/MenuPrincipal.java</file>
             <file>file:/C:/SIGEBIM/SIGEBIM/src/util/TablaUtil.java</file>
@@ -45,12 +51,16 @@
             <file>file:/C:/SIGEBIM/SIGEBIM/src/archivos/ArchivoUsuario.java</file>
             <file>file:/C:/SIGEBIM/SIGEBIM/src/archivos/ArchivoLibro.java</file>
             <file>file:/C:/SIGEBIM/SIGEBIM/src/vista/JInternalFrame/Gestion/GestionColas.java</file>
+            <file>file:/C:/SIGEBIM/SIGEBIM/src/archivos/ArchivoRegistroActividad.java</file>
             <file>file:/C:/SIGEBIM/SIGEBIM/src/modelo/prestamo/Devolucion.java</file>
             <file>file:/C:/SIGEBIM/SIGEBIM/src/modelo/prestamo/SolicitudPrestamo.java</file>
             <file>file:/C:/SIGEBIM/SIGEBIM/src/vista/JInternalFrame/Gestion/GestionPrestamo.java</file>
             <file>file:/C:/SIGEBIM/SIGEBIM/src/img/escoba.png</file>
             <file>file:/C:/SIGEBIM/SIGEBIM/src/vista/JInternalFrame/Gestion/GestionarCategoria.java</file>
+            <file>file:/C:/SIGEBIM/SIGEBIM/src/servicios/configuracion/ConfiguracionService.java</file>
+            <file>file:/C:/SIGEBIM/SIGEBIM/src/vista/JInternalFrame/Ayuda/AyudaConfiguracionForm.java</file>
             <file>file:/C:/SIGEBIM/SIGEBIM/src/archivos/ArchivoPrestamo.java</file>
+            <file>file:/C:/SIGEBIM/SIGEBIM/src/modelo/reporte/RegistroActividad.java</file>
             <file>file:/C:/SIGEBIM/SIGEBIM/src/modelo/enums/RolUsuario.java</file>
             <file>file:/C:/SIGEBIM/SIGEBIM/src/servicios/usuarios/UsuarioService.java</file>
             <file>file:/C:/SIGEBIM/SIGEBIM/src/modelo/persona/Persona.java</file>
@@ -58,6 +68,7 @@
             <file>file:/C:/SIGEBIM/SIGEBIM/src/vista/JInternalFrame/Ayuda/AyudaLibroForm.java</file>
             <file>file:/C:/SIGEBIM/SIGEBIM/src/img/fondo.png</file>
             <file>file:/C:/SIGEBIM/SIGEBIM/src/img/LOGO.png</file>
+            <file>file:/C:/SIGEBIM/SIGEBIM/src/vista/JInternalFrame/Ayuda/AyudaUsuarioForm.java</file>
             <file>file:/C:/SIGEBIM/SIGEBIM/src/servicios/libros/AutorService.java</file>
             <file>file:/C:/SIGEBIM/SIGEBIM/src/archivos/ArchivoCategoria.java</file>
             <file>file:/C:/SIGEBIM/SIGEBIM/src/modelo/libro/MaterialBiblioteca.java</file>

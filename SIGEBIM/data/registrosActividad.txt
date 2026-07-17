@@ -1,0 +1,11 @@
+LOG-0001|17/07/2026 12:28:01|admin|Administrador|Seguridad|Iniciar Sesion|El Usuario ingreso correctamente al sistema|Exitoso
+LOG-0002|17/07/2026 12:29:45|admin|Administrador|Respaldo|Copia de Seguridad|Realizo copia de seguridad en su carpeta: C:\Users\zulmi\OneDrive - Universidad Tecnologica del Peru\Documentos\Algortimo y Estructura de Datos\respaldo_SIGEBIM_2026-07-17\respaldo_SIGEBIM_2026-07-17|Exitoso
+LOG-0003|17/07/2026 12:31:10|admin|Administrador|Seguridad|Cerrar sesión|El usuario cerró su sesión.|Exitoso
+LOG-0004|17/07/2026 12:31:15|admin|No identificado|Seguridad|Iniciar sesión|Nombre de usuario o contraseña incorrecta verificar con lista de Usuarios.|Fallido
+LOG-0005|17/07/2026 12:31:17|admin|No identificado|Seguridad|Iniciar sesión|Nombre de usuario o contraseña incorrecta verificar con lista de Usuarios.|Fallido
+LOG-0006|17/07/2026 12:31:20|admin|Administrador|Seguridad|Iniciar Sesion|El Usuario ingreso correctamente al sistema|Exitoso
+LOG-0007|17/07/2026 12:37:38|admin|Administrador|Seguridad|Iniciar Sesion|El Usuario ingreso correctamente al sistema|Exitoso
+LOG-0008|17/07/2026 12:38:29|admin|Administrador|Seguridad|Iniciar Sesion|El Usuario ingreso correctamente al sistema|Exitoso
+LOG-0009|17/07/2026 12:41:00|admin|Administrador|Seguridad|Iniciar Sesion|El Usuario ingreso correctamente al sistema|Exitoso
+LOG-0010|17/07/2026 12:51:55|admin|Administrador|Seguridad|Iniciar Sesion|El Usuario ingreso correctamente al sistema|Exitoso
+LOG-0011|17/07/2026 12:53:51|admin|Administrador|Seguridad|Iniciar Sesion|El Usuario ingreso correctamente al sistema|Exitoso

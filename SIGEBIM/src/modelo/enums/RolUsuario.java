@@ -25,4 +25,8 @@ public enum RolUsuario {
         //Si no reconoce que es admin o bibliotecario, lo coloca como lector por defecto
         return LECTOR;
     }
+    @Override
+    public String toString() {
+        return texto;
+    }
 }

@@ -3,7 +3,6 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JInternalFrame.java to edit this template
  */
 package vista.JInternalFrame.Ayuda;
-import vista.JInternalFrame.Gestion.GestionarUsuario;
 import vista.RegistrarUsuario;
 /**
  *
@@ -27,26 +26,12 @@ public class AyudaUsuarioForm extends javax.swing.JInternalFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel2 = new javax.swing.JPanel();
         jLabel15 = new javax.swing.JLabel();
         btnCerrar = new javax.swing.JButton();
-        jLabel27 = new javax.swing.JLabel();
         btnIr = new javax.swing.JButton();
-        jLabel26 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         jLabel28 = new javax.swing.JLabel();
         jLabel29 = new javax.swing.JLabel();
-
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 384, Short.MAX_VALUE)
-        );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
-        );
 
         jLabel15.setBackground(new java.awt.Color(150, 111, 51));
         jLabel15.setFont(new java.awt.Font("Segoe Print", 0, 24)); // NOI18N
@@ -64,12 +49,6 @@ public class AyudaUsuarioForm extends javax.swing.JInternalFrame {
             }
         });
 
-        jLabel27.setBackground(new java.awt.Color(150, 111, 51));
-        jLabel27.setFont(new java.awt.Font("Segoe Print", 0, 18)); // NOI18N
-        jLabel27.setForeground(new java.awt.Color(255, 51, 51));
-        jLabel27.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/close.png"))); // NOI18N
-        jLabel27.setText("¿Necesita soporte adicional?");
-
         btnIr.setBackground(new java.awt.Color(255, 0, 51));
         btnIr.setFont(new java.awt.Font("Segoe Print", 0, 12)); // NOI18N
         btnIr.setForeground(new java.awt.Color(255, 255, 255));
@@ -80,10 +59,6 @@ public class AyudaUsuarioForm extends javax.swing.JInternalFrame {
             }
         });
 
-        jLabel26.setBackground(new java.awt.Color(150, 111, 51));
-        jLabel26.setFont(new java.awt.Font("Segoe Print", 0, 10)); // NOI18N
-        jLabel26.setText("Contacte al administrador del equipo de desarrollo SIGEBIM.");
-
         jLabel28.setBackground(new java.awt.Color(150, 111, 51));
         jLabel28.setFont(new java.awt.Font("Segoe Print", 0, 14)); // NOI18N
         jLabel28.setForeground(new java.awt.Color(255, 51, 51));
@@ -91,7 +66,7 @@ public class AyudaUsuarioForm extends javax.swing.JInternalFrame {
 
         jLabel29.setBackground(new java.awt.Color(150, 111, 51));
         jLabel29.setFont(new java.awt.Font("Segoe Print", 0, 14)); // NOI18N
-        jLabel29.setText("<html>1. <b>DNI:</b> Ingrese el número de DNI del usuario.<br> 2. <b>Validar:</b> Haga clic en <b>[VALIDAR DNI]</b>.<br> 3. <b>Autocompletado:</b> El sistema extraerá los nombres automáticamente. Estos campos se bloquearán por seguridad.<br> 4. <b>Contacto:</b> Ingrese el correo y presione <b>[REGISTRAR]</b>.<br><br> <i>Nota: No es necesario escribir nombres manualmente.</i> </html>");
+        jLabel29.setText("<html> <b>1. REGISTRO AUTOMÁTICO:</b><br> - <b>DNI:</b> Ingrese el número de DNI (8 dígitos) del lector.<br> - Presione el botón <b>[VALIDAR DNI]</b>. El sistema buscará a la persona y llenará sus Nombres y Apellidos automáticamente.<br> - <b>Credenciales y Rol:</b> Asigne un Username (nombre de usuario), una Password (contraseña de acceso) y seleccione el Rol de Usuario correspondiente.<br> - <b>Contacto:</b> Ingrese un Correo Electrónico y un Teléfono válidos para notificaciones.<br> - Presione <b>[REGISTRAR]</b> para habilitar al lector en el sistema.<br><br>  <b>2. BÚSQUEDA Y EDICIÓN:</b><br> - Escriba el DNI en la barra de búsqueda para encontrar rápidamente a un lector.<br> - Seleccione al usuario en la tabla para actualizar sus datos de contacto, modificar su Username / Password, o cambiar su Rol de Usuario si es necesario. </html>");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -101,8 +76,8 @@ public class AyudaUsuarioForm extends javax.swing.JInternalFrame {
                 .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel28, javax.swing.GroupLayout.PREFERRED_SIZE, 302, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel29, javax.swing.GroupLayout.PREFERRED_SIZE, 520, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(18, Short.MAX_VALUE))
+                    .addComponent(jLabel29, javax.swing.GroupLayout.PREFERRED_SIZE, 621, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -110,7 +85,8 @@ public class AyudaUsuarioForm extends javax.swing.JInternalFrame {
                 .addContainerGap()
                 .addComponent(jLabel28)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel29, javax.swing.GroupLayout.DEFAULT_SIZE, 184, Short.MAX_VALUE))
+                .addComponent(jLabel29, javax.swing.GroupLayout.PREFERRED_SIZE, 361, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(33, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -118,29 +94,20 @@ public class AyudaUsuarioForm extends javax.swing.JInternalFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel26, javax.swing.GroupLayout.PREFERRED_SIZE, 337, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel27, javax.swing.GroupLayout.PREFERRED_SIZE, 306, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE))
-                    .addGroup(layout.createSequentialGroup()
+                        .addContainerGap()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel15)
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(6, 6, 6)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addGap(6, 6, 6)
-                                        .addComponent(btnIr, javax.swing.GroupLayout.PREFERRED_SIZE, 194, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addComponent(btnCerrar, javax.swing.GroupLayout.PREFERRED_SIZE, 194, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(71, 71, 71)))))
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(45, 45, 45)
+                        .addComponent(btnIr, javax.swing.GroupLayout.PREFERRED_SIZE, 194, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(152, 152, 152)
+                        .addComponent(btnCerrar, javax.swing.GroupLayout.PREFERRED_SIZE, 194, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(94, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -149,18 +116,11 @@ public class AyudaUsuarioForm extends javax.swing.JInternalFrame {
                 .addComponent(jLabel15)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnIr, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btnCerrar, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel27, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel26, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(58, 58, 58))
+                .addGap(103, 103, 103))
         );
 
         pack();
@@ -172,7 +132,7 @@ public class AyudaUsuarioForm extends javax.swing.JInternalFrame {
     }//GEN-LAST:event_btnCerrarActionPerformed
 
     private void btnIrActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnIrActionPerformed
-    GestionarUsuario form = new GestionarUsuario(); 
+      RegistrarUsuario form = new RegistrarUsuario(); 
     this.getDesktopPane().add(form);
     form.setVisible(true);
     this.dispose();  // TODO add your handling code here:
@@ -183,11 +143,8 @@ public class AyudaUsuarioForm extends javax.swing.JInternalFrame {
     private javax.swing.JButton btnCerrar;
     private javax.swing.JButton btnIr;
     private javax.swing.JLabel jLabel15;
-    private javax.swing.JLabel jLabel26;
-    private javax.swing.JLabel jLabel27;
     private javax.swing.JLabel jLabel28;
     private javax.swing.JLabel jLabel29;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
     // End of variables declaration//GEN-END:variables
 }

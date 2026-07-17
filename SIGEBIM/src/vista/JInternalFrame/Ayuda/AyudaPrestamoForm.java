@@ -31,9 +31,7 @@ public class AyudaPrestamoForm extends javax.swing.JInternalFrame {
         jPanel2 = new javax.swing.JPanel();
         jLabel15 = new javax.swing.JLabel();
         btnCerrar = new javax.swing.JButton();
-        jLabel27 = new javax.swing.JLabel();
         btnIr = new javax.swing.JButton();
-        jLabel26 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         jLabel28 = new javax.swing.JLabel();
         jLabel29 = new javax.swing.JLabel();
@@ -65,12 +63,6 @@ public class AyudaPrestamoForm extends javax.swing.JInternalFrame {
             }
         });
 
-        jLabel27.setBackground(new java.awt.Color(150, 111, 51));
-        jLabel27.setFont(new java.awt.Font("Segoe Print", 0, 18)); // NOI18N
-        jLabel27.setForeground(new java.awt.Color(255, 51, 51));
-        jLabel27.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/close.png"))); // NOI18N
-        jLabel27.setText("¿Necesita soporte adicional?");
-
         btnIr.setBackground(new java.awt.Color(255, 0, 51));
         btnIr.setFont(new java.awt.Font("Segoe Print", 0, 12)); // NOI18N
         btnIr.setForeground(new java.awt.Color(255, 255, 255));
@@ -81,10 +73,6 @@ public class AyudaPrestamoForm extends javax.swing.JInternalFrame {
             }
         });
 
-        jLabel26.setBackground(new java.awt.Color(150, 111, 51));
-        jLabel26.setFont(new java.awt.Font("Segoe Print", 0, 10)); // NOI18N
-        jLabel26.setText("Contacte al administrador del equipo de desarrollo SIGEBIM.");
-
         jLabel28.setBackground(new java.awt.Color(150, 111, 51));
         jLabel28.setFont(new java.awt.Font("Segoe Print", 0, 14)); // NOI18N
         jLabel28.setForeground(new java.awt.Color(255, 51, 51));
@@ -92,7 +80,7 @@ public class AyudaPrestamoForm extends javax.swing.JInternalFrame {
 
         jLabel29.setBackground(new java.awt.Color(150, 111, 51));
         jLabel29.setFont(new java.awt.Font("Segoe Print", 0, 14)); // NOI18N
-        jLabel29.setText("<html> 1. <b>Búsqueda:</b> Ingrese DNI e ISBN, luego presione <b>[BUSCAR]</b>.<br> 2. <b>Verificación:</b> Asegúrese que el estado sea 'Disponible'.<br> 3. <b>Confirmación:</b> Defina la fecha y presione <b>[CONFIRMAR PRÉSTAMO]</b>.<br> 4. <b>Estado:</b> El libro pasará automáticamente a 'No Disponible'.<br><br> <i>Nota: Si el ejemplar no está disponible, el sistema bloqueará la operación.</i> </html>");
+        jLabel29.setText("<html>1. CÓMO PRESTAR UN LIBRO:</b><br> - <b>Lector:</b> Ingrese el DNI del usuario. El sistema verificará si no tiene multas pendientes.<br> - <b>Libro:</b> Ingrese el ISBN del libro que desea llevar. El sistema verificará que haya Stock disponible.<br> - <b>Fecha de Devolución:</b> Seleccione en el calendario qué día debe devolver el libro.<br> - Presione <b>[CONFIRMAR PRÉSTAMO]</b>. El stock del libro se reducirá automáticamente.<br><br> <b>2. CÓMO REGISTRAR UNA DEVOLUCIÓN:</b><br> - Busque el préstamo activo usando el DNI del lector.<br> - Seleccione el registro y presione <b>[PROCESAR DEVOLUCIÓN]</b>.<br> - Si el lector se excedió de la fecha acordada, el sistema calculará automáticamente la multa a pagar. </html>");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -102,8 +90,8 @@ public class AyudaPrestamoForm extends javax.swing.JInternalFrame {
                 .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel28, javax.swing.GroupLayout.PREFERRED_SIZE, 302, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel29, javax.swing.GroupLayout.PREFERRED_SIZE, 520, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(18, Short.MAX_VALUE))
+                    .addComponent(jLabel29, javax.swing.GroupLayout.PREFERRED_SIZE, 709, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -111,7 +99,7 @@ public class AyudaPrestamoForm extends javax.swing.JInternalFrame {
                 .addContainerGap()
                 .addComponent(jLabel28)
                 .addGap(18, 18, 18)
-                .addComponent(jLabel29, javax.swing.GroupLayout.DEFAULT_SIZE, 166, Short.MAX_VALUE)
+                .addComponent(jLabel29, javax.swing.GroupLayout.DEFAULT_SIZE, 312, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
@@ -123,10 +111,7 @@ public class AyudaPrestamoForm extends javax.swing.JInternalFrame {
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel26, javax.swing.GroupLayout.PREFERRED_SIZE, 337, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel27, javax.swing.GroupLayout.PREFERRED_SIZE, 306, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGap(349, 349, 349)
                         .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
@@ -156,12 +141,7 @@ public class AyudaPrestamoForm extends javax.swing.JInternalFrame {
                     .addComponent(btnIr, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btnCerrar, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel27, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel26, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(58, 58, 58))
         );
 
@@ -174,7 +154,7 @@ public class AyudaPrestamoForm extends javax.swing.JInternalFrame {
     }//GEN-LAST:event_btnCerrarActionPerformed
 
     private void btnIrActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnIrActionPerformed
-    GestionPrestamo form = new GestionPrestamo(); 
+        GestionPrestamo form = new GestionPrestamo(); 
     this.getDesktopPane().add(form);
     form.setVisible(true);
     this.dispose();    // TODO add your handling code here:
@@ -185,8 +165,6 @@ public class AyudaPrestamoForm extends javax.swing.JInternalFrame {
     private javax.swing.JButton btnCerrar;
     private javax.swing.JButton btnIr;
     private javax.swing.JLabel jLabel15;
-    private javax.swing.JLabel jLabel26;
-    private javax.swing.JLabel jLabel27;
     private javax.swing.JLabel jLabel28;
     private javax.swing.JLabel jLabel29;
     private javax.swing.JPanel jPanel1;

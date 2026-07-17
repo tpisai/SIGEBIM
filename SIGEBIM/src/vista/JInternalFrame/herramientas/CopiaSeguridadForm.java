@@ -10,7 +10,9 @@ import java.nio.file.Path;
 import java.util.List;
 import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
+import modelo.persona.Usuario;
 import modelo.respaldo.ResultadoRespaldo;
+import servicios.respaldos.RegistroActividadService;
 import servicios.respaldos.RespaldoService;
 
 /**
@@ -23,7 +25,9 @@ public class CopiaSeguridadForm extends javax.swing.JInternalFrame {
      * Creates new form CopiaSeguridadForm
      */
     private final RespaldoService respaldoService = new RespaldoService();
-    private final String origen = "C:\\SIGEBIM\\SIGEBIM\\data";
+    private final String origen = "C:\\SIGEBIM\\SIGEBIM\\data";   
+    private final Usuario usuarioActual;
+    private final RegistroActividadService registroActividadService;
     
     public void mostrarArchivosDatos(Path carpetaDatos) {
         StringBuilder contenido = new StringBuilder();
@@ -53,10 +57,12 @@ public class CopiaSeguridadForm extends javax.swing.JInternalFrame {
         txtArchivos.setCaretPosition(0);
     }
     
-    public CopiaSeguridadForm() {
+    public CopiaSeguridadForm(Usuario usuarioActual, RegistroActividadService registroActividadService) {
         initComponents();
         txtCarpetaDatos.setEditable(false);
         txtCarpetaDatos.setText(origen);
+        this.usuarioActual = usuarioActual;
+        this.registroActividadService = registroActividadService;
     }
     private void limpiar(){
         txtCarpetaDestino.setText(null);
@@ -263,6 +269,8 @@ public class CopiaSeguridadForm extends javax.swing.JInternalFrame {
             }
         }
         ResultadoRespaldo resultado = respaldoService.crearRespaldo(carpetaDatos,carpetaDestino);
+        registroActividadService.registrar(usuarioActual,"Respaldo","Copia de Seguridad",
+                "Realizo copia de seguridad en su carpeta: "+carpetaDestino+"\nCon el nombre de"+nombreRespaldo,true);
         JOptionPane.showMessageDialog(this,resultado.getMensaje(),
                 resultado.isExitoso() ? "Respaldo completado" : "Error",
                 resultado.isExitoso() ? JOptionPane.INFORMATION_MESSAGE : JOptionPane.ERROR_MESSAGE);

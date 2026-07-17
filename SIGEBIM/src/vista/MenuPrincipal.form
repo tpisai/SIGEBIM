@@ -38,14 +38,6 @@
             <Property name="text" type="java.lang.String" value="Archivo"/>
           </Properties>
           <SubComponents>
-            <MenuItem class="javax.swing.JMenuItem" name="ItemSalir">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Salir"/>
-              </Properties>
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ItemSalirActionPerformed"/>
-              </Events>
-            </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="ItemCerrarSesion">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Cerrar Sesion"/>
@@ -193,10 +185,13 @@
                 <Property name="text" type="java.lang.String" value="Configuracion del Sistema"/>
               </Properties>
             </MenuItem>
-            <MenuItem class="javax.swing.JMenuItem" name="jMenuItem8">
+            <MenuItem class="javax.swing.JMenuItem" name="itemRegistroActividad">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Registro de Actividad"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="itemRegistroActividadActionPerformed"/>
+              </Events>
             </MenuItem>
           </SubComponents>
         </Menu>

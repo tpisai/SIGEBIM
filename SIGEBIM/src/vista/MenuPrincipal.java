@@ -16,10 +16,12 @@ import javax.swing.ImageIcon;
 import java.awt.Image;
 import java.awt.Graphics;
 import javax.swing.SwingUtilities;
+import servicios.respaldos.RegistroActividadService;
 import vista.JInternalFrame.Ayuda.AyudaConfiguracionForm;
 import vista.JInternalFrame.Ayuda.AyudaLibroForm;
 import vista.JInternalFrame.Ayuda.AyudaPrestamoForm;
 import vista.JInternalFrame.Ayuda.AyudaUsuarioForm;
+import vista.JInternalFrame.Consultas.ConsultarRegistroActividad;
 import vista.JInternalFrame.herramientas.CopiaSeguridadForm;
 import vista.JInternalFrame.Gestion.GestionColas;
 import vista.JInternalFrame.Gestion.GestionLibro;
@@ -38,15 +40,10 @@ public class MenuPrincipal extends JFrame {
     /**
      * Creates new form MenuPrincipal
      */
-    private Usuario usuario;
+    private final Usuario usuario;
+    private final RegistroActividadService registroActividadService;
     
     private void mostrarModulo(JInternalFrame frame) {
-        /*Primero valida que no haya una ventana abierta (De momento en comentario para validar despues si es necesario
-        para el sistema o nop)
-        if(Ventana.getAllFrames().length > 0){
-            JOptionPane.showMessageDialog(this,"Primero cierre la ventana actual.");
-            return;
-        }*/
         //Mostrar Ventana en el Menu
         Ventana.add(frame);
         frame.setVisible(true);
@@ -78,13 +75,10 @@ public class MenuPrincipal extends JFrame {
     }
     //
     //Constructor, No Tocar!!
-    public MenuPrincipal(Usuario usuario) {
+    public MenuPrincipal(Usuario usuario, RegistroActividadService registroActividadService) {
         initComponents();
-        // Validar que usuario no sea nulo
-        if (usuario == null) {
-            throw new IllegalArgumentException("El usuario no puede ser nulo.");
-        }
         this.usuario = usuario;
+        this.registroActividadService = registroActividadService;
         configurarPermisos();
         configurarVentana();
         setExtendedState(MAXIMIZED_BOTH);
@@ -160,7 +154,6 @@ public class MenuPrincipal extends JFrame {
         btnAccesoCopiaSeguridad = new javax.swing.JButton();
         jMenuBar1 = new javax.swing.JMenuBar();
         menuArchivo = new javax.swing.JMenu();
-        ItemSalir = new javax.swing.JMenuItem();
         ItemCerrarSesion = new javax.swing.JMenuItem();
         jMenu4 = new javax.swing.JMenu();
         menuLibros = new javax.swing.JMenu();
@@ -182,7 +175,7 @@ public class MenuPrincipal extends JFrame {
         itemCopiaSeguridad = new javax.swing.JMenuItem();
         intemRestaurar = new javax.swing.JMenuItem();
         jMenuItem10 = new javax.swing.JMenuItem();
-        jMenuItem8 = new javax.swing.JMenuItem();
+        itemRegistroActividad = new javax.swing.JMenuItem();
         itemAyudaUsuarios = new javax.swing.JMenu();
         itemNosotros = new javax.swing.JMenuItem();
         itemAyudaLibros = new javax.swing.JMenuItem();
@@ -295,14 +288,6 @@ public class MenuPrincipal extends JFrame {
         jMenuBar1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
 
         menuArchivo.setText("Archivo");
-
-        ItemSalir.setText("Salir");
-        ItemSalir.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ItemSalirActionPerformed(evt);
-            }
-        });
-        menuArchivo.add(ItemSalir);
 
         ItemCerrarSesion.setText("Cerrar Sesion");
         ItemCerrarSesion.addActionListener(new java.awt.event.ActionListener() {
@@ -419,8 +404,13 @@ public class MenuPrincipal extends JFrame {
         jMenuItem10.setText("Configuracion del Sistema");
         jMenu1.add(jMenuItem10);
 
-        jMenuItem8.setText("Registro de Actividad");
-        jMenu1.add(jMenuItem8);
+        itemRegistroActividad.setText("Registro de Actividad");
+        itemRegistroActividad.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                itemRegistroActividadActionPerformed(evt);
+            }
+        });
+        jMenu1.add(itemRegistroActividad);
 
         jMenuBar1.add(jMenu1);
 
@@ -503,17 +493,12 @@ public class MenuPrincipal extends JFrame {
         mostrarModulo(new GestionPrestamo());
     }//GEN-LAST:event_ItemGestionPrestamoActionPerformed
 
-    private void ItemSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ItemSalirActionPerformed
-        int salir=JOptionPane.showConfirmDialog(this, "Desea Salir de todo el sistema?","Confirmar Salida", JOptionPane.YES_NO_OPTION);
-        if(salir==JOptionPane.YES_OPTION){
-            System.exit(0);
-        }
-    }//GEN-LAST:event_ItemSalirActionPerformed
-
     private void ItemCerrarSesionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ItemCerrarSesionActionPerformed
-        LoginForm login= new LoginForm();
+        registroActividadService.registrar(usuario,"Seguridad","Cerrar sesión","El usuario cerró su sesión.",
+            true);
+        JOptionPane.showMessageDialog(this, "Cerrando Sesion..., Deme un 20 profe ;)");
+        LoginForm login= new LoginForm(registroActividadService);
         login.setVisible(true);
-        JOptionPane.showMessageDialog(this, "Cerrando Sesion..., " + "Deme un 20 profe ;)");
         this.dispose();
     }//GEN-LAST:event_ItemCerrarSesionActionPerformed
 
@@ -530,7 +515,7 @@ public class MenuPrincipal extends JFrame {
     }//GEN-LAST:event_itemGestionColasActionPerformed
 
     private void itemCopiaSeguridadActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itemCopiaSeguridadActionPerformed
-        mostrarModulo(new CopiaSeguridadForm());
+        mostrarModulo(new CopiaSeguridadForm(usuario,registroActividadService));
     }//GEN-LAST:event_itemCopiaSeguridadActionPerformed
 
     private void intemRestaurarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_intemRestaurarActionPerformed
@@ -550,7 +535,7 @@ public class MenuPrincipal extends JFrame {
     }//GEN-LAST:event_btnAccesoPrestamosActionPerformed
 
     private void btnAccesoCopiaSeguridadActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAccesoCopiaSeguridadActionPerformed
-        mostrarModulo(new CopiaSeguridadForm());
+        mostrarModulo(new CopiaSeguridadForm(usuario,registroActividadService));
     }//GEN-LAST:event_btnAccesoCopiaSeguridadActionPerformed
 
     private void itemNosotrosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itemNosotrosActionPerformed
@@ -573,6 +558,10 @@ public class MenuPrincipal extends JFrame {
         mostrarModulo(new AyudaConfiguracionForm());
     }//GEN-LAST:event_itemAyudaConfiguracionActionPerformed
 
+    private void itemRegistroActividadActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itemRegistroActividadActionPerformed
+        mostrarModulo(new ConsultarRegistroActividad(registroActividadService));
+    }//GEN-LAST:event_itemRegistroActividadActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -584,7 +573,6 @@ public class MenuPrincipal extends JFrame {
     private javax.swing.JMenuItem ItemGestionUsuarios;
     private javax.swing.JMenuItem ItemGestionarAutor;
     private javax.swing.JMenuItem ItemGestionarCategoria;
-    private javax.swing.JMenuItem ItemSalir;
     private javax.swing.JDesktopPane Ventana;
     private javax.swing.JButton btnAccesoCopiaSeguridad;
     private javax.swing.JButton btnAccesoDevoluciones;
@@ -601,6 +589,7 @@ public class MenuPrincipal extends JFrame {
     private javax.swing.JMenuItem itemCopiaSeguridad;
     private javax.swing.JMenuItem itemGestionColas;
     private javax.swing.JMenuItem itemNosotros;
+    private javax.swing.JMenuItem itemRegistroActividad;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu4;
     private javax.swing.JMenu jMenu5;
@@ -613,7 +602,6 @@ public class MenuPrincipal extends JFrame {
     private javax.swing.JMenuItem jMenuItem5;
     private javax.swing.JMenuItem jMenuItem6;
     private javax.swing.JMenuItem jMenuItem7;
-    private javax.swing.JMenuItem jMenuItem8;
     private javax.swing.JPopupMenu jPopupMenu1;
     private javax.swing.JPopupMenu jPopupMenu2;
     private javax.swing.JPopupMenu jPopupMenu3;

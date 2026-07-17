@@ -20,24 +20,21 @@
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" attributes="0">
-              <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="jLabel15" min="-2" max="-2" attributes="0"/>
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="jPanel3" min="-2" max="-2" attributes="0"/>
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
-                              <Component id="btnIr" min="-2" pref="194" max="-2" attributes="0"/>
-                              <EmptySpace max="32767" attributes="0"/>
-                              <Component id="btnCerrar" min="-2" pref="194" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="109" max="-2" attributes="0"/>
-                          </Group>
-                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jLabel15" min="-2" max="-2" attributes="0"/>
                   </Group>
+                  <Component id="jPanel1" alignment="0" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace pref="12" max="32767" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
+          </Group>
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
+              <Component id="btnIr" min="-2" pref="194" max="-2" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
+              <Component id="btnCerrar" min="-2" pref="194" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="128" max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -46,14 +43,14 @@
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
               <Component id="jLabel15" min="-2" max="-2" attributes="0"/>
-              <EmptySpace max="32767" attributes="0"/>
-              <Component id="jPanel3" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="btnIr" min="-2" pref="34" max="-2" attributes="0"/>
-                  <Component id="btnCerrar" alignment="0" min="-2" pref="34" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="btnIr" alignment="3" min="-2" pref="34" max="-2" attributes="0"/>
+                  <Component id="btnCerrar" alignment="3" min="-2" pref="34" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace min="-2" pref="176" max="-2" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -71,9 +68,9 @@
           <Color blue="73" green="5f" red="0" type="rgb"/>
         </Property>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/img/CONFIGURACION.png"/>
+          <Image iconType="3" name="/img/REPORTES.png"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="CONFIGURACI&#xd3;N AVANZADA: PAR&#xc1;METROS"/>
+        <Property name="text" type="java.lang.String" value="GU&#xcd;A DE USUARIO: REPORTES Y EXPORTACI&#xd3;N"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="btnCerrar">
@@ -104,13 +101,13 @@
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="ff" red="ff" type="rgb"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="IR A CONFIGURACI&#xd3;N"/>
+        <Property name="text" type="java.lang.String" value="IR A REPORTES"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnIrActionPerformed"/>
       </Events>
     </Component>
-    <Container class="javax.swing.JPanel" name="jPanel3">
+    <Container class="javax.swing.JPanel" name="jPanel1">
 
       <Layout>
         <DimensionLayout dim="0">
@@ -118,8 +115,8 @@
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="jLabel29" min="-2" pref="705" max="-2" attributes="0"/>
-                      <Component id="jLabel28" min="-2" pref="361" max="-2" attributes="0"/>
+                      <Component id="jLabel28" alignment="0" min="-2" pref="302" max="-2" attributes="0"/>
+                      <Component id="jLabel29" alignment="0" min="-2" pref="621" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="32767" attributes="0"/>
               </Group>
@@ -127,12 +124,11 @@
         </DimensionLayout>
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Group type="102" alignment="1" attributes="0">
-                  <EmptySpace pref="14" max="32767" attributes="0"/>
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
                   <Component id="jLabel28" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="jLabel29" min="-2" pref="275" max="-2" attributes="0"/>
-                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="jLabel29" pref="321" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -149,7 +145,6 @@
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="33" green="33" red="ff" type="rgb"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="GU&#xcd;A DE USUARIO: CONFIGURACI&#xd3;N GENERA"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel29">
@@ -160,7 +155,7 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe Print" size="14" style="0"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="&lt;html&gt;Aqu&#xed; se definen las reglas de la biblioteca. Tenga cuidado al modificar estos valores:&lt;br&gt;&lt;br&gt; - &lt;b&gt;Carpeta de Respaldo:&lt;/b&gt; Indique d&#xf3;nde se guardar&#xe1;n las copias de seguridad del sistema.&lt;br&gt; - &lt;b&gt;D&#xed;as M&#xe1;ximos de Pr&#xe9;stamo:&lt;/b&gt; El l&#xed;mite de tiempo est&#xe1;ndar que un lector puede llevarse un libro.&lt;br&gt; - &lt;b&gt;Multa Diaria (S/.):&lt;/b&gt; Cu&#xe1;nto dinero se cobrar&#xe1; por cada d&#xed;a que un lector se retrase.&lt;br&gt; - &lt;b&gt;L&#xed;mite de Colas:&lt;/b&gt; Cu&#xe1;ntas personas como m&#xe1;ximo pueden reservar un libro que no tiene stock.&lt;br&gt; - &lt;b&gt;Costo de Reposici&#xf3;n (S/.):&lt;/b&gt; La penalidad fija que se cobra si un lector pierde un libro prestado.&lt;br&gt;&lt;br&gt; Presione &lt;b&gt;[GUARDAR CONFIGURACI&#xd3;N]&lt;/b&gt; para que las nuevas reglas se apliquen inmediatamente. &lt;/html&gt;"/>
+            <Property name="text" type="java.lang.String" value="&lt;html&gt;1. GENERAR UN REPORTE:&lt;/b&gt;&lt;br&gt; - &lt;b&gt;Tipo:&lt;/b&gt; Seleccione qu&#xe9; desea consultar (Libros m&#xe1;s prestados, Usuarios Morosos, Inventario Total).&lt;br&gt; - &lt;b&gt;Filtro de Fechas:&lt;/b&gt; Seleccione una &apos;Fecha Inicio&apos; y una &apos;Fecha Fin&apos; si solo quiere ver la informaci&#xf3;n de un mes o semana espec&#xed;fica.&lt;br&gt; - Presione &lt;b&gt;[GENERAR VISTA PREVIA]&lt;/b&gt; para ver la tabla en su pantalla.&lt;br&gt;&lt;br&gt; &lt;b&gt;2. GUARDAR E IMPRIMIR:&lt;/b&gt;&lt;br&gt; - Una vez generado el reporte, presione &lt;b&gt;[EXPORTAR A PDF]&lt;/b&gt;.&lt;br&gt; - Elija d&#xf3;nde guardar el archivo en su computadora para poder imprimirlo o enviarlo por correo. &lt;/html&gt;"/>
           </Properties>
         </Component>
       </SubComponents>
