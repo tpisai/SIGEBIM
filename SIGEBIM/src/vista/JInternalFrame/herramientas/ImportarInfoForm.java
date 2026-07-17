@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JInternalFrame.java to edit this template
  */
-package vista.JInternalFrame;
+package vista.JInternalFrame.herramientas;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -10,14 +10,16 @@ import java.nio.file.Path;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.List;
+import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
+import modelo.respaldo.ResultadoRespaldo;
 import servicios.respaldos.RespaldoService;
 
 /**
  *
  * @author zulmi
  */
-public class RestaurarInfoForm extends javax.swing.JInternalFrame {
+public class ImportarInfoForm extends javax.swing.JInternalFrame {
 
     /**
      * Creates new form RestaurarInfoForm
@@ -29,8 +31,8 @@ public class RestaurarInfoForm extends javax.swing.JInternalFrame {
         contenido.append("CONTENIDO DEL RESPALDO\n");
         contenido.append("--------------------------------------------\n\n");
         try {
-            List<Path> archivos = respaldoService.listarArchivos(carpetaRespaldo);
-            if (archivos.isEmpty()) {
+            Path[] archivos = respaldoService.listarArchivos(carpetaRespaldo);
+            if (archivos.length == 0) {
                 contenido.append("No se encontraron archivos en el respaldo.\n");
                 txtCantidad.setText("0");
                 txtArchivosRespaldo.setText(contenido.toString());
@@ -43,13 +45,13 @@ public class RestaurarInfoForm extends javax.swing.JInternalFrame {
                 contenido.append("  Estado: Correcto\n\n");
             }
             contenido.append("--------------------------------------------\n");
-            contenido.append("Cantidad de archivos: ").append(archivos.size()).append("\n\n");
+            contenido.append("Cantidad de archivos: ").append(archivos.length).append("\n\n");
             if (respaldoService.validarRespaldo(carpetaRespaldo)) {
                 contenido.append("El respaldo puede ser restaurado.");
             } else {
                 contenido.append("Advertencia: el respaldo está incompleto.");
             }
-            txtCantidad.setText(String.valueOf(archivos.size()));
+            txtCantidad.setText(String.valueOf(archivos.length));
             LocalDateTime fecha = respaldoService.obtenerFechaModificacion(carpetaRespaldo);
             if (fecha != null) {
                 txtFechaRespaldo.setText(fecha.format(
@@ -63,13 +65,18 @@ public class RestaurarInfoForm extends javax.swing.JInternalFrame {
         txtArchivosRespaldo.setCaretPosition(0);
     }
         
-    public RestaurarInfoForm() {
+    public ImportarInfoForm() {
         initComponents();
         txtCarpetaRespaldo.setEditable(false);
+        txtFechaRespaldo.setEditable(false);
+        txtCantidad.setEditable(false);
     }
     
     private void limpiar(){
-        
+        txtCarpetaRespaldo.setText(null);
+        txtFechaRespaldo.setText(null);
+        txtCantidad.setText(null);
+        txtArchivosRespaldo.setText(null);
     }
     /**
      * This method is called from within the constructor to initialize the form.
@@ -94,8 +101,8 @@ public class RestaurarInfoForm extends javax.swing.JInternalFrame {
         btnVerificar = new javax.swing.JButton();
         btnLimpiar = new javax.swing.JButton();
         btnClose = new javax.swing.JButton();
-        btnSeleccionar1 = new javax.swing.JButton();
-        btnRespaldar1 = new javax.swing.JButton();
+        btnSeleccionar = new javax.swing.JButton();
+        btnRestaurar = new javax.swing.JButton();
         txtCantidad = new javax.swing.JTextField();
 
         jLabel15.setBackground(new java.awt.Color(150, 111, 51));
@@ -104,13 +111,20 @@ public class RestaurarInfoForm extends javax.swing.JInternalFrame {
         jLabel15.setText("SIGEBIM - CREAR COPIA DE SEGURIDAD");
 
         txtCarpetaDatos.setBackground(new java.awt.Color(60, 60, 60));
+        txtCarpetaDatos.setFont(new java.awt.Font("Segoe UI", 2, 14)); // NOI18N
         txtCarpetaDatos.setForeground(new java.awt.Color(255, 255, 255));
+
+        txtCarpetaRespaldo.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
 
         jLabel12.setFont(new java.awt.Font("Segoe UI", 2, 14)); // NOI18N
         jLabel12.setText("Carpeta de Respaldo:");
 
         jLabel13.setFont(new java.awt.Font("Segoe UI", 2, 14)); // NOI18N
         jLabel13.setText("Carpeta de Datos:");
+
+        txtFechaRespaldo.setBackground(new java.awt.Color(60, 60, 60));
+        txtFechaRespaldo.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        txtFechaRespaldo.setForeground(new java.awt.Color(255, 255, 255));
 
         jLabel14.setFont(new java.awt.Font("Segoe UI", 2, 14)); // NOI18N
         jLabel14.setText("Fecha de respaldo:");
@@ -150,14 +164,23 @@ public class RestaurarInfoForm extends javax.swing.JInternalFrame {
             }
         });
 
-        btnSeleccionar1.setText("Seleccionar Respaldo");
-        btnSeleccionar1.addActionListener(new java.awt.event.ActionListener() {
+        btnSeleccionar.setText("Seleccionar Carpeta...");
+        btnSeleccionar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnSeleccionar1ActionPerformed(evt);
+                btnSeleccionarActionPerformed(evt);
             }
         });
 
-        btnRespaldar1.setText("Restaurar");
+        btnRestaurar.setText("Restaurar");
+        btnRestaurar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnRestaurarActionPerformed(evt);
+            }
+        });
+
+        txtCantidad.setBackground(new java.awt.Color(60, 60, 60));
+        txtCantidad.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        txtCantidad.setForeground(new java.awt.Color(255, 255, 255));
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -177,14 +200,14 @@ public class RestaurarInfoForm extends javax.swing.JInternalFrame {
                                 .addComponent(jLabel13)
                                 .addComponent(jLabel14, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addComponent(btnVerificar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(btnRespaldar1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                .addComponent(btnRestaurar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                             .addComponent(btnLimpiar))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addComponent(txtCarpetaRespaldo)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(btnSeleccionar1))
+                                .addComponent(btnSeleccionar))
                             .addComponent(jScrollPane1)
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addComponent(txtFechaRespaldo, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -206,33 +229,31 @@ public class RestaurarInfoForm extends javax.swing.JInternalFrame {
                     .addComponent(jLabel15))
                 .addGap(12, 12, 12)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(txtCarpetaRespaldo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(txtCarpetaDatos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabel12)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(jLabel12)
-                                .addGap(18, 18, 18)
-                                .addComponent(jLabel13))
-                            .addComponent(btnSeleccionar1))
-                        .addGap(12, 12, 12)
+                            .addComponent(txtCarpetaRespaldo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btnSeleccionar))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel14)
-                            .addComponent(txtFechaRespaldo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel16)
-                            .addComponent(txtCantidad, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addComponent(txtCarpetaDatos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel13))))
+                .addGap(13, 13, 13)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel14)
+                    .addComponent(txtFechaRespaldo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel16)
+                    .addComponent(txtCantidad, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(10, 10, 10)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                         .addComponent(btnVerificar)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(btnRespaldar1)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGap(18, 18, 18)
+                        .addComponent(btnRestaurar)
+                        .addGap(51, 51, 51)
                         .addComponent(btnLimpiar))
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(0, 20, Short.MAX_VALUE))
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 215, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(0, 10, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -246,7 +267,7 @@ public class RestaurarInfoForm extends javax.swing.JInternalFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         pack();
@@ -260,9 +281,14 @@ public class RestaurarInfoForm extends javax.swing.JInternalFrame {
         dispose();
     }//GEN-LAST:event_btnCloseActionPerformed
 
-    private void btnSeleccionar1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSeleccionar1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnSeleccionar1ActionPerformed
+    private void btnSeleccionarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSeleccionarActionPerformed
+        JFileChooser selector = new JFileChooser();
+        selector.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
+        int resultado = selector.showOpenDialog(this);
+        if (resultado == JFileChooser.APPROVE_OPTION) {
+            txtCarpetaRespaldo.setText(selector.getSelectedFile().getAbsolutePath());
+        }
+    }//GEN-LAST:event_btnSeleccionarActionPerformed
 
     private void btnVerificarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVerificarActionPerformed
          String ruta = txtCarpetaRespaldo.getText().trim();
@@ -275,12 +301,39 @@ public class RestaurarInfoForm extends javax.swing.JInternalFrame {
         mostrarContenidoRespaldo(carpetaRespaldo);
     }//GEN-LAST:event_btnVerificarActionPerformed
 
+    private void btnRestaurarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRestaurarActionPerformed
+        String respaldoTexto = txtCarpetaRespaldo.getText().trim();
+        String datosTexto = txtCarpetaDatos.getText().trim();
+        if (respaldoTexto.isEmpty() || datosTexto.isEmpty()) {
+            JOptionPane.showMessageDialog(this,"Seleccione la carpeta donde respaldo sus archivos");
+            return;
+        }
+        Path carpetaRespaldo = Path.of(respaldoTexto);
+        Path carpetaDatos = Path.of(datosTexto);
+        if (!respaldoService.validarRespaldo(carpetaRespaldo)) {
+            JOptionPane.showMessageDialog(this,"La carpeta seleccionada no contiene un respaldo válido.",
+                    "Respaldo inválido",JOptionPane.ERROR_MESSAGE);
+            return;
+        }
+        int confirmacion = JOptionPane.showConfirmDialog(this,"La restauración reemplazará la información actual.\n"
+                        + "¿Desea continuar?","Confirmar restauración",JOptionPane.YES_NO_OPTION,
+                JOptionPane.WARNING_MESSAGE);
+        if (confirmacion != JOptionPane.YES_OPTION) {
+            return;
+        }
+        ResultadoRespaldo resultado = respaldoService.restaurarRespaldo(carpetaRespaldo,carpetaDatos);
+        JOptionPane.showMessageDialog(this,resultado.getMensaje(),
+                resultado.isExitoso() ? "Restauración completada" : "Error",
+                resultado.isExitoso() ? JOptionPane.INFORMATION_MESSAGE : JOptionPane.ERROR_MESSAGE
+        );
+    }//GEN-LAST:event_btnRestaurarActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnClose;
     private javax.swing.JButton btnLimpiar;
-    private javax.swing.JButton btnRespaldar1;
-    private javax.swing.JButton btnSeleccionar1;
+    private javax.swing.JButton btnRestaurar;
+    private javax.swing.JButton btnSeleccionar;
     private javax.swing.JButton btnVerificar;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;

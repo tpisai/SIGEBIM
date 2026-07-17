@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JInternalFrame.java to edit this template
  */
-package vista.JInternalFrame;
+package vista.JInternalFrame.herramientas;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -10,6 +10,7 @@ import java.nio.file.Path;
 import java.util.List;
 import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
+import modelo.respaldo.ResultadoRespaldo;
 import servicios.respaldos.RespaldoService;
 
 /**
@@ -22,14 +23,15 @@ public class CopiaSeguridadForm extends javax.swing.JInternalFrame {
      * Creates new form CopiaSeguridadForm
      */
     private final RespaldoService respaldoService = new RespaldoService();
+    private final String origen = "C:\\SIGEBIM\\SIGEBIM\\data";
     
     public void mostrarArchivosDatos(Path carpetaDatos) {
         StringBuilder contenido = new StringBuilder();
         contenido.append("ARCHIVOS QUE SERÁN RESPALDADOS\n");
         contenido.append("--------------------------------------------\n\n");
         try {
-            List<Path> archivos = respaldoService.listarArchivos(carpetaDatos);
-            if (archivos.isEmpty()) {
+            Path[] archivos = respaldoService.listarArchivos(carpetaDatos);
+            if (archivos.length == 0) {
                 contenido.append("No se encontraron archivos para respaldar.\n");
             } else {
                 int cantidad = 0;
@@ -54,10 +56,11 @@ public class CopiaSeguridadForm extends javax.swing.JInternalFrame {
     public CopiaSeguridadForm() {
         initComponents();
         txtCarpetaDatos.setEditable(false);
-        mostrarArchivosDatos(Path.of(txtCarpetaDatos.getText()));
+        txtCarpetaDatos.setText(origen);
     }
     private void limpiar(){
-        
+        txtCarpetaDestino.setText(null);
+        txtArchivos.setText(null);
     }
     /**
      * This method is called from within the constructor to initialize the form.
@@ -74,8 +77,6 @@ public class CopiaSeguridadForm extends javax.swing.JInternalFrame {
         txtCarpetaDatos = new javax.swing.JTextField();
         jLabel12 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
-        txtNombreArchivo = new javax.swing.JTextField();
-        jLabel14 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         txtArchivos = new javax.swing.JTextArea();
         jLabel16 = new javax.swing.JLabel();
@@ -98,17 +99,14 @@ public class CopiaSeguridadForm extends javax.swing.JInternalFrame {
         jLabel13.setFont(new java.awt.Font("Segoe UI", 2, 14)); // NOI18N
         jLabel13.setText("Carpeta de Destino:");
 
-        jLabel14.setFont(new java.awt.Font("Segoe UI", 2, 14)); // NOI18N
-        jLabel14.setText("Nombre del Archivo:");
-
         txtArchivos.setColumns(20);
         txtArchivos.setRows(5);
         jScrollPane1.setViewportView(txtArchivos);
 
         jLabel16.setFont(new java.awt.Font("Segoe UI", 2, 14)); // NOI18N
-        jLabel16.setText("Ultimo Respaldo:");
+        jLabel16.setText("Archivos a Respaldar:");
 
-        btnSeleccionar.setText("Seleccionar Destino");
+        btnSeleccionar.setText("Seleccionar Carpeta...");
         btnSeleccionar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnSeleccionarActionPerformed(evt);
@@ -116,6 +114,11 @@ public class CopiaSeguridadForm extends javax.swing.JInternalFrame {
         });
 
         btnRespaldar.setText("Crear Respaldo");
+        btnRespaldar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnRespaldarActionPerformed(evt);
+            }
+        });
 
         btnLimpiar.setBackground(new java.awt.Color(255, 255, 249));
         btnLimpiar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/escoba.png"))); // NOI18N
@@ -143,27 +146,23 @@ public class CopiaSeguridadForm extends javax.swing.JInternalFrame {
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jLabel15, javax.swing.GroupLayout.PREFERRED_SIZE, 540, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(btnClose))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addComponent(jLabel12)
-                                .addComponent(jLabel13)
-                                .addComponent(jLabel14, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jLabel16)
-                                .addComponent(btnRespaldar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                            .addComponent(btnLimpiar))
+                            .addComponent(jLabel12)
+                            .addComponent(jLabel13)
+                            .addComponent(jLabel16)
+                            .addComponent(btnLimpiar)
+                            .addComponent(btnRespaldar, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(18, 18, 18)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(txtNombreArchivo, javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(txtCarpetaDestino, javax.swing.GroupLayout.Alignment.LEADING))
+                                .addComponent(txtCarpetaDestino)
                                 .addGap(18, 18, 18)
                                 .addComponent(btnSeleccionar))
                             .addComponent(jScrollPane1)
@@ -188,19 +187,15 @@ public class CopiaSeguridadForm extends javax.swing.JInternalFrame {
                     .addComponent(txtCarpetaDestino, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btnSeleccionar))
                 .addGap(18, 18, 18)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(txtNombreArchivo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel14))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(jLabel16)
-                        .addGap(18, 18, 18)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 113, Short.MAX_VALUE)
                         .addComponent(btnRespaldar)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGap(18, 18, 18)
                         .addComponent(btnLimpiar))
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(jScrollPane1))
+                .addContainerGap())
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -228,6 +223,7 @@ public class CopiaSeguridadForm extends javax.swing.JInternalFrame {
         int resultado = selector.showOpenDialog(this);
         if (resultado == JFileChooser.APPROVE_OPTION) {
             txtCarpetaDestino.setText(selector.getSelectedFile().getAbsolutePath());
+            mostrarArchivosDatos(Path.of(txtCarpetaDatos.getText()));
         }
     }//GEN-LAST:event_btnSeleccionarActionPerformed
 
@@ -239,6 +235,46 @@ public class CopiaSeguridadForm extends javax.swing.JInternalFrame {
         dispose();
     }//GEN-LAST:event_btnCloseActionPerformed
 
+    private void btnRespaldarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRespaldarActionPerformed
+        String origenTexto = txtCarpetaDatos.getText().trim();
+        String destinoTexto = txtCarpetaDestino.getText().trim();
+        String nombreRespaldo = respaldoService.generarNombreRespaldo();
+        
+        if (origenTexto.isEmpty() || destinoTexto.isEmpty()) {
+            JOptionPane.showMessageDialog(this,"Seleccione la carpeta de destino.",
+                    "Campo requeridos",JOptionPane.WARNING_MESSAGE);
+            return;
+        }
+        Path carpetaDatos = Path.of(origenTexto);
+        Path carpetaDestino = Path.of(destinoTexto);
+        Path carpetaNuevoRespaldo = carpetaDestino.resolve(nombreRespaldo);
+        
+        if (respaldoService.carpetaContieneInformacion(carpetaNuevoRespaldo)) {
+            int decision = JOptionPane.showConfirmDialog(this, 
+                    "Ya existe una carpeta de respaldo con el nombre:\n\n" 
+                            + nombreRespaldo + "\n\nEsta carpeta contiene información."
+                            + "\nSi continúa, su contenido será reemplazado."
+                            + "\n\n¿Desea realizar el respaldo de todos modos?",
+                    "Respaldo existente",JOptionPane.YES_NO_OPTION,JOptionPane.WARNING_MESSAGE);
+            if (decision != JOptionPane.YES_OPTION) {
+                JOptionPane.showMessageDialog(this,"La copia de seguridad fue cancelada.",
+                        "Operación cancelada",JOptionPane.INFORMATION_MESSAGE);
+                return;
+            }
+        }
+        ResultadoRespaldo resultado = respaldoService.crearRespaldo(carpetaDatos,carpetaDestino);
+        JOptionPane.showMessageDialog(this,resultado.getMensaje(),
+                resultado.isExitoso() ? "Respaldo completado" : "Error",
+                resultado.isExitoso() ? JOptionPane.INFORMATION_MESSAGE : JOptionPane.ERROR_MESSAGE);
+        if (resultado.isExitoso()) {
+            txtArchivos.append(
+                    "\n\n------------------------------------------"
+                    + "\nRESPALDO CREADO CORRECTAMENTE"
+                    + "\nUbicación: " + resultado.getRuta()
+            );
+        }
+    }//GEN-LAST:event_btnRespaldarActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnClose;
@@ -247,7 +283,6 @@ public class CopiaSeguridadForm extends javax.swing.JInternalFrame {
     private javax.swing.JButton btnSeleccionar;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
     private javax.swing.JPanel jPanel1;
@@ -255,6 +290,5 @@ public class CopiaSeguridadForm extends javax.swing.JInternalFrame {
     private javax.swing.JTextArea txtArchivos;
     private javax.swing.JTextField txtCarpetaDatos;
     private javax.swing.JTextField txtCarpetaDestino;
-    private javax.swing.JTextField txtNombreArchivo;
     // End of variables declaration//GEN-END:variables
 }

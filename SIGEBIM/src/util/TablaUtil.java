@@ -1,44 +1,72 @@
 package util;
 
+import java.awt.Color;
 import java.awt.Component;
 import javax.swing.JTable;
+import javax.swing.SwingUtilities;
+import javax.swing.table.DefaultTableCellRenderer;
 import javax.swing.table.TableCellRenderer;
 import javax.swing.table.TableColumn;
 
 public class TablaUtil {
 
-    public static void ajustarTabla(JTable tabla) {
-        int columnas = tabla.getColumnCount();
+    public static void aplicarEstiloYFormato(javax.swing.JScrollPane scrollPane, JTable tabla) {
+        // 1. Diseño Visual
+        scrollPane.setOpaque(false);
+        scrollPane.getViewport().setOpaque(false);
+        tabla.setOpaque(false);
 
-        if (columnas <= 3) {
-            // Pocas columnas: que se repartan proporcionalmente
-            tabla.setAutoResizeMode(JTable.AUTO_RESIZE_SUBSEQUENT_COLUMNS);
-            int anchoTotal = tabla.getParent().getWidth();
-            int anchoPorColumna = anchoTotal / columnas;
-            for (int col = 0; col < columnas; col++) {
-                tabla.getColumnModel().getColumn(col).setPreferredWidth(anchoPorColumna);
+        // Renderizado para filas intercaladas tipo "papel antiguo"
+        tabla.setDefaultRenderer(Object.class, new DefaultTableCellRenderer() {
+            @Override
+            public Component getTableCellRendererComponent(JTable table, Object value, 
+                    boolean isSelected, boolean hasFocus, int row, int column) {
+                
+                Component c = super.getTableCellRendererComponent(table, value, isSelected, hasFocus, row, column);
+                
+                // Fondo intercalado
+                if (row % 2 == 0) {
+                    c.setBackground(new Color(245, 235, 215, 200)); // Crema claro
+                } else {
+                    c.setBackground(new Color(230, 215, 190, 200)); // Crema tostado
+                }
+                
+                c.setForeground(Color.BLACK); 
+                return c;
             }
-        } else {
-            // Muchas columnas: mostrar completo con scroll
-            tabla.setAutoResizeMode(JTable.AUTO_RESIZE_OFF);
-            tabla.setFillsViewportHeight(true);
-            tabla.setRowHeight(tabla.getRowHeight() + 8);
+        });
 
-            for (int column = 0; column < tabla.getColumnCount(); column++) {
-                TableColumn tableColumn = tabla.getColumnModel().getColumn(column);
-                int preferredWidth = 80;
-                int maxWidth = 400;
+        // Encabezado Café Tierra
+        tabla.getTableHeader().setBackground(new Color(80, 50, 30));
+        tabla.getTableHeader().setForeground(new Color(245, 235, 215));
+
+        // 2. Ajuste automático para ocupar TODO el espacio
+        SwingUtilities.invokeLater(() -> {
+            // USAR ESTO para que las columnas se expandan automáticamente
+            tabla.setAutoResizeMode(JTable.AUTO_RESIZE_ALL_COLUMNS);
+            tabla.setFillsViewportHeight(true);
+            tabla.setRowHeight(Math.max(tabla.getRowHeight(), 25));
+
+            int columnas = tabla.getColumnCount();
+            for (int i = 0; i < columnas; i++) {
+                TableColumn col = tabla.getColumnModel().getColumn(i);
+                int anchoMinimo = 60;
+
+                // Calcular ancho ideal basado en contenido
+                Component header = tabla.getTableHeader().getDefaultRenderer().getTableCellRendererComponent(
+                        tabla, col.getHeaderValue(), false, false, -1, i);
+                anchoMinimo = Math.max(header.getPreferredSize().width + 20, anchoMinimo);
 
                 for (int row = 0; row < tabla.getRowCount(); row++) {
-                    TableCellRenderer cellRenderer = tabla.getCellRenderer(row, column);
-                    Component c = tabla.prepareRenderer(cellRenderer, row, column);
-                    int width = c.getPreferredSize().width + tabla.getIntercellSpacing().width;
-                    preferredWidth = Math.max(preferredWidth, width);
+                    TableCellRenderer renderer = tabla.getCellRenderer(row, i);
+                    Component c = tabla.prepareRenderer(renderer, row, i);
+                    anchoMinimo = Math.max(c.getPreferredSize().width + 20, anchoMinimo);
                 }
-
-                preferredWidth = Math.min(preferredWidth, maxWidth);
-                tableColumn.setPreferredWidth(preferredWidth);
+                
+                // Establecemos el tamaño preferido, pero el AUTO_RESIZE_ALL_COLUMNS 
+                // se encargará de estirarlo para llenar el JScrollPane
+                col.setPreferredWidth(anchoMinimo);
             }
-        }
+        });
     }
 }

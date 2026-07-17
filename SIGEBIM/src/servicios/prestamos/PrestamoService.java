@@ -73,6 +73,7 @@ public class PrestamoService {
                 usuario,
                 LocalDate.now(),
                 LocalDate.now().plusDays(diasPrestamo),
+                null,
                 EstadoPrestamo.ACTIVO
         );
         registrar(prestamo);

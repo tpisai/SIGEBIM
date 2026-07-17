@@ -16,14 +16,18 @@ import javax.swing.ImageIcon;
 import java.awt.Image;
 import java.awt.Graphics;
 import javax.swing.SwingUtilities;
-import vista.JInternalFrame.CopiaSeguridadForm;
-import vista.JInternalFrame.GestionColas;
-import vista.JInternalFrame.GestionLibro;
-import vista.JInternalFrame.GestionPrestamo;
-import vista.JInternalFrame.GestionarAutor;
-import vista.JInternalFrame.GestionarCategoria;
-import vista.JInternalFrame.GestionarUsuario;
-import vista.JInternalFrame.RestaurarInfoForm;
+import vista.JInternalFrame.Ayuda.AyudaConfiguracionForm;
+import vista.JInternalFrame.Ayuda.AyudaLibroForm;
+import vista.JInternalFrame.Ayuda.AyudaPrestamoForm;
+import vista.JInternalFrame.Ayuda.AyudaUsuarioForm;
+import vista.JInternalFrame.herramientas.CopiaSeguridadForm;
+import vista.JInternalFrame.Gestion.GestionColas;
+import vista.JInternalFrame.Gestion.GestionLibro;
+import vista.JInternalFrame.Gestion.GestionPrestamo;
+import vista.JInternalFrame.Gestion.GestionarAutor;
+import vista.JInternalFrame.Gestion.GestionarCategoria;
+import vista.JInternalFrame.Gestion.GestionarUsuario;
+import vista.JInternalFrame.herramientas.ImportarInfoForm;
 
 /**
  *
@@ -93,11 +97,9 @@ public class MenuPrincipal extends JFrame {
             case ADMINISTRADOR:
                 break;
             case BIBLIOTECARIO:
-                menuUsuarios.setVisible(false);
                 menuReportes.setVisible(false);
                 break;
             case LECTOR:
-                menuUsuarios.setVisible(false);
                 menuLibros.setVisible(false);
                 menuReportes.setVisible(false);
                 break;
@@ -165,7 +167,6 @@ public class MenuPrincipal extends JFrame {
         ItemGestionLibros = new javax.swing.JMenuItem();
         ItemGestionarCategoria = new javax.swing.JMenuItem();
         ItemGestionarAutor = new javax.swing.JMenuItem();
-        menuUsuarios = new javax.swing.JMenu();
         ItemGestionUsuarios = new javax.swing.JMenuItem();
         menuPrestamos = new javax.swing.JMenu();
         ItemGestionPrestamo = new javax.swing.JMenuItem();
@@ -175,10 +176,20 @@ public class MenuPrincipal extends JFrame {
         jMenuItem2 = new javax.swing.JMenuItem();
         jMenuItem3 = new javax.swing.JMenuItem();
         jMenuItem4 = new javax.swing.JMenuItem();
+        jMenuItem5 = new javax.swing.JMenuItem();
+        jMenuItem6 = new javax.swing.JMenuItem();
         jMenu1 = new javax.swing.JMenu();
         itemCopiaSeguridad = new javax.swing.JMenuItem();
         intemRestaurar = new javax.swing.JMenuItem();
-        jMenu2 = new javax.swing.JMenu();
+        jMenuItem10 = new javax.swing.JMenuItem();
+        jMenuItem8 = new javax.swing.JMenuItem();
+        itemAyudaUsuarios = new javax.swing.JMenu();
+        itemNosotros = new javax.swing.JMenuItem();
+        itemAyudaLibros = new javax.swing.JMenuItem();
+        jMenuItem7 = new javax.swing.JMenuItem();
+        itemAyudaPrestamos = new javax.swing.JMenuItem();
+        itemAyudaReportes = new javax.swing.JMenuItem();
+        itemAyudaConfiguracion = new javax.swing.JMenuItem();
 
         jMenuItem1.setText("jMenuItem1");
 
@@ -305,10 +316,10 @@ public class MenuPrincipal extends JFrame {
 
         jMenu4.setText("Gestion");
 
-        menuLibros.setText("Libros");
+        menuLibros.setText("Mantenimiento de Libros");
 
         ItemGestionLibros.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_L, java.awt.event.InputEvent.ALT_DOWN_MASK));
-        ItemGestionLibros.setText("Gestion de Libros");
+        ItemGestionLibros.setText("Libros");
         ItemGestionLibros.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 ItemGestionLibrosActionPerformed(evt);
@@ -316,7 +327,7 @@ public class MenuPrincipal extends JFrame {
         });
         menuLibros.add(ItemGestionLibros);
 
-        ItemGestionarCategoria.setText("Gestionar las Categorias");
+        ItemGestionarCategoria.setText("Categorias");
         ItemGestionarCategoria.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 ItemGestionarCategoriaActionPerformed(evt);
@@ -324,7 +335,7 @@ public class MenuPrincipal extends JFrame {
         });
         menuLibros.add(ItemGestionarCategoria);
 
-        ItemGestionarAutor.setText("Gestionar los Autores");
+        ItemGestionarAutor.setText("Autores");
         ItemGestionarAutor.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 ItemGestionarAutorActionPerformed(evt);
@@ -334,21 +345,17 @@ public class MenuPrincipal extends JFrame {
 
         jMenu4.add(menuLibros);
 
-        menuUsuarios.setText("Usuarios");
-
-        ItemGestionUsuarios.setText("Gestion de Usuarios");
+        ItemGestionUsuarios.setText("Mantenimiento de usuarios");
         ItemGestionUsuarios.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 ItemGestionUsuariosActionPerformed(evt);
             }
         });
-        menuUsuarios.add(ItemGestionUsuarios);
+        jMenu4.add(ItemGestionUsuarios);
 
-        jMenu4.add(menuUsuarios);
+        menuPrestamos.setText("Mantenimiento de Prestamos");
 
-        menuPrestamos.setText("Prestamos");
-
-        ItemGestionPrestamo.setText("Gestion de Prestamos");
+        ItemGestionPrestamo.setText("Prestamos");
         ItemGestionPrestamo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 ItemGestionPrestamoActionPerformed(evt);
@@ -356,7 +363,7 @@ public class MenuPrincipal extends JFrame {
         });
         menuPrestamos.add(ItemGestionPrestamo);
 
-        itemGestionColas.setText("Gestionar Colas");
+        itemGestionColas.setText("Colas");
         itemGestionColas.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 itemGestionColasActionPerformed(evt);
@@ -383,6 +390,12 @@ public class MenuPrincipal extends JFrame {
 
         jMenu5.add(menuReportes);
 
+        jMenuItem5.setText("Catalogo Virtual");
+        jMenu5.add(jMenuItem5);
+
+        jMenuItem6.setText("Prestamos Vencidos");
+        jMenu5.add(jMenuItem6);
+
         jMenuBar1.add(jMenu5);
 
         jMenu1.setText("Herramientas");
@@ -395,7 +408,7 @@ public class MenuPrincipal extends JFrame {
         });
         jMenu1.add(itemCopiaSeguridad);
 
-        intemRestaurar.setText("Restaurar Informacion");
+        intemRestaurar.setText("Importar Ficheros");
         intemRestaurar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 intemRestaurarActionPerformed(evt);
@@ -403,10 +416,60 @@ public class MenuPrincipal extends JFrame {
         });
         jMenu1.add(intemRestaurar);
 
+        jMenuItem10.setText("Configuracion del Sistema");
+        jMenu1.add(jMenuItem10);
+
+        jMenuItem8.setText("Registro de Actividad");
+        jMenu1.add(jMenuItem8);
+
         jMenuBar1.add(jMenu1);
 
-        jMenu2.setText("Ayuda");
-        jMenuBar1.add(jMenu2);
+        itemAyudaUsuarios.setText("Ayuda");
+
+        itemNosotros.setText("Sobre Nosotros");
+        itemNosotros.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                itemNosotrosActionPerformed(evt);
+            }
+        });
+        itemAyudaUsuarios.add(itemNosotros);
+
+        itemAyudaLibros.setText("Ayuda a GestionLibros");
+        itemAyudaLibros.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                itemAyudaLibrosActionPerformed(evt);
+            }
+        });
+        itemAyudaUsuarios.add(itemAyudaLibros);
+
+        jMenuItem7.setText("Ayuda a GestionUsuarios");
+        jMenuItem7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem7ActionPerformed(evt);
+            }
+        });
+        itemAyudaUsuarios.add(jMenuItem7);
+
+        itemAyudaPrestamos.setText("Ayuda a GestionPrestamos");
+        itemAyudaPrestamos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                itemAyudaPrestamosActionPerformed(evt);
+            }
+        });
+        itemAyudaUsuarios.add(itemAyudaPrestamos);
+
+        itemAyudaReportes.setText("Ayuda a Reportes");
+        itemAyudaUsuarios.add(itemAyudaReportes);
+
+        itemAyudaConfiguracion.setText("Ayuda a Configuracion");
+        itemAyudaConfiguracion.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                itemAyudaConfiguracionActionPerformed(evt);
+            }
+        });
+        itemAyudaUsuarios.add(itemAyudaConfiguracion);
+
+        jMenuBar1.add(itemAyudaUsuarios);
 
         setJMenuBar(jMenuBar1);
 
@@ -471,7 +534,7 @@ public class MenuPrincipal extends JFrame {
     }//GEN-LAST:event_itemCopiaSeguridadActionPerformed
 
     private void intemRestaurarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_intemRestaurarActionPerformed
-        mostrarModulo(new RestaurarInfoForm());
+        mostrarModulo(new ImportarInfoForm());
     }//GEN-LAST:event_intemRestaurarActionPerformed
 
     private void btnAccesoLibroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAccesoLibroActionPerformed
@@ -489,6 +552,26 @@ public class MenuPrincipal extends JFrame {
     private void btnAccesoCopiaSeguridadActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAccesoCopiaSeguridadActionPerformed
         mostrarModulo(new CopiaSeguridadForm());
     }//GEN-LAST:event_btnAccesoCopiaSeguridadActionPerformed
+
+    private void itemNosotrosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itemNosotrosActionPerformed
+        
+    }//GEN-LAST:event_itemNosotrosActionPerformed
+
+    private void itemAyudaLibrosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itemAyudaLibrosActionPerformed
+        mostrarModulo(new AyudaLibroForm());
+    }//GEN-LAST:event_itemAyudaLibrosActionPerformed
+
+    private void jMenuItem7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem7ActionPerformed
+        mostrarModulo(new AyudaUsuarioForm());
+    }//GEN-LAST:event_jMenuItem7ActionPerformed
+
+    private void itemAyudaPrestamosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itemAyudaPrestamosActionPerformed
+        mostrarModulo(new AyudaPrestamoForm());
+    }//GEN-LAST:event_itemAyudaPrestamosActionPerformed
+
+    private void itemAyudaConfiguracionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itemAyudaConfiguracionActionPerformed
+        mostrarModulo(new AyudaConfiguracionForm());
+    }//GEN-LAST:event_itemAyudaConfiguracionActionPerformed
 
     /**
      * @param args the command line arguments
@@ -510,17 +593,27 @@ public class MenuPrincipal extends JFrame {
     private javax.swing.JButton btnAccesoPrestamos;
     private javax.swing.JButton btnAccesoUsuarios;
     private javax.swing.JMenuItem intemRestaurar;
+    private javax.swing.JMenuItem itemAyudaConfiguracion;
+    private javax.swing.JMenuItem itemAyudaLibros;
+    private javax.swing.JMenuItem itemAyudaPrestamos;
+    private javax.swing.JMenuItem itemAyudaReportes;
+    private javax.swing.JMenu itemAyudaUsuarios;
     private javax.swing.JMenuItem itemCopiaSeguridad;
     private javax.swing.JMenuItem itemGestionColas;
+    private javax.swing.JMenuItem itemNosotros;
     private javax.swing.JMenu jMenu1;
-    private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu4;
     private javax.swing.JMenu jMenu5;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem1;
+    private javax.swing.JMenuItem jMenuItem10;
     private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JMenuItem jMenuItem3;
     private javax.swing.JMenuItem jMenuItem4;
+    private javax.swing.JMenuItem jMenuItem5;
+    private javax.swing.JMenuItem jMenuItem6;
+    private javax.swing.JMenuItem jMenuItem7;
+    private javax.swing.JMenuItem jMenuItem8;
     private javax.swing.JPopupMenu jPopupMenu1;
     private javax.swing.JPopupMenu jPopupMenu2;
     private javax.swing.JPopupMenu jPopupMenu3;
@@ -531,6 +624,5 @@ public class MenuPrincipal extends JFrame {
     private javax.swing.JMenu menuLibros;
     private javax.swing.JMenu menuPrestamos;
     private javax.swing.JMenu menuReportes;
-    private javax.swing.JMenu menuUsuarios;
     // End of variables declaration//GEN-END:variables
 }

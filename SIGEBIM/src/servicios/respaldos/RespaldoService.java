@@ -14,19 +14,20 @@ import java.nio.file.attribute.FileTime;
 import java.time.LocalDateTime;
 import java.time.ZoneId;
 import java.time.format.DateTimeFormatter;
-import java.util.List;
+import java.util.stream.Stream;
 
 public class RespaldoService {
 
     private final ArchivoRespaldo archivoRespaldo;
 
-    private final List<String> archivosObligatorios = List.of(
+    private final String[] archivosObligatorios = {
             "usuarios.txt",
             "libros.txt",
             "autores.txt",
             "categorias.txt",
             "prestamos.txt",
-            "log_busqueda.txt");
+            "log_busqueda.txt"
+    };
 
     public RespaldoService() {
         this.archivoRespaldo = new ArchivoRespaldo();
@@ -50,9 +51,11 @@ public class RespaldoService {
                 }
             }
             if (archivosCopiados == 0) {
-                return new ResultadoRespaldo(false, "No se encontraron archivos para respaldar.", directorioRespaldo);
+                return new ResultadoRespaldo(false, "No se encontraron archivos para respaldar.", 
+                        directorioRespaldo);
             }
-            return new ResultadoRespaldo(true, "Copia de seguridad creada correctamente.", directorioRespaldo);
+            return new ResultadoRespaldo(true, "Copia de seguridad creada correctamente.", 
+                    directorioRespaldo);
         } catch (IOException ex) {
             return new ResultadoRespaldo(false, "No se pudo crear la copia de seguridad: " +
                     ex.getMessage(),directorioRespaldo);
@@ -83,17 +86,32 @@ public class RespaldoService {
         if (!archivoRespaldo.existeDirectorio(carpetaRespaldo)) {
             return false;
         }
-        return archivosObligatorios.stream().anyMatch(nombre -> 
-                archivoRespaldo.existeArchivo(carpetaRespaldo.resolve(nombre)));
+        for (String nombre : archivosObligatorios) {
+            if (archivoRespaldo.existeArchivo(carpetaRespaldo.resolve(nombre))) {
+                return true;
+            }
+        }
+        return false;
     }
 
-    public List<Path> listarArchivos(Path carpeta) throws IOException {
-        return archivoRespaldo.listarArchivos(carpeta);
+    public boolean carpetaContieneInformacion(Path carpeta) {
+        if (carpeta == null || !Files.isDirectory(carpeta)) {
+            return false;
+        }
+        try (Stream<Path> contenido = Files.list(carpeta)) {
+            return contenido.findAny().isPresent();
+        } catch (IOException ex) {
+            return false;
+        }
+    }
+    
+    public Path[] listarArchivos(Path carpeta) throws IOException {
+        return archivoRespaldo.listarArchivos(carpeta).toArray(new Path[0]);
     }
 
-    private String generarNombreRespaldo() {
-        DateTimeFormatter formato = DateTimeFormatter.ofPattern("yyyy-MM-dd_HH-mm-ss");
-        return "respaldo_" + LocalDateTime.now().format(formato);
+    public String generarNombreRespaldo() {
+        DateTimeFormatter formato = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+        return "respaldo_SIGEBIM_" + LocalDateTime.now().format(formato);
     }
     
     public String formatearTamanio(long bytes) {

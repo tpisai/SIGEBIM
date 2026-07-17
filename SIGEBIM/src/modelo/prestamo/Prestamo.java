@@ -6,6 +6,7 @@ import modelo.persona.Usuario;
 import modelo.enums.EstadoPrestamo;
 
 public class Prestamo {
+
     private String idPrestamo;
     private Libro libro;
     private Usuario usuario;
@@ -13,7 +14,7 @@ public class Prestamo {
     private LocalDate fechaLimite;
     private LocalDate fechaDevolucion;
     private EstadoPrestamo estadoPrestamo;
-    //Constructores
+
     public Prestamo() {
         this.estadoPrestamo = EstadoPrestamo.ACTIVO;
         this.fechaPrestamo = LocalDate.now();
@@ -21,24 +22,25 @@ public class Prestamo {
     }
 
     public Prestamo(String idPrestamo, Libro libro, Usuario usuario,
-            LocalDate fechaPrestamo, LocalDate fechaDevolucion, EstadoPrestamo estadoPrestamo) {
+            LocalDate fechaPrestamo, LocalDate fechaLimite, LocalDate fechaDevolucion,
+            EstadoPrestamo estadoPrestamo) {
         this.idPrestamo = idPrestamo;
         this.libro = libro;
         this.usuario = usuario;
         this.fechaPrestamo = fechaPrestamo;
+        this.fechaLimite = fechaLimite;
         this.fechaDevolucion = fechaDevolucion;
         this.estadoPrestamo = estadoPrestamo;
     }
-    //Metodos
-    //Logica para el form
+
     public boolean estaActivo() {
         return estadoPrestamo == EstadoPrestamo.ACTIVO;
     }
 
     public boolean estaVencido() {
         return estaActivo()
-                && fechaDevolucion != null
-                && LocalDate.now().isAfter(fechaDevolucion);
+                && fechaLimite != null
+                && LocalDate.now().isAfter(fechaLimite);
     }
 
     public void marcarDevuelto() {
@@ -50,7 +52,7 @@ public class Prestamo {
             this.estadoPrestamo = EstadoPrestamo.VENCIDO;
         }
     }
-    //Getters y Setters
+
     public String getIdPrestamo() {
         return idPrestamo;
     }
